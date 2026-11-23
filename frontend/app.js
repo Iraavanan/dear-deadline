@@ -68,7 +68,9 @@
     "work-rules": "The 80-hour rules", "missed-interview": "I missed my SNAP interview", "stolen-snap": "My SNAP benefits were stolen",
     "work-check": "I work while getting benefits", "ssi-limit": "Am I under SSI's $2,000 limit?", "report-change": "Something in my life changed",
     "filed": "Keep a record of what I sent", "is-it-real": "Is this message real?", "helper-permission": "Can someone talk to the agency for me?",
-    "helper-board": "I help several people"
+    "helper-board": "I help several people", "earnings-record": "Is a year missing from my earnings record?", "fema-proof": "FEMA is asking for proof that I lived there",
+    "late-appeal": "I missed my appeal deadline", "payment-missing": "My payment didn't arrive", "benefit-offset": "Part of my benefit is taken for a debt",
+    "medicare-irmaa": "My Medicare premium is higher because of income"
   };
   var RELATED = {
     "overpayment": ["withholding", "check-amount", "notice-check"], "check-amount": ["overpayment", "notice-check"], "notice-check": ["overpayment", "check-amount"],
@@ -80,7 +82,9 @@
     "paperwork": ["renewal", "benefit-hearing", "medicaid-ending"], "medicaid-ending": ["paperwork", "benefit-hearing"], "work-rules": ["renewal", "benefit-hearing"],
     "missed-interview": ["renewal", "benefit-hearing"], "stolen-snap": ["is-it-real", "filed"], "rent-check": ["filed"], "utility-shutoff": ["filed"],
     "work-check": ["report-change", "ssi-limit"], "ssi-limit": ["report-change", "overpayment"], "report-change": ["work-check", "filed"], "filed": ["asked-again", "ssa-call"],
-    "is-it-real": ["stolen-snap", "locked-out"], "helper-permission": ["helper-board"], "helper-board": ["helper-permission"]
+    "is-it-real": ["stolen-snap", "locked-out"], "helper-permission": ["helper-board"], "helper-board": ["helper-permission"],
+    "late-appeal": ["decision-appeal", "filed"], "payment-missing": ["ssa-call", "locked-out"], "benefit-offset": ["withholding", "ssa-call"],
+    "medicare-irmaa": ["medicare-costs", "filed"]
   };
   function related() {
     var where = (location.hash || "").replace(/^#/, "").split("/")[0], list = RELATED[where === "letter" ? "medicare-letter" : where];
@@ -311,7 +315,12 @@
               way("Is my overpayment notice complete?", "Check it against what Social Security's rules say every notice must tell you, and ask for an explanation.", go("notice-check"), null, null, "overpayment notice missing explanation pom"),
               way("My disability case is taking too long", "See if Social Security may handle it first, and get a request and a note for your member of Congress.", go("disability-wait"), null, null, "wait backlog slow dire need critical congress hearing delay"),
               way("I can't reach anyone at Social Security", "When to call, what to have ready, what to say, and a log of each try.", go("ssa-call"), null, null, "phone call hold wait 800 callback appointment"),
-              way("I'm locked out of my Social Security account", "Login.gov or ID.me: other ways to prove who you are, and what you can do without the account.", go("locked-out"), null, null, "login.gov id.me my social security account password verify identity locked")
+              way("I'm locked out of my Social Security account", "Login.gov or ID.me: other ways to prove who you are, and what you can do without the account.", go("locked-out"), null, null, "login.gov id.me my social security account password verify identity locked"),
+              way("Is a year missing from my earnings record?", "Compare a W-2 with the earnings on your Social Security statement and prepare a correction request.", go("earnings-record"), null, null, "earnings record statement w-2 w2 missing year wages ssa-7008 correction"),
+              way("I missed my appeal deadline", "The 60 days have passed. Ask Social Security to accept a late appeal, with a statement of good cause.", go("late-appeal"), null, null, "late appeal missed deadline good cause 60 days extension"),
+              way("My payment didn't arrive", "When your Social Security or SSI payment was due, and the day you can report it missing.", go("payment-missing"), null, null, "missing payment check deposit late not received schedule wednesday direct express"),
+              way("Part of my benefit is taken for a debt", "Student loans, taxes, child support and other debts: what can be taken, and the federal limit.", go("benefit-offset"), null, null, "garnish garnishment offset treasury student loan debt taken levy bank frozen"),
+              way("My Medicare premium is higher because of my income", "See your 2026 income tier and whether form SSA-44 could lower it after retirement or another life change.", go("medicare-irmaa"), null, null, "irmaa income related premium ssa-44 magi high income part b part d surcharge medicare")
             ]),
           h("div", { class: "band band-med", "data-band": "med" },
             h("p", { class: "group", text: "I have a letter about Medicare" }),
@@ -339,7 +348,8 @@
               way("I won my hearing, but nothing changed", "The date it should have happened by, and a letter asking for the decision to be carried out.", go("hearing-decision"), null, null, "hearing decision won compliance not carried out restore"),
               way("My SNAP benefits were stolen", "Stop more theft today, lock the card, and a statement for the police report.", go("stolen-snap"), null, null, "ebt card stolen skimming theft fraud lock"),
               way("Check how my housing rent was worked out", "Voucher or public housing: redo the rent formula, find missing deductions, or see why your rent changed.", go("rent-check"), null, null, "rent housing section 8 voucher hud public housing"),
-              way("My electricity or gas may be shut off", "Florida: who to call today, what to ask, crisis help with the bill, and what to bring.", go("utility-shutoff"), null, null, "electric gas utility shutoff disconnect bill liheap")
+              way("My electricity or gas may be shut off", "Florida: who to call today, what to ask, crisis help with the bill, and what to bring.", go("utility-shutoff"), null, null, "electric gas utility shutoff disconnect bill liheap"),
+              way("FEMA is asking for proof that I lived there", "After a disaster: what the letter may be asking for, which papers can show you lived in the home, and your response date.", go("fema-proof"), null, null, "fema disaster hurricane flood occupancy proof residence home lived")
             ]),
           band("none", "No letter, or not sure", [
               way("I work while getting benefits", "Check whether your pay could lead to an overpayment, before a letter comes.", go("work-check"), null, null, "work earnings job ssdi ssi income pay stubs paycheck"),
@@ -487,16 +497,20 @@
     else if (NEXT[where] && window.Modules && window.Modules.nextSteps) window.Modules.nextSteps[NEXT[where]]();
     else if (where === "asked-again" && window.Modules && window.Modules.askedAgain) window.Modules.askedAgain.start();
     else if (FIXES[where] && window.Modules && window.Modules.fixes) window.Modules.fixes[FIXES[where]].start();
+    else if (SSAMORE[where] && window.Modules && window.Modules.ssamore) window.Modules.ssamore[SSAMORE[where]].start();
     else if (where === "wic-practice" && window.Modules && window.Modules.wic) window.Modules.wic.start();
     else if (where === "helper-board" && window.Modules && window.Modules.board) window.Modules.board.start();
     else if (where === "ssi-wages" && window.Modules && window.Modules.worksheets) window.Modules.worksheets.start("wages");
     else if (where === "ssi-medicaid" && window.Modules && window.Modules.worksheets) window.Modules.worksheets.start("medicaid");
+    else if (where === "earnings-record" && window.Modules && window.Modules.worksheets) window.Modules.worksheets.start("earnings");
+    else if (where === "fema-proof" && window.Modules && window.Modules.worksheets) window.Modules.worksheets.start("fema");
     else if (where.indexOf("letter/") === 0 && window.Modules && window.Modules.letters) window.Modules.letters.startAt(where.slice(7));
     else home();
   }
   window.addEventListener("hashchange", route);
   var NEXT = { "helper-permission": "permission", "hearing-prep": "hearingPrep", "hearing-decision": "decision", "medicaid-ending": "medicaidEnd" };
   var FIXES = { "medicare-costs": "costs", "stolen-snap": "stolen", "locked-out": "locked", "ssa-call": "calls", "withholding": "withhold", "paperwork": "paperwork" };
+  var SSAMORE = { "late-appeal": "late", "payment-missing": "payday", "benefit-offset": "offset", "medicare-irmaa": "irmaa" };
 
   function start() {
     count("overpayment", "start");

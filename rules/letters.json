@@ -492,7 +492,9 @@
      "Send or take it to your local Social Security office, or call 1-800-772-1213.",
      "Keep a copy of everything you send and note the date."
     ]
-   }
+   },
+   "see": "medicare-irmaa",
+   "see_label": "Check my premium tier and whether form SSA-44 could lower it"
   },
   {
    "id": "extra-help",

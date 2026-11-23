@@ -17,7 +17,7 @@ import json
 import os
 from pathlib import Path
 
-MODULES = ("overpayment", "disability-ended", "work-check", "decision-appeal", "is-it-real", "report-change", "find-letter", "check-amount", "filed-log", "embed", "medicare-bill", "work-rules", "missed-interview", "renewal", "rent-check", "benefit-hearing", "utility", "wic-practice", "helper-board", "notice-check", "ssi-limit", "plan-appeal", "disability-wait", "medicare-costs", "stolen-snap", "locked-out", "ssa-call", "withholding", "paperwork", "asked-again", "helper-permission", "hearing-prep", "hearing-decision", "medicaid-ending")
+MODULES = ("overpayment", "disability-ended", "work-check", "decision-appeal", "is-it-real", "report-change", "find-letter", "check-amount", "filed-log", "embed", "medicare-bill", "work-rules", "missed-interview", "renewal", "rent-check", "benefit-hearing", "utility", "wic-practice", "helper-board", "notice-check", "ssi-limit", "plan-appeal", "disability-wait", "medicare-costs", "stolen-snap", "locked-out", "ssa-call", "withholding", "paperwork", "asked-again", "helper-permission", "hearing-prep", "hearing-decision", "medicaid-ending", "late-appeal", "payment-missing", "benefit-offset", "medicare-irmaa")
 EVENTS = ("start", "dates", "kit")
 DEFAULT_FILE = Path(__file__).resolve().parents[2] / "data" / "counts.json"
 TABLE = """CREATE TABLE IF NOT EXISTS use_counts (

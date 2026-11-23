@@ -1,0 +1,120 @@
+{
+ "table": "latefiling",
+ "about": "Asking Social Security to accept an appeal after the 60-day limit (good cause).",
+ "rows": [
+  {
+   "id": "appeal",
+   "plain": "You generally have 60 days from the date you received a decision letter to ask for an appeal.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "days": 60
+  },
+  {
+   "id": "mail",
+   "plain": "Social Security assumes you received the letter 5 days after the date on it, unless you show it arrived later.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "days": 5
+  },
+  {
+   "id": "weekend",
+   "plain": "If the last day falls on a weekend or national holiday, the deadline moves to the next workday.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "extension",
+   "plain": "If the time limit has passed, you can still ask for the appeal. The request for more time must be in writing and say why it is late.",
+   "source": "https://www.ssa.gov/OP_Home/cfr20/404/404-0909.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "consider",
+   "plain": "Social Security looks at what kept you from filing on time, whether its own action misled you, and any physical, mental, educational or language limitation, including limited English.",
+   "source": "https://www.ssa.gov/OP_Home/cfr20/404/404-0911.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "ssi",
+   "plain": "The same good-cause rule applies to SSI decisions.",
+   "source": "https://www.ssa.gov/OP_Home/cfr20/416/416-1411.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "reason_illness",
+   "plain": "A serious illness kept you from contacting Social Security in any way, even through someone else.",
+   "source": "https://www.ssa.gov/OP_Home/cfr20/404/404-0911.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "reason_family",
+   "plain": "There was a death or serious illness in your immediate family.",
+   "source": "https://www.ssa.gov/OP_Home/cfr20/404/404-0911.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "reason_records",
+   "plain": "Important records were destroyed or damaged by fire or another accident.",
+   "source": "https://www.ssa.gov/OP_Home/cfr20/404/404-0911.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "reason_searching",
+   "plain": "You were trying hard to find information you needed, but could not find it in time.",
+   "source": "https://www.ssa.gov/OP_Home/cfr20/404/404-0911.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "reason_explained",
+   "plain": "You asked Social Security to explain the decision before the deadline, and you appeal within 60 days of getting the explanation.",
+   "source": "https://www.ssa.gov/OP_Home/cfr20/404/404-0911.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "reason_wrong_info",
+   "plain": "Social Security gave you wrong or incomplete information about how or when to appeal.",
+   "source": "https://www.ssa.gov/OP_Home/cfr20/404/404-0911.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "reason_no_notice",
+   "plain": "You never received the decision letter.",
+   "source": "https://www.ssa.gov/OP_Home/cfr20/404/404-0911.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "reason_other_agency",
+   "plain": "You sent the request on time to another government agency in good faith, and it reached Social Security late.",
+   "source": "https://www.ssa.gov/OP_Home/cfr20/404/404-0911.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "reason_limits",
+   "plain": "A physical, mental, educational or language limitation kept you from filing on time or from knowing about the deadline.",
+   "source": "https://www.ssa.gov/OP_Home/cfr20/404/404-0911.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "reason_unusual",
+   "plain": "Something unusual or unavoidable kept you from filing on time or from knowing you needed to.",
+   "source": "https://www.ssa.gov/OP_Home/cfr20/404/404-0911.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  }
+ ]
+}

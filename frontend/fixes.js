@@ -204,5 +204,6 @@
   });
 
   window.Modules = window.Modules || {};
-  window.Modules.fixes = { costs: costs, stolen: stolen, locked: locked, calls: calls, withhold: withhold, paperwork: paperwork };
+  window.Modules.fixes = { costs: costs, stolen: stolen, locked: locked, calls: calls, withhold: withhold, paperwork: paperwork,
+    kit: { flow: flow, tail: tail, plain: plain, input: input, val: val, steps: steps, money: money, select: select } };
 })();

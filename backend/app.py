@@ -18,7 +18,7 @@ from pathlib import Path
 from flask import Flask, Response, jsonify, request, send_from_directory
 
 import helper
-from helper import ai_reader, amount, bill, hearing, noticecheck, ssilimit, planappeal, diswait, fixes, utility, budget, cessation, counter, deadlines, denial, engine, letters, renewal, rent, reporting, rules, validate, work, workrules
+from helper import ssamore, ai_reader, amount, bill, hearing, noticecheck, ssilimit, planappeal, diswait, fixes, utility, budget, cessation, counter, deadlines, denial, engine, letters, renewal, rent, reporting, rules, validate, work, workrules
 
 ROOT = Path(__file__).resolve().parents[1]
 FRONTEND = ROOT / "frontend"
@@ -302,6 +302,26 @@ def create_app():
         """Medicaid or SNAP ended over paperwork: the window to send papers without starting over."""
         return _figures(fixes.procedural, "details")
 
+    @app.post("/api/late-appeal")
+    def late_appeal():
+        """Missed the 60-day appeal limit: the usual deadline, good-cause reasons and a statement."""
+        return _figures(ssamore.latefiling, "details")
+
+    @app.post("/api/payment-missing")
+    def payment_missing():
+        """A Social Security or SSI payment did not arrive: when it was due and when to report it."""
+        return _figures(ssamore.payday, "details")
+
+    @app.post("/api/offset")
+    def benefit_offset():
+        """Part of a benefit taken for a debt: the federal limits and what to do."""
+        return _figures(ssamore.offset, "details")
+
+    @app.post("/api/irmaa")
+    def medicare_irmaa():
+        """Income-related Medicare premium: the 2026 tier and when form SSA-44 may help."""
+        return _figures(ssamore.irmaa, "details")
+
     @app.post("/api/disability-wait")
     def disability_wait():
         """A slow disability case: critical-case categories that may fit, and letters."""
@@ -399,6 +419,23 @@ def create_app():
     @app.get("/open/heldout-protocol")
     def heldout_protocol():
         return send_from_directory(ROOT / "benchmark" / "heldout", "PROTOCOL.md", mimetype="text/plain")
+
+    SITE = os.environ.get("SITE_URL", "https://deardeadline.org").rstrip("/")
+    PAGES = ("/", "/helpers", "/es", "/about", "/open")
+
+    @app.get("/robots.txt")
+    def robots():
+        """Search engines may read every page; the API answers only form submissions."""
+        body = "User-agent: *\nDisallow: /api/\nAllow: /\n\nSitemap: %s/sitemap.xml\n" % SITE
+        return Response(body, mimetype="text/plain")
+
+    @app.get("/sitemap.xml")
+    def sitemap():
+        """The public pages, dated by the day the rules were last checked."""
+        day = rules.rules_checked_as_of()
+        urls = "".join("  <url><loc>%s%s</loc><lastmod>%s</lastmod></url>\n" % (SITE, p, day) for p in PAGES)
+        body = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n%s</urlset>\n' % urls
+        return Response(body, mimetype="application/xml")
 
     @app.get("/es")
     def spanish():

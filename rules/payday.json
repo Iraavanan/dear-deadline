@@ -1,0 +1,41 @@
+{
+ "table": "payday",
+ "about": "When Social Security and SSI payments are due, and when to report one missing.",
+ "rows": [
+  {
+   "id": "ss_birthday",
+   "plain": "Social Security payments are paid on a Wednesday chosen by your birth date: the 1st to 10th get the second Wednesday, the 11th to 20th the third Wednesday, and the 21st to 31st the fourth Wednesday.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10031.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "ss_third",
+   "plain": "If you got Social Security before May 1997, or you get both Social Security and SSI, your Social Security payment is due on the 3rd of the month.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10031.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "ssi_first",
+   "plain": "SSI is paid on the 1st of the month. When a payment day falls on a weekend or federal holiday, it is paid on the business day before.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10031.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "wait",
+   "plain": "Payments are sometimes delayed. Social Security asks you to contact it if the payment has not arrived by the third mail delivery day after the payment date.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202406135",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "history",
+   "plain": "Your my Social Security account shows your payment history, so you can see whether a payment was sent.",
+   "source": "https://www.ssa.gov/myaccount/",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  }
+ ]
+}

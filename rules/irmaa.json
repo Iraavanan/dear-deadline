@@ -1,0 +1,145 @@
+{
+ "table": "irmaa",
+ "about": "The income-related Medicare premium (IRMAA) for 2026 and how to ask for a new decision.",
+ "rows": [
+  {
+   "id": "standard",
+   "plain": "The standard 2026 Part B premium is $202.90 a month.",
+   "source": "https://www.ssa.gov/benefits/medicare/medicare-premiums.html",
+   "effective_from": "2026-01-01",
+   "checked_on": "2026-11-23",
+   "amount": 202.9
+  },
+  {
+   "id": "based_on",
+   "plain": "Your 2026 premium is based on your modified adjusted gross income from your 2024 tax return.",
+   "source": "https://www.ssa.gov/benefits/medicare/medicare-premiums.html",
+   "effective_from": "2026-01-01",
+   "checked_on": "2026-11-23",
+   "tax_year": 2024
+  },
+  {
+   "id": "tiers_single",
+   "plain": "2026 tiers for an individual return: up to $109,000 standard; to $137,000 +$81.20; to $171,000 +$202.90; to $205,000 +$324.60; under $500,000 +$446.30; $500,000 or more +$487.00. Part D adds $14.50 to $91.00.",
+   "source": "https://www.ssa.gov/benefits/medicare/medicare-premiums.html",
+   "effective_from": "2026-01-01",
+   "checked_on": "2026-11-23",
+   "tiers": [
+    [
+     109000,
+     0,
+     0
+    ],
+    [
+     137000,
+     81.2,
+     14.5
+    ],
+    [
+     171000,
+     202.9,
+     37.5
+    ],
+    [
+     205000,
+     324.6,
+     60.4
+    ],
+    [
+     499999.99,
+     446.3,
+     83.3
+    ],
+    [
+     null,
+     487.0,
+     91.0
+    ]
+   ]
+  },
+  {
+   "id": "tiers_joint",
+   "plain": "2026 tiers for a joint return: up to $218,000 standard; to $274,000 +$81.20; to $342,000 +$202.90; to $410,000 +$324.60; under $750,000 +$446.30; $750,000 or more +$487.00.",
+   "source": "https://www.ssa.gov/benefits/medicare/medicare-premiums.html",
+   "effective_from": "2026-01-01",
+   "checked_on": "2026-11-23",
+   "tiers": [
+    [
+     218000,
+     0,
+     0
+    ],
+    [
+     274000,
+     81.2,
+     14.5
+    ],
+    [
+     342000,
+     202.9,
+     37.5
+    ],
+    [
+     410000,
+     324.6,
+     60.4
+    ],
+    [
+     749999.99,
+     446.3,
+     83.3
+    ],
+    [
+     null,
+     487.0,
+     91.0
+    ]
+   ]
+  },
+  {
+   "id": "tiers_separate",
+   "plain": "2026 tiers for married filing separately while living with your spouse: up to $109,000 standard; under $391,000 +$446.30; $391,000 or more +$487.00.",
+   "source": "https://www.ssa.gov/benefits/medicare/medicare-premiums.html",
+   "effective_from": "2026-01-01",
+   "checked_on": "2026-11-23",
+   "tiers": [
+    [
+     109000,
+     0,
+     0
+    ],
+    [
+     390999.99,
+     446.3,
+     83.3
+    ],
+    [
+     null,
+     487.0,
+     91.0
+    ]
+   ]
+  },
+  {
+   "id": "events",
+   "plain": "You can ask for a new decision with form SSA-44 if your income went down because of a life-changing event: marriage, divorce or a spouse's death; you or your spouse stopping or reducing work; losing income-producing property in a disaster; a pension plan ending or being cut; or an employer settlement after closure or bankruptcy.",
+   "source": "https://www.ssa.gov/forms/ssa-44.html",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "proof",
+   "plain": "Send proof of the event and of the lower income, such as a death certificate or a letter from your employer, and a signed copy of your tax return if you filed one.",
+   "source": "https://www.ssa.gov/benefits/medicare/medicare-premiums.html",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "appeal",
+   "plain": "If the information Social Security used is wrong, you can ask for reconsideration (form SSA-561). If the IRS figure itself is wrong, it must be corrected with the IRS.",
+   "source": "https://www.ssa.gov/benefits/medicare/medicare-premiums.html",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  }
+ ]
+}
