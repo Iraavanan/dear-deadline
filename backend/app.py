@@ -1,7 +1,7 @@
 """Small web service for Release 1.
 
-It keeps nothing: no database, no accounts, no cookies, and request bodies are
-never written to a log. Each request is answered from memory and forgotten.
+It keeps nothing about the person: no accounts, no cookies, and request bodies are
+never written to a log. The only stored data is the anonymous daily use count (helper/counter.py). Each request is answered from memory and forgotten.
 
 Run locally:  python backend/app.py   then open http://127.0.0.1:5050
 """
