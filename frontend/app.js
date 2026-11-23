@@ -489,6 +489,8 @@
     else if (FIXES[where] && window.Modules && window.Modules.fixes) window.Modules.fixes[FIXES[where]].start();
     else if (where === "wic-practice" && window.Modules && window.Modules.wic) window.Modules.wic.start();
     else if (where === "helper-board" && window.Modules && window.Modules.board) window.Modules.board.start();
+    else if (where === "ssi-wages" && window.Modules && window.Modules.worksheets) window.Modules.worksheets.start("wages");
+    else if (where === "ssi-medicaid" && window.Modules && window.Modules.worksheets) window.Modules.worksheets.start("medicaid");
     else if (where.indexOf("letter/") === 0 && window.Modules && window.Modules.letters) window.Modules.letters.startAt(where.slice(7));
     else home();
   }
