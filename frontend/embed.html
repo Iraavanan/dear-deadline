@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Social Security letter deadlines</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2313233B'/%3E%3Crect x='6' y='13' width='20' height='6' fill='%23FFDC4E'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="embed">
+  <main class="embed-box">
+    <h1>Got a letter from Social Security? See your deadlines.</h1>
+    <form id="calc" novalidate>
+      <label for="letter">What does the letter say?</label>
+      <select id="letter">
+        <option value="overpayment">I was paid too much</option>
+        <option value="disability-ended">My disability has ended, after a medical review</option>
+        <option value="decision-appeal">My claim was denied, or a decision I disagree with</option>
+      </select>
+      <label for="notice_date">Date printed on the letter</label>
+      <input id="notice_date" type="date" required>
+      <p id="problem" class="err" role="alert" hidden></p>
+      <div class="row"><button class="go" type="submit">Show my dates</button></div>
+    </form>
+    <div id="out" aria-live="polite"></div>
+    <p class="small">An independent tool, not from the Social Security Administration. Information, not legal advice. Nothing you enter is saved.</p>
+  </main>
+  <script src="/embed.js"></script>
+</body>
+</html>

@@ -1,0 +1,1144 @@
+{
+  "version": "1.0.0",
+  "official_excerpt": {
+    "label": "SSA’s single-month paid-versus-payable example",
+    "source": "https://secure.ssa.gov/apps10/poms.nsf/lnx/0202201009",
+    "section": "GN 02201.009 B.1, single-month illustration",
+    "text": "We paid you $3,000 for June 2026. We should have paid you $1,500.",
+    "expected": {"months": "found", "paid_due": "found"}
+  },
+  "author": "Shirshak J. Thapa, Benefits Letter Helper project",
+  "date": "2026-11-22",
+  "scope": "Five text-evidence suggestions for initial Title II overpayment notices. Complete means all five measured elements are present in the example.",
+  "source": "https://secure.ssa.gov/apps10/poms.nsf/lnx/0202201009",
+  "method": "Three parent layouts, seven paired variants per layout. Annotation numbers count content lines below each page heading. All documents are constructed and none are claimant records.",
+  "families": [
+    {
+      "id": "single",
+      "basis": "GN 02201.009 B.1, June 2026 single-month illustration. The period and paid/payable figures come from SSA. We supplied a fictional cause, administrative wording and rights."
+    },
+    {
+      "id": "chart",
+      "basis": "GN 02201.009 B.1, the multi-period paid/payable chart. The three periods and their amounts are from SSA. The cause, surrounding words and rights are fictional."
+    },
+    {
+      "id": "alternate",
+      "basis": "Author-written wording challenge based on the required elements in GN 02201.009 B. All numbers and case facts in this family are invented."
+    }
+  ],
+  "cases": [
+    {
+      "id": "single-intact",
+      "family": "single",
+      "variant": "intact",
+      "change": "All five measured elements present",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security retirement • training notice\nThe total overpayment is $1,500.\nThis happened because your earnings from work were above the retirement earnings limit.\nThe overpayment is for June 2026.\nWe paid $3,000 that month. The amount you should have received was $1,500.\n\nPage 2 of 2\nYou may ask for reconsideration of this overpayment decision.\nYou may request a waiver of recovery.\nPlease refund the amount. Ask about installments or a different rate of withholding if you cannot repay it at once.",
+      "expected": {
+        "cause": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 5
+            }
+          ]
+        },
+        "recon": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 1
+            }
+          ]
+        },
+        "waiver": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "single-omit-cause",
+      "family": "single",
+      "variant": "omit-cause",
+      "change": "Remove the only sentence explaining the cause",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security retirement • training notice\nThe total overpayment is $1,500.\nThe overpayment is for June 2026.\nWe paid $3,000 that month. The amount you should have received was $1,500.\n\nPage 2 of 2\nYou may ask for reconsideration of this overpayment decision.\nYou may request a waiver of recovery.\nPlease refund the amount. Ask about installments or a different rate of withholding if you cannot repay it at once.",
+      "expected": {
+        "cause": {
+          "state": "not_located",
+          "evidence": []
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "recon": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 1
+            }
+          ]
+        },
+        "waiver": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "single-omit-rights",
+      "family": "single",
+      "variant": "omit-rights",
+      "change": "Remove both sentences that state review rights",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security retirement • training notice\nThe total overpayment is $1,500.\nThis happened because your earnings from work were above the retirement earnings limit.\nThe overpayment is for June 2026.\nWe paid $3,000 that month. The amount you should have received was $1,500.\n\nPage 2 of 2\nPlease refund the amount. Ask about installments or a different rate of withholding if you cannot repay it at once.",
+      "expected": {
+        "cause": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 5
+            }
+          ]
+        },
+        "recon": {
+          "state": "not_located",
+          "evidence": []
+        },
+        "waiver": {
+          "state": "not_located",
+          "evidence": []
+        }
+      }
+    },
+    {
+      "id": "single-omit-calculation",
+      "family": "single",
+      "variant": "omit-calculation",
+      "change": "Remove all statements of the amount paid versus due",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security retirement • training notice\nThe total overpayment is $1,500.\nThis happened because your earnings from work were above the retirement earnings limit.\nThe overpayment is for June 2026.\n\nPage 2 of 2\nYou may ask for reconsideration of this overpayment decision.\nYou may request a waiver of recovery.\nPlease refund the amount. Ask about installments or a different rate of withholding if you cannot repay it at once.",
+      "expected": {
+        "cause": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "not_located",
+          "evidence": []
+        },
+        "recon": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 1
+            }
+          ]
+        },
+        "waiver": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "single-vague-rate",
+      "family": "single",
+      "variant": "vague-rate",
+      "change": "Replace the cause with a rate change without identifying the reason",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security retirement • training notice\nThe total overpayment is $1,500.\nThe overpayment was due to a rate change.\nThe overpayment is for June 2026.\nWe paid $3,000 that month. The amount you should have received was $1,500.\n\nPage 2 of 2\nYou may ask for reconsideration of this overpayment decision.\nYou may request a waiver of recovery.\nPlease refund the amount. Ask about installments or a different rate of withholding if you cannot repay it at once.",
+      "expected": {
+        "cause": {
+          "state": "unclear",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 5
+            }
+          ]
+        },
+        "recon": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 1
+            }
+          ]
+        },
+        "waiver": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "single-missing-page",
+      "family": "single",
+      "variant": "missing-page",
+      "change": "Supply only page one of a two-page notice",
+      "all_pages": false,
+      "text": "Page 1 of 2\nSocial Security retirement • training notice\nThe total overpayment is $1,500.\nThis happened because your earnings from work were above the retirement earnings limit.\nThe overpayment is for June 2026.\nWe paid $3,000 that month. The amount you should have received was $1,500.",
+      "expected": {
+        "cause": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 5
+            }
+          ]
+        },
+        "recon": {
+          "state": "unclear",
+          "evidence": []
+        },
+        "waiver": {
+          "state": "unclear",
+          "evidence": []
+        }
+      }
+    },
+    {
+      "id": "single-headings",
+      "family": "single",
+      "variant": "headings",
+      "change": "Replace actionable rights with headings only",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security retirement • training notice\nThe total overpayment is $1,500.\nThis happened because your earnings from work were above the retirement earnings limit.\nThe overpayment is for June 2026.\nWe paid $3,000 that month. The amount you should have received was $1,500.\n\nPage 2 of 2\nAppeal information\nWaiver information\nPlease refund the amount. Ask about installments or a different rate of withholding if you cannot repay it at once.",
+      "expected": {
+        "cause": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 5
+            }
+          ]
+        },
+        "recon": {
+          "state": "unclear",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 1
+            }
+          ]
+        },
+        "waiver": {
+          "state": "unclear",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "chart-intact",
+      "family": "chart",
+      "variant": "intact",
+      "change": "All five measured elements present",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security • training notice of overpayment\nWe calculated a total overpayment of $31,400.\nYou were overpaid because we did not apply your workers’ compensation offset.\nThese periods run from February 2023 through November 2025.\nFeb 2023 to Nov 2023: we paid $1,000 a month and the correct payment was $500.\nDec 2023 to Nov 2024: we paid $1,500 a month and the correct payment was $600.\nDec 2024 to Nov 2025: we paid $2,000 a month and the correct payment was $700.\n\nPage 2 of 2\nYou can appeal this decision in writing.\nYou can ask us to waive collection of the debt.\nPlease refund the debt. You can contact us about withholding or a smaller repayment rate.",
+      "expected": {
+        "cause": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 5
+            },
+            {
+              "page": 1,
+              "line": 6
+            },
+            {
+              "page": 1,
+              "line": 7
+            }
+          ]
+        },
+        "recon": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 1
+            }
+          ]
+        },
+        "waiver": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "chart-omit-cause",
+      "family": "chart",
+      "variant": "omit-cause",
+      "change": "Remove the only sentence explaining the cause",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security • training notice of overpayment\nWe calculated a total overpayment of $31,400.\nThese periods run from February 2023 through November 2025.\nFeb 2023 to Nov 2023: we paid $1,000 a month and the correct payment was $500.\nDec 2023 to Nov 2024: we paid $1,500 a month and the correct payment was $600.\nDec 2024 to Nov 2025: we paid $2,000 a month and the correct payment was $700.\n\nPage 2 of 2\nYou can appeal this decision in writing.\nYou can ask us to waive collection of the debt.\nPlease refund the debt. You can contact us about withholding or a smaller repayment rate.",
+      "expected": {
+        "cause": {
+          "state": "not_located",
+          "evidence": []
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            },
+            {
+              "page": 1,
+              "line": 5
+            },
+            {
+              "page": 1,
+              "line": 6
+            }
+          ]
+        },
+        "recon": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 1
+            }
+          ]
+        },
+        "waiver": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "chart-omit-rights",
+      "family": "chart",
+      "variant": "omit-rights",
+      "change": "Remove both sentences that state review rights",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security • training notice of overpayment\nWe calculated a total overpayment of $31,400.\nYou were overpaid because we did not apply your workers’ compensation offset.\nThese periods run from February 2023 through November 2025.\nFeb 2023 to Nov 2023: we paid $1,000 a month and the correct payment was $500.\nDec 2023 to Nov 2024: we paid $1,500 a month and the correct payment was $600.\nDec 2024 to Nov 2025: we paid $2,000 a month and the correct payment was $700.\n\nPage 2 of 2\nPlease refund the debt. You can contact us about withholding or a smaller repayment rate.",
+      "expected": {
+        "cause": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 5
+            },
+            {
+              "page": 1,
+              "line": 6
+            },
+            {
+              "page": 1,
+              "line": 7
+            }
+          ]
+        },
+        "recon": {
+          "state": "not_located",
+          "evidence": []
+        },
+        "waiver": {
+          "state": "not_located",
+          "evidence": []
+        }
+      }
+    },
+    {
+      "id": "chart-omit-calculation",
+      "family": "chart",
+      "variant": "omit-calculation",
+      "change": "Remove all statements of the amount paid versus due",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security • training notice of overpayment\nWe calculated a total overpayment of $31,400.\nYou were overpaid because we did not apply your workers’ compensation offset.\nThese periods run from February 2023 through November 2025.\n\nPage 2 of 2\nYou can appeal this decision in writing.\nYou can ask us to waive collection of the debt.\nPlease refund the debt. You can contact us about withholding or a smaller repayment rate.",
+      "expected": {
+        "cause": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "not_located",
+          "evidence": []
+        },
+        "recon": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 1
+            }
+          ]
+        },
+        "waiver": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "chart-vague-rate",
+      "family": "chart",
+      "variant": "vague-rate",
+      "change": "Replace the cause with a rate change without identifying the reason",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security • training notice of overpayment\nWe calculated a total overpayment of $31,400.\nThe overpayment was due to a rate change.\nThese periods run from February 2023 through November 2025.\nFeb 2023 to Nov 2023: we paid $1,000 a month and the correct payment was $500.\nDec 2023 to Nov 2024: we paid $1,500 a month and the correct payment was $600.\nDec 2024 to Nov 2025: we paid $2,000 a month and the correct payment was $700.\n\nPage 2 of 2\nYou can appeal this decision in writing.\nYou can ask us to waive collection of the debt.\nPlease refund the debt. You can contact us about withholding or a smaller repayment rate.",
+      "expected": {
+        "cause": {
+          "state": "unclear",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 5
+            },
+            {
+              "page": 1,
+              "line": 6
+            },
+            {
+              "page": 1,
+              "line": 7
+            }
+          ]
+        },
+        "recon": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 1
+            }
+          ]
+        },
+        "waiver": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "chart-missing-page",
+      "family": "chart",
+      "variant": "missing-page",
+      "change": "Supply only page one of a two-page notice",
+      "all_pages": false,
+      "text": "Page 1 of 2\nSocial Security • training notice of overpayment\nWe calculated a total overpayment of $31,400.\nYou were overpaid because we did not apply your workers’ compensation offset.\nThese periods run from February 2023 through November 2025.\nFeb 2023 to Nov 2023: we paid $1,000 a month and the correct payment was $500.\nDec 2023 to Nov 2024: we paid $1,500 a month and the correct payment was $600.\nDec 2024 to Nov 2025: we paid $2,000 a month and the correct payment was $700.",
+      "expected": {
+        "cause": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 5
+            },
+            {
+              "page": 1,
+              "line": 6
+            },
+            {
+              "page": 1,
+              "line": 7
+            }
+          ]
+        },
+        "recon": {
+          "state": "unclear",
+          "evidence": []
+        },
+        "waiver": {
+          "state": "unclear",
+          "evidence": []
+        }
+      }
+    },
+    {
+      "id": "chart-headings",
+      "family": "chart",
+      "variant": "headings",
+      "change": "Replace actionable rights with headings only",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security • training notice of overpayment\nWe calculated a total overpayment of $31,400.\nYou were overpaid because we did not apply your workers’ compensation offset.\nThese periods run from February 2023 through November 2025.\nFeb 2023 to Nov 2023: we paid $1,000 a month and the correct payment was $500.\nDec 2023 to Nov 2024: we paid $1,500 a month and the correct payment was $600.\nDec 2024 to Nov 2025: we paid $2,000 a month and the correct payment was $700.\n\nPage 2 of 2\nAppeal information\nWaiver information\nPlease refund the debt. You can contact us about withholding or a smaller repayment rate.",
+      "expected": {
+        "cause": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 5
+            },
+            {
+              "page": 1,
+              "line": 6
+            },
+            {
+              "page": 1,
+              "line": 7
+            }
+          ]
+        },
+        "recon": {
+          "state": "unclear",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 1
+            }
+          ]
+        },
+        "waiver": {
+          "state": "unclear",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "alternate-intact",
+      "family": "alternate",
+      "variant": "intact",
+      "change": "All five measured elements present",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security survivor benefit • training notice\nOur total claim is $400.\nEligibility ended when your child left school.\nThe affected period is March 2026.\nFor that month you received $900. You were entitled to $500.\n\nPage 2 of 2\nYou have the right to appeal the amount.\nYou may ask for a waiver.\nPlease repay the debt. Contact us about other recovery arrangements or a lower withholding rate.",
+      "expected": {
+        "cause": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 5
+            }
+          ]
+        },
+        "recon": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 1
+            }
+          ]
+        },
+        "waiver": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "alternate-omit-cause",
+      "family": "alternate",
+      "variant": "omit-cause",
+      "change": "Remove the only sentence explaining the cause",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security survivor benefit • training notice\nOur total claim is $400.\nThe affected period is March 2026.\nFor that month you received $900. You were entitled to $500.\n\nPage 2 of 2\nYou have the right to appeal the amount.\nYou may ask for a waiver.\nPlease repay the debt. Contact us about other recovery arrangements or a lower withholding rate.",
+      "expected": {
+        "cause": {
+          "state": "not_located",
+          "evidence": []
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "recon": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 1
+            }
+          ]
+        },
+        "waiver": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "alternate-omit-rights",
+      "family": "alternate",
+      "variant": "omit-rights",
+      "change": "Remove both sentences that state review rights",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security survivor benefit • training notice\nOur total claim is $400.\nEligibility ended when your child left school.\nThe affected period is March 2026.\nFor that month you received $900. You were entitled to $500.\n\nPage 2 of 2\nPlease repay the debt. Contact us about other recovery arrangements or a lower withholding rate.",
+      "expected": {
+        "cause": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 5
+            }
+          ]
+        },
+        "recon": {
+          "state": "not_located",
+          "evidence": []
+        },
+        "waiver": {
+          "state": "not_located",
+          "evidence": []
+        }
+      }
+    },
+    {
+      "id": "alternate-omit-calculation",
+      "family": "alternate",
+      "variant": "omit-calculation",
+      "change": "Remove all statements of the amount paid versus due",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security survivor benefit • training notice\nOur total claim is $400.\nEligibility ended when your child left school.\nThe affected period is March 2026.\n\nPage 2 of 2\nYou have the right to appeal the amount.\nYou may ask for a waiver.\nPlease repay the debt. Contact us about other recovery arrangements or a lower withholding rate.",
+      "expected": {
+        "cause": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "not_located",
+          "evidence": []
+        },
+        "recon": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 1
+            }
+          ]
+        },
+        "waiver": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "alternate-vague-rate",
+      "family": "alternate",
+      "variant": "vague-rate",
+      "change": "Replace the cause with a rate change without identifying the reason",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security survivor benefit • training notice\nOur total claim is $400.\nThe overpayment was due to a rate change.\nThe affected period is March 2026.\nFor that month you received $900. You were entitled to $500.\n\nPage 2 of 2\nYou have the right to appeal the amount.\nYou may ask for a waiver.\nPlease repay the debt. Contact us about other recovery arrangements or a lower withholding rate.",
+      "expected": {
+        "cause": {
+          "state": "unclear",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 5
+            }
+          ]
+        },
+        "recon": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 1
+            }
+          ]
+        },
+        "waiver": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "alternate-missing-page",
+      "family": "alternate",
+      "variant": "missing-page",
+      "change": "Supply only page one of a two-page notice",
+      "all_pages": false,
+      "text": "Page 1 of 2\nSocial Security survivor benefit • training notice\nOur total claim is $400.\nEligibility ended when your child left school.\nThe affected period is March 2026.\nFor that month you received $900. You were entitled to $500.",
+      "expected": {
+        "cause": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 5
+            }
+          ]
+        },
+        "recon": {
+          "state": "unclear",
+          "evidence": []
+        },
+        "waiver": {
+          "state": "unclear",
+          "evidence": []
+        }
+      }
+    },
+    {
+      "id": "alternate-headings",
+      "family": "alternate",
+      "variant": "headings",
+      "change": "Replace actionable rights with headings only",
+      "all_pages": true,
+      "text": "Page 1 of 2\nSocial Security survivor benefit • training notice\nOur total claim is $400.\nEligibility ended when your child left school.\nThe affected period is March 2026.\nFor that month you received $900. You were entitled to $500.\n\nPage 2 of 2\nAppeal information\nWaiver information\nPlease repay the debt. Contact us about other recovery arrangements or a lower withholding rate.",
+      "expected": {
+        "cause": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 3
+            }
+          ]
+        },
+        "months": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 4
+            }
+          ]
+        },
+        "paid_due": {
+          "state": "found",
+          "evidence": [
+            {
+              "page": 1,
+              "line": 5
+            }
+          ]
+        },
+        "recon": {
+          "state": "unclear",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 1
+            }
+          ]
+        },
+        "waiver": {
+          "state": "unclear",
+          "evidence": [
+            {
+              "page": 2,
+              "line": 2
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

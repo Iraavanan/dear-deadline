@@ -1,0 +1,63 @@
+{
+ "table": "lockout",
+ "about": "Locked out of a my Social Security account: Login.gov and ID.me.",
+ "rows": [
+  {
+   "id": "two",
+   "plain": "Social Security's online services use Login.gov or ID.me. You only need one of them.",
+   "source": "https://www.ssa.gov/myaccount/account-faqs-and-help.html",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "lg_wait",
+   "plain": "If Login.gov locked you during identity checks (too many tries on your ID, personal information or phone), you must wait six hours before trying again.",
+   "source": "https://login.gov/help/trouble-signing-in/why-is-my-account-locked/",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "hours": 6
+  },
+  {
+   "id": "lg_post",
+   "plain": "Login.gov can check your identity in person at a participating Post Office. Start online first and choose the Post Office option; bring the barcode it emails you and your state-issued ID or driver's license.",
+   "source": "https://login.gov/help/verify-your-identity/verify-your-identity-in-person",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "idme_video",
+   "plain": "With ID.me, if you do not have a personal phone or use a shared device, you can verify on a video call.",
+   "source": "https://www.ssa.gov/myaccount/account-faqs-and-help.html",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "idme_store",
+   "plain": "ID.me also offers in-person checks at participating UPS Store locations.",
+   "source": "https://www.va.gov/resources/verifying-your-identity-on-vagov/",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "no_phone",
+   "plain": "You do not need a mobile phone: you can use a security key, a landline or backup codes for the second step.",
+   "source": "https://www.ssa.gov/myaccount/account-transition-faqs.html",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "ssa_office",
+   "plain": "You can also verify your identity at a local Social Security office. Bring your driver's license, state ID or passport.",
+   "source": "https://ssa.gov/myaccount/lp/landing-page-rome-exit.html",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "phone",
+   "plain": "Most things you would do online, you can also do by calling Social Security at 1-800-772-1213 (TTY 1-800-325-0778).",
+   "source": "https://ssa.gov/agency/contact/phone.html",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  }
+ ]
+}

@@ -1,0 +1,171 @@
+{
+ "table": "medicaid_states",
+ "about": "State details for the Medicaid 80-hour rule in states that expanded Medicaid: when it starts, how to report, and Medicaid hearing time limits. The state's own notice governs.",
+ "rows": [
+  {
+   "id": "hold",
+   "plain": "Each state chooses whether to use a federal \"hold harmless\" period through June 30, 2027. In a state that uses it, people are not denied or cut off only for not meeting the work rule until then. The state still checks hours and exemptions, so keep reporting. States had until December 11, 2026 to tell the federal government.",
+   "source": "https://www.medicaid.gov/Federal-Policy-Guidance/Downloads/smd26006.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "CA",
+   "name": "California",
+   "program": "Medi-Cal",
+   "start": "The rule applies to adults in the Medi-Cal New Adult Group from January 1, 2027. The state's work rules page says people who do not meet it could lose Medi-Cal after June 30, 2027.",
+   "report": "Keep your address and phone number up to date with your county, and ask your county office for help. You can report changes and upload proof in BenefitsCal (benefitscal.com), or call the Medi-Cal Helpline at (800) 541-5555.",
+   "phone": "(800) 541-5555",
+   "portal": "https://benefitscal.com",
+   "info": "https://www.dhcs.ca.gov/medi-cal/updates/work-rules/",
+   "hearing_days": 90,
+   "hearing_plain": "In California, you can ask for a state hearing about Medi-Cal within 90 days of the notice (the Notice of Action). You may be able to ask later if you had a good reason, such as illness.",
+   "keep": {
+    "kind": "before_effective"
+   },
+   "keep_plain": "Medi-Cal continues while you wait (aid paid pending) if you ask for the hearing by the effective date on the notice. If the notice did not have to be sent 10 days ahead, ask within 10 days of the notice date.",
+   "hearing_how": "Ask online through the California Department of Social Services at cdss.ca.gov/hearingrequests, or fill in the Request for State Hearing on the back of your Notice of Action. The notice also lists a phone number.",
+   "hearing_to": "California Department of Social Services, State Hearings (use the address on your Notice of Action)",
+   "source": "https://www.dhcs.ca.gov/medi-cal/updates/work-rules/",
+   "sources": [
+    "https://www.dhcs.ca.gov/medi-cal/updates/work-rules/",
+    "https://www.dhcs.ca.gov/services/medi-cal/eligibility/letters/Documents/25-30.pdf",
+    "https://edge.sitecorecloud.io/partnershipae75-partnership4b61-production30f9-46fc/media/Project/partnership-sites/partnershiphp/files/PDF/MROutreachLetter.pdf",
+    "https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-fair-hearing/",
+    "https://www.dhcs.ca.gov/services/medi-cal/Pages/Medi-CalFairHearing.aspx",
+    "https://www.cdss.ca.gov/hearingrequests"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "hearing_source": "https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-fair-hearing/",
+   "keep_source": "https://www.dhcs.ca.gov/services/medi-cal/Pages/Medi-CalFairHearing.aspx",
+   "how_source": "https://www.cdss.ca.gov/hearingrequests"
+  },
+  {
+   "id": "NY",
+   "name": "New York",
+   "program": "Medicaid",
+   "start": "The rule applies to new applicants from January 1, 2027, and to people already enrolled from their renewals starting March 1, 2027. On November 19, 2026, New York announced it will use the hold harmless period: until June 30, 2027, members will not lose coverage only for not meeting the work rule.",
+   "report": "Update your NY State of Health account at nystateofhealth.ny.gov, or call the NY State of Health Customer Service Center at 1-855-355-5777 (TTY 1-800-662-1220). If you enrolled through your county's Department of Social Services, contact that office instead.",
+   "phone": "1-855-355-5777",
+   "portal": "https://nystateofhealth.ny.gov",
+   "info": "https://info.nystateofhealth.ny.gov/stay-covered",
+   "hearing_days": 60,
+   "hearing_plain": "In New York, you can ask for a fair hearing about Medicaid within 60 days of the date of the notice.",
+   "keep": {
+    "kind": "before_effective"
+   },
+   "keep_plain": "Your Medicaid stays the same until the hearing decision (aid continuing) if you ask for the hearing before the effective date on the notice.",
+   "hearing_how": "Ask online at otda.ny.gov/hearings/request, by phone at 1-800-342-3334, by fax at 518-473-6735, or by mail to NYS OTDA, Office of Administrative Hearings, P.O. Box 1930, Albany, NY 12201-1930.",
+   "hearing_to": "NYS OTDA, Office of Administrative Hearings, P.O. Box 1930, Albany, NY 12201-1930",
+   "source": "https://info.nystateofhealth.ny.gov/stay-covered",
+   "sources": [
+    "https://info.nystateofhealth.ny.gov/stay-covered",
+    "https://www.nyc.gov/site/doh/about/press/pr2026/support-for-nyers-impacted-by-new-federal-medicaid-requirements.page",
+    "https://www.fingerlakes1.com/2026/11/19/new-york-shields-medicaid-members-from-work-rule-coverage-losses-through-june/",
+    "https://otda.ny.gov/hearings/faq.asp",
+    "https://regs.health.ny.gov/node/53998",
+    "https://otda.ny.gov/hearings/request/"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "hearing_source": "https://otda.ny.gov/hearings/faq.asp",
+   "keep_source": "https://regs.health.ny.gov/node/53998",
+   "how_source": "https://otda.ny.gov/hearings/request/"
+  },
+  {
+   "id": "PA",
+   "name": "Pennsylvania",
+   "program": "Medical Assistance (Medicaid)",
+   "start": "The rule applies to applicants from January 1, 2027. People already enrolled report that they meet it, or are exempt, at their next renewal in 2027; coverage does not change on January 1 by itself.",
+   "report": "Report through COMPASS (dhs.pa.gov/COMPASS) or the myCOMPASS PA app, call the Customer Service Center at 877-395-8930 (215-560-7226 in Philadelphia), or go to your County Assistance Office. PA DHS texts come from 69217 and its recorded calls from 1-877-839-4782.",
+   "phone": "877-395-8930",
+   "portal": "https://www.dhs.pa.gov/COMPASS",
+   "info": "https://www.pa.gov/agencies/dhs/resources/medicaid/medicaid-changes",
+   "hearing_days": 30,
+   "hearing_plain": "In Pennsylvania, you have 30 days from the mail date on the notice to appeal. The appeal must be in writing, postmarked or given to your County Assistance Office within the 30 days.",
+   "keep": {
+    "kind": "after_notice",
+    "days": 10
+   },
+   "keep_plain": "To keep your Medical Assistance while you wait, appeal within 10 days of the date the notice was mailed. The notice gives the exact date.",
+   "hearing_how": "Fill in the Appeal and Fair Hearing Form that came with your notice and send it to your County Assistance Office by mail, or take it there. Keep proof of the date you sent it.",
+   "hearing_to": "Your County Assistance Office (the address on your notice)",
+   "source": "https://www.pa.gov/agencies/dhs/resources/medicaid/faq-medicaid-changes",
+   "sources": [
+    "https://www.pa.gov/agencies/dhs/resources/medicaid/faq-medicaid-changes",
+    "https://www.pa.gov/agencies/dhs/resources/sandbox/proofs/proofs-medicaid-changes",
+    "https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/faq-medicaid-changes-hr1.pdf",
+    "https://prddhs.pwpca.pa.gov/HealthChoices/HC-Services/Documents/CM579_English.pdf",
+    "https://www.law.cornell.edu/regulations/pennsylvania/55-Pa-Code-SS-133-4",
+    "https://pa.gov/services/dhs/hearings-and-appeals-dhs.html"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "hearing_source": "https://prddhs.pwpca.pa.gov/HealthChoices/HC-Services/Documents/CM579_English.pdf",
+   "keep_source": "https://www.law.cornell.edu/regulations/pennsylvania/55-Pa-Code-SS-133-4",
+   "how_source": "https://prddhs.pwpca.pa.gov/HealthChoices/HC-Services/Documents/CM579_English.pdf"
+  },
+  {
+   "id": "OH",
+   "name": "Ohio",
+   "program": "Medicaid",
+   "start": "The rule applies to new applications from January 1, 2027, and to renewals started on or after that date, beginning with renewals due in April 2027.",
+   "report": "Use the Ohio Benefits self-service portal (benefits.ohio.gov), call the Ohio Medicaid Consumer Hotline at 1-800-324-8680, or contact your county job and family services office.",
+   "phone": "1-800-324-8680",
+   "portal": "https://benefits.ohio.gov",
+   "info": "https://medicaid.ohio.gov/resources-for-providers/special-programs-and-initiatives/group-viii",
+   "hearing_days": 90,
+   "hearing_plain": "In Ohio, the Bureau of State Hearings must receive your hearing request within 90 days of the date the notice was mailed.",
+   "keep": {
+    "kind": "after_notice",
+    "days": 15
+   },
+   "keep_plain": "If the Bureau receives your request within 15 days of the notice's mailing date, your benefits will not be stopped or lowered until the hearing decision.",
+   "hearing_how": "Call State Hearings at 1-866-635-3748, email bsh@jfs.ohio.gov with \"State Hearing Request\" in the subject, fax (614) 728-9574, or mail ODJFS Bureau of State Hearings, P.O. Box 182825, Columbus, Ohio 43218-2825.",
+   "hearing_to": "ODJFS Bureau of State Hearings, P.O. Box 182825, Columbus, Ohio 43218-2825",
+   "source": "https://secure.jfs.ohio.gov/ols/RequestHearing",
+   "sources": [
+    "https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Families%2C%20Individuals/Programs/Community/Group_VIII_Informational_Webinar_Presentation.pdf",
+    "https://cuyahogacounty.gov/medicaid-access-team",
+    "https://secure.jfs.ohio.gov/ols/RequestHearing",
+    "https://provider.benefits.ohio.gov/apspssp/pdf/JFS_08031.pdf"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "hearing_source": "https://secure.jfs.ohio.gov/ols/RequestHearing",
+   "keep_source": "https://secure.jfs.ohio.gov/ols/RequestHearing",
+   "how_source": "https://secure.jfs.ohio.gov/ols/RequestHearing"
+  },
+  {
+   "id": "MI",
+   "name": "Michigan",
+   "program": "Healthy Michigan Plan",
+   "start": "The rule applies to Healthy Michigan Plan applications from January 1, 2027, and to people already enrolled at renewals on or after March 1, 2027. Michigan first tries to confirm it from data it already has.",
+   "report": "Report through your MI Bridges account (Report My Changes) or your local MDHHS office, or call the Beneficiary Help Line at 1-800-642-3195.",
+   "phone": "1-800-642-3195",
+   "portal": "https://www.michigan.gov/mibridges",
+   "info": "https://www.michigan.gov/healthymiplan/new-medicaid-work-requirements",
+   "hearing_days": 90,
+   "hearing_plain": "In Michigan, you have 90 days from the date of the notice to ask for a hearing about your Medicaid.",
+   "keep": {
+    "kind": "after_notice",
+    "days": 10
+   },
+   "keep_plain": "Your coverage continues while you wait if you file a written hearing request within 10 calendar days of the date of the notice.",
+   "hearing_how": "Send a signed, written request: form DCH-0018 or a signed letter. Your notice says where to send it, usually your local MDHHS office.",
+   "hearing_to": "Your local MDHHS office (the address on your notice)",
+   "source": "https://www.michigan.gov/healthymiplan/new-medicaid-work-requirements",
+   "sources": [
+    "https://www.michigan.gov/healthymiplan/new-medicaid-work-requirements",
+    "https://www.michigan.gov/documents/lara/MOAHR_Medicaid_Hearings_Brochure_4-2019_for_internet_653175_7.pdf",
+    "https://www.michigan.gov/mdhhs/assistance-programs/medicaid/hearings"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "hearing_source": "https://www.michigan.gov/documents/lara/MOAHR_Medicaid_Hearings_Brochure_4-2019_for_internet_653175_7.pdf",
+   "keep_source": "https://www.michigan.gov/documents/lara/MOAHR_Medicaid_Hearings_Brochure_4-2019_for_internet_653175_7.pdf",
+   "how_source": "https://www.michigan.gov/mdhhs/assistance-programs/medicaid/hearings"
+  }
+ ]
+}

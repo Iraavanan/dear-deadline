@@ -1,0 +1,52 @@
+{
+ "table": "renewal",
+ "about": "Renewing Medicaid or SNAP: the time limits the federal rules give, and how to send papers in Florida.",
+ "rows": [
+  {
+   "id": "why",
+   "plain": "During the Medicaid unwinding, 69% of the people who lost coverage lost it for paperwork or procedural reasons, not because they were found ineligible. Many of them may still have been eligible.",
+   "source": "https://www.kff.org/medicaid/an-examination-of-medicaid-renewal-outcomes-and-enrollment-changes-at-the-end-of-the-unwinding/",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "medicaid_auto",
+   "plain": "Medicaid must first try to renew you from information it already has. You only get a renewal form if it cannot.",
+   "source": "https://www.law.cornell.edu/cfr/text/42/435.916",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "medicaid_form",
+   "plain": "If you get a Medicaid renewal form, the agency must give you at least 30 days from the date of the form to respond.",
+   "source": "https://www.law.cornell.edu/cfr/text/42/435.916",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "medicaid_reconsider",
+   "plain": "If Medicaid based on income ended because the renewal form was not returned, you can send it in within 90 days after coverage ended (longer in some states) and have your eligibility looked at again without a new application. For Medicaid based on age or disability, states may do the same.",
+   "source": "https://www.law.cornell.edu/cfr/text/42/435.916",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "days": 90
+  },
+  {
+   "id": "snap_proof",
+   "plain": "When the state asks for proof for SNAP, it must give you at least 10 days to provide it.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.2",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "fl_ways",
+   "plain": "In Florida, you can renew and upload proof in your MyACCESS account, or mail, fax or bring documents to a local DCF office or a community partner. When you fax or scan, use the ACCESS Florida Fax/Scanning Cover Sheet.",
+   "source": "https://myflfamilies.com/services/public-assistance/applying-for-assistance",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "portal": "https://myaccess.myflfamilies.com",
+   "cover": "https://myflfamilies.com/document/366",
+   "phone": "(850) 300-4323"
+  }
+ ]
+}

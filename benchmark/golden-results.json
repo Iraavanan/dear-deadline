@@ -1,0 +1,100 @@
+{
+ "version": "0.11.0",
+ "run_on": "2026-11-22",
+ "matched": 11,
+ "checked": 11,
+ "not_covered": 2,
+ "cases": [
+  {
+   "case": "HUD example 1: total tenant payment",
+   "source": "https://www.hud.gov/sites/dfiles/PIH/documents/HCV_Guidebook_Calculating_Rent_and_HAP_Payments.pdf",
+   "published": "Adjusted income $700 a month, income $740, minimum rent $50: TTP $210",
+   "tool": "210.0",
+   "match": true
+  },
+  {
+   "case": "HUD example 2: minimum rent applies",
+   "source": "https://www.hud.gov/sites/dfiles/PIH/documents/HCV_Guidebook_Calculating_Rent_and_HAP_Payments.pdf",
+   "published": "Adjusted income $134, income $174, minimum rent $50: TTP $50",
+   "tool": "50.0",
+   "match": true
+  },
+  {
+   "case": "HUD example 4: minimum rent suspended for hardship",
+   "source": "https://www.hud.gov/sites/dfiles/PIH/documents/HCV_Guidebook_Calculating_Rent_and_HAP_Payments.pdf",
+   "published": "Same family with the minimum rent suspended: TTP $40",
+   "tool": "40.0",
+   "match": true
+  },
+  {
+   "case": "HUD example 8: gross rent under the payment standard",
+   "source": "https://www.hud.gov/sites/dfiles/PIH/documents/HCV_Guidebook_Calculating_Rent_and_HAP_Payments.pdf",
+   "published": "Payment standard $450, TTP $210, gross rent $425: HAP $215",
+   "tool": "215.0",
+   "match": true
+  },
+  {
+   "case": "HUD example 9: gross rent over the payment standard",
+   "source": "https://www.hud.gov/sites/dfiles/PIH/documents/HCV_Guidebook_Calculating_Rent_and_HAP_Payments.pdf",
+   "published": "Payment standard $450, TTP $210, gross rent $500: HAP $240",
+   "tool": "240.0",
+   "match": true
+  },
+  {
+   "case": "HUD example 10: owner pays the utilities",
+   "source": "https://www.hud.gov/sites/dfiles/PIH/documents/HCV_Guidebook_Calculating_Rent_and_HAP_Payments.pdf",
+   "published": "Gross rent $425, utility allowance $0: family share and rent to owner $210",
+   "tool": "210.0",
+   "match": true
+  },
+  {
+   "case": "HUD example 11: family pays some utilities",
+   "source": "https://www.hud.gov/sites/dfiles/PIH/documents/HCV_Guidebook_Calculating_Rent_and_HAP_Payments.pdf",
+   "published": "Family share $210, utility allowance $125: rent to owner $85",
+   "tool": "85.0",
+   "match": true
+  },
+  {
+   "case": "HUD example 12: utility reimbursement",
+   "source": "https://www.hud.gov/sites/dfiles/PIH/documents/HCV_Guidebook_Calculating_Rent_and_HAP_Payments.pdf",
+   "published": "Family share $100, utility allowance $150: rent to owner $0, utility reimbursement $50",
+   "tool": "(0, 50.0)",
+   "match": true
+  },
+  {
+   "case": "Medicare sample notice, approved line, bill matches",
+   "source": "https://www.medicare.gov/publications/summarynoticeb.pdf",
+   "published": "Maximum You May Be Billed $21.59; a bill for $21.59 matches",
+   "tool": "same",
+   "match": true
+  },
+  {
+   "case": "Medicare sample notice, approved line, full charge billed",
+   "source": "https://www.medicare.gov/publications/summarynoticeb.pdf",
+   "published": "Charged $143.00, Medicare paid $86.38, maximum $21.59: a bill for the rest ($56.62) is $35.03 too high",
+   "tool": "35.03",
+   "match": true
+  },
+  {
+   "case": "Medicare sample notice, denied line",
+   "source": "https://www.medicare.gov/publications/summarynoticeb.pdf",
+   "published": "Service Approved? NO, maximum $68.56: points to the appeal",
+   "tool": "denied",
+   "match": true
+  },
+  {
+   "case": "HUD example 3: welfare rent",
+   "source": "https://www.hud.gov/sites/dfiles/PIH/documents/HCV_Guidebook_Calculating_Rent_and_HAP_Payments.pdf",
+   "published": "TTP $65 from a welfare rent. The tool does not take a welfare rent, so it cannot reproduce this; it says so on the rent page.",
+   "tool": "not covered",
+   "match": null
+  },
+  {
+   "case": "HUD example 13: prorated assistance for mixed families",
+   "source": "https://www.hud.gov/sites/dfiles/PIH/documents/HCV_Guidebook_Calculating_Rent_and_HAP_Payments.pdf",
+   "published": "HAP prorated for a household with an ineligible noncitizen. Not covered.",
+   "tool": "not covered",
+   "match": null
+  }
+ ]
+}

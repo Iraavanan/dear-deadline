@@ -1,0 +1,33 @@
+{
+  "id": "sample-appeal",
+  "title": "The amount looks wrong",
+  "story": "Maria reported her part-time pay on time, but the notice counts earnings she never had.",
+  "notice_days_ago": 12,
+  "facts": {
+    "overpaid_amount": 4200,
+    "period": "January 2026 to June 2026",
+    "reason": "your earnings were higher than we expected",
+    "benefit_type": "retirement",
+    "stated_withholding": "withhold part of your monthly benefit"
+  },
+  "answers": {
+    "amount_wrong": "yes",
+    "not_at_fault": "yes",
+    "reported_change": "yes",
+    "cannot_afford": "no",
+    "unfair_other": "no",
+    "rate_too_high": "no"
+  },
+  "statements": {
+    "what_happened": "I reported my part-time pay by phone in January and again in March.",
+    "why_wrong": "The notice counts earnings I did not have. My pay stubs show a lower amount.",
+    "hardship": ""
+  },
+  "expected": {
+    "headline": "appeal",
+    "fits": [
+      "appeal"
+    ]
+  },
+  "notice_text": "SAMPLE NOTICE - MADE UP FOR PRACTICE - NOT A REAL NOTICE\n\nDear Maria Example,\n\nWe paid you $4,200.00 more in benefits than you were due for January 2026 to June 2026. This happened because your earnings were higher than we expected.\n\nIf you do not repay or contact us, we will withhold part of your monthly benefit.\n\n(Dated 12 days ago. The name, amounts and dates on this page are invented.)"
+}

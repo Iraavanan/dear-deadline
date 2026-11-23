@@ -1,0 +1,41 @@
+{
+ "table": "ssacall",
+ "about": "Reaching Social Security by phone or in person.",
+ "rows": [
+  {
+   "id": "hours",
+   "plain": "Social Security's national number is 1-800-772-1213 (TTY 1-800-325-0778), Monday to Friday, 8 a.m. to 7 p.m. local time. Automated services work 24 hours a day.",
+   "source": "https://ssa.gov/agency/contact/phone.html",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "best",
+   "plain": "Social Security says wait times tend to be shorter early in the morning, later in the week and later in the month.",
+   "source": "https://blog.ssa.gov/social-security-is-improving-our-national-800-number-and-reducing-call-wait-times/",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "callback",
+   "plain": "When offered, you can choose a callback instead of holding. Keep your phone near you and answer calls from unknown numbers.",
+   "source": "https://blog.ssa.gov/social-security-is-improving-our-national-800-number-and-reducing-call-wait-times/",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "office",
+   "plain": "You can call or visit your local office. Most in-person services need an appointment; ask for one by phone.",
+   "source": "https://www.ssa.gov/locator/",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "waits",
+   "plain": "Social Security publishes its current phone and office wait times.",
+   "source": "https://www.ssa.gov/ssa-performance/system-status",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  }
+ ]
+}

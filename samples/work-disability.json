@@ -1,0 +1,42 @@
+{
+  "id": "work-disability",
+  "module": "work",
+  "title": "I get disability benefits and went back to work",
+  "story": "Jo used 7 trial work months last year and has worked most of this year.",
+  "form": {
+    "track": "disability",
+    "blind": "no",
+    "self_employed": "no",
+    "prior_trial_months": 7,
+    "months": [
+      {
+        "month": "2026-01",
+        "earnings": 1300
+      },
+      {
+        "month": "2026-02",
+        "earnings": 1000
+      },
+      {
+        "month": "2026-03",
+        "earnings": 1250
+      },
+      {
+        "month": "2026-04",
+        "earnings": 1800
+      },
+      {
+        "month": "2026-05",
+        "earnings": 500
+      },
+      {
+        "month": "2026-06",
+        "earnings": 1800
+      },
+      {
+        "month": "2026-07",
+        "earnings": 1800
+      }
+    ]
+  }
+}

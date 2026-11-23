@@ -1,0 +1,89 @@
+{
+ "table": "ssilimit",
+ "about": "SSI's resource limit: what counts, what does not, and when.",
+ "rows": [
+  {
+   "id": "limit",
+   "plain": "SSI counts what you own against a limit of $2,000 for one person and $3,000 for a married couple. Your home, one car, and some other things do not count.",
+   "source": "https://www.ssa.gov/OACT/ssir/SSI26/III_ProgramDescription.html",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "single": 2000,
+   "couple": 3000
+  },
+  {
+   "id": "first_moment",
+   "plain": "Social Security checks what you own as of the first moment of each month. Money you receive during a month counts as income that month; if you still have it on the 1st of the next month, it counts toward the limit.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0501110600",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "tax_refund",
+   "plain": "Federal tax refunds, including the Earned Income Tax Credit and Child Tax Credit, do not count toward the limit for 12 months after the month you get them. State tax refunds do count.",
+   "source": "https://secure.ssa.gov/POMS.NSF/LNX/0501130676",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "months": 12
+  },
+  {
+   "id": "retro",
+   "plain": "Past-due SSI or Social Security benefits you have not spent do not count for 9 months after the month you get them.",
+   "source": "https://secure.ssa.gov/POMS.nsf/lnx/0501130600",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "months": 9
+  },
+  {
+   "id": "able",
+   "plain": "Money in an ABLE account, up to $100,000, does not count toward the SSI limit. Since January 1, 2026, you can have an ABLE account if your disability or blindness began before age 46 (before 26 until then).",
+   "source": "https://www.ssa.gov/ssi/spotlights/spot-able.html",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "cap": 100000,
+   "sources": [
+    "https://www.ssa.gov/ssi/spotlights/spot-able.html",
+    "https://secure.ssa.gov/POMS.nsf/lnx/0501130740"
+   ]
+  },
+  {
+   "id": "burial",
+   "plain": "Up to $1,500 set aside for your burial expenses does not count. The $1,500 is lowered by the face value of certain life insurance and by irrevocable burial contracts.",
+   "source": "https://secure.ssa.gov/POMS.nsf/lnx/0501130410",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "cap": 1500
+  },
+  {
+   "id": "tolerance",
+   "plain": "If you were overpaid only because you were over the limit by $50 or less, and it was not your fault, Social Security waives that overpayment.",
+   "source": "https://secure.ssa.gov/POMS.NSF/lnx/0202250090",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "amount": 50
+  },
+  {
+   "id": "leading_cause",
+   "plain": "Social Security names bank balances over the limit as the leading cause of SSI overpayments, and checks bank accounts electronically.",
+   "source": "https://paymentaccuracy.gov/assets/scorecards/Q3%202026/Supplemental%20Security%20Income%20(SSI).pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "transfer",
+   "plain": "Giving things away, or selling them for less than they are worth, to get under the limit can stop SSI for up to 36 months.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0501150110",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "months": 36
+  },
+  {
+   "id": "suspension",
+   "plain": "When you are over the limit, SSI stops for that month. If SSI stays stopped for 12 months in a row, it ends and you have to apply again.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0502301205",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "months": 12
+  }
+ ]
+}

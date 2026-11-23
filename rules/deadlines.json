@@ -1,0 +1,40 @@
+{
+  "table": "deadlines",
+  "about": "Time windows that apply after a Social Security overpayment notice. Each row is dated; a rule change is added as a new row, never an edit.",
+  "rows": [
+    {
+      "id": "collection_protection",
+      "days": 30,
+      "counted_from": "notice_date",
+      "plain": "If you ask for an appeal or a waiver within 30 days, Social Security says it will not collect until it decides.",
+      "source": "https://www.ssa.gov/manage-benefits/resolve-overpayment",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "appeal",
+      "days": 60,
+      "counted_from": "receipt_date",
+      "plain": "An appeal (request for reconsideration) is due within 60 days of the date you received the notice.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10098.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "mail_presumption",
+      "days": 5,
+      "counted_from": "notice_date",
+      "plain": "Social Security assumes you received the notice 5 days after the date printed on it, unless you show otherwise.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10098.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "weekend",
+      "plain": "If the last day falls on a weekend or national holiday, the deadline moves to the next workday.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    }
+  ]
+}

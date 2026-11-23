@@ -1,0 +1,66 @@
+{
+ "table": "planappeal",
+ "about": "Appeals against a Medicare Advantage or Medicare drug plan's denial.",
+ "rows": [
+  {
+   "id": "ma_deadline",
+   "plain": "For a Medicare Advantage plan, you have 65 days from the date on the plan's denial notice to ask the plan to reconsider (the first level of appeal).",
+   "source": "https://www.medicare.gov/providers-services/claims-appeals-complaints/appeals/medicare-health-plans",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "days": 65
+  },
+  {
+   "id": "ma_times",
+   "plain": "A Medicare Advantage plan must decide a standard appeal within 30 days for care you have not yet received, 60 days for a bill, and 7 days for a Part B drug. It can take up to 14 more days in some cases, with written notice.",
+   "source": "https://www.medicare.gov/providers-services/claims-appeals-complaints/appeals/medicare-health-plans",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "ma_fast",
+   "plain": "If waiting could seriously harm your life, health or ability to regain function, ask for a fast appeal. The plan must decide within 72 hours if it agrees, or if your doctor tells the plan that waiting could seriously harm your health.",
+   "source": "https://www.medicare.gov/providers-services/claims-appeals-complaints/appeals/medicare-health-plans",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "hours": 72
+  },
+  {
+   "id": "ma_next",
+   "plain": "If the plan says no again, fully or partly, your appeal goes on to an Independent Review Entity automatically.",
+   "source": "https://www.medicare.gov/providers-services/claims-appeals-complaints/appeals/medicare-health-plans",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "pd_deadline",
+   "plain": "For a Medicare drug plan, you, your representative or your prescriber must ask for an appeal within 65 days from the date on the plan's denial notice. If you miss it, you must give a reason for being late.",
+   "source": "https://medicare.gov/medicare-prescription-drug-coverage-appeals",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "days": 65
+  },
+  {
+   "id": "pd_times",
+   "plain": "A drug plan must decide a standard appeal within 7 days for a drug you need, or 14 days for a payment, and a fast appeal within 72 hours.",
+   "source": "https://medicare.gov/medicare-prescription-drug-coverage-appeals",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "pd_next",
+   "plain": "If the drug plan says no again, you can ask the Independent Review Entity, in writing, within 65 days of the plan's decision.",
+   "source": "https://www.cms.gov/medicare/appeals-grievances/prescription-drug/reconsiderations",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "days": 65
+  },
+  {
+   "id": "why",
+   "plain": "Few denials are appealed, but most appeals succeed: in 2024, 11.5% of Medicare Advantage prior-authorization denials were appealed, and 80.7% of those appeals were partly or fully overturned.",
+   "source": "https://www.kff.org/medicare/medicare-advantage-insurers-made-nearly-53-million-prior-authorization-determinations-in-2024/",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  }
+ ]
+}

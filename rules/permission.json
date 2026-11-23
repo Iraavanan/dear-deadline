@@ -1,0 +1,63 @@
+{
+ "table": "permission",
+ "about": "Letting a family member or helper talk to an agency for you.",
+ "rows": [
+  {
+   "id": "ssa_rep",
+   "plain": "To have someone act for you on a Social Security claim or appeal, you appoint them with form SSA-1696. The representative must be a person, not an organization.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0203316125",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "form": "SSA-1696",
+   "form_url": "https://www.ssa.gov/forms/ssa-1696.pdf"
+  },
+  {
+   "id": "ssa_release",
+   "plain": "To let Social Security give your information to someone without making them your representative, sign form SSA-3288. It lets them receive information; it does not let them act for you.",
+   "source": "https://secure.ssa.gov/POMS.nsf/lnx/0431001005",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "form": "SSA-3288",
+   "form_url": "https://www.ssa.gov/forms/ssa-3288.pdf"
+  },
+  {
+   "id": "ssa_sign",
+   "plain": "A paper consent needs your own handwritten signature. A legal guardian can sign for an adult they are guardian for.",
+   "source": "https://secure.ssa.gov/poms.nsf/LNX/0203305005",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "medicare",
+   "plain": "To let 1-800-MEDICARE talk with someone about your Medicare, fill in form CMS-10106, Authorization to Disclose Personal Health Information.",
+   "source": "https://www.cms.gov/cms10106-authorization-disclose-personal-health-information",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "form": "CMS-10106",
+   "form_url": "https://www.cms.gov/medicare/cms-forms/cms-forms/downloads/cms10106.pdf"
+  },
+  {
+   "id": "fl_rep",
+   "plain": "For Florida food assistance, name an authorized representative with DCF's Authorized Representative Designation form.",
+   "source": "https://eds.myflfamilies.com/DCFFormsInternet/Search/OpenDCFForm.aspx?FormId=349",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "form": "Authorized Representative Designation"
+  },
+  {
+   "id": "fl_disclose",
+   "plain": "For Florida Medicaid, let DCF share your information with someone using the Authorization to Disclose Information form.",
+   "source": "https://eds.myflfamilies.com/DCFFormsInternet/Search/OpenDCFForm.aspx?FormId=122",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "form": "Authorization to Disclose Information"
+  },
+  {
+   "id": "prepare",
+   "plain": "Anyone can help you read letters, fill in forms, make copies and sit with you on a call without a form. A form is needed for the agency to talk with them without you, or for them to act for you.",
+   "source": "https://secure.ssa.gov/POMS.nsf/lnx/0431001005",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  }
+ ]
+}

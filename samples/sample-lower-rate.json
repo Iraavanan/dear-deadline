@@ -1,0 +1,33 @@
+{
+  "id": "sample-lower-rate",
+  "title": "I owe it, but not this fast",
+  "story": "Lin forgot to report a change and agrees she owes the money, but the monthly amount is too much.",
+  "notice_days_ago": 8,
+  "facts": {
+    "overpaid_amount": 2600,
+    "period": "August 2026 to October 2026",
+    "reason": "a change in your situation was not reported",
+    "benefit_type": "retirement",
+    "stated_withholding": "withhold part of your monthly benefit"
+  },
+  "answers": {
+    "amount_wrong": "no",
+    "not_at_fault": "no",
+    "reported_change": "no",
+    "cannot_afford": "no",
+    "unfair_other": "no",
+    "rate_too_high": "yes"
+  },
+  "statements": {
+    "what_happened": "",
+    "why_wrong": "",
+    "hardship": "After rent and bills I have about $150 left each month."
+  },
+  "expected": {
+    "headline": "lower_rate",
+    "fits": [
+      "lower_rate"
+    ]
+  },
+  "notice_text": "SAMPLE NOTICE - MADE UP FOR PRACTICE - NOT A REAL NOTICE\n\nDear Lin Example,\n\nWe paid you $2,600.00 more in benefits than you were due for August 2026 to October 2026. This happened because a change in your situation was not reported.\n\nIf you do not repay or contact us, we will withhold part of your monthly benefit.\n\n(Dated 8 days ago. The name, amounts and dates on this page are invented.)"
+}

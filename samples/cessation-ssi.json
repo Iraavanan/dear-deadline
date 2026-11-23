@@ -1,0 +1,24 @@
+{
+  "id": "cessation-ssi",
+  "module": "cessation",
+  "title": "My SSI is ending after a medical review",
+  "story": "Ravi receives SSI only. The letter arrived nearly two weeks ago and he has just opened it.",
+  "notice_days_ago": 13,
+  "facts": {
+    "letter_kind": "medical",
+    "benefit_kind": "ssi"
+  },
+  "answers": {
+    "still_disabled": "yes",
+    "could_repay": "unknown",
+    "has_medicare": "no",
+    "others_on_record": "no",
+    "new_evidence": "unknown"
+  },
+  "statements": {
+    "why_disagree": "",
+    "treatment": "",
+    "late_reason": ""
+  },
+  "notice_text": "SAMPLE NOTICE - MADE UP FOR PRACTICE - NOT A REAL NOTICE\n\nNotice of Disability Cessation\n\nDear Ravi Example,\n\nWe reviewed the evidence in your SSI case and found that you no longer meet the disability rules. Your SSI payments will stop.\n\nIf you want to appeal and to get payments during the appeal, you have to act fast.\n\n(The name and dates on this page are invented.)"
+}

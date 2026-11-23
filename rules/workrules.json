@@ -1,0 +1,200 @@
+{
+  "table": "workrules",
+  "about": "The SNAP time limit and the Medicaid 80-hour rule, with Florida's contacts. Federal rules first; a state's own notice governs its details.",
+  "rows": [
+    {
+      "id": "snap_limit",
+      "plain": "Adults aged 18 to 64 who are able to work and not exempt can get SNAP for only 3 months in a 3-year period, unless they meet the work requirement.",
+      "source": "https://www.usda.gov/sites/default/files/guidance-documents/fna.snap-obbbABAWDexceptionsImplementation-revised.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "snap_work",
+      "plain": "The work requirement is met by working, by taking part in a work program, or by a mix of the two, for 20 hours a week averaged monthly: 80 hours a month. Unpaid or volunteer work counts as work when the state can check it.",
+      "source": "https://www.law.cornell.edu/cfr/text/7/273.24",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "snap_countable",
+      "plain": "A month counts toward the 3 only if you got a full month of SNAP while not exempt, not covered by a waiver for your area, and not meeting the work requirement. Months when you met the requirement or were exempt do not count.",
+      "source": "https://www.law.cornell.edu/cfr/text/7/273.24",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "snap_regain",
+      "plain": "If you lose SNAP under the time limit, you can get it back by working or taking part in a work program for 80 hours in any 30 days in a row, or by becoming exempt. If you later stop meeting the requirement, you get 3 more months in a row, once in the 3-year period.",
+      "source": "https://www.law.cornell.edu/cfr/text/7/273.24",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "snap_removed",
+      "plain": "Since the 2025 law, being homeless, being a veteran, or being 24 or younger and having been in foster care at 18 no longer exempts anyone from the time limit. The exemption for parents now applies only when the child is under 14.",
+      "source": "https://www.usda.gov/sites/default/files/guidance-documents/fna.snap-obbbABAWDexceptionsImplementation-revised.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "snap_exemptions",
+      "plain": "Ways out of the SNAP time limit that may apply. The state decides.",
+      "source": "https://www.usda.gov/sites/default/files/guidance-documents/fna.snap-obbbABAWDexceptionsImplementation-revised.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "items": [
+        [
+          "age",
+          "Under 18, or 65 or older"
+        ],
+        [
+          "unfit",
+          "A doctor or other medical professional says you are physically or mentally unable to work"
+        ],
+        [
+          "pregnant",
+          "Pregnant"
+        ],
+        [
+          "child_under_14",
+          "Responsible for a child under 14 who lives with you (they may be your child or another child in the household)"
+        ],
+        [
+          "general",
+          "Exempt from SNAP's general work rules: for example caring for a child under 6 or for someone who cannot care for themselves, getting disability benefits, getting unemployment benefits and following its rules, in a drug or alcohol treatment program, a student at least half-time, or already working 30 hours a week (or earning at least 30 times the federal minimum wage each week)"
+        ],
+        [
+          "indian",
+          "An American Indian, an Urban Indian, or a California Indian under federal law"
+        ]
+      ]
+    },
+    {
+      "id": "snap_florida_waiver",
+      "plain": "Florida has no waiver of the time limit for any area, so the 3-month limit applies across the state.",
+      "source": "https://fns-prod.azureedge.us/sites/default/files/resource-files/FY26-Quarter-2-ABAWD-Waiver-Status.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "snap_florida",
+      "plain": "In Florida, the Department of Children and Families (DCF) runs SNAP, which it calls food assistance. It sends a Food Assistance Work Rules notice saying who in the household must meet work rules. People who must take part in the work program get a referral letter by mail from FloridaCommerce and their local CareerSource center. If you think an exemption applies, tell DCF: (850) 300-4323. Keep your mailing address current in your MyACCESS account.",
+      "source": "https://myflfamilies.com/services/public-assistance/abawd",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "phone": "(850) 300-4323",
+      "portal": "https://myaccess.myflfamilies.com"
+    },
+    {
+      "id": "medicaid_rule",
+      "plain": "From January 1, 2027 (earlier in some states), adults aged 19 to 64 covered by Medicaid expansion must show 80 hours a month of work, community service, a work program or school (at least half-time), or a mix, or monthly income of at least 80 times the federal minimum wage ($580). It does not apply to people who are pregnant or who have Medicare.",
+      "source": "https://cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "income": 580
+    },
+    {
+      "id": "medicaid_lookback",
+      "plain": "New applicants must meet the requirement for at least one month before the month they apply. People already covered must meet it for one or more months between renewals. Each state decides how many months.",
+      "source": "https://cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "medicaid_notice",
+      "plain": "If the state cannot confirm you met the requirement, it must send a notice of noncompliance. You then have 30 days to show you met it or that you are exempt. People who lose coverage can apply again at any time.",
+      "source": "https://cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "medicaid_exemptions",
+      "plain": "Exemptions from the Medicaid work requirement that may apply. The state decides.",
+      "source": "https://cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "items": [
+        [
+          "caregiver",
+          "A parent or caregiver of a child aged 13 or under, or of a person with a disability"
+        ],
+        [
+          "frail",
+          "Medically frail, or with special medical needs that make it very hard to meet the requirement"
+        ],
+        [
+          "veteran",
+          "A veteran with a total disability rating"
+        ],
+        [
+          "foster",
+          "Formerly in foster care (under age 26)"
+        ],
+        [
+          "indian",
+          "An American Indian or Alaska Native"
+        ],
+        [
+          "treatment",
+          "In a drug or alcohol treatment program"
+        ],
+        [
+          "snap_tanf",
+          "Meeting TANF work rules, or in a SNAP household and not exempt from SNAP's work rules"
+        ],
+        [
+          "pregnant",
+          "Pregnant, or covered after giving birth"
+        ],
+        [
+          "institution",
+          "Held in a jail or prison"
+        ]
+      ]
+    },
+    {
+      "id": "medicaid_hardship",
+      "plain": "States may also give short-term exceptions: a hospital or nursing home stay, living in a county with a declared disaster or high unemployment, or travelling for long medical care.",
+      "source": "https://cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "medicaid_florida",
+      "plain": "Florida did not expand Medicaid, so the federal 80-hour Medicaid rule for the expansion group does not apply to Florida Medicaid. Florida's own work rules for food assistance still apply.",
+      "source": "https://flsenate.gov/Session/Bill/2026/1758/Analyses/2026s01758.ap.PDF",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "interview_missed",
+      "plain": "If you miss your SNAP interview, the state must send you a notice saying you missed it and that you are responsible for rescheduling. If you contact the state within 30 days of applying, it must schedule a second interview. It may not deny your application for a missed first interview before the 30th day after you applied.",
+      "source": "https://www.law.cornell.edu/cfr/text/7/273.2",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "interview_denial",
+      "plain": "If you miss the interview and do not contact the state, it sends a denial notice on the 30th day after you applied. You can apply again.",
+      "source": "https://www.law.cornell.edu/cfr/text/7/273.2",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "verification",
+      "plain": "When the state asks for proof, it must give you at least 10 days to provide it.",
+      "source": "https://www.law.cornell.edu/cfr/text/7/273.2",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "fl_hearing",
+      "plain": "In Florida, you can ask for a fair hearing about SNAP, cash assistance or Medicaid within 90 days of the Notice of Case Action. Ask by phone (850) 488-1429, fax (850) 487-0662, email appeal.hearings@myflfamilies.com, or mail to the Appeal Hearings Section, 2415 North Monroe Street, Suite 400-I, Tallahassee, FL 32303-4190. To keep your benefits the same while you wait, ask before the change takes effect; the notice says when.",
+      "source": "https://www.myflfamilies.com/about/office-inspector-general/appeal-hearings/how-request-public-assistance-hearing",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "days": 90
+    }
+  ]
+}

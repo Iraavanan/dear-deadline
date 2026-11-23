@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>About, privacy and testing: Dear Deadline</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2313233B'/%3E%3Crect x='6' y='13' width='20' height='6' fill='%23FFDC4E'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="mast">
+    <p class="mast-name"><a href="/">Dear Deadline</a></p>
+    <details class="lang">
+      <summary>English</summary>
+      <div><p><b>English:</b> the full tool.</p><p><a href="/es" lang="es">Español: una página en español con lo más importante</a></p></div>
+    </details>
+    <p class="mast-note">An independent guide to benefit letters and bills: Social Security, Medicare, SNAP, Medicaid and housing. Not a government website.</p>
+  </header>
+
+  <main id="main">
+    <div class="sheet">
+      <h1 class="long">About this tool, your privacy, and how it is tested</h1>
+      <p class="lead">A free tool for people who have received a letter or bill about Social Security, Medicare, SNAP, Medicaid or housing help. It shows your deadlines, checks the figures, explains what you can ask for, and gives you a kit you can send yourself.</p>
+      <p>It has full helpers for three Social Security letters: an overpayment notice, a notice that your disability has ended after a medical review, and a decision you disagree with, such as a denied claim. It has a shorter page for 23 other common letters about Social Security and Medicare, which says what the letter is, whether a deadline applies, and the first thing to do. It can also check the month-by-month figures on an overpayment notice, and keep a record of what you sent, which stays in a file on your own device. It also has three things for people with no letter: a check for people who work while getting benefits, a builder for reporting a change to Social Security, and a check for scam letters, calls and messages about Social Security, Medicare, SNAP, Medicaid or housing. For Medicare, SNAP, Medicaid and housing it can also compare a doctor's bill with your Medicare Summary Notice, sort your hours under the 80-hour work rules, give the date to reschedule a missed SNAP interview, check a renewal packet before you send it, and redo the arithmetic behind your housing voucher or public housing rent. Florida is the only state with its own phone numbers and rules so far. It says so plainly when something is not covered.</p>
+      <p><a href="/">Back to the tool</a></p>
+
+      <h2>Who makes it</h2>
+      <p>Shirshak J. Thapa, a software developer and researcher who studies whether public-benefits software gives correct answers. It is a personal, non-commercial project: no fees, no ads, no donations.</p>
+      <p>It is independent. It is not affiliated with, endorsed by, or connected to the Social Security Administration, Medicare, HUD, any state agency or any other government agency.</p>
+
+      <h2>What it does not do</h2>
+      <ul>
+        <li>It does not give legal advice or tell you that you qualify for anything. The agency makes every decision.</li>
+        <li>It does not send anything to any agency. You file the official form yourself.</li>
+        <li>It never tells you an appeal or other request is not needed.</li>
+        <li>It does not choose for you. Where a choice has a cost, such as keeping benefits during a disability appeal, it sets out each option and what it risks.</li>
+        <li>It does not read photos or scanned pages automatically unless this copy of the tool has its photo reader installed. When it does, the reading happens on your device, and each detail it finds is shown with the line it came from so you can check it.</li>
+        <li>It checks arithmetic only on the figures you type in: an overpayment chart, a doctor's bill against a Medicare notice, and a housing rent calculation. It cannot see the papers themselves, and it never fills in a missing figure.</li>
+      </ul>
+
+      <h2>Your privacy</h2>
+      <ul>
+        <li><b>Nothing is saved.</b> There are no accounts, no database, no cookies and nothing kept in your browser. Closing the tab forgets everything.</li>
+        <li><b>No Social Security number is needed.</b> If you paste notice text, numbers that look like a Social Security or claim number are blacked out on your own device.</li>
+        <li><b>Your notice stays on your device.</b> A PDF, photo or pasted text is opened in your browser and is not uploaded. Only the details you confirm (date, amount, months, reason, your answers and your own words) are sent to work out your dates and kit, and they are discarded as soon as the answer is returned.</li>
+        <li id="ai-line"><b>No AI service is used on this site.</b></li>
+        <li><b>It counts uses, not people.</b> The tool adds one to a daily tally when a part is opened, reaches its results, or produces a kit, and notes whether the appeal date had already passed. It keeps those numbers and nothing else: no address, no browser details, no answers. The totals are public on the <a href="/open">open data page</a>.</li>
+        <li><b>The scam check stays on your device.</b> A message you paste there is not sent anywhere.</li>
+        <li><b>The Medicare bill check and the housing rent check run on your device.</b> The figures you type for them are not sent anywhere. They give the same answers as the server's version, which is checked by a test on hundreds of cases.</li>
+        <li><b>The record of what you sent and the helpers' deadline board stay on your device</b> until you save them as a file.</li>
+        <li><b>Nothing loads from other websites.</b> The PDF reader is part of this site, and there is no tracking.</li>
+      </ul>
+
+      <h2>How it is tested</h2>
+      <p>Deadlines, the request rules and the kit are ordinary tested code, not an AI model. The tool is measured against a set of invented notices with a hand-written answer key.</p>
+      <div id="accuracy"><p class="small">Loading the latest results…</p></div>
+      <div id="pdf-accuracy"></div>
+
+      <h2>The rules it uses, and where they come from</h2>
+      <p>Every rule is kept in a dated table with its official source. If a source changes, a new dated rule is added.</p>
+      <div id="rules"><p class="small">Loading the rule tables…</p></div>
+
+      <h2>Report a problem</h2>
+      <p>If the tool showed you something wrong or confusing, the author wants to know. Please do not send letters, case numbers or Social Security numbers.</p>
+      <p id="contact" class="small">Contact: see the project's public code page.</p>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-in">
+      <p class="foot-lead">This tool is independent. It is not affiliated with the Social Security Administration, Medicare, HUD, or any state agency.</p>
+      <p class="foot-small"><a href="/">The tool</a> &nbsp; <a href="/helpers">Helping someone else</a> &nbsp; <a href="/open">Open data and embedding</a></p>
+      <p class="foot-small">A project by Shirshak J. Thapa.</p>
+    </div>
+  </footer>
+  <script src="about.js"></script>
+</body>
+</html>

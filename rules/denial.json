@@ -1,0 +1,103 @@
+{
+  "table": "denial",
+  "about": "Rules for appealing a Social Security or SSI decision: the time limit and the four levels of appeal in order.",
+  "rows": [
+    {
+      "id": "appeal",
+      "days": 60,
+      "counted_from": "receipt_date",
+      "plain": "You generally have 60 days from the date you received the letter to ask for an appeal.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "mail_presumption",
+      "days": 5,
+      "counted_from": "notice_date",
+      "plain": "Social Security assumes you received the letter 5 days after the date on it, unless you show otherwise.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "weekend",
+      "plain": "If the last day falls on a weekend or national holiday, the deadline moves to the next workday.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "late",
+      "plain": "If you do not appeal within 60 days you may lose the right to appeal. If you had a good reason for the delay, Social Security may give you more time, but you must ask in writing and give the reason.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "level_reconsideration",
+      "order": 1,
+      "name": "Reconsideration",
+      "form": "SSA-561",
+      "online": "https://www.ssa.gov/apply/appeal-decision-we-made/request-reconsideration",
+      "plain": "Reconsideration is a fresh look by someone who took no part in the first decision. It reviews the evidence from the first decision plus anything new.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "level_hearing",
+      "order": 2,
+      "name": "A hearing with an administrative law judge",
+      "form": "HA-501",
+      "online": "https://www.ssa.gov/apply/appeal-decision-we-made/request-hearing",
+      "plain": "A hearing is held by an administrative law judge who took no part in the earlier decisions. The hearing office tells you when it is scheduled.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "level_appeals_council",
+      "order": 3,
+      "name": "Review by the Appeals Council",
+      "form": "HA-520",
+      "online": "https://www.ssa.gov/apply/appeal-decision-we-made/request-review-hearing-decision",
+      "plain": "The Appeals Council can deny, dismiss or grant review. If it grants review it issues a new decision or sends the case back to a judge.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "level_federal_court",
+      "order": 4,
+      "name": "A civil action in federal district court",
+      "form": null,
+      "online": "https://www.ssa.gov/apply/appeal-decision-we-made/file-review-federal-district-court",
+      "plain": "After an Appeals Council decision or denial of review, the next step is a civil action in a federal district court.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "medical_extra",
+      "plain": "For a decision about whether you are disabled, the reconsideration request also needs Form SSA-827, which lets Social Security get your medical records.",
+      "source": "https://www.ssa.gov/forms/ssa-561.html",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "representative",
+      "plain": "You may have a representative, such as a lawyer or another qualified person. You appoint one in writing with Form SSA-1696, and a representative cannot charge a fee without Social Security's written approval.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "paper",
+      "plain": "You can also ask for the appeal form by phone or at a local office instead of going online.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "checker_version": "1.0.0",
+  "corpus_version": "1.0.0",
+  "fixture_date": "2026-11-22",
+  "cases": 21,
+  "families": 3,
+  "decisions": 105,
+  "matched": 100,
+  "abstentions": 16,
+  "known_omissions": 12,
+  "omissions_flagged": 12,
+  "omissions_suggested_present": 0,
+  "omissions_deferred": 0,
+  "intact_fields": 15,
+  "false_flags_intact": 1,
+  "intact_fields_deferred": 0,
+  "intact_examples": 3,
+  "intact_examples_flagged": 1,
+  "partial_missing_fields": 6,
+  "partial_missing_deferred": 6,
+  "ambiguous_suggested_present": 0,
+  "rows": [
+    {
+      "id": "single-intact",
+      "actual": {
+        "cause": "found",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "found",
+        "waiver": "found"
+      }
+    },
+    {
+      "id": "single-omit-cause",
+      "actual": {
+        "cause": "not_located",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "found",
+        "waiver": "found"
+      }
+    },
+    {
+      "id": "single-omit-rights",
+      "actual": {
+        "cause": "found",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "not_located",
+        "waiver": "not_located"
+      }
+    },
+    {
+      "id": "single-omit-calculation",
+      "actual": {
+        "cause": "found",
+        "months": "found",
+        "paid_due": "not_located",
+        "recon": "found",
+        "waiver": "found"
+      }
+    },
+    {
+      "id": "single-vague-rate",
+      "actual": {
+        "cause": "unclear",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "found",
+        "waiver": "found"
+      }
+    },
+    {
+      "id": "single-missing-page",
+      "actual": {
+        "cause": "found",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "unclear",
+        "waiver": "unclear"
+      }
+    },
+    {
+      "id": "single-headings",
+      "actual": {
+        "cause": "found",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "unclear",
+        "waiver": "unclear"
+      }
+    },
+    {
+      "id": "chart-intact",
+      "actual": {
+        "cause": "found",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "found",
+        "waiver": "found"
+      }
+    },
+    {
+      "id": "chart-omit-cause",
+      "actual": {
+        "cause": "not_located",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "found",
+        "waiver": "found"
+      }
+    },
+    {
+      "id": "chart-omit-rights",
+      "actual": {
+        "cause": "found",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "not_located",
+        "waiver": "not_located"
+      }
+    },
+    {
+      "id": "chart-omit-calculation",
+      "actual": {
+        "cause": "found",
+        "months": "found",
+        "paid_due": "not_located",
+        "recon": "found",
+        "waiver": "found"
+      }
+    },
+    {
+      "id": "chart-vague-rate",
+      "actual": {
+        "cause": "unclear",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "found",
+        "waiver": "found"
+      }
+    },
+    {
+      "id": "chart-missing-page",
+      "actual": {
+        "cause": "found",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "unclear",
+        "waiver": "unclear"
+      }
+    },
+    {
+      "id": "chart-headings",
+      "actual": {
+        "cause": "found",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "unclear",
+        "waiver": "unclear"
+      }
+    },
+    {
+      "id": "alternate-intact",
+      "actual": {
+        "cause": "not_located",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "found",
+        "waiver": "found"
+      }
+    },
+    {
+      "id": "alternate-omit-cause",
+      "actual": {
+        "cause": "not_located",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "found",
+        "waiver": "found"
+      }
+    },
+    {
+      "id": "alternate-omit-rights",
+      "actual": {
+        "cause": "not_located",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "not_located",
+        "waiver": "not_located"
+      }
+    },
+    {
+      "id": "alternate-omit-calculation",
+      "actual": {
+        "cause": "not_located",
+        "months": "found",
+        "paid_due": "not_located",
+        "recon": "found",
+        "waiver": "found"
+      }
+    },
+    {
+      "id": "alternate-vague-rate",
+      "actual": {
+        "cause": "unclear",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "found",
+        "waiver": "found"
+      }
+    },
+    {
+      "id": "alternate-missing-page",
+      "actual": {
+        "cause": "unclear",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "unclear",
+        "waiver": "unclear"
+      }
+    },
+    {
+      "id": "alternate-headings",
+      "actual": {
+        "cause": "not_located",
+        "months": "found",
+        "paid_due": "found",
+        "recon": "unclear",
+        "waiver": "unclear"
+      }
+    }
+  ],
+  "official_excerpt": {
+    "source": "https://secure.ssa.gov/apps10/poms.nsf/lnx/0202201009",
+    "checked": 2,
+    "matched": 2,
+    "actual": {
+      "months": "found",
+      "paid_due": "found"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "table": "wic",
+  "about": "Florida WIC shopping rules used by the practice trip. Balances and boxes in the practice are invented.",
+  "rows": [
+    {
+      "id": "cereal",
+      "plain": "WIC breakfast cereal must be a box or bag of 9 oz or more. Your cereal is in ounces for the month; plan your boxes so you can use all of it. Buying 12, 18, 24 and 36 oz sizes makes that easier.",
+      "source": "https://www.floridahealth.gov/programs-and-services/wic/_documents/fl-wic-foods-eng.pdf",
+      "min_oz": 9,
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "whole_grain",
+      "plain": "WIC whole grains, such as 100% whole wheat bread, can be any package from 12 to 42 oz.",
+      "source": "https://www.floridahealth.gov/programs-and-services/wic/_documents/fl-wic-food-list-changes-for-2025-10-eng.pdf",
+      "min_oz": 12,
+      "max_oz": 42,
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "family",
+      "plain": "Foods for everyone in your family are added together on one card. For example, 3 people with 36 oz of cereal each have 108 oz on the card.",
+      "source": "https://www.floridahealth.gov/programs-and-services/wic/_documents/smart-shopping-with-your-wic-ebt-card-eng.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "check",
+      "plain": "Check a real product with the Florida WIC app, which scans items to see if they are approved, or with the Florida WIC Foods pamphlet. Check your receipt before you leave the store.",
+      "source": "https://miamidade.floridahealth.gov/programs-and-services/wic/wic-foods.html",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    }
+  ]
+}

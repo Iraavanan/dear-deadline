@@ -1,0 +1,76 @@
+{
+ "table": "diswait",
+ "about": "Speeding up a disability claim or appeal that is taking too long.",
+ "rows": [
+  {
+   "id": "critical",
+   "plain": "Social Security's hearing offices speed up 'critical' cases: terminal illness; a 100% permanent and total VA compensation rating; a military injury on active duty since October 1, 2001; a Compassionate Allowances condition; homelessness; dire need; and a risk of harm to self or others.",
+   "source": "https://secure.ssa.gov/apps10/poms.nsf/lnx/2501210040",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "dire_need",
+   "plain": "Dire need means you do not have enough income or resources to deal with an immediate threat to your health or safety, such as no food, medicine or medical care, or no heat, water or electricity. Staff accept what you say unless there is evidence against it, and lean toward marking the case.",
+   "source": "https://secure.ssa.gov/apps10/poms.nsf/lnx/2501210040",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "homeless",
+   "plain": "Homeless means you have no fixed, regular and adequate place to sleep at night, or expect to lose your housing within 14 days with nowhere to go.",
+   "source": "https://secure.ssa.gov/apps10/poms.nsf/lnx/2501210040",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "how",
+   "plain": "You can tell Social Security about a critical situation by fax, by mail, by phone or in person. Staff record it and pass it to the person who can mark the case.",
+   "source": "https://secure.ssa.gov/apps10/poms.nsf/lnx/2501210040",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "vapt",
+   "plain": "For the VA rating category, Social Security needs proof of the 100% permanent and total compensation rating, such as your VA letter. A VA pension does not qualify.",
+   "source": "https://secure.ssa.gov/apps10/poms.nsf/lnx/2501210040",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "waits",
+   "plain": "Social Security publishes how long hearings take, by office, each month.",
+   "source": "https://www.ssa.gov/securitystat/disability-appeals-time",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "fo_dire_need",
+   "plain": "Before a hearing, the Social Security office and the state agency that decides disability (DDS) can also mark a claim 'dire need' and handle it first. They accept what you say unless there is evidence against it.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0423020030",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "ssi_advance",
+   "plain": "On a new SSI disability claim, the Social Security office can pay up to 6 months of SSI before the medical decision for some conditions (presumptive disability), and can make a one-time emergency advance payment when there is a financial emergency.",
+   "source": "https://secure.ssa.gov/POMS.nsf/lnx/0423020015",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "congress",
+   "plain": "Your U.S. representative's and senators' offices have caseworkers who can ask Social Security about a delayed case. They will ask you to sign a privacy release first. They cannot force Social Security to decide faster.",
+   "source": "https://sgp.fas.org/crs/misc/RL33209.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "find_rep",
+   "plain": "Find your U.S. representative by ZIP code.",
+   "source": "https://www.house.gov/representatives/find-your-representative",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  }
+ ]
+}

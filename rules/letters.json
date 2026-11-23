@@ -1,0 +1,927 @@
+{
+ "table": "letters",
+ "about": "Common letters about Social Security and Medicare: what each one is, whether a deadline applies, and the first thing to do. Where the official page gives no number of days, none is given here.",
+ "rows": [
+  {
+   "id": "overpayment",
+   "group": "ssa",
+   "title": "It says I was paid too much",
+   "cue": "An overpayment notice asking for money back.",
+   "plain": "Social Security says it paid you more than you were due and wants the money back.",
+   "do": [
+    "Use the overpayment helper. It shows the 30-day and 60-day dates and what you can ask for."
+   ],
+   "helper": "overpayment",
+   "chip": "30 and 60 days",
+   "contact": "Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "source": "https://www.ssa.gov/manage-benefits/resolve-overpayment",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "disability-ended",
+   "group": "ssa",
+   "title": "It says my disability has ended",
+   "cue": "After a medical review of your condition.",
+   "plain": "Social Security reviewed your condition and decided you are no longer disabled, so your benefits will stop.",
+   "do": [
+    "Use the disability-ended helper. Part of this letter has a 15-day window."
+   ],
+   "helper": "disability-ended",
+   "chip": "15 and 60 days",
+   "contact": "Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "source": "https://www.ssa.gov/ssi/text-appeals-ussi.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "decision-denied",
+   "group": "ssa",
+   "title": "It says my claim or appeal was denied",
+   "cue": "A denied application, a reconsideration, a judge's decision or an Appeals Council letter.",
+   "plain": "Social Security decided against you on an application or an appeal.",
+   "do": [
+    "Use the appeal helper. It shows your date and which step of appeal comes next."
+   ],
+   "helper": "decision-appeal",
+   "chip": "60 days",
+   "contact": "Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "source": "https://www.ssa.gov/pubs/EN-05-10098.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "award",
+   "group": "ssa",
+   "title": "It says my benefits were approved (award letter)",
+   "cue": "Often titled Notice of Award. It gives your monthly amount and the date payments start.",
+   "plain": "Social Security approved your benefits. The letter states how much you will get and from when.",
+   "do": [
+    "Check the monthly amount, the start date and any back payment against what you expected.",
+    "If you think any of them is wrong, you can appeal like any other decision. The appeal helper shows the steps.",
+    "Keep this letter. Other agencies and landlords often ask for it."
+   ],
+   "clocks": [
+    {
+     "id": "appeal",
+     "days": 60,
+     "label": "Appeal by this date",
+     "rule": "You have 60 days after you receive the letter to ask for an appeal.",
+     "note": "Counted from the date printed on the letter, which is the cautious reading."
+    },
+    {
+     "id": "appeal_latest",
+     "days": 65,
+     "label": "Latest appeal date if the letter took 5 days to arrive",
+     "rule": "Social Security assumes you received the letter 5 days after the date on it, unless you show otherwise.",
+     "note": "Do not aim for this date. Use it only if the earlier date has passed."
+    }
+   ],
+   "date": {
+    "label": "Date printed on the letter",
+    "hint": "Usually at the top of the first page.",
+    "future": false
+   },
+   "chip": "60 days if you disagree",
+   "see": "decision-appeal",
+   "contact": "Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "source": "https://www.ssa.gov/pubs/EN-05-10098.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "see_label": "Open the appeal helper"
+  },
+  {
+   "id": "ssi-planned-action",
+   "group": "ssa",
+   "title": "It says my SSI will go down or stop (Notice of Planned Action)",
+   "cue": "Supplemental Security Income only. It says what Social Security plans to do and from which month.",
+   "plain": "Social Security plans to lower, suspend or stop your SSI for a reason other than your medical condition. This is an advance notice: the change has not happened yet.",
+   "do": [
+    "If you disagree, ask for reconsideration in writing. Form SSA-561 can be used, or the online appeal.",
+    "Ask within 10 days of getting the letter if you can. Then the payment you get now continues until Social Security decides.",
+    "You still have 60 days to appeal. Social Security's page says payments may be continued or put back if you appeal within that time.",
+    "If the letter is about your medical condition, use the disability-ended helper instead."
+   ],
+   "clocks": [
+    {
+     "id": "continue",
+     "days": 10,
+     "label": "Appeal by this date to keep your payment unchanged",
+     "rule": "If you ask for reconsideration in writing within 10 days of the date you receive the notice, any payment being made continues until the reconsideration is decided.",
+     "note": "Counted from the date printed on the letter, which is the cautious reading. Social Security assumes you received it 5 days later."
+    },
+    {
+     "id": "appeal",
+     "days": 60,
+     "label": "Appeal by this date",
+     "rule": "You have 60 days after you receive the letter to ask for an appeal.",
+     "note": "Counted from the date printed on the letter, which is the cautious reading."
+    },
+    {
+     "id": "appeal_latest",
+     "days": 65,
+     "label": "Latest appeal date if the letter took 5 days to arrive",
+     "rule": "Social Security assumes you received the letter 5 days after the date on it, unless you show otherwise.",
+     "note": "Do not aim for this date. Use it only if the earlier date has passed."
+    }
+   ],
+   "date": {
+    "label": "Date printed on the letter",
+    "hint": "Usually at the top of the first page.",
+    "future": false
+   },
+   "chip": "10 and 60 days",
+   "forms": [
+    {
+     "name": "Form SSA-561, Request for Reconsideration",
+     "url": "https://www.ssa.gov/forms/ssa-561.pdf"
+    }
+   ],
+   "contact": "Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "source": "https://www.ssa.gov/ssi/text-appeals-ussi.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "kit": {
+    "kind": "written",
+    "ask": "a reconsideration",
+    "to": "the Social Security Administration",
+    "about_label": "What Social Security plans to change, and what the letter gives as the reason",
+    "include": [
+     "A copy of the Notice of Planned Action",
+     "Proof that supports your side, such as pay stubs, bank statements, a lease or bills",
+     "Your name and the number shown on the letter, written by hand on the copy you send"
+    ],
+    "how": [
+     "Ask in writing. Form SSA-561 can be used, or the online appeal.",
+     "If you ask within 10 days of getting the letter, the payment you get now continues until Social Security decides.",
+     "Hand it in at your local office or send it in a way that shows the date. Keep a copy.",
+     "Ask for a receipt that shows the date Social Security got it."
+    ]
+   }
+  },
+  {
+   "id": "ssi-redetermination",
+   "group": "ssa",
+   "title": "It says Social Security is reviewing my SSI (redetermination)",
+   "cue": "An appointment letter, or a form asking about income, savings and where you live.",
+   "plain": "A redetermination is a review of your income, resources and living arrangements, to make sure you still qualify for SSI and get the right amount. It is not about your medical condition.",
+   "do": [
+    "Keep the appointment in the letter, or call Social Security to change it.",
+    "If you were sent a form, complete, sign and return it. If you have a representative payee, the payee completes and signs it.",
+    "Ask your local office for help with the form if you need it.",
+    "Gather what the letter asks for, such as pay stubs, bank statements and bills for household expenses."
+   ],
+   "chip": "Date in the letter",
+   "contact": "Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "source": "https://www.ssa.gov/ssi/text-redets-ussi.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "see": "renewal",
+   "see_label": "Check what they asked for before you send it"
+  },
+  {
+   "id": "disability-update",
+   "group": "ssa",
+   "title": "It asks about my health and work (Disability Update Report)",
+   "cue": "A short form, numbered SSA-455, with questions about the last two years.",
+   "plain": "This form is part of a periodic review of people who get disability benefits. It asks about your health, treatment, work and training, usually over the last two years. It is not a decision and it does not stop your benefits.",
+   "do": [
+    "Answer every question and return the form by the date printed on it.",
+    "Keep a copy and note the date you sent it.",
+    "If it is not returned, Social Security sends a second request.",
+    "If you later get a letter saying your disability has ended, use the disability-ended helper straight away."
+   ],
+   "chip": "Date on the form",
+   "contact": "Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0413004005",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "payee-report",
+   "group": "ssa",
+   "title": "It asks how I spent someone's benefits (Representative Payee Report)",
+   "cue": "Sent once a year to people who manage benefits for someone else. Forms SSA-623, SSA-6230 or SSA-6234.",
+   "plain": "If you receive benefits on behalf of someone else, Social Security asks most payees once a year to report how the money was spent or saved.",
+   "do": [
+    "Complete the report on paper or online and return it by the date on the form.",
+    "Use your records of what was spent on food, housing, medical care and personal needs, and what was saved.",
+    "If a payee does not respond after repeated requests, Social Security must consider choosing a different payee."
+   ],
+   "chip": "Date on the form",
+   "contact": "Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0200605001",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "cola",
+   "group": "ssa",
+   "title": "It tells me my new benefit amount for next year (COLA notice)",
+   "cue": "Mailed in December. It gives your new monthly amount after the cost-of-living adjustment.",
+   "plain": "Each year Social Security tells you your benefit amount for the next year, after the cost-of-living adjustment. Most people can also read it in the Message Center of their my Social Security account from late November.",
+   "do": [
+    "Check the new monthly amount, and any Medicare premium taken out of it.",
+    "Keep the notice. Landlords, lenders and other programs often ask for proof of income.",
+    "If an amount looks wrong, call Social Security and ask how it was worked out."
+   ],
+   "chip": "Keep it",
+   "contact": "Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "source": "https://www.ssa.gov/cola/",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "ssa-1099",
+   "group": "ssa",
+   "title": "It is my tax statement (SSA-1099)",
+   "cue": "Sent early in the year. It shows the benefits paid to you last year, for your tax return.",
+   "plain": "The SSA-1099 shows the Social Security benefits paid to you in a year, so you can report them on your tax return.",
+   "do": [
+    "Use it when you or your tax preparer file your tax return.",
+    "If you lost it, download a replacement from your my Social Security account, or call 1-800-772-1213 and say \"ten ninety-nine\".",
+    "If the amount looks wrong, call Social Security before you file."
+   ],
+   "chip": "For your tax return",
+   "contact": "Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "source": "https://www.ssa.gov/manage-benefits/get-tax-form-10991042s",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "work-report",
+   "group": "ssa",
+   "title": "It asks about my work (Work Activity Report)",
+   "cue": "Form SSA-821. It asks about work since a date it names.",
+   "plain": "Social Security believes you may have worked recently and asks for details: where and when you worked, what you were paid, and any help or expenses related to your disability.",
+   "do": [
+    "Complete, sign and return the form by the date in the letter. If you were asked for it, you can also complete it online.",
+    "Have your pay stubs for each month you worked.",
+    "Include what you pay for in order to work because of your disability, and any extra help your employer gives. Social Security can count less pay because of them.",
+    "If you cannot explain the earnings shown, ask your employer or your local Social Security office."
+   ],
+   "chip": "Date in the letter",
+   "see": "work-check",
+   "see_label": "Check your pay against the limits",
+   "forms": [
+    {
+     "name": "Complete Form SSA-821 online",
+     "url": "https://secure.ssa.gov/ssaforms/ssa821"
+    }
+   ],
+   "contact": "Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "source": "https://www.ssa.gov/forms/ssa-821.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "medical-exam",
+   "group": "ssa",
+   "title": "It books a medical exam for my disability claim",
+   "cue": "A consultative examination appointment from the state agency that decides disability claims.",
+   "plain": "The state agency deciding your claim needs more medical information, so it has booked an exam or test that Social Security pays for. It is not a decision.",
+   "do": [
+    "Confirm you will attend by the date in the letter, using the form and envelope sent with it.",
+    "If you cannot keep the appointment, call the agency right away at the number in the letter. To reschedule, you must give a good reason.",
+    "Tell the agency before the appointment if you need an interpreter. One is provided free.",
+    "Social Security also pays certain travel costs. Ask about it if a travel form came with the letter."
+   ],
+   "chip": "Date in the letter",
+   "contact": "The state agency's phone number is in the letter. Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "source": "https://www.ssa.gov/pubs/EN-05-10087.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "hearing-notice",
+   "group": "ssa",
+   "title": "It gives the date of my hearing with a judge",
+   "cue": "A Notice of Hearing, sent at least 75 days before the hearing.",
+   "plain": "Your hearing before an administrative law judge has been scheduled. The notice gives the date, the time, and how you will take part.",
+   "do": [
+    "Read how you will take part. The notice includes a form to object to or agree to the ways offered.",
+    "Send any written evidence early, and no later than 5 business days before the hearing.",
+    "If you cannot attend, contact the hearing office as soon as possible and explain why in writing.",
+    "If you have a representative, make sure they have the notice."
+   ],
+   "clocks": [
+    {
+     "id": "evidence",
+     "days": 0,
+     "label": "Send written evidence by this date",
+     "rule": "For a disability hearing, written evidence must be submitted no later than 5 business days before the hearing date.",
+     "note": "Counted back 5 business days from the hearing date, skipping weekends and federal holidays. Send it earlier if you can.",
+     "workdays": -5
+    },
+    {
+     "id": "hearing",
+     "days": 0,
+     "label": "Your hearing",
+     "rule": "The notice of hearing is sent at least 75 days before the hearing and gives the date, time and how you will appear.",
+     "note": ""
+    }
+   ],
+   "date": {
+    "label": "Date of your hearing",
+    "hint": "From the notice, not the date the notice was written.",
+    "future": true,
+    "max_ahead": 400
+   },
+   "chip": "5 business days before",
+   "contact": "Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "source": "https://www.ssa.gov/appeals/hearing_process.html",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "show-cause",
+   "group": "ssa",
+   "title": "It asks why I missed my hearing (Request to Show Cause)",
+   "cue": "Sent when you did not appear at a scheduled hearing.",
+   "plain": "The hearing office is asking why you did not attend your hearing. If you do not answer in time, your request for a hearing can be dismissed.",
+   "do": [
+    "Answer in writing, and explain the reason you could not attend.",
+    "Send copies of anything that shows the reason.",
+    "Contact the hearing office named in the letter to confirm it received your answer."
+   ],
+   "clocks": [
+    {
+     "id": "respond",
+     "days": 15,
+     "label": "Respond by this date",
+     "rule": "You have 10 days from the date of the request, plus 5 days for mail, to respond before a dismissal is issued.",
+     "note": "Counted from the date printed on the request. Respond sooner if you can."
+    }
+   ],
+   "date": {
+    "label": "Date printed on the letter",
+    "hint": "Usually at the top of the first page.",
+    "future": false
+   },
+   "chip": "15 days",
+   "contact": "The hearing office's phone number is in the letter. Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "source": "https://www.ssa.gov/appeals/hearing_process.html",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "age-18",
+   "group": "ssa",
+   "title": "It says my SSI will stop after the review at age 18",
+   "cue": "A decision after the review under the disability rules for adults.",
+   "plain": "When someone getting SSI turns 18, Social Security reviews whether they qualify under the disability rules for adults. If it decides they do not, payments usually stop.",
+   "do": [
+    "If you disagree, appeal in writing. Your letter says how.",
+    "Appeal within 10 days of getting the letter if you want payments to continue during the appeal.",
+    "If you are in school or a vocational rehabilitation program, ask whether payments can continue because of it.",
+    "Legal aid offices help with these appeals."
+   ],
+   "clocks": [
+    {
+     "id": "continue",
+     "days": 10,
+     "label": "Appeal by this date to keep payments during the appeal",
+     "rule": "If you appeal within 10 days of receiving the letter, you can ask to keep receiving payments during the appeal.",
+     "note": "Counted from the date printed on the letter, which is the cautious reading."
+    },
+    {
+     "id": "appeal",
+     "days": 60,
+     "label": "Appeal by this date",
+     "rule": "You have 60 days from the date you receive the letter to file a written appeal.",
+     "note": "Counted from the date printed on the letter, which is the cautious reading."
+    },
+    {
+     "id": "appeal_latest",
+     "days": 65,
+     "label": "Latest appeal date if the letter took 5 days to arrive",
+     "rule": "Social Security assumes you receive a notice five days after the date on it, unless you show otherwise.",
+     "note": "Do not aim for this date. Use it only if the earlier date has passed.",
+     "source": "https://www.ssa.gov/ssi/text-appeals-ussi.htm"
+    }
+   ],
+   "date": {
+    "label": "Date printed on the letter",
+    "hint": "Usually at the top of the first page.",
+    "future": false
+   },
+   "chip": "10 and 60 days",
+   "contact": "Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "kit": {
+    "kind": "written",
+    "ask": "a reconsideration",
+    "to": "the Social Security Administration",
+    "about_label": "Why you think you meet the adult rules, or what the review missed",
+    "include": [
+     "A copy of the decision letter",
+     "Recent medical records, and the names of the doctors and clinics treating you",
+     "Proof of school or a vocational rehabilitation program, if you are in one",
+     "Your name and the number shown on the letter, written by hand on the copy you send"
+    ],
+    "how": [
+     "Hand it in at your local Social Security office or send it in a way that shows the date. Keep a copy.",
+     "If you want payments to continue, say so, and send it within 10 days of getting the letter.",
+     "Ask for a receipt that shows the date Social Security got it."
+    ]
+   },
+   "source": "https://www.ssa.gov/pubs/EN-05-11005.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "irmaa",
+   "group": "medicare",
+   "title": "It says my Medicare premium is higher because of my income",
+   "cue": "From Social Security. It mentions an income-related monthly adjustment amount, or IRMAA.",
+   "plain": "Social Security used your tax return from two years ago to decide that you pay more for Medicare Part B, Part D or both.",
+   "do": [
+    "If your income has dropped because of a life-changing event, such as the death of a spouse, marriage, divorce, or stopping or reducing work, ask Social Security to use your newer income. Form SSA-44 can be used for this.",
+    "If you think the tax information used is wrong, you can ask for reconsideration.",
+    "Social Security can also be asked to look again if you filed an amended tax return."
+   ],
+   "clocks": [
+    {
+     "id": "appeal",
+     "days": 60,
+     "label": "Ask for reconsideration by this date",
+     "rule": "A request for reconsideration can be filed within 60 days of receiving the determination notice.",
+     "note": "Counted from the date printed on the letter, which is the cautious reading."
+    },
+    {
+     "id": "appeal_latest",
+     "days": 65,
+     "label": "Latest date if the letter took 5 days to arrive",
+     "rule": "Date received means 5 days after the date on the notice, unless you show you did not receive it within that time.",
+     "note": "Do not aim for this date. Use it only if the earlier date has passed."
+    }
+   ],
+   "date": {
+    "label": "Date printed on the letter",
+    "hint": "Usually at the top of the first page.",
+    "future": false
+   },
+   "chip": "60 days",
+   "forms": [
+    {
+     "name": "Form SSA-44, life-changing event",
+     "url": "https://www.ssa.gov/forms/ssa-44.pdf"
+    },
+    {
+     "name": "Form SSA-561, Request for Reconsideration",
+     "url": "https://www.ssa.gov/forms/ssa-561.pdf"
+    }
+   ],
+   "contact": "Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0601140001",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "kit": {
+    "kind": "written",
+    "ask": "a reconsideration",
+    "to": "the Social Security Administration",
+    "about_label": "What happened and when (for example: stopped work in March 2026), or what is wrong with the tax information used",
+    "include": [
+     "A copy of the letter about your premium",
+     "Proof of the life-changing event, such as a death certificate, a letter from your employer or a divorce decree",
+     "Your newer tax return or your estimate of this year's income",
+     "Your name and the number shown on the letter, written by hand on the copy you send"
+    ],
+    "how": [
+     "If your income dropped because of a life-changing event, Form SSA-44 asks Social Security to use your newer income. That is a new decision, not an appeal.",
+     "If you think the tax information is wrong, ask for reconsideration. Form SSA-561 can be used.",
+     "Send or take it to your local Social Security office, or call 1-800-772-1213.",
+     "Keep a copy of everything you send and note the date."
+    ]
+   }
+  },
+  {
+   "id": "extra-help",
+   "group": "medicare",
+   "title": "It is a decision about Extra Help with drug costs",
+   "cue": "From Social Security, about help with Medicare prescription drug plan costs.",
+   "plain": "Social Security decided whether you can get, or keep, Extra Help with Medicare prescription drug costs.",
+   "do": [
+    "If you disagree, ask for an appeal by calling Social Security, in writing, or at a local office. Form SSA-1021 can be used.",
+    "You can choose a hearing by telephone or a review of your case file. Both are the same level of appeal.",
+    "The letter says how long you have. Do not wait."
+   ],
+   "chip": "Date in the letter",
+   "forms": [
+    {
+     "name": "Form SSA-1021, appeal of an Extra Help decision",
+     "url": "https://www.ssa.gov/forms/ssa-1021.pdf"
+    }
+   ],
+   "contact": "Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+   "source": "https://www.ssa.gov/OP_Home/handbook/handbook.26/handbook-2614.html",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "kit": {
+    "kind": "written",
+    "ask": "an appeal",
+    "to": "the Social Security Administration",
+    "about_label": "Which part of the decision you disagree with (income, savings, household size or something else)",
+    "include": [
+     "A copy of the decision letter",
+     "Proof of the correct income, savings or household details",
+     "Your name and the number shown on the letter, written by hand on the copy you send"
+    ],
+    "how": [
+     "Ask for the appeal by calling 1-800-772-1213, in writing, or at a local Social Security office. Form SSA-1021 can be used.",
+     "Say whether you want a hearing by telephone or a review of your case file. Both are the same level of appeal.",
+     "Keep a copy of everything you send and note the date."
+    ]
+   }
+  },
+  {
+   "id": "msn",
+   "group": "medicare",
+   "title": "It lists my Medicare claims (Medicare Summary Notice)",
+   "cue": "Comes every 3 months if you have Original Medicare. It says \"This is not a bill\".",
+   "plain": "The Medicare Summary Notice lists the services billed to Medicare for you, what Medicare paid, and what you may owe. If Medicare did not pay for something, this is where you find out.",
+   "do": [
+    "Check each service against what you actually received.",
+    "To appeal a claim Medicare did not pay, follow the appeal instructions on the last page: circle the item, say why you disagree, sign and send it to the address listed, or use the Redetermination Request Form.",
+    "The last page also shows the date your appeal must be received. If it differs from the date here, use the date on your notice.",
+    "Ask your doctor or supplier for any information that may help."
+   ],
+   "clocks": [
+    {
+     "id": "appeal",
+     "days": 120,
+     "label": "Appeal by this date",
+     "rule": "You must file your appeal within 120 days of the date you get the Medicare Summary Notice.",
+     "note": "Counted from the date printed on the notice, which is the cautious reading."
+    },
+    {
+     "id": "appeal_latest",
+     "days": 125,
+     "label": "Latest date if the notice took 5 days to arrive",
+     "rule": "The notice is presumed to be received 5 calendar days after its date, unless there is evidence otherwise.",
+     "note": "Do not aim for this date. Use it only if the earlier date has passed."
+    }
+   ],
+   "date": {
+    "label": "Date printed on the notice",
+    "hint": "At the top of the first page.",
+    "future": false
+   },
+   "chip": "120 days",
+   "contact": "Medicare: 1-800-MEDICARE (1-800-633-4227), TTY 1-877-486-2048",
+   "source": "https://www.medicare.gov/claims-appeals/file-an-appeal/appeals-level-1-company-handling-medicare-claims-redetermination",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "kit": {
+    "kind": "written",
+    "ask": "a redetermination",
+    "to": "the Medicare contractor at the address in the appeals section of my Medicare Summary Notice",
+    "about_label": "Which service or item, and the date you got it",
+    "include": [
+     "A copy of the Medicare Summary Notice with the item you disagree with circled",
+     "Anything from your doctor or supplier that supports the claim",
+     "Your name and Medicare number, written by hand on the copy you send"
+    ],
+    "how": [
+     "Use the Redetermination Request Form, or send this written request. Either goes to the Medicare contractor at the address listed on your notice.",
+     "Keep a copy of everything you send and note the date.",
+     "You will generally get a decision, called a Medicare Redetermination Notice, within 60 days after the contractor gets your request.",
+     "You can send more information after you file, but the decision may then take longer than 60 days."
+    ]
+   }
+  },
+  {
+   "id": "ma-denial",
+   "group": "medicare",
+   "title": "My Medicare Advantage plan refused to cover or pay for care",
+   "cue": "From your health plan, often titled Notice of Denial of Medical Coverage or Payment.",
+   "plain": "Your Medicare Advantage plan decided not to cover, or not to pay for, a service, item or drug it handles. The first appeal goes to the plan itself and is called a reconsideration.",
+   "do": [
+    "Follow the directions in the plan's denial notice to start your appeal.",
+    "Standard requests are made in writing, unless your plan accepts requests by phone.",
+    "Ask your doctor for information that supports the request. For care you have not had yet, your doctor can ask for the reconsideration for you."
+   ],
+   "clocks": [
+    {
+     "id": "appeal",
+     "days": 65,
+     "label": "Ask the plan for reconsideration by this date",
+     "rule": "Reconsideration requests must be filed with the health plan within 65 calendar days from the date of the notice.",
+     "note": "Counted from the date printed on the notice."
+    }
+   ],
+   "date": {
+    "label": "Date printed on the denial notice",
+    "hint": "",
+    "future": false
+   },
+   "chip": "65 days",
+   "contact": "Your plan's phone number is on your membership card. Medicare: 1-800-MEDICARE (1-800-633-4227), TTY 1-877-486-2048",
+   "source": "https://www.cms.gov/Medicare/Appeals-and-Grievances/MMCAG/PartCRecon",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "kit": {
+    "kind": "written",
+    "ask": "a reconsideration",
+    "to": "my Medicare Advantage plan, at the appeals address in its denial notice",
+    "about_label": "Which service, item or payment the plan refused",
+    "include": [
+     "A copy of the plan's denial notice",
+     "A letter or records from your doctor that support the request",
+     "Your name and plan member number, written by hand on the copy you send"
+    ],
+    "how": [
+     "Follow the directions in the plan's denial notice to send this request to the plan.",
+     "Standard requests are made in writing, unless your plan accepts requests by phone.",
+     "For care you have not had yet, your doctor can ask for the reconsideration for you.",
+     "If you file after the 65 days, give your reason for filing late.",
+     "Keep a copy of everything you send and note the date."
+    ]
+   }
+  },
+  {
+   "id": "partd-denial",
+   "group": "medicare",
+   "title": "My drug plan refused to cover or pay for a prescription",
+   "cue": "From your Part D plan, titled Notice of Denial of Medicare Part D Prescription Drug Coverage.",
+   "plain": "Your Medicare drug plan decided not to cover or pay for a drug. The first appeal goes to the plan and is called a redetermination.",
+   "do": [
+    "You, your prescriber or your representative can ask the plan for a redetermination.",
+    "If waiting could harm your health, ask for a fast (expedited) decision. Fast requests may be made by phone or in writing, and the plan has 72 hours.",
+    "A standard request is decided in 7 days for a drug you have not received and 14 days for a payment request."
+   ],
+   "clocks": [
+    {
+     "id": "appeal",
+     "days": 65,
+     "label": "Ask the plan for a redetermination by this date",
+     "rule": "Redetermination requests must be filed with the plan within 65 calendar days from the date of the notice.",
+     "note": "Counted from the date printed on the notice."
+    }
+   ],
+   "date": {
+    "label": "Date printed on the denial notice",
+    "hint": "",
+    "future": false
+   },
+   "chip": "65 days",
+   "contact": "Your plan's phone number is on your membership card. Medicare: 1-800-MEDICARE (1-800-633-4227), TTY 1-877-486-2048",
+   "source": "https://www.cms.gov/medicare/appeals-grievances/prescription-drug/redetermination-part-d-plan-sponsor",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "kit": {
+    "kind": "written",
+    "ask": "a redetermination",
+    "to": "my Medicare drug plan, at the appeals address in its denial notice",
+    "about_label": "Which drug the plan refused, and what your prescriber says about it",
+    "include": [
+     "A copy of the plan's denial notice",
+     "A statement from your prescriber, if you have one",
+     "Your name and plan member number, written by hand on the copy you send"
+    ],
+    "how": [
+     "Send this request to the plan, following the directions in its denial notice. Your prescriber or representative can also ask for you.",
+     "If waiting could harm your health, ask for a fast (expedited) decision by phone or in writing. The plan then has 72 hours.",
+     "A standard request is decided in 7 days for a drug you have not received and 14 days for a payment request.",
+     "Keep a copy of everything you send and note the date."
+    ]
+   }
+  },
+  {
+   "id": "nomnc",
+   "group": "medicare",
+   "title": "It says my nursing, home health or hospice care is ending",
+   "cue": "Titled Notice of Medicare Non-Coverage. You should get it at least 2 days before covered services end.",
+   "plain": "The provider or your plan has decided Medicare will stop covering your skilled nursing, home health, outpatient rehabilitation or hospice services on the date in the notice.",
+   "do": [
+    "If you think the services are ending too soon, ask for a fast appeal. The notice gives the phone number of the review organization for your area (the BFCC-QIO).",
+    "Call no later than noon on the day before the end date printed on the notice.",
+    "You are not charged for services you get before the end date on the notice.",
+    "If you miss that time, you can still ask, but different rules and time frames apply."
+   ],
+   "clocks": [
+    {
+     "id": "fast_appeal",
+     "days": -1,
+     "label": "Ask for a fast appeal by noon on this date",
+     "rule": "Follow the instructions on the Notice of Medicare Non-Coverage no later than noon the day before the termination date listed on the notice.",
+     "note": "By noon, not by the end of the day."
+    }
+   ],
+   "date": {
+    "label": "Date your services end, printed on the notice",
+    "hint": "Not the date the notice was written.",
+    "future": true
+   },
+   "chip": "Noon the day before",
+   "contact": "Medicare: 1-800-MEDICARE (1-800-633-4227), TTY 1-877-486-2048",
+   "source": "https://www.medicare.gov/providers-services/claims-appeals-complaints/appeals/fast-appeals",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "kit": {
+    "kind": "call",
+    "ask": "a fast appeal",
+    "to": "the review organization (BFCC-QIO) named on my notice",
+    "about_label": "Which services are ending (for example: physical therapy at home)",
+    "include": [
+     "The Notice of Medicare Non-Coverage, with the end date",
+     "Your Medicare card",
+     "The name of the provider and of your doctor"
+    ],
+    "how": [
+     "Call the review organization (the BFCC-QIO) at the number printed on your notice. It is a free review.",
+     "Write down the date and time you called, the name of the person, and any case number.",
+     "You can ask a family member or someone you trust to make the call for you.",
+     "After you call, your provider must give you a Detailed Explanation of Non-Coverage by the end of the day it is told about your appeal.",
+     "You are not charged for services you get before the end date on the notice."
+    ],
+    "script": "I have Medicare and I received a Notice of Medicare Non-Coverage. I am asking for a fast appeal because I think my services are ending too soon."
+   },
+   "urgent": {
+    "call": "the review organization (BFCC-QIO) whose phone number is printed on your notice",
+    "by": "By noon on the day before the end date printed on the notice",
+    "script": [
+     "Hello. I want a fast appeal. My Medicare services are ending and I think it is too soon.",
+     "My name is [your name]. I am getting care from [the provider's name on the notice].",
+     "The end date on my notice is [the date on the notice].",
+     "Please tell me what happens next, and when I will hear back."
+    ]
+   }
+  },
+  {
+   "id": "hospital-im",
+   "group": "medicare",
+   "title": "I am in hospital and think I am being sent home too soon",
+   "cue": "You should have been given An Important Message from Medicare about Your Rights within 2 days of being admitted.",
+   "plain": "The Important Message from Medicare explains your rights as a hospital patient, including the right to a fast review if you think you are being discharged too soon.",
+   "do": [
+    "Follow the directions on the Important Message to ask for a fast appeal. It gives the phone number of the review organization for your area (the BFCC-QIO).",
+    "Ask no later than the day you are scheduled to be discharged.",
+    "If you were not given the notice, ask the hospital for it.",
+    "If you miss that day you can still ask for a review, but different rules apply and you might have to pay for the extra days."
+   ],
+   "clocks": [
+    {
+     "id": "fast_appeal",
+     "days": 0,
+     "label": "Ask for a fast appeal no later than this day",
+     "rule": "Follow the directions on the Important Message from Medicare no later than the day you are scheduled to be discharged from the hospital.",
+     "note": "Ask before you leave the hospital."
+    }
+   ],
+   "date": {
+    "label": "The day the hospital plans to discharge you",
+    "hint": "",
+    "future": true
+   },
+   "chip": "Day of discharge",
+   "contact": "Medicare: 1-800-MEDICARE (1-800-633-4227), TTY 1-877-486-2048",
+   "source": "https://www.medicare.gov/providers-services/claims-appeals-complaints/appeals/fast-appeals",
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "kit": {
+    "kind": "call",
+    "ask": "a fast appeal",
+    "to": "the review organization (BFCC-QIO) named on the Important Message from Medicare",
+    "about_label": "Why you were admitted, and what you still need the hospital for",
+    "include": [
+     "The Important Message from Medicare you signed",
+     "Your Medicare card",
+     "The name of the hospital and of your doctor"
+    ],
+    "how": [
+     "Call the review organization (the BFCC-QIO) at the number printed on your notice. It is a free review.",
+     "Write down the date and time you called, the name of the person, and any case number.",
+     "You can ask a family member or someone you trust to make the call for you.",
+     "After you call, the hospital must give you a Detailed Notice of Discharge by noon of the day after it is told about your appeal.",
+     "Ask before you leave the hospital, and no later than the day you are scheduled to be discharged."
+    ],
+    "script": "I have Medicare and I am a hospital inpatient. I am asking for a fast appeal because I think I am being discharged too soon."
+   },
+   "urgent": {
+    "call": "the review organization (BFCC-QIO) whose phone number is printed on the Important Message from Medicare",
+    "by": "No later than the day you are scheduled to leave the hospital, and before you leave",
+    "script": [
+     "Hello. I want a fast appeal. I am in the hospital and I think I am being discharged too soon.",
+     "My name is [your name]. I am at [the hospital's name].",
+     "My planned discharge date is [the date].",
+     "Please tell me what happens next, and when I will hear back."
+    ]
+   }
+  },
+  {
+   "id": "premium-bill",
+   "group": "medicare",
+   "title": "It is a bill for my Medicare premium (CMS-500)",
+   "cue": "Titled Medicare Premium Bill. Sent to people whose premium is not taken out of a Social Security payment.",
+   "plain": "This is a bill for people who pay Medicare directly for Part A, Part B, or the extra Part D amount charged to people with higher incomes.",
+   "do": [
+    "Pay the total amount by the due date on the bill. Medicare must get your payment by the 25th of the month for it to be on time.",
+    "If the bill says Delinquent Bill and you do not pay the full amount by the due date, you could lose your Medicare coverage.",
+    "You can pay through your Medicare account online or sign up for Medicare Easy Pay."
+   ],
+   "chip": "25th of the month",
+   "contact": "Medicare: 1-800-MEDICARE (1-800-633-4227), TTY 1-877-486-2048",
+   "source": "https://www.medicare.gov/basics/forms-publications-mailings/mailings/costs-and-coverage/medicare-premium-bill",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "part-d-lep",
+   "group": "medicare",
+   "title": "It says I owe a late enrollment penalty for drug coverage",
+   "cue": "From your drug plan. A penalty is added to your monthly premium for a gap in drug coverage.",
+   "plain": "Your drug plan says you went 63 days or more without creditable drug coverage after you were first able to join, so a penalty is added to your premium for as long as you have Medicare drug coverage.",
+   "do": [
+    "If you disagree, ask for a review using the reconsideration request form that came with the letter.",
+    "Show that you had other drug coverage that counts, such as through an employer or union.",
+    "Send it by the date listed in the letter."
+   ],
+   "clocks": [
+    {
+     "id": "appeal",
+     "days": 60,
+     "label": "Ask for a review by this date",
+     "rule": "If you disagree with your penalty, you can request a review, generally within 60 days from the date on the letter.",
+     "note": "Counted from the date printed on the letter. If the letter lists a different date, use that one."
+    }
+   ],
+   "date": {
+    "label": "Date printed on the penalty letter",
+    "hint": "",
+    "future": false
+   },
+   "chip": "60 days",
+   "forms": [
+    {
+     "name": "Part D late enrollment penalty reconsideration request form",
+     "url": "https://www.cms.gov/files/document/part-d-lep-reconsideration-request-form-c2c.pdf"
+    }
+   ],
+   "contact": "Your plan's phone number is on your membership card. Medicare: 1-800-MEDICARE (1-800-633-4227), TTY 1-877-486-2048",
+   "kit": {
+    "kind": "written",
+    "ask": "a reconsideration",
+    "to": "Medicare's independent review contractor, at the address or fax number on the reconsideration request form sent with my letter",
+    "about_label": "The months you had other drug coverage, and where it came from (for example an employer or union plan)",
+    "include": [
+     "The reconsideration request form that came with the plan's letter, completed and signed",
+     "Copies, not originals, of anything that shows your other drug coverage, such as letters from an employer or union plan",
+     "A copy of the plan's penalty letter"
+    ],
+    "how": [
+     "Fill out the reconsideration request form you got with the letter. This draft can go with it as your explanation.",
+     "Mail or fax it to the address or number on the form. Send copies, not originals.",
+     "The review contractor has 90 days to decide. You do not need to send the form again during that time.",
+     "Keep a copy of everything you send and note the date."
+    ]
+   },
+   "source": "https://www.medicare.gov/claims-appeals/file-an-appeal/if-you-disagree-with-your-late-enrollment-penalty",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "anoc",
+   "group": "medicare",
+   "title": "It lists my plan's changes for next year (Annual Notice of Change)",
+   "cue": "From your Medicare Advantage or drug plan, each fall.",
+   "plain": "Your plan sends this each fall. It lists the changes in coverage, costs and more that take effect in January.",
+   "do": [
+    "Review the changes to decide whether the plan will still meet your needs next year.",
+    "Open Enrollment runs from October 15 to December 7. If you join a new plan, the plan must get your enrollment by December 7.",
+    "Compare plans on Medicare's plan finder, or call 1-800-MEDICARE."
+   ],
+   "chip": "Change by December 7",
+   "forms": [
+    {
+     "name": "Compare plans on Medicare.gov",
+     "url": "https://www.medicare.gov/plan-compare"
+    }
+   ],
+   "contact": "Medicare: 1-800-MEDICARE (1-800-633-4227), TTY 1-877-486-2048",
+   "source": "https://www.medicare.gov/basics/forms-publications-mailings/mailings/costs-and-coverage/upcoming-plan-changes",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "abn",
+   "group": "medicare",
+   "title": "My doctor or supplier says Medicare may not pay (ABN)",
+   "cue": "An Advance Beneficiary Notice of Non-coverage, given before you get an item or service.",
+   "plain": "In Original Medicare, a doctor, provider or supplier gives you this notice when they think Medicare may not pay for something. It is their opinion, not an official Medicare decision.",
+   "do": [
+    "Read it and ask any questions before you decide.",
+    "You must choose one option on the notice and sign it. The provider cannot choose for you.",
+    "Under Option 1 you get the item and Medicare is billed for an official decision, which comes on your Medicare Summary Notice.",
+    "Under Option 3 you do not get the item, you do not pay for it, and you cannot appeal to see whether Medicare would pay.",
+    "If Medicare later does not pay, the Medicare Summary Notice page here shows how long you have to appeal."
+   ],
+   "chip": "Choose before you get it",
+   "see": "medicare-letter",
+   "see_label": "See the Medicare letters, including the Medicare Summary Notice",
+   "contact": "Medicare: 1-800-MEDICARE (1-800-633-4227), TTY 1-877-486-2048",
+   "source": "https://www.medicare.gov/basics/your-medicare-rights/your-protections",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  }
+ ]
+}

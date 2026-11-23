@@ -1,0 +1,93 @@
+{
+  "table": "rent",
+  "about": "How a housing authority works out rent for a Housing Choice Voucher or public housing (HUD rules).",
+  "rows": [
+    {
+      "id": "ttp",
+      "plain": "Your total tenant payment is the highest of: 30% of your adjusted monthly income, 10% of your monthly income, any welfare payment set aside for housing, or the housing authority's minimum rent. It is rounded to the nearest dollar.",
+      "source": "https://www.law.cornell.edu/cfr/text/24/5.628",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "minimum_rent",
+      "plain": "A housing authority may set a minimum rent of up to $50 a month, and must grant a hardship exemption in some cases.",
+      "source": "https://www.law.cornell.edu/cfr/text/24/5.630",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "maximum": 50
+    },
+    {
+      "id": "deductions",
+      "plain": "Adjusted income is your yearly income minus these deductions: an amount for each dependent; an amount for an elderly or disabled family; for an elderly or disabled family, unreimbursed medical expenses above a share of yearly income; and reasonable child care costs that let a family member work or go to school.",
+      "source": "https://www.law.cornell.edu/cfr/text/24/5.611",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "amounts",
+      "plain": "HUD now changes the deduction amounts each year. The amounts used depend on the date of your rent review and on whether your housing authority has moved to the new rules.",
+      "source": "https://www.huduser.gov/portal/sites/default/files/datasets/inflationary-adjustments/CY2026-Revised-Amounts-And-Passbook-Rate.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "sets": [
+        {
+          "id": "before",
+          "name": "older rules",
+          "dependent": 480,
+          "elderly": 400,
+          "medical": 0.03
+        },
+        {
+          "id": "2025",
+          "name": "2024 and 2025 amounts",
+          "dependent": 480,
+          "elderly": 525,
+          "medical": 0.1
+        },
+        {
+          "id": "2026",
+          "name": "2026 amounts",
+          "dependent": 500,
+          "elderly": 550,
+          "medical": 0.1
+        },
+        {
+          "id": "2027",
+          "name": "2027 amounts",
+          "dependent": 525,
+          "elderly": 575,
+          "medical": 0.1
+        }
+      ]
+    },
+    {
+      "id": "medical_phase",
+      "plain": "Families who had a medical deduction above 3% of income on January 1, 2024 move to the 10% level in steps: 5%, then 7.5% a year later, then 10%.",
+      "source": "https://www.law.cornell.edu/cfr/text/24/5.611",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "voucher",
+      "plain": "With a voucher, you pay your total tenant payment, plus any amount by which the rent and utility allowance together are above the housing authority's payment standard. The utility allowance comes off what you pay the owner when you pay utilities yourself.",
+      "source": "https://www.law.cornell.edu/cfr/text/24/982.505",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "public_housing",
+      "plain": "In public housing with income-based rent, your rent is your total tenant payment minus the utility allowance, if you pay utilities yourself.",
+      "source": "https://www.law.cornell.edu/cfr/text/24/960.253",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "interim",
+      "plain": "You can ask your housing authority to review your rent between yearly reviews because of any change. It may decline when your adjusted income is expected to drop by less than 10%, or by less than a lower threshold it has set.",
+      "source": "https://www.law.cornell.edu/cfr/text/24/982.516",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    }
+  ]
+}

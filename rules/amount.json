@@ -1,0 +1,57 @@
+{
+  "table": "amount",
+  "about": "What an overpayment notice must show, used by the month-by-month check.",
+  "rows": [
+    {
+      "id": "notice_contents",
+      "plain": "An overpayment notice must give the total overpayment and how and when it happened, including the monthly amount paid, the monthly amount that should have been paid, and why a different amount was due.",
+      "source": "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "chart",
+      "plain": "When an overpayment covers several months or amounts, the notice shows a chart of what was paid and what should have been paid for each period, and the total of each.",
+      "source": "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "example": [
+        [
+          "2023-02",
+          "2023-11",
+          1000,
+          500
+        ],
+        [
+          "2023-12",
+          "2024-11",
+          1500,
+          600
+        ],
+        [
+          "2024-12",
+          "2025-11",
+          2000,
+          700
+        ]
+      ],
+      "example_paid": 52000,
+      "example_due": 20600,
+      "example_overpaid": 31400
+    },
+    {
+      "id": "explanation",
+      "plain": "You can ask Social Security for an explanation of the overpayment.",
+      "source": "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "audit",
+      "plain": "Social Security's Inspector General reviewed overpayment notices and found that 46 percent of them did not meet the agency's own rules.",
+      "source": "https://oig.ssa.gov/audit-reports/2026-09-01-old-age-survivors-and-disability-insurance-overpayment-notices/",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    }
+  ]
+}

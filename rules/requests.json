@@ -1,0 +1,49 @@
+{
+  "table": "requests",
+  "about": "The three requests a person can make after an overpayment notice, and the official form for each.",
+  "rows": [
+    {
+      "id": "appeal",
+      "name": "Appeal",
+      "official_name": "Request for Reconsideration",
+      "form": "SSA-561",
+      "form_url": "https://www.ssa.gov/forms/ssa-561.html",
+      "online_url": "https://secure.ssa.gov/iApplNMD/start",
+      "when": "You think you were not overpaid, or the amount is wrong.",
+      "time_limit": "60 days from the date you received the notice. A later appeal needs a good reason.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10098.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "links_verified": true
+    },
+    {
+      "id": "waiver",
+      "name": "Waiver",
+      "official_name": "Request for Waiver of Overpayment Recovery",
+      "form": "SSA-632",
+      "form_url": "https://www.ssa.gov/forms/ssa-632.html",
+      "online_url": "https://www.ssa.gov/manage-benefits/resolve-overpayment/ask-us-waive-overpayment",
+      "when": "The overpayment was not your fault, and paying it back would cause hardship or be unfair for another reason.",
+      "time_limit": "No time limit. Asking within 30 days of the notice also holds off collection while Social Security decides.",
+      "phone_note": "When you ask for a waiver today, if the original overpayment is $2,000 or less and you believe it was not your fault, call Social Security or your local office. They may be able to process the waiver by phone.",
+      "source": "https://www.ssa.gov/forms/ssa-632-bk.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "links_verified": true
+    },
+    {
+      "id": "lower_rate",
+      "name": "Lower repayment rate",
+      "official_name": "Request for Change in Overpayment Recovery Rate",
+      "form": "SSA-634",
+      "form_url": "https://www.ssa.gov/forms/ssa-634.pdf",
+      "online_url": null,
+      "when": "You agree you owe the money, but the amount being taken each month leaves you unable to meet necessary living expenses.",
+      "time_limit": "No stated time limit.",
+      "source": "https://www.ssa.gov/forms/ssa-634.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "links_verified": true
+    }
+  ]
+}

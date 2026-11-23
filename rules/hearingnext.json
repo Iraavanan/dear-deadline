@@ -1,0 +1,65 @@
+{
+ "table": "hearingnext",
+ "about": "Preparing for a hearing and making sure a decision is carried out.",
+ "rows": [
+  {
+   "id": "snap_file",
+   "plain": "For a SNAP hearing, you can look at every document and record the state will use, before the hearing and during it.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.15",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "snap_rights",
+   "plain": "At a SNAP hearing you can bring witnesses, submit evidence, and question or refute any testimony or evidence.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.15",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "medicaid_rights",
+   "plain": "At a Medicaid hearing you can look at your case file and the documents the agency will use, before and during the hearing, bring witnesses, present your side and question witnesses.",
+   "source": "https://www.law.cornell.edu/cfr/text/42/431.242",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "snap_increase",
+   "plain": "If a SNAP hearing decision raises your benefits, the increase must reach your EBT account within 10 days of when the state receives the decision. The state may instead use your normal payment date if that is within 60 days of your hearing request.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.15",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "days": 10
+  },
+  {
+   "id": "snap_lost",
+   "plain": "If the decision says you were wrongly denied or underpaid, the benefits you lost must be given back.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.15",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "medicaid_fix",
+   "plain": "If a Medicaid hearing decision is in your favor, the agency must promptly make corrective payments, back to the date of the wrong action.",
+   "source": "https://www.law.cornell.edu/cfr/text/42/431.246",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "medicaid_time",
+   "plain": "A Medicaid hearing decision is ordinarily due within 90 days of the hearing request.",
+   "source": "https://www.law.cornell.edu/cfr/text/42/431.244",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "days": 90
+  },
+  {
+   "id": "snap_time",
+   "plain": "A SNAP hearing decision is due within 60 days of the hearing request.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.15",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "days": 60
+  }
+ ]
+}

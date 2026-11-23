@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Open data and embedding: Dear Deadline</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2313233B'/%3E%3Crect x='6' y='13' width='20' height='6' fill='%23FFDC4E'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="mast">
+    <p class="mast-name"><a href="/">Dear Deadline</a></p>
+    <details class="lang">
+      <summary>English</summary>
+      <div><p><b>English:</b> the full tool.</p><p><a href="/es" lang="es">Español: una página en español con lo más importante</a></p></div>
+    </details>
+    <p class="mast-note">An independent guide to benefit letters and bills: Social Security, Medicare, SNAP, Medicaid and housing. Not a government website.</p>
+  </header>
+
+  <main id="main">
+    <div class="sheet">
+      <h1 class="long">Open data, and putting the deadline calculator on your own site</h1>
+      <p class="lead">The rules this tool uses, its test letters and its code are free for anyone to check, reuse and build on.</p>
+      <p><a href="/">Back to the tool</a></p>
+
+      <h2>The rules, as data</h2>
+      <p>Every deadline, form and figure the tool uses is a row in a table, with the official page it came from and the date it was last checked against that page.</p>
+      <ul>
+        <li><a href="/open/rules.csv">Download the rules as a spreadsheet file (CSV)</a></li>
+        <li><a href="/api/rules">Read the rules as JSON</a></li>
+      </ul>
+      <div id="rules-count"><p class="small">Counting the rules…</p></div>
+
+      <h2>The deadline calculator, for your site</h2>
+      <p>Legal aid offices, libraries and community groups may place the small calculator below on their own pages. It asks for the kind of letter and the date on it, and shows the dates. It collects nothing.</p>
+      <label for="snippet">Copy this into your page</label>
+      <textarea id="snippet" class="paste code" readonly spellcheck="false" rows="4"></textarea>
+      <p class="small">It looks like this:</p>
+      <iframe id="preview" class="embed-preview" title="Preview of the deadline calculator" src="/embed" loading="lazy"></iframe>
+      <p class="small">You can also ask for the dates directly: send <code>{"letter": "overpayment", "notice_date": "2026-11-02"}</code> to <code>/api/deadlines</code>. The letter can be <code>overpayment</code>, <code>disability-ended</code> or <code>decision-appeal</code>.</p>
+
+      <h2>Invented test letters</h2>
+      <p>A set of invented Social Security letters with the right answers written down, for testing software that reads government letters. None is a real letter and none is about a real person.</p>
+      <div id="benchmark"><p class="small">Loading the figures…</p></div>
+      <p><a href="/open/letters.jsonl">Download the letters and answers</a></p>
+
+      <h2>Held-out test: how well does software read these letters?</h2>
+      <p>150 more invented letters, written after the reader was finished, with traps that cost people money: a monthly amount that is not the total, a letter with no date, a total that does not match its own figures, and letters that are not overpayment notices at all. Any tool can take the same test, including AI models and letter-explainer apps. A number given where the letter states none is counted as invented.</p>
+      <div id="heldout"><p class="small">Loading the results…</p></div>
+      <p><a href="/open/heldout-letters.jsonl">Download the letters and answers</a> · <a href="/open/heldout-protocol">How to test a tool</a></p>
+
+      <h2>"They asked again": does a tool mistake a receipt for acceptance?</h2>
+      <p>24 invented Florida SNAP cases where a new notice asks again for proof: two household members, two paydays, a receipt that leaves an item out, a request repeated word for word, and a due date that has passed. The right answers were written before the matcher was built. Three measures: missing items found, wrong-person or wrong-period matches, and receipts treated as the agency accepting a document. The simple checklist rule (anything of the same kind sent counts as done) is scored on the same cases.</p>
+      <div id="askedagain"><p class="small">Loading the results…</p></div>
+      <p><a href="/open/asked-again-cases.json">Download the cases and answers</a></p>
+
+      <h2>How readable are Social Security's overpayment notice paragraphs?</h2>
+      <p>Social Security's own notice guide asks for the sixth to eighth-grade reading level and says to check each paragraph's Flesch-Kincaid grade. We scored the paragraph templates its notice system uses for overpayments, recovery, refunds, waivers and appeals, as published in its public manual.</p>
+      <div id="readability"><p class="small">Loading the scores…</p></div>
+      <p><a href="/open/notice-readability.json">Download every paragraph's score</a></p>
+
+      <h2>Checked against the agencies' own worked examples</h2>
+      <p>HUD and Medicare publish worked examples with the right answers. Each one is a fixed test of this tool. Cases the tool does not cover are listed too.</p>
+      <div id="golden"><p class="small">Loading the results…</p></div>
+      <p><a href="/open/golden.json">Download the results</a></p>
+
+      <h2>How much the tool is used</h2>
+      <div id="stats"><p class="small">Loading the counts…</p></div>
+      <p class="small">The tool counts how many times each part is opened and finished. It keeps a number per day and nothing about any visitor. <a href="/api/stats">Read the counts as JSON</a>.</p>
+
+      <h2>Using and citing it</h2>
+      <p>The code is under the MIT license. The rule tables and test letters may be reused with credit. If you use them in research, cite: Shirshak J. Thapa, <i>Dear Deadline: rule tables and invented test letters for benefit notices</i>, 2026.</p>
+      <p class="small">The rules are a reading of Social Security's public pages by an independent project. They are not official and not legal advice. Check the source link on each row before relying on it.</p>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-in">
+      <p class="foot-lead">This tool is independent. It is not affiliated with the Social Security Administration, Medicare, HUD, or any state agency.</p>
+      <p class="foot-small"><a href="/">The tool</a> &nbsp; <a href="/about">About, privacy and testing</a> &nbsp; <a href="/helpers">Helping someone else</a> &nbsp; <a href="/open">Open data and embedding</a></p>
+      <p class="foot-small">A project by Shirshak J. Thapa.</p>
+    </div>
+  </footer>
+  <script src="/pages.js"></script>
+</body>
+</html>

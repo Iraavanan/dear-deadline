@@ -1,0 +1,17 @@
+#inspection .sample-text { white-space: pre-wrap; overflow-wrap: anywhere; }
+.worksheet-result .table-wrap, #inspection .table-wrap { overflow-x: auto; }
+.worksheet-result .plain th, #inspection .plain th { text-align: left; }
+.worksheet-result .plain td, #inspection .plain td { overflow-wrap: anywhere; }
+.worksheet-result section { margin-top: 1rem; }
+@media print {
+  body:has(.worksheet-result) { min-height: 0; }
+  body:has(.worksheet-result) .sheet { margin: 0; }
+  body:has(.worksheet-result) .foot, body:has(.worksheet-result) .mast, .worksheet-sources { display: none; }
+  .worksheet-result { font-size: 10pt; line-height: 1.2; }
+  .worksheet-result h1 { font-size: 19pt; line-height: 1.1; margin: 0 0 6pt; }
+  .worksheet-result h2 { font-size: 12pt; margin: 7pt 0 2pt; }
+  .worksheet-result .lead { font-size: 10.5pt; padding: 0; margin: 4pt 0; }
+  .worksheet-result section, .worksheet-result ul, .worksheet-result li { margin-top: 2pt; margin-bottom: 2pt; }
+  .worksheet-result .plain { font-size: 9pt; width: 100%; }
+  .worksheet-result .plain td, .worksheet-result .plain th { padding: 3pt; }
+}

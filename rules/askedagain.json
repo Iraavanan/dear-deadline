@@ -1,0 +1,59 @@
+{
+ "table": "askedagain",
+ "about": "When an agency asks again for proof the person already sent.",
+ "rows": [
+  {
+   "id": "ten_days",
+   "plain": "For SNAP, the state must give you at least 10 days to provide proof it asks for.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.2",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "days": 10
+  },
+  {
+   "id": "notice",
+   "plain": "The state's request for proof must say, in plain language, which documents to send and the period they should cover.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.2",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "help",
+   "plain": "If you are cooperating but cannot get a document, the state must help you get the proof, for example by contacting your employer itself.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.2",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "unchanged",
+   "plain": "At SNAP renewal, information that has not changed is not checked again unless it is incomplete, inaccurate, inconsistent or outdated. You can ask why something is needed again.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.2",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "receipt",
+   "plain": "A receipt or an upload in your account shows the agency got something. Agencies say documents must still be reviewed for completeness and accepted by a worker.",
+   "source": "https://www.nyc.gov/site/hra/help/access-hra-frequently-asked-questions.page",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "fl_employer",
+   "plain": "Florida DCF's Verification of Employment/Loss of Income form can be filled in by your employer when you cannot get pay stubs.",
+   "source": "https://eds.myflfamilies.com/DCFFormsInternet/Search/OpenDCFForm.aspx?FormId=197",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "sources": [
+    "https://www.myflfamilies.com/services/public-assistance/additional-resources-and-services/ess-forms"
+   ]
+  },
+  {
+   "id": "ssa_letter",
+   "plain": "For Social Security or SSI income, a benefit verification letter is proof of income. Download it from your my Social Security account, or call 1-800-772-1213 any time and say \"proof of income\".",
+   "source": "https://www.ssa.gov/manage-benefits/get-benefit-letter",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  }
+ ]
+}

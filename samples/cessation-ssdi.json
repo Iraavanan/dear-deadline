@@ -1,0 +1,24 @@
+{
+  "id": "cessation-ssdi",
+  "module": "cessation",
+  "title": "My disability benefits are ending after a review",
+  "story": "Dana gets Social Security disability and Medicare. A review decided her health has improved, and she disagrees.",
+  "notice_days_ago": 4,
+  "facts": {
+    "letter_kind": "medical",
+    "benefit_kind": "ssdi"
+  },
+  "answers": {
+    "still_disabled": "yes",
+    "could_repay": "no",
+    "has_medicare": "yes",
+    "others_on_record": "yes",
+    "new_evidence": "yes"
+  },
+  "statements": {
+    "why_disagree": "My condition has not improved. I still cannot stand or sit for more than a short time.",
+    "treatment": "I see my specialist every two months and started a new medicine in the summer.",
+    "late_reason": ""
+  },
+  "notice_text": "SAMPLE NOTICE - MADE UP FOR PRACTICE - NOT A REAL NOTICE\n\nNotice of Disability Cessation\n\nDear Dana Example,\n\nWe reviewed your case and decided that your health has improved and you are no longer disabled. Your disability benefits will stop.\n\nIf you disagree, you have 60 days to ask for an appeal. You have only 10 days to ask us to continue your payments during your appeal.\n\n(The name and dates on this page are invented.)"
+}

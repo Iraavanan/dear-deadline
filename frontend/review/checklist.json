@@ -1,0 +1,250 @@
+{
+ "table": "noticecheck",
+ "about": "What Social Security's own rules say every initial overpayment notice must contain, and what a person can do when one is missing a part.",
+ "rows": [
+  {
+   "id": "total",
+   "applies": [
+    "t2",
+    "ssi"
+   ],
+   "ask": "The total amount you were overpaid",
+   "missing": "the total amount of the overpayment",
+   "refs": {
+    "t2": "GN 02201.009 B.1",
+    "ssi": "SI 02201.025 A.1"
+   },
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+   "sources": [
+    "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+    "https://secure.ssa.gov/poms.nsf/lnx/0502201025"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22",
+   "note": "Required contents of an initial overpayment notice. Retirement, survivor and disability benefits (Title II): POMS GN 02201.009 B, TN 86 (09-26). SSI (Title XVI): POMS SI 02201.025 A, TN 23 (12-24)."
+  },
+  {
+   "id": "months",
+   "applies": [
+    "t2",
+    "ssi"
+   ],
+   "ask": "The months the overpayment happened in",
+   "missing": "the months involved",
+   "refs": {
+    "t2": "GN 02201.009 B.1",
+    "ssi": "SI 02201.025 A.1"
+   },
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+   "sources": [
+    "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+    "https://secure.ssa.gov/poms.nsf/lnx/0502201025"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "paid_due",
+   "applies": [
+    "t2",
+    "ssi"
+   ],
+   "ask": "What you were paid and what you should have been paid, for each month (a single sentence is enough when only one month or one amount is involved)",
+   "missing": "what I was paid and what I should have been paid, for each month",
+   "refs": {
+    "t2": "GN 02201.009 B.1",
+    "ssi": "SI 02201.025 A.2"
+   },
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+   "sources": [
+    "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+    "https://secure.ssa.gov/poms.nsf/lnx/0502201025"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "cause",
+   "applies": [
+    "t2",
+    "ssi"
+   ],
+   "ask": "Why a different amount was due: what happened to cause the overpayment",
+   "missing": "the cause: why a different amount was due",
+   "refs": {
+    "t2": "GN 02201.009 B.1",
+    "ssi": "SI 02201.025 A.1"
+   },
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+   "sources": [
+    "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+    "https://secure.ssa.gov/poms.nsf/lnx/0502201025"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "recon",
+   "applies": [
+    "t2",
+    "ssi"
+   ],
+   "ask": "Your right to ask for reconsideration if you think the overpayment is wrong, and how to ask",
+   "missing": "my right to ask for reconsideration, and how to ask",
+   "refs": {
+    "t2": "GN 02201.009 B.2",
+    "ssi": "SI 02201.025 A.7, A.9"
+   },
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+   "sources": [
+    "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+    "https://secure.ssa.gov/poms.nsf/lnx/0502201025"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "waiver",
+   "applies": [
+    "t2",
+    "ssi"
+   ],
+   "ask": "Your right to ask Social Security not to collect the money (a waiver), and how to ask",
+   "missing": "my right to ask for a waiver, and how to ask",
+   "refs": {
+    "t2": "GN 02201.009 B.3",
+    "ssi": "SI 02201.025 A.6, A.8"
+   },
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+   "sources": [
+    "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+    "https://secure.ssa.gov/poms.nsf/lnx/0502201025"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "refund",
+   "applies": [
+    "t2",
+    "ssi"
+   ],
+   "ask": "A request to pay back the full amount",
+   "missing": "the request to pay back the full amount",
+   "refs": {
+    "t2": "GN 02201.009 B.4",
+    "ssi": "SI 02201.025 A.3"
+   },
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+   "sources": [
+    "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+    "https://secure.ssa.gov/poms.nsf/lnx/0502201025"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "withholding",
+   "applies": [
+    "t2",
+    "ssi"
+   ],
+   "ask": "What will be held back from your payments if you do not pay it all back (for SSI: 10% of the payment, if you still get SSI)",
+   "missing": "what will be held back from my payments if I do not repay",
+   "refs": {
+    "t2": "GN 02201.009 B.5",
+    "ssi": "SI 02201.025 A.4"
+   },
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+   "sources": [
+    "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+    "https://secure.ssa.gov/poms.nsf/lnx/0502201025"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "start",
+   "applies": [
+    "ssi"
+   ],
+   "ask": "The month and year the holding back will start",
+   "missing": "the month and year the holding back will start",
+   "refs": {
+    "ssi": "SI 02201.025 A.5"
+   },
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0502201025",
+   "sources": [
+    "https://secure.ssa.gov/poms.nsf/lnx/0502201025"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "options",
+   "applies": [
+    "t2",
+    "ssi"
+   ],
+   "ask": "Other ways to repay: a different amount held back, monthly installments, or recovery from another Social Security payment",
+   "missing": "the other ways to repay: a different amount, installments, or recovery from another payment",
+   "refs": {
+    "t2": "GN 02201.009 B.6",
+    "ssi": "SI 02201.025 A.10-A.12"
+   },
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+   "sources": [
+    "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+    "https://secure.ssa.gov/poms.nsf/lnx/0502201025"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "explain",
+   "plain": "You can ask Social Security to explain an overpayment, by phone, in person or in writing, and ask for the explanation in writing. Its own procedure for retirement, survivor and disability benefits says: \"We must stop recovery efforts until we provide the overpaid person an explanation.\"",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202201017",
+   "ref": "GN 02201.017",
+   "applies": [
+    "t2"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "explain_deadline",
+   "plain": "Social Security's explanation procedure does not say that asking for an explanation changes the 60-day time limit to ask for reconsideration. If you think the overpayment is wrong, you can ask for reconsideration at the same time.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202201017",
+   "ref": "GN 02201.017",
+   "applies": [
+    "t2",
+    "ssi"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "new_notice",
+   "plain": "Social Security's instructions to its staff say that if a notice was not sent, was inadequate, or was not received at least 30 days before money was held back, staff send a new notice with all the required information and repay any money already held back.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202201009",
+   "ref": "GN 02201.009",
+   "applies": [
+    "t2"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "audit",
+   "plain": "In September 2026, Social Security's Inspector General reported that 46% of the overpayment notices it reviewed did not meet these rules. The most common gaps were how and when the overpayment happened, and the right to ask for reconsideration or a waiver.",
+   "source": "https://oig.ssa.gov/~assets/audits/summary/152407summary.pdf",
+   "ref": "SSA OIG report 152407",
+   "applies": [
+    "t2",
+    "ssi"
+   ],
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  }
+ ]
+}

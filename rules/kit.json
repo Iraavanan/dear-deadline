@@ -1,0 +1,48 @@
+{
+  "table": "kit",
+  "about": "Fixed content used to build the take-away kit: where to get help, how to reach Social Security, and what to gather for each request.",
+  "rows": [
+    {
+      "id": "contact",
+      "phone": "1-800-772-1213",
+      "tty": "1-800-325-0778",
+      "office_locator": "https://www.ssa.gov/locator/",
+      "contact_page": "https://www.ssa.gov/agency/contact/",
+      "source": "https://www.ssa.gov/pubs/EN-05-10098.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "documents",
+      "appeal": [
+        "The overpayment notice (every page)",
+        "Anything that shows the amount or the months are wrong: pay stubs, W-2s, award letters, bank statements",
+        "Proof of when and how you reported a change: letters, receipts, call notes with dates and names"
+      ],
+      "waiver": [
+        "The overpayment notice (every page)",
+        "Proof of when and how you reported a change, if you did",
+        "Proof of monthly income: benefit letters, pay stubs",
+        "Proof of monthly expenses: rent or mortgage, utilities, food, medical bills, insurance",
+        "Recent bank statements"
+      ],
+      "lower_rate": [
+        "The overpayment notice (every page)",
+        "Proof of monthly income: benefit letters, pay stubs",
+        "Proof of monthly expenses: rent or mortgage, utilities, food, medical bills, insurance"
+      ],
+      "source": "https://www.ssa.gov/pubs/EN-05-10098.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "help",
+      "legal_aid_finder": "https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help",
+      "plain": "Legal aid offices help with Social Security overpayments, usually at no cost if your income is low. This tool gives information, not legal advice.",
+      "source": "https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "links_verified": true
+    }
+  ]
+}

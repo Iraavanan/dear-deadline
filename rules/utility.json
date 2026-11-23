@@ -1,0 +1,59 @@
+{
+  "table": "utility",
+  "about": "Florida electric and gas shutoff notices: the notice rule, medically essential service, crisis help and complaints.",
+  "rows": [
+    {
+      "id": "notice",
+      "plain": "For electric companies regulated by the Florida Public Service Commission, service can be shut off for an unpaid bill only after at least 5 working days' written notice, separate from the bill.",
+      "source": "https://www.law.cornell.edu/regulations/florida/Fla-Admin-Code-Ann-R-25-6-105",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "working_days": 5
+    },
+    {
+      "id": "who",
+      "plain": "The Public Service Commission sets these rules for the investor-owned electric and gas companies. Utilities run by a city or a cooperative set their own rules for shutoffs, so ask yours which apply.",
+      "source": "https://floridapsc.com/pscfiles/website-files/PDF/Publications/Consumer/Brochure/WhereToFindHelp-old1.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "medical",
+      "plain": "If someone in the home needs electricity for medical reasons, a doctor can certify it as medically essential. The utility must then try to reach you by phone at least 24 hours before a shutoff, and visit by 4 p.m. the day before if it cannot reach you. Ask your utility how to register.",
+      "source": "https://codes.findlaw.com/fl/title-xxvii-railroads-and-other-regulated-utilities/fl-st-sect-366-15/",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "dispute",
+      "plain": "If you file a complaint with the Public Service Commission about a bill, the company may not shut off service over the disputed amount while the complaint is open. Call 1-800-342-3552.",
+      "source": "https://www.law.cornell.edu/regulations/florida/Fla-Admin-Code-Ann-R-25-22-032",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "phone": "1-800-342-3552"
+    },
+    {
+      "id": "liheap",
+      "plain": "Crisis help with an electric or gas bill comes from LIHEAP, run in Florida by FloridaCommerce through a local community action agency in each county. It can be used for a disconnection notice, deposits and reconnection. Call 850-717-8450 or dial 211 to find your local agency.",
+      "source": "https://liheapch.ncat.org/node/1220",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "phone": "850-717-8450"
+    },
+    {
+      "id": "liheap_bring",
+      "plain": "When you apply, bring your most recent energy bill and the shutoff or final notice.",
+      "source": "https://benefitscheckup.org/program/utility_fl_liheap",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "elder",
+      "plain": "If someone in the home is 60 or older, the Emergency Home Energy Assistance for the Elderly Program may help. Call the Elder Helpline: 1-800-963-5337.",
+      "source": "https://www.floridapsc.com/pscfiles/website-files/PDF/Publications/General/Guide_Utility_Assistance_Florida.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "phone": "1-800-963-5337"
+    }
+  ]
+}

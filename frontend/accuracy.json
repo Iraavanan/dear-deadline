@@ -1,0 +1,78 @@
+{
+ "letter_kind": {
+  "right": 40,
+  "total": 40
+ },
+ "disability_ended": {
+  "notices": 10,
+  "date_read": 10,
+  "identity_numbers_left_visible": 0,
+  "dates_right": 10
+ },
+ "tool_version": "0.14.1",
+ "measured_on": "2026-11-23",
+ "notices": 30,
+ "reading": {
+  "fields_right": 120,
+  "fields_total": 120,
+  "by_field": {
+   "notice_date": {
+    "right": 30,
+    "total": 30
+   },
+   "overpaid_amount": {
+    "right": 30,
+    "total": 30
+   },
+   "period": {
+    "right": 30,
+    "total": 30
+   },
+   "benefit_type": {
+    "right": 30,
+    "total": 30
+   }
+  },
+  "by_layout": {
+   "formal-letter": {
+    "right": 24,
+    "total": 24
+   },
+   "numeric-date": {
+    "right": 24,
+    "total": 24
+   },
+   "day-first": {
+    "right": 24,
+    "total": 24
+   },
+   "withholding-first": {
+    "right": 24,
+    "total": 24
+   },
+   "typed-summary": {
+    "right": 24,
+    "total": 24
+   }
+  },
+  "misses": []
+ },
+ "identity_numbers": {
+  "fully_blacked_out": 30,
+  "total": 30
+ },
+ "requests": {
+  "right": 30,
+  "total": 30
+ },
+ "dates": {
+  "right": 30,
+  "total": 30
+ },
+ "first_run": {
+  "fields_right": 108,
+  "fields_total": 120,
+  "note": "On the first run the reader took a later deadline for the notice date in one wording and a monthly withholding figure for the overpayment in another. Both were fixed, and the set was run again."
+ },
+ "caveat": "These notices were invented by the tool's author. Real notices vary more, so reading accuracy on real notices will be lower. Every value read is shown to the person to confirm or correct."
+}

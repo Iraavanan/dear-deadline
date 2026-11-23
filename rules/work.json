@@ -1,0 +1,154 @@
+{
+ "table": "work",
+ "about": "Yearly limits and rules for working while receiving retirement, survivor or disability benefits. Yearly figures are separate dated rows.",
+ "rows": [
+  {
+   "id": "retirement_test",
+   "year": 2025,
+   "lower_annual": 23400,
+   "lower_monthly": 1950,
+   "higher_annual": 62160,
+   "higher_monthly": 5180,
+   "plain": "In 2025, if you are under full retirement age all year, Social Security withholds $1 of benefits for every $2 you earn above $23,400. In the year you reach full retirement age the limit is $62,160, $1 is withheld for every $3 above it, and only earnings before the month you reach that age count.",
+   "source": "https://www.ssa.gov/oact/cola/rtea.html",
+   "effective_from": "2025-01-01",
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "retirement_test",
+   "year": 2026,
+   "lower_annual": 24480,
+   "lower_monthly": 2040,
+   "higher_annual": 65160,
+   "higher_monthly": 5430,
+   "plain": "In 2026, if you are under full retirement age all year, Social Security withholds $1 of benefits for every $2 you earn above $24,480. In the year you reach full retirement age the limit is $65,160, $1 is withheld for every $3 above it, and only earnings before the month you reach that age count.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10069.pdf",
+   "effective_from": "2026-01-01",
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "retirement_no_limit",
+   "plain": "From the month you reach full retirement age, you keep your benefits whatever you earn. Full retirement age is 67 for people born on January 2, 1960 or later, and earlier for people born before that.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10069.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "retirement_how_withheld",
+   "plain": "Social Security withholds whole monthly payments, starting in January, until the amount is covered. Anything held beyond the amount is paid back the next year.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10069.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "retirement_not_lost",
+   "plain": "Withheld benefits are not lost. Your benefit goes up at full retirement age to account for the months withheld.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10069.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "retirement_first_year",
+   "plain": "In the first year of retirement a monthly rule can apply: you can get a full payment for any month your earnings are at or under the monthly amount, whatever your total for the year.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10069.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "retirement_what_counts",
+   "plain": "Wages count, and for self-employment only net earnings count. Pensions, annuities, investment earnings, interest, capital gains and other government benefits do not count.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10069.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "retirement_report",
+   "plain": "Tell Social Security right away if your earnings for the year will differ from your estimate, because benefits are adjusted from that estimate. You can do it online, by phone, or at an office.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10069.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "disability_work",
+   "year": 2025,
+   "twp": 1160,
+   "sga": 1620,
+   "sga_blind": 2700,
+   "plain": "In 2025, a month with earnings over $1,160 counts as a trial work month, and earnings over $1,620 a month ($2,700 if blind) count as substantial work.",
+   "source": "https://www.ssa.gov/oact/cola/sga.html",
+   "effective_from": "2025-01-01",
+   "checked_on": "2026-11-23",
+   "sources": [
+    "https://www.ssa.gov/oact/cola/sga.html",
+    "https://www.ssa.gov/oact/cola/twp.html"
+   ]
+  },
+  {
+   "id": "disability_work",
+   "year": 2026,
+   "twp": 1210,
+   "sga": 1690,
+   "sga_blind": 2830,
+   "plain": "In 2026, a month with earnings over $1,210 counts as a trial work month, and earnings over $1,690 a month ($2,830 if blind) count as substantial work.",
+   "source": "https://www.ssa.gov/redbook/newfor2026.htm",
+   "effective_from": "2026-01-01",
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "disability_twp",
+   "months": 9,
+   "window": 60,
+   "plain": "The trial work period is 9 months, not necessarily in a row, within a 60-month window. Full disability benefits are paid during it whatever you earn, if you report your work and still have a disabling condition.",
+   "source": "https://www.ssa.gov/redbook/eng/ssdi-only-employment-supports.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "disability_epe",
+   "months": 36,
+   "grace": 3,
+   "plain": "After the trial work period comes a 36-month period. In it, benefits are paid for months your earnings are under the substantial-work level and suspended for months above it. The first time work is above that level, benefits are still paid for that month and the next 2 months.",
+   "source": "https://www.ssa.gov/redbook/eng/ssdi-only-employment-supports.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "disability_after_epe",
+   "plain": "After the 36 months, benefits end if you work above the substantial-work level. If you stop that work within 5 years, you may be able to restart benefits quickly.",
+   "source": "https://www.ssa.gov/redbook/eng/ssdi-only-employment-supports.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "disability_report",
+   "plain": "Tell Social Security right away when you start or stop work, or when your duties, hours or pay change. You can report by phone, at a local office, or through your online Social Security account. Social Security gives you a receipt; keep it.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10095.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "disability_hold",
+   "plain": "You can ask Social Security to hold your payments while it reviews substantial earnings, to avoid an overpayment.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10095.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "disability_help",
+   "phone": "1-866-968-7842",
+   "tty": "1-866-833-2967",
+   "url": "https://choosework.ssa.gov",
+   "plain": "The Ticket to Work Help Line can explain how work affects your benefits: 1-866-968-7842 (TTY 1-866-833-2967).",
+   "source": "https://www.ssa.gov/pubs/EN-05-10095.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "ssi_report",
+   "plain": "SSI follows different rules. People on SSI report earnings by the sixth day of the next month by phone, or bring pay stubs to a local office by the 10th.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10095.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  }
+ ]
+}

@@ -1,0 +1,391 @@
+{
+  "table": "scam",
+  "about": "Warning signs of government imposter scams about Social Security, Medicare, SNAP, Medicaid and housing help, in the words of the agencies and the FTC. Used by the on-device check; a message is never called genuine.",
+  "rows": [
+    {
+      "id": "pay_method",
+      "ask": "It told me to pay with gift cards, a prepaid card, cryptocurrency, a wire transfer, gold or cash",
+      "plain": "Scammers tell you to pay in a specific way. Social Security says: do not pay with gift cards, precious metals, prepaid debit cards, cryptocurrency, wire transfers or cash.",
+      "source": "https://www.ssa.gov/scam/",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "programs": [
+        "ssa",
+        "medicare",
+        "snap",
+        "medicaid",
+        "housing",
+        "other"
+      ],
+      "other": {
+        "plain": "No government agency will demand that you pay with gift cards, a wire transfer, cryptocurrency or a payment app. Only a scammer insists on that.",
+        "source": "https://consumer.ftc.gov/consumer-alerts/2022/11/fbi-wont-ask-you-money-thats-scam"
+      }
+    },
+    {
+      "id": "pressure",
+      "ask": "It threatened me or said I must act right away",
+      "plain": "Scammers pressure you to act immediately. Social Security will never threaten, scare or pressure you to take an immediate action.",
+      "source": "https://oig.ssa.gov/scam-awareness/scam-alert/",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "programs": [
+        "ssa",
+        "medicare",
+        "snap",
+        "medicaid",
+        "housing",
+        "other"
+      ],
+      "other": {
+        "plain": "Real government staff won't call to threaten to arrest you, freeze your accounts or take your property, even if you owe money.",
+        "source": "https://consumer.ftc.gov/consumer-alerts/2022/11/fbi-wont-ask-you-money-thats-scam"
+      }
+    },
+    {
+      "id": "problem_or_prize",
+      "ask": "It said there is a problem with my number, card, account or benefits, or that I won something",
+      "plain": "Scammers claim there is a problem or a prize.",
+      "source": "https://www.ssa.gov/scam/",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "programs": [
+        "ssa",
+        "medicare",
+        "snap",
+        "medicaid",
+        "housing",
+        "other"
+      ],
+      "other": {
+        "plain": "Scammers pretend to be from an agency you know, often saying there is a problem or a prize. The FTC notes that it, for one, never runs sweepstakes or lotteries.",
+        "source": "https://www.ftc.gov/about-ftc/office-inspector-general/ftc-imposter-scams"
+      }
+    },
+    {
+      "id": "personal_info",
+      "ask": "It asked for my Social Security number, Medicare number, bank details, card number or a password",
+      "plain": "Social Security will never ask for sensitive or personal information through social media, email or text message.",
+      "source": "https://www.ssa.gov/scam/",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "programs": [
+        "ssa",
+        "medicare",
+        "snap",
+        "medicaid",
+        "housing",
+        "other"
+      ],
+      "other": {
+        "plain": "Government agencies will never call, email, text, or message you on social media to ask for money or personal information.",
+        "source": "https://www.consumer.ftc.gov/articles/how-avoid-government-impersonation-scam"
+      }
+    },
+    {
+      "id": "protect_money",
+      "ask": "It told me to move my money somewhere to keep it safe",
+      "plain": "Social Security and its Inspector General will never ask you to transfer money to protect it.",
+      "source": "https://oig.ssa.gov/scam-awareness/scam-alert/",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "programs": [
+        "ssa",
+        "medicare",
+        "snap",
+        "medicaid",
+        "housing",
+        "other"
+      ],
+      "other": {
+        "plain": "No one from the government will tell you to move your money to keep it safe. Only a scammer will.",
+        "source": "https://www.ssa.gov/news/en/mip/2026-11-01-e.html"
+      }
+    },
+    {
+      "id": "meet_in_person",
+      "ask": "Someone wants to meet me or send a courier to collect cash, cards or gold",
+      "plain": "They will never meet you in person to exchange cash, gift cards, cryptocurrency or gold bars.",
+      "source": "https://oig.ssa.gov/scam-awareness/scam-alert/",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "programs": [
+        "ssa",
+        "medicare",
+        "snap",
+        "medicaid",
+        "housing",
+        "other"
+      ],
+      "other": {
+        "plain": "Someone who works for the government won't tell you to get cash or gold and give it to someone.",
+        "source": "https://consumer.ftc.gov/node/85621"
+      }
+    },
+    {
+      "id": "secrecy",
+      "ask": "It told me to keep this secret",
+      "plain": "They will never require you to keep information secret or confidential.",
+      "source": "https://oig.ssa.gov/scam-awareness/scam-alert/",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "programs": [
+        "ssa",
+        "medicare",
+        "snap",
+        "medicaid",
+        "housing",
+        "other"
+      ],
+      "other": {
+        "plain": "Scammers often tell you to keep the conversation secret from your friends and family.",
+        "source": "https://oig.ftc.gov/ftc-imposter-scams"
+      }
+    },
+    {
+      "id": "badge",
+      "ask": "It sent a photo of a badge or an ID card",
+      "plain": "Federal law enforcement will never send photographs of credentials or badges to demand any kind of payment.",
+      "source": "https://www.ssa.gov/scam/",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "programs": [
+        "ssa",
+        "medicare",
+        "snap",
+        "medicaid",
+        "housing",
+        "other"
+      ],
+      "other": {
+        "plain": "Federal law enforcement will never send photographs of credentials or badges to demand any kind of payment.",
+        "source": "https://www.ssa.gov/scam/"
+      }
+    },
+    {
+      "id": "link",
+      "ask": "It has a link or an attachment I was told to open",
+      "plain": "Social Security's advice for a suspicious message: do not click links or open attachments.",
+      "source": "https://www.ssa.gov/scam/",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "programs": [
+        "ssa",
+        "medicare",
+        "snap",
+        "medicaid",
+        "housing",
+        "other"
+      ],
+      "other": {
+        "plain": "Don't click on links in unexpected emails or text messages.",
+        "source": "https://www.militaryconsumer.gov/blog/it-really-irs"
+      }
+    },
+    {
+      "id": "what_to_do",
+      "plain": "Pause. Hang up or ignore the message. Do not click links or open attachments, do not pay, and do not share personal information with an unexpected contact about a problem you do not recognize.",
+      "source": "https://www.ssa.gov/scam/",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "report",
+      "url": "https://oig.ssa.gov/report",
+      "ftc": "https://reportfraud.ftc.gov/",
+      "plain": "Report a Social Security-related scam to the Inspector General.",
+      "source": "https://www.ssa.gov/scam/",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "verify",
+      "phone": "1-800-772-1213",
+      "tty": "1-800-325-0778",
+      "account": "https://www.ssa.gov/myaccount/",
+      "plain": "To check whether a letter or call is real, contact Social Security yourself, using the phone number or website you look up yourself and not one given in the message.",
+      "source": "https://www.ssa.gov/scam/",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "mc_sell",
+      "programs": [
+        "medicare"
+      ],
+      "ask": "Someone said they were from Medicare and tried to sell me something, or wanted to come to my home",
+      "plain": "Medicare will not call you to sell you anything, and will not visit your home.",
+      "source": "https://www.medicare.gov/basics/reporting-medicare-fraud-and-abuse",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "mc_number",
+      "programs": [
+        "medicare"
+      ],
+      "ask": "A caller I did not call first asked for my Medicare number or other personal details",
+      "plain": "Medicare will not call you or ask for personal information, except in limited cases, such as returning a call you made or after you reported fraud.",
+      "source": "https://www.medicare.gov/basics/reporting-medicare-fraud-and-abuse",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "mc_free",
+      "programs": [
+        "medicare"
+      ],
+      "ask": "It offered free equipment, tests, care or a gift if I share my Medicare number",
+      "plain": "Medicare's advice: don't accept money or gifts in exchange for free medical care, and share your Medicare number only with your doctor or people who should have it.",
+      "source": "https://www.medicare.gov/basics/reporting-medicare-fraud-and-abuse",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "mc_plan_phone",
+      "programs": [
+        "medicare"
+      ],
+      "ask": "It wanted me to join or switch a Medicare plan on a call I did not ask for",
+      "plain": "Medicare's advice: don't join a Medicare health or drug plan over the phone unless you called and asked for help.",
+      "source": "https://www.medicare.gov/basics/reporting-medicare-fraud-and-abuse",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "snap_pin",
+      "programs": [
+        "snap"
+      ],
+      "ask": "It asked for my EBT card number or PIN",
+      "plain": "State agencies and EBT processors will never call or text to ask for your PIN or card number.",
+      "source": "https://www.fna.usda.gov/snap/stolen-benefits",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "snap_locked",
+      "programs": [
+        "snap"
+      ],
+      "ask": "It says my EBT card is locked or my benefits are stopped, and gives a number or link to fix it",
+      "plain": "USDA has warned of fake text messages saying a SNAP EBT card has been locked, with a phone number to call for help.",
+      "source": "https://www.fns.usda.gov/snap/scam-alerts",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "md_pay",
+      "programs": [
+        "medicaid"
+      ],
+      "ask": "It asked me to pay, or for card or bank details, to keep, renew or restart Medicaid",
+      "plain": "Medicaid won't charge you to renew or enroll. A state Medicaid program will never threaten you, or ask for your credit card information or a payment, to keep or qualify for coverage.",
+      "source": "https://www.medicaid.gov/sites/default/files/2023-06/say-no-to-scams-language-for-states.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "h_fee",
+      "programs": [
+        "housing"
+      ],
+      "ask": "It asks for a fee to apply, or to get on a Section 8 or housing waiting list",
+      "plain": "Never pay anyone to be added to an assisted housing waitlist. Housing authorities and government agencies will never ask you to pay to join a waitlist or to be admitted to a housing assistance program.",
+      "source": "https://hudoig.gov/sites/default/files/2024-08/fraud_bulletin-fake_hcv_waitlists_508.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "h_contact",
+      "programs": [
+        "housing"
+      ],
+      "ask": "Someone contacted me by phone, email or social media to suggest I join a waiting list",
+      "plain": "Housing authorities do not charge fees, and they won't reach out to you by phone or email to suggest that you join a waiting list.",
+      "source": "https://consumer.ftc.gov/node/76896",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "verify_medicare",
+      "plain": "To check, call Medicare yourself at 1-800-MEDICARE (1-800-633-4227), or look at your claims in your Medicare.gov account. If it is about a Medicare Advantage or drug plan, call the number on your plan card.",
+      "source": "https://www.medicare.gov/basics/reporting-medicare-fraud-and-abuse",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "phone": "1-800-633-4227"
+    },
+    {
+      "id": "report_medicare",
+      "plain": "Report Medicare fraud to 1-800-MEDICARE or to the HHS Office of Inspector General. For a Medicare Advantage or drug plan, you can also call the I-MEDIC line, 1-877-772-3379.",
+      "source": "https://www.medicare.gov/basics/reporting-medicare-fraud-and-abuse",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "url": "https://oig.hhs.gov/fraud/report-fraud/"
+    },
+    {
+      "id": "verify_snap",
+      "plain": "If you are not sure a message about SNAP is real, contact your local SNAP office yourself. In Florida that is DCF at (850) 300-4323. For other states, find your state's contact in USDA's directory.",
+      "source": "https://www.fna.usda.gov/snap/scam-alerts",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "url": "https://www.fns.usda.gov/snap/state-directory",
+      "phone": "(850) 300-4323"
+    },
+    {
+      "id": "report_snap",
+      "plain": "If you think you were caught by a SNAP scam or your benefits were stolen, tell your local SNAP office right away and change your PIN. Report scam texts to the Federal Trade Commission.",
+      "source": "https://www.fna.usda.gov/snap/stolen-benefits",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "url": "https://reportfraud.ftc.gov/"
+    },
+    {
+      "id": "verify_medicaid",
+      "plain": "To check a message about Medicaid, contact your state Medicaid agency yourself, using the number on your Medicaid card or the state's own website. In Florida, eligibility is handled by DCF: (850) 300-4323.",
+      "source": "https://www.medicaid.gov/sites/default/files/2023-06/say-no-to-scams-language-for-states.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "phone": "(850) 300-4323"
+    },
+    {
+      "id": "report_medicaid",
+      "plain": "Report a Medicaid scam to the Federal Trade Commission and to your state.",
+      "source": "https://consumer.ftc.gov/node/81080",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "url": "https://reportfraud.ftc.gov/"
+    },
+    {
+      "id": "verify_housing",
+      "plain": "To get on a real waiting list, contact your local housing authority yourself and ask how to apply. It is free.",
+      "source": "https://consumer.ftc.gov/node/298505",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "report_housing",
+      "plain": "Report a housing voucher scam to the HUD Office of Inspector General hotline, 1-800-347-3735, and to the Federal Trade Commission.",
+      "source": "https://hudoig.gov/sites/default/files/2022-09/Voucher%20Fraud%20Bulletin.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "url": "https://www.hudoig.gov/hotline",
+      "phone": "1-800-347-3735"
+    },
+    {
+      "id": "verify_other",
+      "plain": "Contact the agency yourself, using a phone number or website you look up yourself, not one given in the message.",
+      "source": "https://consumer.ftc.gov/node/298418",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "report_other",
+      "plain": "Report imposter scams to the Federal Trade Commission.",
+      "source": "https://consumer.ftc.gov/node/298418",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "url": "https://reportfraud.ftc.gov/"
+    }
+  ]
+}

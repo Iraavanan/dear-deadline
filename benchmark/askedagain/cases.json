@@ -1,0 +1,959 @@
+{
+ "written": "2026-11-23",
+ "note": "Invented cases. Expected answers were written before the matcher was built.",
+ "cases": [
+  {
+   "id": "c01",
+   "story": "One October pay stub sent, the other not",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-09-27",
+     "to": "2026-10-10",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "partly_sent"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c02",
+   "story": "Every October pay stub sent, receipt lists each",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-09-27",
+     "to": "2026-10-10",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    },
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-11",
+     "to": "2026-10-24",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    },
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-25",
+     "to": "2026-11-07",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "sent_listed"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c03",
+   "story": "Every stub sent, but the receipt does not list the second one",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-09-27",
+     "to": "2026-10-10",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    },
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-11",
+     "to": "2026-10-24",
+     "receipt": "not_listed",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    },
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-25",
+     "to": "2026-11-07",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "sent_unconfirmed"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c04",
+   "story": "Bank statement asked for, nothing sent",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "bank",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "label": ""
+    }
+   ],
+   "sent": [],
+   "expected": {
+    "items": [
+     "not_sent"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c05",
+   "story": "Pay stubs asked for Maria; only the person's own were sent",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "pay_stub",
+     "who": "Maria",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "wrong_person"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c06",
+   "story": "September stub sent for an October request",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-09-01",
+     "to": "2026-09-30",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "wrong_period"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c07",
+   "story": "Two earners: one with a receipt, one without",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "label": ""
+    },
+    {
+     "kind": "pay_stub",
+     "who": "Luis",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    },
+    {
+     "kind": "pay_stub",
+     "who": "Luis",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "receipt": "none",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "sent_listed",
+     "sent_unconfirmed"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c08",
+   "story": "Rent proof asked for again, already sent and listed",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "rent",
+     "who": "me",
+     "from": "",
+     "to": "",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "rent",
+     "who": "me",
+     "from": "",
+     "to": "",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "sent_listed"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c09",
+   "story": "ID asked for, nothing sent, due date passed",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-10-31",
+   "due": "2026-11-10",
+   "requested": [
+    {
+     "kind": "id",
+     "who": "me",
+     "from": "",
+     "to": "",
+     "label": ""
+    }
+   ],
+   "sent": [],
+   "expected": {
+    "items": [
+     "not_sent"
+    ],
+    "deadline_passed": true
+   }
+  },
+  {
+   "id": "c10",
+   "story": "Social Security benefit letter asked for, nothing sent",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "ss_letter",
+     "who": "me",
+     "from": "",
+     "to": "",
+     "label": ""
+    }
+   ],
+   "sent": [],
+   "expected": {
+    "items": [
+     "not_sent"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c11",
+   "story": "Pay stub sent but the person did not note its dates",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "",
+     "to": "",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "period_unknown"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c12",
+   "story": "Three items: one sent and listed, one not sent, one without a receipt",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "label": ""
+    },
+    {
+     "kind": "bank",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "label": ""
+    },
+    {
+     "kind": "rent",
+     "who": "me",
+     "from": "",
+     "to": "",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    },
+    {
+     "kind": "rent",
+     "who": "me",
+     "from": "",
+     "to": "",
+     "receipt": "none",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "sent_listed",
+     "not_sent",
+     "sent_unconfirmed"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c13",
+   "story": "Childcare proof for Ana, names typed differently",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "childcare",
+     "who": "Ana",
+     "from": "2026-11-01",
+     "to": "2026-11-30",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "childcare",
+     "who": "ana ",
+     "from": "2026-11-01",
+     "to": "2026-11-30",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "sent_listed"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c14",
+   "story": "Request names no one; the person's own stub was sent",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "pay_stub",
+     "who": "",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "sent_listed"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c15",
+   "story": "Stubs sent for the start and end of October, not the middle",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-10",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    },
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-21",
+     "to": "2026-10-31",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "partly_sent"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c16",
+   "story": "Overlapping stubs cover October; one not on the receipt",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-15",
+     "to": "2026-10-31",
+     "receipt": "not_listed",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    },
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-16",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "sent_unconfirmed"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c17",
+   "story": "Bank statement asked for; a pay stub was sent instead",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "bank",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "pay_stub",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "not_sent"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c18",
+   "story": "Utility bill asked for the person; only Luis's was sent",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "utility",
+     "who": "me",
+     "from": "",
+     "to": "",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "utility",
+     "who": "Luis",
+     "from": "",
+     "to": "",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "wrong_person"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c19",
+   "story": "Employer letter sent with no receipt",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "employer",
+     "who": "me",
+     "from": "",
+     "to": "",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "employer",
+     "who": "me",
+     "from": "",
+     "to": "",
+     "receipt": "none",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "sent_unconfirmed"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c20",
+   "story": "Medical bills for three months; two months sent",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "medical",
+     "who": "me",
+     "from": "2026-09-01",
+     "to": "2026-11-30",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "medical",
+     "who": "me",
+     "from": "2026-09-01",
+     "to": "2026-09-30",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    },
+    {
+     "kind": "medical",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "partly_sent"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c21",
+   "story": "Bank statement covering more than the month asked for",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "bank",
+     "who": "me",
+     "from": "2026-10-01",
+     "to": "2026-10-31",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "bank",
+     "who": "me",
+     "from": "2026-09-15",
+     "to": "2026-11-15",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "sent_listed"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c22",
+   "story": "ID for two people; only one sent",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "id",
+     "who": "me",
+     "from": "",
+     "to": "",
+     "label": ""
+    },
+    {
+     "kind": "id",
+     "who": "Luis",
+     "from": "",
+     "to": "",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "id",
+     "who": "me",
+     "from": "",
+     "to": "",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "sent_listed",
+     "wrong_person"
+    ],
+    "deadline_passed": false
+   }
+  },
+  {
+   "id": "c23",
+   "story": "Rent proof sent and listed, due date passed",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-10-31",
+   "due": "2026-11-10",
+   "requested": [
+    {
+     "kind": "rent",
+     "who": "me",
+     "from": "",
+     "to": "",
+     "label": ""
+    }
+   ],
+   "sent": [
+    {
+     "kind": "rent",
+     "who": "me",
+     "from": "",
+     "to": "",
+     "receipt": "lists",
+     "label": "",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "sent_listed"
+    ],
+    "deadline_passed": true
+   }
+  },
+  {
+   "id": "c24",
+   "story": "Other document named by the person (a lease)",
+   "today": "2026-11-23",
+   "program": "snap",
+   "state": "FL",
+   "notice_date": "2026-11-20",
+   "due": "2026-12-04",
+   "requested": [
+    {
+     "kind": "other",
+     "who": "me",
+     "from": "",
+     "to": "",
+     "label": "Lease"
+    }
+   ],
+   "sent": [
+    {
+     "kind": "other",
+     "who": "me",
+     "from": "",
+     "to": "",
+     "receipt": "lists",
+     "label": "lease ",
+     "sent": "2026-11-03",
+     "how": "online"
+    }
+   ],
+   "expected": {
+    "items": [
+     "sent_listed"
+    ],
+    "deadline_passed": false
+   }
+  }
+ ]
+}

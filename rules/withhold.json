@@ -1,0 +1,66 @@
+{
+ "table": "withhold",
+ "about": "Asking Social Security to take less from each payment to repay an overpayment.",
+ "rows": [
+  {
+   "id": "lower",
+   "plain": "If you cannot meet your ordinary and necessary living expenses because of the withholding, you can ask for a lower rate.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202210030",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "twelve",
+   "plain": "Social Security first tries to agree on an amount that repays the whole debt within 12 months.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202210030",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "months": 12
+  },
+  {
+   "id": "sixty",
+   "plain": "If the amount you ask for would repay the debt within 60 months, Social Security does not need form SSA-634. If it would take longer, you fill in form SSA-634 with your income, expenses and resources.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202210030",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "months": 60
+  },
+  {
+   "id": "resources",
+   "plain": "For a rate that takes longer than 60 months, Social Security looks at whether your resources are below $3,000 and whether your income is more than your expenses.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202210030",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "amount": 3000
+  },
+  {
+   "id": "partd",
+   "plain": "If you get full Extra Help with Medicare drug costs, Social Security grants any request of at least $10 a month without form SSA-634.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202210030",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "amount": 10
+  },
+  {
+   "id": "fraud",
+   "plain": "A lower rate is not approved if the overpayment involved fraud or similar fault.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202210030",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "ssi",
+   "plain": "For SSI, you can ask for a different rate at any time.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0502220026",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "form",
+   "plain": "Form SSA-634, Request for Change in Overpayment Recovery Rate.",
+   "source": "https://www.ssa.gov/forms/ssa-634.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  }
+ ]
+}

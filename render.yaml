@@ -1,0 +1,23 @@
+# Render blueprint: one web service, no database.
+# Set HELPER_CONTACT to the address shown on the About page for problem reports.
+# Use counts: Render's free plan wipes the disk on each deploy. To keep them, change plan to "starter"
+# and remove the "#" in front of the disk lines and the HELPER_COUNT_FILE lines below.
+services:
+  - type: web
+    name: dear-deadline
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --chdir backend "app:create_app()" --bind 0.0.0.0:$PORT --workers 2
+    healthCheckPath: /api/meta
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.7"
+      - key: HELPER_CONTACT
+        sync: false
+      # - key: HELPER_COUNT_FILE
+      #   value: /var/data/counts.json
+    # disk:
+    #   name: counts
+    #   mountPath: /var/data
+    #   sizeGB: 1

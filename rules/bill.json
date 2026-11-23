@@ -1,0 +1,55 @@
+{
+  "table": "bill",
+  "about": "Comparing a doctor's or supplier's bill with the Medicare Summary Notice (Original Medicare).",
+  "rows": [
+    {
+      "id": "msn_contents",
+      "plain": "The Medicare Summary Notice lists the services your providers billed to Medicare, what Medicare paid, and the most you may owe the provider.",
+      "source": "https://www.medicare.gov/basics/forms-publications-mailings/mailings/costs-and-coverage/medicare-summary-notice",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "msn_compare",
+      "plain": "Medicare tells people to compare their bills and receipts with the notice, and to check that the amount they paid matches it. If an item was denied, call the provider's office to check they sent the right information; the office may send the claim again.",
+      "source": "https://www.medicare.gov/basics/forms-publications-mailings/mailings/costs-and-coverage/medicare-summary-notice",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "msn_timing",
+      "plain": "Medicare Summary Notices are mailed every few months, and only for periods when you had services. A recent visit may not be on one yet. You can also see claims sooner in your account on Medicare.gov.",
+      "source": "https://www.medicare.gov/basics/forms-publications-mailings/mailings/costs-and-coverage/medicare-summary-notice",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "assignment",
+      "plain": "A provider who accepts assignment takes the Medicare-approved amount as full payment and can only ask you for the deductible and coinsurance. A non-participating provider who does not accept assignment can charge more, but in most cases no more than 15% above the Medicare-approved amount (the limiting charge).",
+      "source": "https://www.medicare.gov/basics/costs/medicare-costs/provider-accept-medicare",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "qmb",
+      "plain": "Federal law says Medicare providers and suppliers, including pharmacies, must not bill people in the Qualified Medicare Beneficiary (QMB) program for Medicare deductibles, coinsurance or copays. Since July 2018 the Medicare Summary Notice says when you are in the QMB program and shows that you should not be billed.",
+      "source": "https://www.cms.gov/files/document/mln7936176-prohibition-billing-qualified-medicare-beneficiaries.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "qmb_tip",
+      "plain": "If you are in the QMB program and get a bill for Medicare-covered services, tell the provider and show them your Medicare card, your Medicaid or QMB card, and your Medicare Summary Notice. If they keep billing you, call 1-800-MEDICARE (1-800-633-4227).",
+      "source": "https://www.medicare.gov/publications/12039-qualified-medicare-beneficiary-program.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "appeal",
+      "plain": "To appeal a decision on a Medicare Summary Notice, follow the steps on the last page of the notice. You must appeal within 120 days of the date you get the notice.",
+      "source": "https://www.medicare.gov/claims-appeals/file-an-appeal/appeals-level-1-company-handling-medicare-claims-redetermination",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    }
+  ]
+}

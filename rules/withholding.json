@@ -1,0 +1,42 @@
+{
+ "table": "withholding",
+ "about": "Default share of the monthly payment Social Security withholds to recover an overpayment, by the date the notice was sent. The rate printed on the person's own notice governs.",
+ "rows": [
+  {
+   "id": "benefits_default",
+   "program": "social_security_benefits",
+   "rate": "10% of the monthly benefit or $10, whichever is more",
+   "plain": "For overpayment notices sent before March 27, 2025, Social Security's default was to withhold 10% of the monthly benefit or $10, whichever is more. The rate printed on your notice is the one that applies to you.",
+   "source": "https://www.ssa.gov/pubs/EN-05-10098.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "benefits_default",
+   "program": "social_security_benefits",
+   "rate": "100% of the monthly benefit",
+   "plain": "For overpayment notices sent from March 27, 2025, Social Security announced a default of withholding 100% of the monthly benefit. It changed this to 50% for notices sent from April 25, 2025.",
+   "source": "https://www.ssa.gov/news/en/press/releases/2025-03-07-a.html",
+   "effective_from": "2025-03-27",
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "benefits_default",
+   "program": "social_security_benefits",
+   "rate": "50% of the monthly benefit",
+   "plain": "For retirement, survivor and disability overpayment notices sent on or after April 25, 2025, Social Security's default is to withhold 50% of the monthly benefit if you do not repay, ask for a lower rate, appeal or ask for a waiver. You can ask for a lower rate with form SSA-634.",
+   "source": "https://secure.ssa.gov/apps10/reference.nsf/links/08282025031929PM",
+   "effective_from": "2025-04-25",
+   "checked_on": "2026-11-22"
+  },
+  {
+   "id": "ssi_default",
+   "program": "ssi",
+   "rate": "10% of the monthly SSI payment",
+   "plain": "For SSI, Social Security withholds 10% of the monthly payment by default. The 2025 change to 50% did not apply to SSI.",
+   "source": "https://secure.ssa.gov/apps10/reference.nsf/links/08282025031929PM",
+   "effective_from": null,
+   "checked_on": "2026-11-22"
+  }
+ ]
+}

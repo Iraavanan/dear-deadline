@@ -1,0 +1,46 @@
+{
+ "table": "medicaidend",
+ "about": "When Medicaid is ending: what each person in the household can do next.",
+ "rows": [
+  {
+   "id": "kids",
+   "plain": "For children under 19 who no longer qualify for Medicaid, Florida KidCare may cover them, sometimes with a monthly premium. When DCF finds a child not eligible for Medicaid, it shares the application with Florida KidCare.",
+   "source": "https://discover.pbcgov.org/communityservices/PDF/2024/Medicaid_Healthcare_Coverage_Flyer.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "apply": "https://www.floridakidcare.org/"
+  },
+  {
+   "id": "marketplace",
+   "plain": "You can apply on HealthCare.gov if you lost Medicaid in the past 90 days or will lose it in the next 60 days. Coverage starts once you pay the first premium.",
+   "source": "https://www.healthcare.gov/medicaid-chip/transfer-to-marketplace/",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "before": 60,
+   "after": 90
+  },
+  {
+   "id": "gap",
+   "plain": "In a state that has not expanded Medicaid, an adult with income below the federal poverty level who does not qualify for Medicaid for another reason gets neither Medicaid nor Marketplace savings.",
+   "source": "https://www.healthcare.gov/what-if-my-state-is-not-expanding-medicaid/",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "fl_not_expanded",
+   "plain": "Florida has not expanded Medicaid to adults under the Affordable Care Act.",
+   "source": "https://www.cbpp.org/research/health/closing-medicaid-coverage-gap-would-help-diverse-groups-and-reduce-inequities",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "fpl",
+   "plain": "2026 federal poverty guideline: $15,960 a year for one person, plus $5,680 for each extra person (48 states and DC).",
+   "source": "https://aspe.hhs.gov/poverty-guidelines",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "base": 15960,
+   "per": 5680
+  }
+ ]
+}

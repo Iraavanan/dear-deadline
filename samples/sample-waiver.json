@@ -1,0 +1,34 @@
+{
+  "id": "sample-waiver",
+  "title": "Not my fault, and I cannot pay it back",
+  "story": "James was paid too much after an agency mistake, and his whole check goes to rent, food and medicine.",
+  "notice_days_ago": 20,
+  "facts": {
+    "overpaid_amount": 9850,
+    "period": "March 2025 to February 2026",
+    "reason": "we used the wrong benefit amount",
+    "benefit_type": "retirement",
+    "stated_withholding": "withhold part of your monthly benefit"
+  },
+  "answers": {
+    "amount_wrong": "no",
+    "not_at_fault": "yes",
+    "reported_change": "unknown",
+    "cannot_afford": "yes",
+    "unfair_other": "no",
+    "rate_too_high": "yes"
+  },
+  "statements": {
+    "what_happened": "I did not know the amount was wrong. Nothing in my situation changed.",
+    "why_wrong": "",
+    "hardship": "My benefit is my only income. Rent, food and medicine use all of it."
+  },
+  "expected": {
+    "headline": "multiple",
+    "fits": [
+      "waiver",
+      "lower_rate"
+    ]
+  },
+  "notice_text": "SAMPLE NOTICE - MADE UP FOR PRACTICE - NOT A REAL NOTICE\n\nDear James Example,\n\nWe paid you $9,850.00 more in benefits than you were due for March 2025 to February 2026. This happened because we used the wrong benefit amount.\n\nIf you do not repay or contact us, we will withhold part of your monthly benefit.\n\n(Dated 20 days ago. The name, amounts and dates on this page are invented.)"
+}

@@ -1,0 +1,105 @@
+{
+  "table": "cessation",
+  "about": "Rules for a notice that says a person's disability has ended after a medical review (a medical cessation after a continuing disability review). Other letters that stop benefits follow different rules and are not covered by this table.",
+  "rows": [
+    {
+      "id": "continuation_received_by",
+      "days": 15,
+      "counted_from": "notice_date",
+      "plain": "To keep benefits coming during your appeal, Social Security must receive your choice on Form SSA-792 no later than 15 calendar days from the date on the notice.",
+      "source": "https://www.ssa.gov/forms/ssa-792.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "continuation_aim",
+      "days": 10,
+      "counted_from": "notice_date",
+      "plain": "The rule gives 10 days from when you receive the notice, and Social Security allows 5 days for the mail. Aim to hand the form in within 10 days of the notice date so it is in their hands in time.",
+      "source": "https://www.ssa.gov/OP_Home/hallex/I-02/I-2-8-6.html",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "appeal",
+      "days": 60,
+      "counted_from": "receipt_date",
+      "plain": "An appeal is due within 60 days of the date you received the notice.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "mail_presumption",
+      "days": 5,
+      "counted_from": "notice_date",
+      "plain": "Social Security assumes you received the notice 5 days after the date printed on it, unless you show otherwise.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "appeal_form",
+      "form": "SSA-789",
+      "title": "Request for Reconsideration - Disability Cessation Right to Appear",
+      "url": "https://www.ssa.gov/forms/ssa-789.pdf",
+      "plain": "The appeal of a disability-ended decision uses Form SSA-789. It cannot be filed online. It asks for your reasons, any new evidence, and whether you want to appear at a disability hearing.",
+      "source": "https://www.ssa.gov/forms/ssa-789.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "election_form",
+      "form": "SSA-792",
+      "title": "Statutory Benefit Continuation Election Statement",
+      "url": "https://www.ssa.gov/forms/ssa-792.pdf",
+      "plain": "Form SSA-792 records whether you want benefits to continue while a medical appeal is pending. It is also the form for saying you do not want them continued.",
+      "source": "https://www.ssa.gov/forms/ssa-792.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "repayment",
+      "plain": "If your appeal is not successful, the payments you received during it are an overpayment that you must pay back. You can ask Social Security not to collect it with Form SSA-632-BK. You are not asked to repay Medicare received during the appeal.",
+      "waiver_form_url": "https://www.ssa.gov/forms/ssa-632-bk.pdf",
+      "source": "https://www.ssa.gov/forms/ssa-792.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "late_continuation",
+      "plain": "If your SSA-792 will arrive after the 15 days, fill in its good-cause section and explain why. Social Security then decides whether to accept the reason.",
+      "source": "https://www.ssa.gov/forms/ssa-792.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "late_appeal",
+      "plain": "If the notice is dated more than 65 days ago, Form SSA-789 asks for the reason your request is late and the date you received the notice.",
+      "source": "https://www.ssa.gov/forms/ssa-789.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "no_hearing_appearance",
+      "plain": "Form SSA-789 asks whether you want to appear at a disability hearing. If you do not, it asks you to also complete Form SSA-773, Waiver of Right to Appear.",
+      "source": "https://www.ssa.gov/forms/ssa-789.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "evidence",
+      "plain": "You can send evidence until the hearing date, and sending it earlier is better.",
+      "source": "https://www.ssa.gov/forms/ssa-789.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "weekend",
+      "plain": "If the last day falls on a weekend or national holiday, the deadline moves to the next workday.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10058.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    }
+  ]
+}

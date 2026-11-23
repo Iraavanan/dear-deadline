@@ -1,0 +1,154 @@
+{
+ "letters": 300,
+ "kinds": 3,
+ "layouts": 16,
+ "measured_on": "2026-11-23",
+ "tool_version": "0.14.1",
+ "by_field": {
+  "notice_date": {
+   "right": 280,
+   "total": 300
+  },
+  "overpaid_amount": {
+   "right": 140,
+   "total": 160
+  },
+  "kind_overpayment": {
+   "right": 160,
+   "total": 160
+  },
+  "kind_disability_ended": {
+   "right": 34,
+   "total": 68
+  },
+  "kind_not_mistaken": {
+   "right": 72,
+   "total": 72
+  },
+  "identity_numbers": {
+   "right": 300,
+   "total": 300
+  }
+ },
+ "field_names": {
+  "notice_date": "The date on the letter",
+  "overpaid_amount": "The overpaid amount (overpayment letters)",
+  "kind_overpayment": "That it is an overpayment letter",
+  "kind_disability_ended": "That it is a disability-ended letter",
+  "kind_not_mistaken": "A denial letter not mistaken for one of the other two",
+  "identity_numbers": "Identity number fully blacked out"
+ },
+ "by_layout": {
+  "formal-letter": {
+   "kind": "overpayment",
+   "right": 80,
+   "total": 80
+  },
+  "numeric-date": {
+   "kind": "overpayment",
+   "right": 80,
+   "total": 80
+  },
+  "day-first": {
+   "kind": "overpayment",
+   "right": 80,
+   "total": 80
+  },
+  "withholding-first": {
+   "kind": "overpayment",
+   "right": 80,
+   "total": 80
+  },
+  "typed-summary": {
+   "kind": "overpayment",
+   "right": 80,
+   "total": 80
+  },
+  "bill-style": {
+   "kind": "overpayment",
+   "right": 80,
+   "total": 80
+  },
+  "date-at-foot": {
+   "kind": "overpayment",
+   "right": 60,
+   "total": 80
+  },
+  "iso-date": {
+   "kind": "overpayment",
+   "right": 60,
+   "total": 80
+  },
+  "title-ii-letter": {
+   "kind": "disability-ended",
+   "right": 51,
+   "total": 51
+  },
+  "ssi-letter": {
+   "kind": "disability-ended",
+   "right": 51,
+   "total": 51
+  },
+  "short-form": {
+   "kind": "disability-ended",
+   "right": 34,
+   "total": 51
+  },
+  "review-result": {
+   "kind": "disability-ended",
+   "right": 34,
+   "total": 51
+  },
+  "disapproved-claim": {
+   "kind": "decision-denied",
+   "right": 54,
+   "total": 54
+  },
+  "reconsideration": {
+   "kind": "decision-denied",
+   "right": 54,
+   "total": 54
+  },
+  "hearing-decision": {
+   "kind": "decision-denied",
+   "right": 54,
+   "total": 54
+  },
+  "council-denial": {
+   "kind": "decision-denied",
+   "right": 54,
+   "total": 54
+  }
+ },
+ "caveat": "The author of the tool wrote these letters, and five of the layouts are ones the reader was built against. None is a real Social Security letter, so results on real letters will differ.",
+ "first_run": {
+  "measured_on": "2026-11-22",
+  "tool_version": "0.7.0",
+  "by_field": {
+   "notice_date": {
+    "right": 260,
+    "total": 300
+   },
+   "overpaid_amount": {
+    "right": 140,
+    "total": 160
+   },
+   "kind_overpayment": {
+    "right": 160,
+    "total": 160
+   },
+   "kind_disability_ended": {
+    "right": 34,
+    "total": 68
+   },
+   "kind_not_mistaken": {
+    "right": 72,
+    "total": 72
+   },
+   "identity_numbers": {
+    "right": 300,
+    "total": 300
+   }
+  }
+ }
+}

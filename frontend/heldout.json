@@ -1,0 +1,123 @@
+{
+ "letters": 150,
+ "results": [
+  {
+   "tool": "Dear Deadline, built-in reader",
+   "measured_on": "2026-11-22",
+   "tool_version": "0.12.0",
+   "how": "Rules and patterns on the device; no AI.",
+   "first_run": true,
+   "letters": 150,
+   "answered": 150,
+   "by_field": {
+    "kind": {
+     "right": 113,
+     "total": 150
+    },
+    "notice_date": {
+     "right": 136,
+     "total": 150
+    },
+    "overpaid_amount": {
+     "right": 128,
+     "total": 150
+    },
+    "monthly_withholding": {
+     "right": 60,
+     "total": 75
+    },
+    "totals_agree": {
+     "right": 0,
+     "total": 15
+    },
+    "recon": {
+     "right": 75,
+     "total": 75
+    },
+    "waiver": {
+     "right": 75,
+     "total": 75
+    },
+    "identity_hidden": {
+     "right": 150,
+     "total": 150
+    }
+   },
+   "field_names": {
+    "kind": "Kind of letter",
+    "notice_date": "Date of the letter (or none given)",
+    "overpaid_amount": "Total overpaid (or none)",
+    "monthly_withholding": "Amount to be held back each month (or none)",
+    "totals_agree": "Whether the stated total matches the month-by-month figures",
+    "recon": "Says whether the letter states the right to reconsideration",
+    "waiver": "Says whether the letter states the right to a waiver",
+    "identity_hidden": "Identity number not shown back (tools that return text only)"
+   },
+   "invented": {
+    "notice_date": 8,
+    "overpaid_amount": 7,
+    "monthly_withholding": 0
+   },
+   "note": null
+  },
+  {
+   "tool": "Dear Deadline, built-in reader",
+   "measured_on": "2026-11-23",
+   "tool_version": "0.14.1",
+   "how": "Rules and patterns on the device; no AI.",
+   "first_run": null,
+   "letters": 150,
+   "answered": 150,
+   "by_field": {
+    "kind": {
+     "right": 113,
+     "total": 150
+    },
+    "notice_date": {
+     "right": 150,
+     "total": 150
+    },
+    "overpaid_amount": {
+     "right": 135,
+     "total": 150
+    },
+    "monthly_withholding": {
+     "right": 60,
+     "total": 75
+    },
+    "totals_agree": {
+     "right": 0,
+     "total": 15
+    },
+    "recon": {
+     "right": 75,
+     "total": 75
+    },
+    "waiver": {
+     "right": 75,
+     "total": 75
+    },
+    "identity_hidden": {
+     "right": 150,
+     "total": 150
+    }
+   },
+   "field_names": {
+    "kind": "Kind of letter",
+    "notice_date": "Date of the letter (or none given)",
+    "overpaid_amount": "Total overpaid (or none)",
+    "monthly_withholding": "Amount to be held back each month (or none)",
+    "totals_agree": "Whether the stated total matches the month-by-month figures",
+    "recon": "Says whether the letter states the right to reconsideration",
+    "waiver": "Says whether the letter states the right to a waiver",
+    "identity_hidden": "Identity number not shown back (tools that return text only)"
+   },
+   "invented": {
+    "notice_date": 0,
+    "overpaid_amount": 0,
+    "monthly_withholding": 0
+   },
+   "note": "Run after changes made by looking at the first run's misses: the reader no longer gives a date or amount a letter does not state, and reads more date formats. These letters are no longer unseen for those fields, so this run shows the fix worked; the first run is the fair accuracy figure."
+  }
+ ]
+}

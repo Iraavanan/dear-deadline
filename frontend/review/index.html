@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer">
+  <title>Notice explanation benchmark · Benefits Letter Helper</title>
+  <link rel="icon" href="data:,"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/review/worksheets.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="mast"><p class="mast-name"><a href="/">Benefits Letter Helper</a></p><p class="mast-note">Independent research and public test materials</p></header>
+  <main id="main"><article class="sheet">
+    <p id="site-links"><a href="/#notice-check">Check my notice</a> · <a href="/open">All open data</a></p>
+    <h1 class="long">Does the checker catch a missing explanation?</h1>
+    <p class="lead">Inspect the evidence the checker finds in a Social Security overpayment notice. You can rerun the test or try the same check on a sample of your own.</p>
+    <p>Benefits Letter Helper project by Shirshak J. Thapa · Version 1.0.0 · November 22, 2026</p>
+    <h2>Why check the wording?</h2>
+    <p>Social Security’s inspector general found a policy deficiency in 46% of the Title II overpayment notices it reviewed for fiscal 2023. The audit identified missing explanations and missing information about review rights. The agency’s instructions describe the contents expected in an initial notice. <a href="https://oig.ssa.gov/audit-reports/2026-09-01-old-age-survivors-and-disability-insurance-overpayment-notices/">Read the audit</a> · <a href="https://secure.ssa.gov/apps10/poms.nsf/lnx/0202201009">Read SSA’s instructions</a>.</p>
+    <h2>Results on the supplied examples</h2>
+    <p>Three parent layouts have seven variations each. Two adapt SSA’s worked examples, including the single-month and multi-period calculations. The project supplied the other wording and annotated the answers. Every example is fictional.</p>
+    <div id="results" aria-live="polite">Loading the recorded results…</div>
+    <div class="row"><button id="rerun" class="go" type="button" disabled>Rerun the check on this device</button></div>
+    <p id="rerun-status" role="status"></p>
+    <details><summary>Read the original SSA excerpt used for the separate check</summary><blockquote id="official"></blockquote><p>Only the period and paid-versus-payable wording are scored on this excerpt. <a href="https://secure.ssa.gov/apps10/poms.nsf/lnx/0202201009">SSA POMS GN 02201.009 B.1</a>.</p></details>
+    <h2>Inspect an example</h2>
+    <label for="case">Notice and variation</label><select id="case"></select>
+    <div id="inspection"></div>
+    <h2 id="custom-heading">Try another public or invented example</h2>
+    <label for="custom-text">Text to check</label><textarea id="custom-text" class="paste" rows="4" spellcheck="false"></textarea>
+    <label for="custom-full"><input id="custom-full" type="checkbox"> I supplied every page of the example.</label>
+    <div class="row"><button type="button" id="custom-run" class="quiet">Check this wording</button></div>
+    <div id="custom-results" aria-live="polite"></div>
+    <h2 id="method-heading">Reproduce or reuse the work</h2>
+    <p>Download the kit and run <code>node score.js --verify</code> in the extracted directory. The code, inputs, annotated answers, agency sources, version, file hashes and recorded results travel together. The same checker runs in the app.</p>
+    <p id="download-links"><a href="offline-review.html" download>Download the offline browser reviewer (HTML)</a> · <a href="notice-review-1.0.0.zip" download>Download the full reproduction kit (ZIP)</a> · <a href="METHOD.md">Scoring method</a> · <a href="examples.json">Annotated examples</a> · <a href="checklist.json">Full checklist</a> · <a href="results.json">All results</a></p>
+    <p>The five measured elements are the cause, affected period, calculation, reconsideration and waiver. A matched passage still needs the reader’s confirmation. A missing scan page can hide an answer. The project has measured performance on these examples only. Independent replication, real-world accuracy, usage and claimant outcomes are separate evidence.</p>
+  </article></main>
+  <script src="notice-evidence.js"></script><script src="score.js"></script><script src="review-page.js"></script>
+</body></html>

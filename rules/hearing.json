@@ -1,0 +1,86 @@
+{
+  "table": "hearing",
+  "about": "Fair hearings about SNAP and Medicaid decisions: time limits, keeping benefits during a hearing, and Florida's route.",
+  "rows": [
+    {
+      "id": "fl_deadline",
+      "plain": "In Florida, you can ask for a fair hearing about SNAP, cash assistance or Medicaid within 90 days of the Notice of Case Action.",
+      "source": "https://prod.myflfamilies.com/about/office-inspector-general/appeal-hearings",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "days": 90
+    },
+    {
+      "id": "fl_rule",
+      "plain": "Florida's hearing rule gives 90 calendar days to appeal in these programs.",
+      "source": "https://www.law.cornell.edu/regulations/florida/Fla-Admin-Code-Ann-R-65-2-046",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "days": 90
+    },
+    {
+      "id": "fl_contact",
+      "plain": "Ask by phone (850) 488-1429, fax (850) 487-0662, email appeal.hearings@myflfamilies.com, or mail to the Appeal Hearings Section, 2415 North Monroe Street, Suite 400-I, Tallahassee, FL 32303-4190. You can also ask at a local DCF office or through the DCF call center.",
+      "source": "https://www.myflfamilies.com/about/office-inspector-general/appeal-hearings/how-request-public-assistance-hearing",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "fl_plan_first",
+      "plain": "If your Medicaid health plan refused a service, you must first finish the plan's own appeal before a Medicaid fair hearing. The plan's phone number is on your plan ID card.",
+      "source": "https://ahca.myflorida.com/medicaid/florida-medicaid-complaints/medicaid-fair-hearings.html",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "snap_deadline",
+      "plain": "Under federal SNAP rules, a household can ask for a hearing on any action or loss of benefits in the prior 90 days.",
+      "source": "https://www.law.cornell.edu/cfr/text/7/273.15",
+      "effective_from": null,
+      "checked_on": "2026-11-22",
+      "days": 90
+    },
+    {
+      "id": "snap_continue",
+      "plain": "If you ask for a hearing within the period your notice gives, SNAP continues at the amount you got before the notice until the hearing decision, unless you say you do not want that or your certification period ends.",
+      "source": "https://www.law.cornell.edu/cfr/text/7/273.15",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "snap_decision",
+      "plain": "The state must hold the hearing and decide within 60 days of your request.",
+      "source": "https://www.law.cornell.edu/cfr/text/7/273.15",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "medicaid_continue",
+      "plain": "If you ask for a hearing before the date the action takes effect, Medicaid generally may not stop or reduce your coverage until the hearing decision.",
+      "source": "https://www.law.cornell.edu/cfr/text/42/431.230",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "medicaid_reinstate",
+      "plain": "If you ask within 10 days after the date of action, the agency may reinstate your coverage until the decision.",
+      "source": "https://www.law.cornell.edu/cfr/text/42/431.231",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "medicaid_repay",
+      "plain": "If the hearing decision agrees with the agency, it may seek back the cost of services you got only because coverage continued.",
+      "source": "https://www.law.cornell.edu/cfr/text/42/431.230",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "snap_repay",
+      "plain": "If you lose the hearing, SNAP you got while waiting can be counted as an overpayment that you have to pay back.",
+      "source": "https://www.law.cornell.edu/regulations/florida/Fla-Admin-Code-Ann-R-65-2-043",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    }
+  ]
+}

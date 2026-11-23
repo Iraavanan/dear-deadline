@@ -1,0 +1,30 @@
+{
+ "measured_on": "2026-11-22",
+ "files": 30,
+ "fields_right": 120,
+ "fields_total": 120,
+ "identity_numbers_left_visible": 0,
+ "by_program": {
+  "reportlab": {
+   "right": 24,
+   "total": 24
+  },
+  "chrome": {
+   "right": 24,
+   "total": 24
+  },
+  "libreoffice": {
+   "right": 24,
+   "total": 24
+  },
+  "wkhtmltopdf": {
+   "right": 24,
+   "total": 24
+  },
+  "pdflatex": {
+   "right": 24,
+   "total": 24
+  }
+ },
+ "misses": []
+}

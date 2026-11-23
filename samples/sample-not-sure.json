@@ -1,0 +1,31 @@
+{
+  "id": "sample-not-sure",
+  "title": "I do not know what to do",
+  "story": "Sam opened the notice late, does not understand the amount, and is not sure of anything yet.",
+  "notice_days_ago": 40,
+  "facts": {
+    "overpaid_amount": null,
+    "period": null,
+    "reason": null,
+    "benefit_type": "unknown",
+    "stated_withholding": null
+  },
+  "answers": {
+    "amount_wrong": "unknown",
+    "not_at_fault": "unknown",
+    "reported_change": "unknown",
+    "cannot_afford": "unknown",
+    "unfair_other": "unknown",
+    "rate_too_high": "unknown"
+  },
+  "statements": {
+    "what_happened": "",
+    "why_wrong": "",
+    "hardship": ""
+  },
+  "expected": {
+    "headline": "cannot_determine",
+    "fits": []
+  },
+  "notice_text": "SAMPLE NOTICE - MADE UP FOR PRACTICE - NOT A REAL NOTICE\n\nDear Sam Example,\n\nWe paid you $[amount not shown on this page] more in benefits than you were due for the months listed on a page you cannot find. This happened because of a reason you do not understand.\n\nIf you do not repay or contact us, we will begin collecting.\n\n(Dated 40 days ago. The name, amounts and dates on this page are invented.)"
+}

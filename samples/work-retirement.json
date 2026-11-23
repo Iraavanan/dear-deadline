@@ -1,0 +1,14 @@
+{
+  "id": "work-retirement",
+  "module": "work",
+  "title": "I took benefits early and I'm still working",
+  "story": "Pat is 63, gets $600 a month, and now expects to earn $26,080 this year. This is the example in Social Security's own booklet.",
+  "form": {
+    "track": "retirement",
+    "year": 2026,
+    "fra": "after",
+    "first_year": "no",
+    "earnings": 26080,
+    "monthly_benefit": 600
+  }
+}

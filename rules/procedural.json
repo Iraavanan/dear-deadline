@@ -1,0 +1,44 @@
+{
+ "table": "procedural",
+ "about": "Coverage or benefits that ended because paperwork was not returned.",
+ "rows": [
+  {
+   "id": "medicaid_magi",
+   "plain": "If your Medicaid is based on income (most children, parents, pregnant people and adults under 65) and it ended because the renewal form or papers were not sent, the state must look at it again without a new application if you send them within 90 days after coverage ended (longer in some states).",
+   "source": "https://www.law.cornell.edu/cfr/text/42/435.916",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "days": 90
+  },
+  {
+   "id": "medicaid_abd",
+   "plain": "If your Medicaid is based on age, blindness or disability, the state may use the same 90-day rule. Ask your Medicaid office.",
+   "source": "https://www.law.cornell.edu/cfr/text/42/435.916",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "snap_late_proof",
+   "plain": "For SNAP, if you send the missing papers within 30 days after your certification period ended, the state reopens your case. Benefits start from the day you send them, so send them as soon as you can.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.14",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "days": 30
+  },
+  {
+   "id": "snap_late_app",
+   "plain": "If you did not send the renewal at all, sending it within 30 days after the certification period ended counts as your application, and benefits are counted from that date.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.14",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "days": 30
+  },
+  {
+   "id": "hearing",
+   "plain": "You can also ask for a fair hearing if you think the case was closed by mistake, for example because you did send the papers.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.15",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  }
+ ]
+}

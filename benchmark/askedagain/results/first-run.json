@@ -1,0 +1,22 @@
+{
+ "first_run": true,
+ "tool": {
+  "exact": 28,
+  "missing_found": 13,
+  "wrong_matches": 0,
+  "receipt_as_acceptance": 0,
+  "deadline_right": 24
+ },
+ "checklist": {
+  "missing_found": 5,
+  "wrong_matches": 8,
+  "receipt_as_acceptance": 23
+ },
+ "items": 28,
+ "missing_items": 13,
+ "wrong_items": 8,
+ "cases": 24,
+ "misses": [],
+ "measured_on": "2026-11-23",
+ "how": "Each case is a new notice asking again for proof, with what the person sent and whether a receipt lists it. Every item was asked for again, so any answer that says nothing more is needed counts as treating a receipt as acceptance. The checklist column is the simple rule most checklists use: anything of the same kind sent counts as done."
+}

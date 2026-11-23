@@ -1,0 +1,53 @@
+{
+ "table": "stolen",
+ "about": "Stolen SNAP benefits: what to do, with Florida's steps.",
+ "rows": [
+  {
+   "id": "ended",
+   "plain": "The federal program that replaced stolen SNAP benefits ended on December 20, 2024. Replacing stolen benefits is no longer guaranteed.",
+   "source": "https://www.myflfamilies.com/reportstolensnap",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "fl_steps",
+   "plain": "In Florida, file a police report with your local law enforcement agency and ask for a replacement EBT card. Call EBT Customer Service at 1-888-356-3281, or use your MyACCESS account.",
+   "source": "https://www.myflfamilies.com/reportstolensnap",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "phone": "1-888-356-3281"
+  },
+  {
+   "id": "fl_lock",
+   "plain": "Florida offers ebtEDGE (website or app): you can freeze your card so no transactions go through, and block out-of-state and online transactions. Unfreeze it when you shop.",
+   "source": "https://myflfamilies.com/services/public-assistance/ebt-transaction-protection",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "other",
+   "plain": "In other states, contact your local SNAP office if your benefits were stolen, and change your PIN right away. USDA lists each state's EBT customer service number.",
+   "source": "https://www.fns.usda.gov/snap/stolen-benefits",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "sources": [
+    "https://www.fns.usda.gov/snap/stolen-benefits",
+    "https://www.fns.usda.gov/snap/state-directory"
+   ]
+  },
+  {
+   "id": "phishing",
+   "plain": "State agencies and EBT processors never call or text to ask for your card number or PIN. Anyone who does is a scammer.",
+   "source": "https://www.fns.usda.gov/snap/stolen-benefits",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "pin",
+   "plain": "Change your PIN often, right before your benefits are added each month.",
+   "source": "https://www.fns.usda.gov/snap/stolen-benefits",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  }
+ ]
+}

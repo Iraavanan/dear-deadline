@@ -1,0 +1,94 @@
+{
+ "table": "msp",
+ "about": "Medicare Savings Programs and Extra Help: 2026 limits and how to apply.",
+ "rows": [
+  {
+   "id": "qmb",
+   "plain": "QMB pays your Part A and Part B premiums, deductibles, coinsurance and copays. 2026 limits: $1,350 a month in income and $9,950 in resources for one person; $1,824 and $14,910 for a married couple.",
+   "source": "https://www.medicare.gov/publications/12132-save-money-on-your-medicare-costs.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "income": {
+    "single": 1350,
+    "couple": 1824
+   },
+   "resources": {
+    "single": 9950,
+    "couple": 14910
+   }
+  },
+  {
+   "id": "slmb",
+   "plain": "SLMB pays your Part B premium. 2026 limits: $1,616 a month in income and $9,950 in resources for one person; $2,184 and $14,910 for a married couple.",
+   "source": "https://www.medicare.gov/publications/12132-save-money-on-your-medicare-costs.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "income": {
+    "single": 1616,
+    "couple": 2184
+   },
+   "resources": {
+    "single": 9950,
+    "couple": 14910
+   }
+  },
+  {
+   "id": "qi",
+   "plain": "QI pays your Part B premium. 2026 limits: $1,816 a month in income and $9,950 in resources for one person; $2,455 and $14,910 for a married couple. You apply each year, and money is given out first come, first served.",
+   "source": "https://www.medicare.gov/publications/12132-save-money-on-your-medicare-costs.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "income": {
+    "single": 1816,
+    "couple": 2455
+   },
+   "resources": {
+    "single": 9950,
+    "couple": 14910
+   }
+  },
+  {
+   "id": "extra_help",
+   "plain": "Extra Help lowers what you pay for Medicare drug coverage. 2026 limits: $23,940 a year in income and $18,090 in resources for one person; $32,460 and $36,100 for a married couple living together.",
+   "source": "https://www.medicare.gov/extrahelp",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "income": {
+    "single": 23940,
+    "couple": 32460
+   },
+   "resources": {
+    "single": 18090,
+    "couple": 36100
+   }
+  },
+  {
+   "id": "auto",
+   "plain": "If you qualify for QMB, SLMB or QI, you also get Extra Help automatically.",
+   "source": "https://www.medicare.gov/medicare-savings-programs",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "higher",
+   "plain": "Some states have higher limits or do not count some income, so you may qualify even above these limits. If you work, part of your pay is not counted. Florida uses the federal limits.",
+   "source": "https://assets.ncoa.org/ffacfe7d-10b6-0083-2632-604077fd4eca/78306116-4908-4802-ae2f-67968427bb55/2026_MSP_Coverage_and_Eligibility.pdf",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "apply_msp",
+   "plain": "Apply for a Medicare Savings Program through your state Medicaid office. In Florida that is the Department of Children and Families (ACCESS Florida).",
+   "source": "https://www.medicare.gov/medicare-savings-programs",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "apply_eh",
+   "plain": "Apply for Extra Help with Social Security, online or with form SSA-1020.",
+   "source": "https://www.ssa.gov/medicare/part-d-extra-help",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  }
+ ]
+}

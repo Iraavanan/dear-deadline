@@ -1,0 +1,370 @@
+{
+  "table": "reporting",
+  "about": "What people who get Social Security or SSI must report, and how soon. Wording follows Social Security's own booklets; where a booklet gives no time limit, none is invented.",
+  "rows": [
+    {
+      "id": "ssi_deadline",
+      "days_after_month_end": 10,
+      "plain": "For SSI, report a change as soon as possible and no later than 10 days after the end of the month in which the change occurred.",
+      "source": "https://www.ssa.gov/ssi/text-report-ussi.htm",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "ssi_penalty",
+      "plain": "For SSI, a late or missed report can reduce your payment by $25 to $100 for each time you fail to report a change.",
+      "source": "https://www.ssa.gov/ssi/text-report-ussi.htm",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "title2_timing",
+      "plain": "For retirement, survivors and disability benefits, Social Security's booklets say to report changes promptly. They give no fixed number of days.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "overpaid",
+      "plain": "If a change is not reported, you may be paid too much and have to pay the money back.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "false_statement",
+      "plain": "Giving false information on purpose, or knowingly failing to report, can stop benefits: 6 months for the first time, 12 for the second, 24 for the third.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "how",
+      "phone": "1-800-772-1213",
+      "tty": "1-800-325-0778",
+      "hours": "Monday through Friday, 8 a.m. to 7 p.m.",
+      "office_locator": "https://www.ssa.gov/locator/",
+      "plain": "You can report by phone, by mail or in person at your local Social Security office. Have the Beneficiary Notice Control (BNC) number from a letter about your benefits ready; it is not your Social Security number.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "online",
+      "url": "https://www.ssa.gov/myaccount/",
+      "only_for": [
+        "change_address",
+        "change_direct_deposit"
+      ],
+      "plain": "A change of address or direct deposit can be made online in a personal my Social Security account.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "more",
+      "booklets": {
+        "retirement": "https://www.ssa.gov/pubs/EN-05-10077.pdf",
+        "disability": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+        "ssi": "https://www.ssa.gov/ssi/text-report-ussi.htm"
+      },
+      "plain": "Social Security's booklets list other changes that must be reported, such as a warrant, a conviction, time in an institution, or a change in citizenship or immigration status. Read the list for your benefit.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_address",
+      "label": "Address or phone number",
+      "applies_to": [
+        "retirement",
+        "disability",
+        "ssi"
+      ],
+      "when": "as soon as you know the new one",
+      "have_ready": [
+        "The new address and phone number",
+        "The date of the move",
+        "The names of family members getting benefits who are moving with you"
+      ],
+      "plain": "Report: address or phone number.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_direct_deposit",
+      "label": "Bank account for direct deposit",
+      "applies_to": [
+        "retirement",
+        "disability"
+      ],
+      "when": "promptly",
+      "have_ready": [
+        "The new account and routing numbers (give these only to Social Security, never to this tool)"
+      ],
+      "plain": "Report: bank account for direct deposit.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_work",
+      "label": "Starting or stopping work, or a change in pay or hours",
+      "applies_to": [
+        "disability",
+        "ssi"
+      ],
+      "when": "promptly",
+      "have_ready": [
+        "The date work started or stopped",
+        "Your employer's name",
+        "Your pay before tax and your hours",
+        "Any work expenses caused by your disability"
+      ],
+      "see": "work-check",
+      "plain": "Report: starting or stopping work, or a change in pay or hours.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_earnings",
+      "label": "Yearly earnings that will be higher or lower than you told Social Security",
+      "applies_to": [
+        "retirement"
+      ],
+      "when": "as soon as possible",
+      "have_ready": [
+        "Your new estimate of earnings for the year",
+        "The month work started, stopped or changed"
+      ],
+      "see": "work-check",
+      "plain": "Report: yearly earnings that will be higher or lower than you told Social Security.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10077.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_income",
+      "label": "Other income, including a spouse's income",
+      "applies_to": [
+        "ssi"
+      ],
+      "when": "promptly",
+      "have_ready": [
+        "What the income is and who pays it",
+        "The amount and the date it started or changed"
+      ],
+      "plain": "Report: other income, including a spouse's income.",
+      "source": "https://www.ssa.gov/ssi/text-report-ussi.htm",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_resources",
+      "label": "Savings or things you own (resources)",
+      "applies_to": [
+        "ssi"
+      ],
+      "when": "promptly",
+      "have_ready": [
+        "What changed: a new resource, a sale, a transfer or a change in value",
+        "The amount and the date"
+      ],
+      "plain": "Report: savings or things you own (resources).",
+      "source": "https://www.ssa.gov/ssi/text-report-ussi.htm",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_living",
+      "label": "Where or with whom you live, or help with living expenses",
+      "applies_to": [
+        "ssi"
+      ],
+      "when": "promptly",
+      "have_ready": [
+        "The new living arrangement and the date",
+        "Who lives in the household",
+        "Any help you get with food or shelter costs"
+      ],
+      "plain": "Report: where or with whom you live, or help with living expenses.",
+      "source": "https://www.ssa.gov/ssi/text-report-ussi.htm",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_marriage",
+      "label": "Marriage, separation or divorce",
+      "applies_to": [
+        "retirement",
+        "disability",
+        "ssi"
+      ],
+      "when": "promptly",
+      "have_ready": [
+        "The date",
+        "Your spouse's or former spouse's name"
+      ],
+      "plain": "Report: marriage, separation or divorce.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_name",
+      "label": "Name change",
+      "applies_to": [
+        "retirement",
+        "disability",
+        "ssi"
+      ],
+      "when": "right away",
+      "have_ready": [
+        "Your old and new name",
+        "The marriage, divorce or court paper that shows it"
+      ],
+      "plain": "Report: name change.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_death",
+      "label": "A death in the family or household",
+      "applies_to": [
+        "retirement",
+        "disability",
+        "ssi"
+      ],
+      "when": "as soon as possible",
+      "have_ready": [
+        "The person's name and date of death"
+      ],
+      "plain": "Report: a death in the family or household.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_travel",
+      "label": "Leaving the United States for 30 days or more",
+      "applies_to": [
+        "retirement",
+        "disability",
+        "ssi"
+      ],
+      "when": "promptly",
+      "have_ready": [
+        "The date you leave and the date you plan to return",
+        "The country or countries"
+      ],
+      "plain": "Report: leaving the United States for 30 days or more.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_child",
+      "label": "A child in your care moves out or changes address",
+      "applies_to": [
+        "retirement",
+        "disability"
+      ],
+      "when": "right away",
+      "have_ready": [
+        "The child's name",
+        "The name and address of the person the child now lives with"
+      ],
+      "plain": "Report: a child in your care moves out or changes address.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_other_benefit",
+      "label": "Another benefit or payment starts, changes or stops",
+      "applies_to": [
+        "disability",
+        "ssi"
+      ],
+      "when": "promptly",
+      "have_ready": [
+        "What the benefit is and who pays it",
+        "The amount and the date"
+      ],
+      "plain": "Report: another benefit or payment starts, changes or stops.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_pension",
+      "label": "A pension from work that did not pay Social Security taxes",
+      "applies_to": [
+        "retirement",
+        "disability"
+      ],
+      "when": "promptly",
+      "have_ready": [
+        "Who pays the pension",
+        "The amount and the date it started or changed"
+      ],
+      "plain": "Report: a pension from work that did not pay Social Security taxes.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_medical",
+      "label": "Your medical condition improves",
+      "applies_to": [
+        "disability",
+        "ssi"
+      ],
+      "when": "promptly",
+      "have_ready": [
+        "What has changed",
+        "The date you noticed it",
+        "Your doctor's name"
+      ],
+      "plain": "Report: your medical condition improves.",
+      "source": "https://www.ssa.gov/pubs/EN-05-10153.pdf",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_institution",
+      "label": "Going into or leaving a hospital, nursing home or other institution",
+      "applies_to": [
+        "ssi"
+      ],
+      "when": "promptly",
+      "have_ready": [
+        "The name of the place",
+        "The date you went in or left"
+      ],
+      "plain": "Report: going into or leaving a hospital, nursing home or other institution.",
+      "source": "https://www.ssa.gov/ssi/text-report-ussi.htm",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    },
+    {
+      "id": "change_school",
+      "label": "School attendance, if under age 22",
+      "applies_to": [
+        "ssi"
+      ],
+      "when": "promptly",
+      "have_ready": [
+        "The school's name",
+        "The date attendance started, stopped or changed"
+      ],
+      "plain": "Report: school attendance, if under age 22.",
+      "source": "https://www.ssa.gov/ssi/text-report-ussi.htm",
+      "effective_from": null,
+      "checked_on": "2026-11-22"
+    }
+  ]
+}
