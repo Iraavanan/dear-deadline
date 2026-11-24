@@ -1722,5 +1722,73 @@
  "medicaid_states/MI/hearing_how": {
   "en": "Send a signed, written request: form DCH-0018 or a signed letter. Your notice says where to send it, usually your local MDHHS office.",
   "es": "Envíe una solicitud firmada y por escrito: el formulario DCH-0018 o una carta firmada. Su aviso dice adónde enviarla, por lo general a su oficina local del MDHHS."
+ },
+ "work/retirement_test/plain@2025-01-01": {
+  "en": "In 2025, if you are under full retirement age all year, Social Security withholds $1 of benefits for every $2 you earn above $23,400. In the year you reach full retirement age the limit is $62,160, $1 is withheld for every $3 above it, and only earnings before the month you reach that age count.",
+  "es": "En 2025, si usted no llega a la plena edad de jubilación en todo el año, el Seguro Social retiene $1 de beneficios por cada $2 que gane por encima de $23,400. En el año en que llega a la plena edad de jubilación el límite es de $62,160, se retiene $1 por cada $3 por encima de ese límite, y solo cuentan las ganancias anteriores al mes en que llega a esa edad."
+ },
+ "work/retirement_test/plain@2026-01-01": {
+  "en": "In 2026, if you are under full retirement age all year, Social Security withholds $1 of benefits for every $2 you earn above $24,480. In the year you reach full retirement age the limit is $65,160, $1 is withheld for every $3 above it, and only earnings before the month you reach that age count.",
+  "es": "En 2026, si usted no llega a la plena edad de jubilación en todo el año, el Seguro Social retiene $1 de beneficios por cada $2 que gane por encima de $24,480. En el año en que llega a la plena edad de jubilación el límite es de $65,160, se retiene $1 por cada $3 por encima de ese límite, y solo cuentan las ganancias anteriores al mes en que llega a esa edad."
+ },
+ "work/retirement_no_limit/plain": {
+  "en": "From the month you reach full retirement age, you keep your benefits whatever you earn. Full retirement age is 67 for people born on January 2, 1960 or later, and earlier for people born before that.",
+  "es": "Desde el mes en que llega a la plena edad de jubilación, usted conserva sus beneficios gane lo que gane. La plena edad de jubilación es de 67 años para las personas nacidas el 2 de enero de 1960 o después, y menor para las nacidas antes."
+ },
+ "work/retirement_how_withheld/plain": {
+  "en": "Social Security withholds whole monthly payments, starting in January, until the amount is covered. Anything held beyond the amount is paid back the next year.",
+  "es": "El Seguro Social retiene pagos mensuales completos, empezando en enero, hasta cubrir la cantidad. Lo que se retenga de más se devuelve al año siguiente."
+ },
+ "work/retirement_not_lost/plain": {
+  "en": "Withheld benefits are not lost. Your benefit goes up at full retirement age to account for the months withheld.",
+  "es": "Los beneficios retenidos no se pierden. Su beneficio sube en la plena edad de jubilación para tener en cuenta los meses retenidos."
+ },
+ "work/retirement_first_year/plain": {
+  "en": "In the first year of retirement a monthly rule can apply: you can get a full payment for any month your earnings are at or under the monthly amount, whatever your total for the year.",
+  "es": "En el primer año de jubilación se puede aplicar una regla mensual: puede recibir un pago completo por cualquier mes en que sus ganancias sean iguales o menores a la cantidad mensual, sea cual sea su total del año."
+ },
+ "work/retirement_what_counts/plain": {
+  "en": "Wages count, and for self-employment only net earnings count. Pensions, annuities, investment earnings, interest, capital gains and other government benefits do not count.",
+  "es": "Cuentan los salarios, y del trabajo por cuenta propia solo cuentan las ganancias netas. No cuentan las pensiones, las anualidades, las ganancias de inversiones, los intereses, las ganancias de capital ni otros beneficios del gobierno."
+ },
+ "work/retirement_report/plain": {
+  "en": "Tell Social Security right away if your earnings for the year will differ from your estimate, because benefits are adjusted from that estimate. You can do it online, by phone, or at an office.",
+  "es": "Avise de inmediato al Seguro Social si sus ganancias del año van a ser diferentes de su cálculo, porque los beneficios se ajustan con ese cálculo. Puede hacerlo por internet, por teléfono o en una oficina."
+ },
+ "work/disability_work/plain@2025-01-01": {
+  "en": "In 2025, a month with earnings over $1,160 counts as a trial work month, and earnings over $1,620 a month ($2,700 if blind) count as substantial work.",
+  "es": "En 2025, un mes con ganancias de más de $1,160 cuenta como un mes de trabajo de prueba, y las ganancias de más de $1,620 al mes ($2,700 si es ciego) cuentan como trabajo sustancial."
+ },
+ "work/disability_work/plain@2026-01-01": {
+  "en": "In 2026, a month with earnings over $1,210 counts as a trial work month, and earnings over $1,690 a month ($2,830 if blind) count as substantial work.",
+  "es": "En 2026, un mes con ganancias de más de $1,210 cuenta como un mes de trabajo de prueba, y las ganancias de más de $1,690 al mes ($2,830 si es ciego) cuentan como trabajo sustancial."
+ },
+ "work/disability_twp/plain": {
+  "en": "The trial work period is 9 months, not necessarily in a row, within a 60-month window. Full disability benefits are paid during it whatever you earn, if you report your work and still have a disabling condition.",
+  "es": "El período de trabajo de prueba es de 9 meses, no necesariamente seguidos, dentro de un plazo de 60 meses. Durante ese período se pagan los beneficios completos por incapacidad gane lo que gane, si usted informa su trabajo y sigue teniendo una condición incapacitante."
+ },
+ "work/disability_epe/plain": {
+  "en": "After the trial work period comes a 36-month period. In it, benefits are paid for months your earnings are under the substantial-work level and suspended for months above it. The first time work is above that level, benefits are still paid for that month and the next 2 months.",
+  "es": "Después del período de trabajo de prueba viene un período de 36 meses. En él, los beneficios se pagan por los meses en que sus ganancias están por debajo del nivel de trabajo sustancial y se suspenden por los meses en que están por encima. La primera vez que el trabajo pasa de ese nivel, los beneficios todavía se pagan por ese mes y los 2 meses siguientes."
+ },
+ "work/disability_after_epe/plain": {
+  "en": "After the 36 months, benefits end if you work above the substantial-work level. If you stop that work within 5 years, you may be able to restart benefits quickly.",
+  "es": "Después de los 36 meses, los beneficios terminan si usted trabaja por encima del nivel de trabajo sustancial. Si deja ese trabajo dentro de 5 años, es posible que pueda reanudar los beneficios rápidamente."
+ },
+ "work/disability_report/plain": {
+  "en": "Tell Social Security right away when you start or stop work, or when your duties, hours or pay change. You can report by phone, at a local office, or through your online Social Security account. Social Security gives you a receipt; keep it.",
+  "es": "Avise de inmediato al Seguro Social cuando empiece o deje de trabajar, o cuando cambien sus tareas, sus horas o su sueldo. Puede informar por teléfono, en una oficina local o por medio de su cuenta de Seguro Social por internet. El Seguro Social le da un recibo; guárdelo."
+ },
+ "work/disability_hold/plain": {
+  "en": "You can ask Social Security to hold your payments while it reviews substantial earnings, to avoid an overpayment.",
+  "es": "Puede pedir al Seguro Social que retenga sus pagos mientras revisa ganancias sustanciales, para evitar un pago de más."
+ },
+ "work/disability_help/plain": {
+  "en": "The Ticket to Work Help Line can explain how work affects your benefits: 1-866-968-7842 (TTY 1-866-833-2967).",
+  "es": "La línea de ayuda de Ticket to Work puede explicar cómo el trabajo afecta sus beneficios: 1-866-968-7842 (TTY 1-866-833-2967)."
+ },
+ "work/ssi_report/plain": {
+  "en": "SSI follows different rules. People on SSI report earnings by the sixth day of the next month by phone, or bring pay stubs to a local office by the 10th.",
+  "es": "SSI sigue reglas diferentes. Las personas con SSI informan sus ganancias por teléfono a más tardar el sexto día del mes siguiente, o llevan sus talones de pago a una oficina local a más tardar el día 10."
  }
 }

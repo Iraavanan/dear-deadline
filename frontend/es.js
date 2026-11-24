@@ -1036,6 +1036,60 @@
           r.contact ? h("p", {}, h("b", { text: "DCF de Florida: " }), r.contact) : null,
           r.hearing ? h("p", {}, r.hearing.plain + " ", enlace(r.hearing.source, "Fuente (en inglés)")) : null, cierreEn(r, volver, "missed-interview"));
       }
+    }),
+    "trabajo-y-beneficios": herramienta({
+      api: "work-check", boton: "Revisar", titulo: "Trabajo mientras recibo beneficios",
+      entrada: "Trabajar puede cambiar lo que le paga el Seguro Social, y no informarlo a tiempo es una causa común de pagos de más. Vea qué límite se aplica a sus ganancias y qué decir al Seguro Social. Cubre 2025 y 2026.",
+      dibujar: function (s, p) {
+        var ms = s._meses || [{}, {}, {}, {}, {}, {}];
+        return [opciones("track", "¿Qué beneficio recibe?", [["retirement", "Jubilación, cónyuge o sobreviviente"], ["disability", "Seguro Social por incapacidad (SSDI)"], ["ssi", "SSI"]], s.track, p),
+          grupo("Si recibe jubilación, o beneficios de cónyuge o de sobreviviente", [
+            opciones("year", "¿De qué año son las ganancias?", [["2026", "2026"], ["2025", "2025"]], s.year || "2026", p),
+            opciones("fra", "¿Cuándo llega a la plena edad de jubilación?", [["after", "Después de ese año"], ["this_year", "Durante ese año"], ["already", "Ya llegué"], ["unknown", "No estoy seguro"]], s.fra || "unknown", p),
+            opciones("first_year", "¿Es su primer año recibiendo beneficios?", [["yes", "Sí"], ["no", "No"], ["unknown", "No estoy seguro"]], s.first_year || "unknown", p),
+            campo("earnings", "Ganancias que espera en el año", "Salarios antes de impuestos, o ganancias netas si trabaja por cuenta propia.", "dinero", s.earnings, p),
+            campo("monthly_benefit", "Su beneficio mensual", "Opcional.", "dinero", s.monthly_benefit, p)]),
+          grupo("Si recibe Seguro Social por incapacidad", [
+            opciones("blind", "¿Recibe beneficios por ceguera?", [["no", "No"], ["yes", "Sí"]], s.blind || "no", p),
+            opciones("self_employed", "¿Trabaja por cuenta propia?", [["no", "No"], ["yes", "Sí"]], s.self_employed || "no", p),
+            campo("prior_trial_months", "Meses de trabajo de prueba que ya usó antes de estos meses", "Del 0 al 9. Déjelo en blanco si no está seguro.", "text", s.prior_trial_months, p),
+            h("fieldset", { class: "ticks", id: "months", "aria-invalid": p.months ? "true" : null }, h("legend", { text: "Lo que ganó o espera ganar cada mes, antes de impuestos" }),
+              p.months ? h("p", { class: "err", role: "alert", text: p.months }) : null,
+              ms.map(function (m, i) { return h("div", { class: "setaside" }, campo("w-month-" + i, "Mes " + (i + 1), null, "month", m.month, {}), campo("w-earnings-" + i, "Ganancias", null, "dinero", m.earnings, {})); }))])];
+      },
+      leer: function () {
+        var meses = [], months = [];
+        [0, 1, 2, 3, 4, 5].forEach(function (i) { var m = { month: valor("w-month-" + i), earnings: valor("w-earnings-" + i) }; meses.push(m); if (m.month || m.earnings) months.push(m); });
+        var t = elegido("track"), b = { track: t, _meses: meses };
+        if (t === "retirement") { b.year = elegido("year"); b.fra = elegido("fra"); b.first_year = elegido("first_year"); b.earnings = valor("earnings"); b.monthly_benefit = valor("monthly_benefit"); }
+        if (t === "disability") { b.blind = elegido("blind"); b.self_employed = elegido("self_employed"); b.prior_trial_months = valor("prior_trial_months") || "unknown"; b.months = months; }
+        return b;
+      },
+      ejemplo: function () { return { track: "retirement", year: "2026", fra: "after", first_year: "no", earnings: "30000", monthly_benefit: "1500" }; },
+      resultado: function (r, volver) {
+        var botones = h("div", { class: "row" }, h("button", { class: "go", type: "button", text: "Imprimir", on: { click: function () { window.print(); } } }),
+          h("button", { class: "quiet", type: "button", text: "Cambiar mis respuestas", on: { click: volver } }), h("button", { class: "quiet", type: "button", text: "Volver al inicio", on: { click: function () { location.hash = ""; } } }));
+        if (!r.covered) {
+          mostrar(h("h1", { class: "long", text: "SSI tiene reglas diferentes" }), h("p", { class: "lead", text: r.message }), h("p", { text: r.help }),
+            h("p", {}, "Seguro Social: " + r.phone + " (TTY " + r.tty + "). ", enlace(r.legal_aid_finder, "Buscar ayuda legal")),
+            h("p", { class: "small", text: "Esta herramienta es independiente. No es una agencia del gobierno y no da consejos legales. La traducción al español todavía no ha sido revisada por un traductor profesional. Reglas revisadas el " + r.rules_as_of + "." }), botones);
+          return;
+        }
+        var k = r.kit;
+        mostrar(h("h1", { class: "long", text: r.headline }), h("p", { class: "lead", text: r.detail }),
+          r.rows ? h("table", { class: "plain" }, r.rows.map(function (x) { return h("tr", {}, h("th", { scope: "row", text: x.label }), h("td", {}, h("b", { text: dinero(x.earnings) }), h("br"), h("span", { class: "small", text: x.text }))); })) : null,
+          r.scenarios ? r.scenarios.map(function (x) { return h("p", {}, h("b", { text: x.label + ": " }), x.text); }) : null,
+          r.verify ? [h("h2", { text: "Qué averiguar" }), h("ul", {}, r.verify.map(function (x) { return h("li", { text: x }); }))] : null,
+          h("ul", {}, r.notes.map(function (x) { return h("li", { text: x }); })),
+          h("h2", { text: "Tenga en cuenta" }), h("ul", {}, r.cautions.map(function (x) { return h("li", { text: x }); })),
+          h("h2", { text: k.title }), h("p", { text: k.why }), pasos(k.how),
+          borrador("Qué decir o entregar (en inglés)", "Está en inglés porque así lo lee el Seguro Social. Complete lo que está entre corchetes [ ].", k.script),
+          h("h3", { text: "Tenga esto a mano" }), h("ul", {}, k.documents.map(function (x) { return h("li", { text: x }); })),
+          k.more.map(function (x) { return h("p", { text: x }); }), h("p", { text: k.if_letter }),
+          h("h2", { text: "Regla en que se basa" }), h("ul", { class: "small sources" }, h("li", {}, r.rule + " ", enlace(r.source, "Fuente (en inglés)"))),
+          h("p", { class: "small", text: k.disclaimer + " Reglas revisadas el " + r.rules_as_of + "." }),
+          h("p", { class: "small" }, "También puede abrir ", h("a", { href: "/#work-check", text: "esta herramienta en inglés" }), "."), botones);
+      }
     })
   };
 
