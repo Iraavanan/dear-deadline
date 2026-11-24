@@ -510,3 +510,20 @@ table.plain th[scope="row"] { font-weight: 600; border-bottom: 1px solid var(--l
 .money-grid { display: grid; gap: 0 var(--s3); }
 @media (min-width: 560px) { .money-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .money-grid .field { margin: 0; }
+
+/* Research pages */
+.research .byline { color: var(--soft); font-size: var(--small); margin: 0 0 var(--s2); }
+.research .paper-formal { color: var(--soft); margin: 0 0 var(--s1); }
+.research .crumbs { font-size: var(--small); margin: 0 0 var(--s2); }
+.research .preprint { display: inline-block; font-size: var(--small); font-weight: 700; background: var(--yellow-tint); border: 1px solid var(--yellow); border-radius: 4px; padding: 0 var(--s2); margin: 0 0 var(--s3); }
+.research .short-version { border: 1px solid var(--teal-dark); border-left-width: 6px; border-radius: 6px; padding: var(--s2) var(--s3); margin: 0 0 var(--s4); }
+.research .short-version h2 { margin-top: 0; font-size: 1.1rem; }
+.research .short-version p { margin: 0; }
+.research .paper-findings li { margin-bottom: var(--s1); }
+.research .paper-buttons { display: flex; flex-wrap: wrap; gap: var(--s2); margin: var(--s4) 0; }
+.research a.go, .research a.quiet { text-decoration: none; }
+.research a.go { color: #fff; }
+.research a.quiet { color: var(--ink); }
+.research .cite { font-size: var(--small); border: 1px solid var(--line); border-radius: 6px; padding: var(--s2) var(--s3); overflow-wrap: anywhere; }
+.research .paper-group { margin: var(--s4) 0; }
+.research .paper-cards { margin-top: var(--s2); }

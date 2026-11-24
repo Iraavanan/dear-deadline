@@ -1,0 +1,74 @@
+{
+ "table": "reinstate",
+ "about": "Expedited reinstatement: restarting disability benefits that stopped because of work.",
+ "rows": [
+  {
+   "id": "who",
+   "plain": "You can ask to restart benefits without a new application if they stopped because of earnings from work, you cannot work at the substantial gainful activity level now, your condition is the same as or related to the one you got benefits for, and you ask within 5 years of the month benefits ended.",
+   "source": "https://www.ssa.gov/disabilityresearch/wi/exr.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "window",
+   "plain": "Social Security counts the 60 months as the month benefits ended plus 59 more months.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0413050050",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "months": 60
+  },
+  {
+   "id": "same_month",
+   "plain": "You can ask in the same month you stop working at the substantial gainful activity level.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0428057001",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "provisional",
+   "plain": "While Social Security reviews your condition, you can get up to 6 months of temporary benefits, and you may get Medicare or Medicaid during that time.",
+   "source": "https://www.ssa.gov/redbook/eng/exr.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "not_repaid",
+   "plain": "Temporary benefits usually do not have to be paid back if the request is denied.",
+   "source": "https://www.ssa.gov/disabilityresearch/wi/exr.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "forms",
+   "plain": "The request is made on form SSA-371 for Social Security disability or form SSA-372 for SSI.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0428057010",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "late",
+   "plain": "If a reinstatement request is denied, it can protect your filing date for a new application.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0413050045",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "sga",
+   "plain": "In 2026, work is substantial gainful activity at earnings over $1,690 a month ($2,830 if you are blind).",
+   "source": "https://www.ssa.gov/cola/factsheets/2026.html",
+   "effective_from": "2026-01-01",
+   "checked_on": "2026-11-23",
+   "amount": 1690,
+   "blind": 2830
+  },
+  {
+   "id": "sga",
+   "plain": "In 2027, work is substantial gainful activity at earnings over $1,770 a month ($2,950 if you are blind).",
+   "source": "https://www.ssa.gov/cola/factsheets/2027.html",
+   "effective_from": "2027-01-01",
+   "checked_on": "2026-11-23",
+   "amount": 1770,
+   "blind": 2950
+  }
+ ]
+}

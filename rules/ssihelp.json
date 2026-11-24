@@ -1,0 +1,102 @@
+{
+ "table": "ssihelp",
+ "about": "How help with housing (in-kind support and maintenance) can lower SSI, and what can change it.",
+ "rows": [
+  {
+   "id": "fbr",
+   "plain": "The 2026 federal SSI amount is $994 a month for one person and $1,491 for a couple.",
+   "source": "https://www.ssa.gov/oact/cola/SSI.html",
+   "effective_from": "2026-01-01",
+   "checked_on": "2026-11-23",
+   "single": 994,
+   "couple": 1491
+  },
+  {
+   "id": "fbr",
+   "plain": "The 2027 federal SSI amount is $1,029 a month for one person and $1,544 for a couple.",
+   "source": "https://www.ssa.gov/oact/cola/SSI.html",
+   "effective_from": "2027-01-01",
+   "checked_on": "2026-11-23",
+   "single": 1029,
+   "couple": 1544
+  },
+  {
+   "id": "food",
+   "plain": "Since September 30, 2024, food someone gives you is no longer counted. Only help with shelter can lower SSI.",
+   "source": "https://www.ssa.gov/news/en/advocates/2024-09-30.html",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "shelter",
+   "plain": "Shelter costs are rent, mortgage, electricity, heating fuel and similar utilities. Phone and cable TV are not shelter costs.",
+   "source": "https://www.ssa.gov/ssi/text-living-ussi.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "share",
+   "plain": "If you live with others and pay your full share of the household's shelter costs, the help is not counted and SSI is not reduced.",
+   "source": "https://www.ssa.gov/ssi/text-living-ussi.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "vtr",
+   "plain": "If you live in another person's household for a whole month and others provide your shelter without you paying your share, SSI may be reduced by one-third of the federal amount.",
+   "source": "https://www.ssa.gov/ssi/spotlights/spot-one-third-reduction.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "pmv",
+   "plain": "In other cases, the help counted is limited to one-third of the federal amount plus $20 (the presumed maximum value).",
+   "source": "https://www.ssa.gov/OACT/ssir/SSI26/III_ProgramDescription.html",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "exclusion",
+   "plain": "The first $20 of unearned income each month is not counted, so help worth $100 can lower SSI by $80.",
+   "source": "https://www.ssa.gov/ssi/text-living-ussi.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "amount": 20
+  },
+  {
+   "id": "pa",
+   "plain": "If at least one other person in your household gets SNAP, TANF, SSI or another need-based payment, the household may count as a public assistance household.",
+   "source": "https://www.ssa.gov/ssi/spotlights/spot-living-arrangements-reg.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "rental",
+   "plain": "If you rent from your parent or child, the rent is not counted as help when it is at least the lower of the presumed maximum value or the local market rent.",
+   "source": "https://www.ssa.gov/ssi/spotlights/spot-living-arrangements-reg.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "report",
+   "plain": "Report a change in where you live or who pays the shelter costs no later than 10 days after the end of the month it happens.",
+   "source": "https://www.ssa.gov/ssi/text-report-ussi.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "appeal",
+   "plain": "If you ask for reconsideration in writing within 10 days of getting the notice, your payment continues until it is decided. You have 60 days to appeal.",
+   "source": "https://www.ssa.gov/ssi/text-appeals-ussi.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "statement",
+   "plain": "Social Security may ask for a statement of household expenses and contributions (form SSA-8012).",
+   "source": "https://secure.ssa.gov/apps10/reference.nsf/lnx/09252024015358PM",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  }
+ ]
+}

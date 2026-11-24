@@ -1,0 +1,285 @@
+{
+ "author": "Shirshak Jung Thapa",
+ "citation_author": "Thapa, Shirshak Jung",
+ "short_author": "Thapa, S. J.",
+ "orcid": "https://orcid.org/0009-0000-4144-5151",
+ "role": "graduate student at Florida Atlantic University",
+ "intro": [
+  "I study whether the software that works out public benefits gives people correct answers.",
+  "This site puts that work to use. Each study below has a short summary in plain words and the full paper."
+ ],
+ "groups": [
+  {
+   "id": "benefits",
+   "name": "Research on benefits software"
+  },
+  {
+   "id": "other",
+   "name": "Other software research"
+  }
+ ],
+ "papers": [
+  {
+   "slug": "social-security-calculators",
+   "group": "benefits",
+   "tag": "Social Security",
+   "question": "Are Social Security benefit calculators accurate?",
+   "title": "How Accurate Are Open-Source Social Security Calculators?",
+   "date": "2026-11-19",
+   "doi": "10.5281/zenodo.24376858",
+   "data_doi": "10.5281/zenodo.24375957",
+   "pdf": "How_Accurate_Are_Open-Source_Social_Security_Calculators.pdf",
+   "md5": "58681f5fce7fd36cd4155c7373dd478d",
+   "description": "Five open-source Social Security retirement calculators checked against the Social Security Administration's own calculator for 1,231 made-up workers.",
+   "card": "Five open-source calculators checked against the agency's own calculator for 1,231 made-up workers. One matched every time.",
+   "short": [
+    "People use free calculators to estimate their Social Security retirement benefit.",
+    "I checked five open-source calculators against the Social Security Administration's own published calculator, using 1,231 made-up workers.",
+    "One calculator matched the agency's answer for every worker.",
+    "Three gave a wrong monthly benefit for 2, 15 and 19 percent of the workers, mostly because of three small mistakes."
+   ],
+   "found": [
+    "Of five open-source Social Security calculators tested, one matched the Social Security Administration's calculator for all 1,231 test workers.",
+    "Three of the five calculators gave a wrong monthly benefit for 2, 15 and 19 percent of the test workers.",
+    "Rounding: two calculators round to the nearest cent before rounding down, which makes some benefits a dollar a month too high.",
+    "Birthdays on January 1: the law treats a person born on January 1 as born the year before. Two calculators miss this, an error worth up to $175 a month.",
+    "High earners: one calculator ignores the yearly limit on earnings that count, putting a typical high earner $597 a month too high.",
+    "The fifth calculator counts only earnings from age 22 to 61, as its own code says, and comes out a little low.",
+    "Three published worked examples, in a Congressional Research Service report and in the federal regulations, print an amount the rules do not give, so testing against them can miss mistakes."
+   ],
+   "matters": [
+    "For an ordinary worker, born in the middle of a month and earning under the yearly limit, the calculators gave the right amount or a dollar more.",
+    "The larger errors fall on people at the edges of the rules, such as a January 1 birthday or high earnings.",
+    "If you are deciding when to claim, compare any estimate with your own Social Security statement or the agency's calculator at ssa.gov."
+   ],
+   "method": [
+    "I built the Social Security Administration's published Detailed Calculator without changes and used its results as the answer key.",
+    "A second program, written only from the law and regulations, agrees with it on every worker.",
+    "The 1,231 made-up workers include 331 placed where a rule changes, such as a birthday on the first of a month or earnings exactly at the yearly limit.",
+    "The workers, the official answers and the checks are public, so anyone can test a calculator the same way."
+   ],
+   "checked": true
+  },
+  {
+   "slug": "benefit-rules-that-change",
+   "group": "benefits",
+   "tag": "SNAP",
+   "question": "What happens when benefit rules change after the fact?",
+   "title": "Rewriting the Past: How an AI-Assisted Benefits Model Handles Dated Rules",
+   "date": "2026-11-20",
+   "doi": "10.5281/zenodo.24406653",
+   "data_doi": "10.5281/zenodo.24406575",
+   "pdf": "Rewriting_the_Past_preprint.pdf",
+   "md5": "28cfd41d537f40c46151f6ffc6a9a85d",
+   "description": "A year of changes to the SNAP rules in an open-source benefits model, and a test of an AI coding agent adding dated rule changes.",
+   "card": "One year of changes to the SNAP rules in an open-source benefits model. Correcting the past turned out to be routine.",
+   "short": [
+    "Benefit rules change on set dates, but hearings, corrections and reviews ask about earlier months, so software that encodes the rules must still answer correctly for the past.",
+    "I studied every change made in 2026 to the dated SNAP rules in an open-source benefits model, where most changes were made with an AI coding tool.",
+    "Changing the rules for months that had already passed was routine.",
+    "In a controlled test, an AI coding agent did not damage any earlier month, but code that ignored the dated rules did give wrong answers."
+   ],
+   "found": [
+    "In 2026, 89 of the 101 changes to dated SNAP values in the open-source benefits model named an AI tool as co-author.",
+    "72 of those 101 changes altered a period that had already taken effect.",
+    "New periods were entered a median of 157 days after they took effect.",
+    "29 of 33 fixes repaired entries written earlier the same year.",
+    "2 changes altered entries that were correct: one by accident, and one by trusting an official table that was wrong.",
+    "In 20 runs, an AI coding agent putting 10 real rule changes into the model damaged no result for earlier months and made both required corrections to the past. Its 3 errors were about fitting the existing code, and 2 of them were caught only by the maintainers' tests.",
+    "One formula reads the rules at a fixed date instead of the date asked about, which denied an exemption to adults aged 51 to 54 in months when the law granted it."
+   ],
+   "matters": [
+    "Questions about past months come up when someone asks for a hearing, when benefits that were wrongly withheld are restored, or when an old overpayment is collected.",
+    "If the software has the wrong rule for that month, the answer for that month can be wrong even though nothing looks wrong today.",
+    "In this study the risk came from late entries, repeated corrections and code that ignores the dated rules, not from an AI tool overwriting history.",
+    "The model studied is an independent calculator, not a system that state agencies use to decide benefits."
+   ],
+   "method": [
+    "I compared every dated SNAP value in the model before and after each of the year's 101 changes, and recorded every change to an earlier month.",
+    "I then asked an AI coding agent to put 10 real rule changes back into the model from short notices, 20 runs in all, and checked every earlier month.",
+    "The study covers one codebase, one program and one year."
+   ],
+   "checked": true
+  },
+  {
+   "slug": "keyboard-access-benefit-forms",
+   "group": "benefits",
+   "tag": "Accessibility",
+   "question": "Do AI code changes break keyboard access to benefit forms?",
+   "title": "AI Coding Agents and Web Accessibility: Keyboard and Screen-Reader Access to Public-Benefit Forms",
+   "date": "2026-11-23",
+   "doi": "10.5281/zenodo.24429402",
+   "data_doi": "10.5281/zenodo.24429397",
+   "pdf": "AI_Coding_Agents_and_Web_Accessibility_preprint.pdf",
+   "md5": "dcedadbca9cf7dbcba36a29f6ab66934",
+   "description": "Benefit application forms tested by keyboard and screen reader before and after each change written by an AI coding agent.",
+   "card": "Benefit application forms tested by keyboard and screen reader before and after each change written by an AI tool.",
+   "short": [
+    "Many people fill in benefit applications with a keyboard or a screen reader instead of a mouse.",
+    "I checked whether changes made by AI coding agents broke keyboard completion of the forms in three open-source public-benefit applications, testing each form by keyboard before and after each change.",
+    "None of the changes broke keyboard completion.",
+    "But barriers I planted by hand passed every check the projects ran, and an automated accessibility scanner caught only one of 14."
+   ],
+   "found": [
+    "In three open-source public-benefit applications, none of 41 merged AI-agent changes that touched form code broke completing the form by keyboard (95 percent interval: 0 to 9 percent).",
+    "Across 91 changes that touched interface or form code, none broke keyboard completion (95 percent interval: 0 to 4 percent).",
+    "Of 48 changes commissioned from two AI models, none broke keyboard completion (95 percent interval: 0 to 7 percent).",
+    "14 barriers were planted by hand in one application: 10 that stop the keyboard and 4 that hide information from screen readers. All of them passed the project's own checks.",
+    "An automated accessibility scanner reported a new problem for 1 of the 14 planted barriers and for none of the 10 keyboard barriers.",
+    "In recordings of the NVDA screen reader, something was missing at the planted step for 10 of the 14 barriers."
+   ],
+   "matters": [
+    "For a person who uses a keyboard or a screen reader, one broken step can block a whole benefit application.",
+    "The AI-made changes studied here did not cause such breaks, but the projects' own checks would not have caught one.",
+    "Benefit websites need keyboard tests of their own, not only automated scanners."
+   ],
+   "method": [
+    "Scripted keyboard runs completed each form before and after every change, with a mouse-driven run as a control.",
+    "To test whether problems get caught, 14 barriers were planted by hand in one application and run past the project's checks, an automated scanner and the NVDA screen reader."
+   ],
+   "checked": true
+  },
+  {
+   "slug": "saved-ai-conversations",
+   "group": "other",
+   "tag": "AI apps",
+   "question": "Why saved AI conversations sometimes cannot be reopened",
+   "title": "When Conversations Cannot Resume: An Empirical Study of Persistent-State Failures in LLM Applications",
+   "date": "2026-11-17",
+   "doi": "10.5281/zenodo.24318243",
+   "data_doi": "10.5281/zenodo.24268936",
+   "pdf": "When_Conversations_Cannot_Resume_preprint_Zenodo.pdf",
+   "md5": "65c66bf2a0c7c20732f82502f9f1e9ac",
+   "description": "A study of 275 reported bugs where a saved conversation in an AI application can no longer be continued.",
+   "card": "What goes wrong when an AI assistant saves a conversation and later cannot continue it.",
+   "short": [
+    "Apps built on large language models save conversations so people can come back to them.",
+    "Sometimes a saved conversation can no longer be continued, because the AI provider's service rejects the stored history.",
+    "I studied 275 reported problems of this kind from 128 open-source projects and reproduced 12 of them.",
+    "In the failures I reproduced, most were caused by code around the AI agent rather than the agent itself, and fixes tended to repair the history when it was read back instead of stopping the bad save."
+   ],
+   "found": [
+    "275 GitHub issues from 128 repositories were analysed and grouped into 261 root causes.",
+    "12 defects in 10 applications were reproduced.",
+    "In 5 of 8 conversations that could no longer be continued, code around the agent, such as an extension, plugin or compaction step, saved a message between a tool call and its result.",
+    "Rules written in the study agreed with one provider's service on 120 of 121 held-out histories, and on 80 of 80 after one revision, and with a second provider on 161 of 177.",
+    "A widely used framework's built-in history check caught only 38 to 42 percent of the histories that one provider rejected.",
+    "A search of 15 current open-source applications and frameworks found 6 defects not reported before, in 5 applications. 5 of them stop a conversation from continuing, and 3 of those 5 sit in or next to code added by an earlier fix."
+   ],
+   "matters": [
+    "A conversation that cannot be continued loses the person's work and context.",
+    "The study shows where to check: the code that saves messages around the agent, and the fixes applied after earlier failures."
+   ],
+   "method": [
+    "The 275 issues were analysed under a protocol fixed in advance.",
+    "Reproduced failures were checked against the real services of two AI providers, and the validation rules were tested on histories held back from their writing."
+   ],
+   "checked": true
+  },
+  {
+   "slug": "postconditions-ai-code-review",
+   "group": "other",
+   "tag": "AI code review",
+   "question": "Does telling an AI code reviewer what the code should do help?",
+   "title": "When Postconditions Help or Mislead: An Empirical Study of LLM Code Review",
+   "date": "2026-11-04",
+   "doi": "10.5281/zenodo.23956986",
+   "data_doi": "10.5281/zenodo.23928190",
+   "pdf": "Thapa_2026_Postconditions_LLM_Code_Review.pdf",
+   "md5": "b6323e6460d9f7c6c98ea5fa470729c3",
+   "description": "Three AI code reviewers, 210 real Java methods and 17,640 reviews, with and without a statement of what each method should do.",
+   "card": "Three AI reviewers, 210 real Java methods, with and without a statement of the intended behavior.",
+   "short": [
+    "AI code reviewers see what code does but not what it is supposed to do, so they flag correct code and miss real bugs.",
+    "I gave three AI reviewers 210 real Java methods, each in its original form and with three planted bugs, sometimes with a statement of what the method should guarantee, called a postcondition.",
+    "Checked postconditions cut false alarms by more than half for two of the three reviewers.",
+    "Postconditions written by an AI also helped, unless the reviewer was told to treat them as the specification."
+   ],
+   "found": [
+    "Three AI reviewers from three companies produced 17,640 reviews of 210 real Java methods, each reviewed in its original form and as 3 versions with a planted bug.",
+    "For two of the three reviewers, adding the benchmark's checked postconditions cut false alarms by more than half, while adding the whole source file did not significantly change them.",
+    "When one reviewer was told to treat AI-written postconditions as the specification, it found 16 percentage points fewer bugs. On bugs those postconditions did not cover, its rate fell from 82 percent to 21 percent.",
+    "Without that instruction, the same AI-written postconditions helped that reviewer find more bugs than with none: 89.5 percent against 86.3 percent.",
+    "Some of what the benchmark counted as false alarms were real: in 19 of the 23 cases checked, the code breaks its reference postconditions on an input the benchmark's tests never try."
+   ],
+   "matters": [
+    "Teams adding an AI reviewer can cut false alarms by giving it a statement of what the code is meant to do.",
+    "The wording matters: give the statement as information, not as an order to treat it as the specification."
+   ],
+   "method": [
+    "The study used PostcondBench, a public benchmark of 210 Java methods from 60 open-source projects with checked postconditions.",
+    "Each method was reviewed alone, with its whole source file, or with either the checked or the AI-written postconditions, and every review was scored against the benchmark.",
+    "A follow-up experiment removed the instruction to treat the postconditions as the specification, to measure its effect."
+   ],
+   "checked": true
+  },
+  {
+   "slug": "telling-failures-apart",
+   "group": "other",
+   "tag": "Reliability",
+   "question": "Can a system's failures be told apart from its logs?",
+   "title": "Telling Failures Apart: Fault Injection, Failure Diagnosis and AI Code Changes",
+   "date": "2026-11-23",
+   "doi": "10.5281/zenodo.24429391",
+   "data_doi": "10.5281/zenodo.24429382",
+   "pdf": "Telling_Failures_Apart_preprint.pdf",
+   "md5": "97d4e76b0b5648b201c04902f6f95481",
+   "description": "Failures injected into an open-source billing system, to see which ones leave the same evidence behind, and whether code changes make that worse.",
+   "card": "Failures injected into a billing system, to see which ones leave the same evidence behind.",
+   "short": [
+    "When a system fails, engineers work out what went wrong from the evidence it reports, such as logs, error messages and responses.",
+    "I injected failures into an open-source billing system at six code paths through eleven entry points, and checked which kinds of failure leave evidence that can be told apart.",
+    "In the release studied, 56 of 235 pairs of failure kinds could not be told apart.",
+    "Careless edits that made this worse mostly went unnoticed by the existing tests, while 141 changes made by AI models made none worse."
+   ],
+   "found": [
+    "In the release studied, 56 of the 235 pairs of failure kinds measured left evidence that could not be told apart.",
+    "Of 27 careless edits planted in the code, 8 made failures harder to tell apart. Existing tests caught 1 of those 8, and none of the 5 that left the business outcome unchanged.",
+    "Two AI models made 144 maintenance changes, half of them with an instruction to keep failures distinguishable. 141 compiled, and none of the 141 made any pair harder to tell apart (95 percent interval: 0 to 3 percent)."
+   ],
+   "matters": [
+    "When different failures look the same in the logs, the person fixing them has to guess, and a billing error can take longer to find.",
+    "In this system, the larger risk lay in the existing code and in tests that never check error evidence, more than in AI-made changes."
+   ],
+   "method": [
+    "Between 5 and 12 kinds of failure were injected per test scenario, at six code paths through eleven entry points, and each case was run twice.",
+    "Each pair of failure kinds was then compared for evidence that tells them apart. The findings apply to this one system and release."
+   ],
+   "checked": true
+  },
+  {
+   "slug": "ai-tests-two-conditions",
+   "group": "other",
+   "tag": "Testing",
+   "question": "Why AI-written tests miss bugs that need two conditions at once",
+   "title": "Combined but Not Reached: AI-Generated Tests for Requirement Interactions",
+   "date": "2026-11-23",
+   "doi": "10.5281/zenodo.24482952",
+   "data_doi": null,
+   "pdf": "Combined_but_Not_Reached.pdf",
+   "md5": "73bac527c83daa6086333f047c890829",
+   "description": "An AI coding agent writing tests for eight real bugs that appear only when two requirements hold at the same time.",
+   "card": "The tests often combine the right conditions and still never run the code that fails.",
+   "short": [
+    "Some bugs appear only when two requirements hold at the same time.",
+    "I gave an AI coding agent the requirements and the code before the fix for eight real bugs from five open-source projects, and asked it to write tests, with and without an instruction to exercise the requirements together.",
+    "Most tests combined the two requirements, but few reached the faulty code.",
+    "That gap explained every missed bug, and the extra instruction did not improve detection."
+   ],
+   "found": [
+    "Of 102 valid tests the agent wrote for 8 historical bugs from 5 open-source projects, 40 combined the two requirements, 7 reached the code path with the bug, and 6 detected it.",
+    "In 21 of the 29 test suites that missed their bug, the tests combined the requirements but did not reach the faulty path.",
+    "Asking the agent to exercise the requirements together raised the number of tests combining them from 16 to 24, but detection stayed at 3 of 15 runs with either prompt."
+   ],
+   "matters": [
+    "A test that sets up the right situation can still pass over the code that fails.",
+    "When reviewing tests written by AI, check that each test actually runs the code it is meant to check, not only that it names the right conditions."
+   ],
+   "method": [
+    "For each of 8 historical bugs, the agent got neutral requirements and the code before the fix, and wrote tests three times with a plain prompt and three times with an added instruction.",
+    "Each test was run against the code with the bug. The data, scores and scripts that reproduce the tables are on Zenodo."
+   ],
+   "checked": true
+  }
+ ]
+}

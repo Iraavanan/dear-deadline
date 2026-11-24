@@ -90,17 +90,19 @@
     title: "My Medicare premium is higher because of my income",
     lead: "If your income two years ago was above a limit, you pay more for Medicare Part B and Part D (IRMAA). If your income has gone down since because of retirement or another life-changing event, you can ask for a new decision.",
     draw: function (s, p) {
-      return [U.choice("filing", "How did you file your 2024 tax return?", [["single", "Single, head of household or surviving spouse"], ["joint", "Married filing jointly"], ["separate", "Married filing separately (lived with spouse)"]], s.filing, p),
+      var y = new Date().getFullYear();
+      return [U.choice("year", "Which year's premium is your letter about?", [[String(y), String(y)], [String(y + 1), String(y + 1) + " (letters sent near the end of " + y + ")"]], s.year || String(y), p),
+        U.choice("filing", "How did you file the tax return from two years before that year?", [["single", "Single, head of household or surviving spouse"], ["joint", "Married filing jointly"], ["separate", "Married filing separately (lived with spouse)"]], s.filing, p),
         U.field("magi", "Modified adjusted gross income on that return", "Your adjusted gross income plus tax-exempt interest. The amount is on the letter about your premium.", input("money", s.magi), p),
         U.choice("event", "Has one of these happened since?", EVENTS, s.event || "none", p),
         U.field("new_income", "The income you expect this year", "Optional. Used to show what the premium could be after a new decision.", input("money", s.new_income), p)];
     },
-    read: function () { return { filing: U.picked("filing"), magi: val("magi"), event: U.picked("event"), new_income: val("new_income") }; },
-    example: function () { return { filing: "joint", magi: "290000", event: "work_stopped", new_income: "120000" }; },
+    read: function () { return { year: U.picked("year"), filing: U.picked("filing"), magi: val("magi"), event: U.picked("event"), new_income: val("new_income") }; },
+    example: function () { return { year: String(new Date().getFullYear()), filing: "joint", magi: "290000", event: "work_stopped", new_income: "120000" }; },
     show: function (r, s, back) {
       U.count("medicare-irmaa", "kit");
       U.show(h("h1", { class: "long", text: r.headline }),
-        table([["Part B premium a month", money(r.part_b)], ["Part D extra a month", money(r.part_d_extra)], ["Extra over the standard premium", money(r.monthly_extra)],
+        table([["Year", String(r.year) + " (based on your " + r.tax_year + " tax return)"], ["Part B premium a month", money(r.part_b)], ["Part D extra a month", money(r.part_d_extra)], ["Extra over the standard premium", money(r.monthly_extra)],
           r.new_level !== undefined ? ["At your expected income", money(r.new_part_b) + " Part B, " + money(r.new_monthly_extra) + " extra in all"] : null]),
         h("h2", { text: "What you can do" }), steps(r.steps),
         h("p", {}, U.link("https://www.ssa.gov/forms/ssa-44.html", "Form SSA-44 at ssa.gov"), " · ", h("a", { href: "#medicare-costs", text: "Could a program pay my Medicare costs?" })),

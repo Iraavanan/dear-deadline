@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 RULES_DIR = Path(__file__).resolve().parents[2] / "rules"
-TABLES = ("deadlines", "requests", "withholding", "kit", "cessation", "work", "denial", "reporting", "scam", "letters", "amount", "bill", "workrules", "renewal", "rent", "hearing", "utility", "wic", "noticecheck", "medicaid_states", "ssilimit", "planappeal", "diswait", "msp", "stolen", "lockout", "ssacall", "withhold", "procedural", "askedagain", "permission", "hearingnext", "medicaidend", "latefiling", "payday", "offset", "irmaa")
+TABLES = ("deadlines", "requests", "withholding", "kit", "cessation", "work", "denial", "reporting", "scam", "letters", "amount", "bill", "workrules", "renewal", "rent", "hearing", "utility", "wic", "noticecheck", "medicaid_states", "ssilimit", "planappeal", "diswait", "msp", "stolen", "lockout", "ssacall", "withhold", "procedural", "askedagain", "permission", "hearingnext", "medicaidend", "latefiling", "payday", "offset", "irmaa", "death", "reinstate", "ssihelp", "changed")
 
 REQUIRED_ROW_FIELDS = ("id", "source", "effective_from", "checked_on")
 

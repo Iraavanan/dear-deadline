@@ -1,0 +1,64 @@
+{
+ "table": "death",
+ "about": "When someone who got Social Security or SSI dies: payments to return, the $255 payment and who to tell.",
+ "rows": [
+  {
+   "id": "report",
+   "plain": "A funeral home usually reports the death to Social Security. If not, report it by phone at 1-800-772-1213 (TTY 1-800-325-0778) or in person. A death cannot be reported online.",
+   "source": "https://www.usa.gov/social-security-report-a-death",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "return_ss",
+   "plain": "If the person was getting Social Security, the benefit for the month of death and any later months must be returned.",
+   "source": "https://www.ssa.gov/benefits/survivors/ifyou.html",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "arrears",
+   "plain": "Each Social Security payment is for the month before it is paid, so the benefit for the month of death is paid in the following month.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202408650",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "return_ssi",
+   "plain": "SSI ends the month after the month of death. SSI paid for any month after the month of death must be returned.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0502301250",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "bank",
+   "plain": "A bank must send back federal benefit payments that arrive after it learns of the death. Payments made by mistake can also be taken back from the account later.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0202408650",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "lump",
+   "plain": "A one-time $255 payment may go to a spouse. A spouse who did not live in the same home may be eligible if they can get benefits on the record of the person who died. If there is no spouse, some children may be eligible. Apply within 2 years of the death.",
+   "source": "https://www.ssa.gov/personal-record/when-someone-dies/lump-sum-death-payment",
+   "effective_from": null,
+   "checked_on": "2026-11-23",
+   "amount": 255,
+   "years": 2
+  },
+  {
+   "id": "lump_order",
+   "plain": "The $255 is paid first to a spouse who lived in the same household, then to a spouse who can get monthly benefits on the record, then to children who can get benefits on the record, who share it.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0900703596",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
+   "id": "survivors",
+   "plain": "A widow or widower, some divorced spouses, children and dependent parents may be able to get monthly survivors benefits on the record of the person who died.",
+   "source": "https://www.ssa.gov/benefits/survivors/ifyou.html",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  }
+ ]
+}

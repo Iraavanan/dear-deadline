@@ -70,7 +70,8 @@
     "filed": "Keep a record of what I sent", "is-it-real": "Is this message real?", "helper-permission": "Can someone talk to the agency for me?",
     "helper-board": "I help several people", "earnings-record": "Is a year missing from my earnings record?", "fema-proof": "FEMA is asking for proof that I lived there",
     "late-appeal": "I missed my appeal deadline", "payment-missing": "My payment didn't arrive", "benefit-offset": "Part of my benefit is taken for a debt",
-    "medicare-irmaa": "My Medicare premium is higher because of income"
+    "medicare-irmaa": "My Medicare premium is higher because of income", "after-death": "Someone who got benefits died",
+    "work-restart": "My benefits stopped after I went back to work", "ssi-help": "My SSI went down because of help I get", "amount-changed": "My benefit amount changed"
   };
   var RELATED = {
     "overpayment": ["withholding", "check-amount", "notice-check"], "check-amount": ["overpayment", "notice-check"], "notice-check": ["overpayment", "check-amount"],
@@ -84,7 +85,8 @@
     "work-check": ["report-change", "ssi-limit"], "ssi-limit": ["report-change", "overpayment"], "report-change": ["work-check", "filed"], "filed": ["asked-again", "ssa-call"],
     "is-it-real": ["stolen-snap", "locked-out"], "helper-permission": ["helper-board"], "helper-board": ["helper-permission"],
     "late-appeal": ["decision-appeal", "filed"], "payment-missing": ["ssa-call", "locked-out"], "benefit-offset": ["withholding", "ssa-call"],
-    "medicare-irmaa": ["medicare-costs", "filed"]
+    "medicare-irmaa": ["medicare-costs", "filed"], "after-death": ["ssa-call", "filed"], "work-restart": ["work-check", "ssa-call"],
+    "ssi-help": ["report-change", "ssi-limit"], "amount-changed": ["withholding", "medicare-irmaa"]
   };
   function related() {
     var where = (location.hash || "").replace(/^#/, "").split("/")[0], list = RELATED[where === "letter" ? "medicare-letter" : where];
@@ -320,7 +322,11 @@
               way("I missed my appeal deadline", "The 60 days have passed. Ask Social Security to accept a late appeal, with a statement of good cause.", go("late-appeal"), null, null, "late appeal missed deadline good cause 60 days extension"),
               way("My payment didn't arrive", "When your Social Security or SSI payment was due, and the day you can report it missing.", go("payment-missing"), null, null, "missing payment check deposit late not received schedule wednesday direct express"),
               way("Part of my benefit is taken for a debt", "Student loans, taxes, child support and other debts: what can be taken, and the federal limit.", go("benefit-offset"), null, null, "garnish garnishment offset treasury student loan debt taken levy bank frozen"),
-              way("My Medicare premium is higher because of my income", "See your 2026 income tier and whether form SSA-44 could lower it after retirement or another life change.", go("medicare-irmaa"), null, null, "irmaa income related premium ssa-44 magi high income part b part d surcharge medicare")
+              way("My Medicare premium is higher because of my income", "See your 2026 income tier and whether form SSA-44 could lower it after retirement or another life change.", go("medicare-irmaa"), null, null, "irmaa income related premium ssa-44 magi high income part b part d surcharge medicare"),
+              way("My benefit amount changed", "Compare the old and new amounts: the cost-of-living increase, the Medicare premium, or something taken out.", go("amount-changed"), null, null, "amount changed lower less more cola increase payment different went down"),
+              way("My SSI went down because of help I get", "Help with rent or utilities can lower SSI. See your share and what may stop the reduction.", go("ssi-help"), null, null, "ssi ism in-kind support maintenance one-third reduction rent living with family pmv vtr"),
+              way("My benefits stopped after I went back to work", "Ask to restart disability benefits within 5 years, without a new application.", go("work-restart"), null, null, "expedited reinstatement exr restart ssdi ssi stopped work earnings sga ssa-371"),
+              way("Someone who got benefits died", "Which payments to send back, the $255 payment, survivors benefits and who to tell.", go("after-death"), null, null, "death died passed away spouse widow funeral lump sum 255 survivor return payment")
             ]),
           h("div", { class: "band band-med", "data-band": "med" },
             h("p", { class: "group", text: "I have a letter about Medicare" }),
@@ -498,6 +504,7 @@
     else if (where === "asked-again" && window.Modules && window.Modules.askedAgain) window.Modules.askedAgain.start();
     else if (FIXES[where] && window.Modules && window.Modules.fixes) window.Modules.fixes[FIXES[where]].start();
     else if (SSAMORE[where] && window.Modules && window.Modules.ssamore) window.Modules.ssamore[SSAMORE[where]].start();
+    else if (SSALIFE[where] && window.Modules && window.Modules.ssalife) window.Modules.ssalife[SSALIFE[where]].start();
     else if (where === "wic-practice" && window.Modules && window.Modules.wic) window.Modules.wic.start();
     else if (where === "helper-board" && window.Modules && window.Modules.board) window.Modules.board.start();
     else if (where === "ssi-wages" && window.Modules && window.Modules.worksheets) window.Modules.worksheets.start("wages");
@@ -511,6 +518,7 @@
   var NEXT = { "helper-permission": "permission", "hearing-prep": "hearingPrep", "hearing-decision": "decision", "medicaid-ending": "medicaidEnd" };
   var FIXES = { "medicare-costs": "costs", "stolen-snap": "stolen", "locked-out": "locked", "ssa-call": "calls", "withholding": "withhold", "paperwork": "paperwork" };
   var SSAMORE = { "late-appeal": "late", "payment-missing": "payday", "benefit-offset": "offset", "medicare-irmaa": "irmaa" };
+  var SSALIFE = { "after-death": "died", "work-restart": "restart", "ssi-help": "ssihelp", "amount-changed": "changed" };
 
   function start() {
     count("overpayment", "start");

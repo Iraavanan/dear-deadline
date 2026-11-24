@@ -261,11 +261,27 @@ def _tier(tiers, magi):
     return len(tiers) - 1, tiers[-1][1], tiers[-1][2]
 
 
+def _published_years(name, field, today, rules_dir):
+    """This year, plus next year once its rows are published."""
+    years = [today.year]
+    if any(r["id"] == field and (r["effective_from"] or "")[:4] == str(today.year + 1) for r in rules.load_table(name, rules_dir)["rows"]):
+        years.append(today.year + 1)
+    return years
+
+
 def irmaa(raw, today=None, rules_dir=None):
     today = today or dt.date.today()
-    t = rules.rows_as_of("irmaa", today, rules_dir)
     body = as_mapping(raw, "filing", "The details could not be read. Enter them again.")
     p = {}
+    years = _published_years("irmaa", "standard", today, rules_dir)
+    try:
+        year = int(body.get("year") or today.year)
+        if year not in years:
+            raise ValueError
+    except (TypeError, ValueError):
+        p["year"] = "Choose %s." % " or ".join(str(y) for y in years)
+        year = today.year
+    t = rules.rows_as_of("irmaa", dt.date(year, 1, 1), rules_dir)
     filing = _pick(body, "filing", ("single", "joint", "separate"), p, "Choose how the tax return was filed.")
     magi = _money(body.get("magi"), "magi", p, top=100_000_000)
     now = _money(body.get("new_income"), "new_income", p, required=False, top=100_000_000)
@@ -278,12 +294,12 @@ def irmaa(raw, today=None, rules_dir=None):
     std = t["standard"]["amount"]
     level, b, d = _tier(tiers, magi)
     used = [t["standard"], t["based_on"], t["tiers_" + filing]]
-    out = {"filing": filing, "tax_year": t["based_on"]["tax_year"], "standard": std, "level": level, "part_b": round(std + b, 2),
+    out = {"filing": filing, "year": year, "years": years, "tax_year": t["based_on"]["tax_year"], "standard": std, "level": level, "part_b": round(std + b, 2),
            "part_b_extra": b, "part_d_extra": d, "monthly_extra": round(b + d, 2)}
     if level == 0:
-        headline = "At this income, you may pay the standard $%s Part B premium" % _fmt(std)
+        headline = "At this income, you may pay the standard $%s Part B premium in %d" % (_fmt(std), year)
     else:
-        headline = "At this income, you may pay $%s more a month for Medicare" % _fmt(b + d)
+        headline = "At this income, you may pay $%s more a month for Medicare in %d" % (_fmt(b + d), year)
     steps = []
     if now is not None:
         lvl2, b2, d2 = _tier(tiers, now)
@@ -305,4 +321,4 @@ def irmaa(raw, today=None, rules_dir=None):
         steps.append(t["appeal"]["plain"])
         used.append(t["appeal"])
     out.update(headline=headline, steps=steps, event=event)
-    return _done(out, used, rules_dir, "This compares one income figure with the 2026 tiers. Social Security sets the premium from IRS records.")
+    return _done(out, used, rules_dir, "This compares one income figure with the %d tiers. Social Security sets the premium from IRS records." % year)

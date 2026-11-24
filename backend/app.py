@@ -15,10 +15,10 @@ import logging
 import mimetypes
 from pathlib import Path
 
-from flask import Flask, Response, jsonify, request, send_from_directory
+from flask import Flask, Response, abort, jsonify, request, send_from_directory
 
 import helper
-from helper import ssamore, ai_reader, amount, bill, hearing, noticecheck, ssilimit, planappeal, diswait, fixes, utility, budget, cessation, counter, deadlines, denial, engine, letters, renewal, rent, reporting, rules, validate, work, workrules
+from helper import ssamore, ssalife, research, ai_reader, amount, bill, hearing, noticecheck, ssilimit, planappeal, diswait, fixes, utility, budget, cessation, counter, deadlines, denial, engine, letters, renewal, rent, reporting, rules, validate, work, workrules
 
 ROOT = Path(__file__).resolve().parents[1]
 FRONTEND = ROOT / "frontend"
@@ -46,7 +46,9 @@ def create_app():
     @app.after_request
     def no_store(response):
         # Nothing about a visit may be cached. The bundled PDF library is the same for everyone, so it may be.
-        response.headers["Cache-Control"] = "public, max-age=86400" if request.path.startswith("/vendor/") else "no-store"
+        # Research pages and papers are the same for everyone, so they may be cached too.
+        response.headers["Cache-Control"] = ("public, max-age=86400" if request.path.startswith("/vendor/")
+                                             else "public, max-age=3600" if request.path.startswith("/research") and response.status_code == 200 else "no-store")
         response.headers["X-Content-Type-Options"] = "nosniff"
         response.headers["Referrer-Policy"] = "no-referrer"
         # Only the small deadline calculator at /embed may be shown inside another site's page.
@@ -322,6 +324,26 @@ def create_app():
         """Income-related Medicare premium: the 2026 tier and when form SSA-44 may help."""
         return _figures(ssamore.irmaa, "details")
 
+    @app.post("/api/after-death")
+    def after_death():
+        """Someone who got Social Security or SSI died: payments to return, the $255 payment, who to tell."""
+        return _figures(ssalife.died, "details")
+
+    @app.post("/api/reinstate")
+    def reinstate():
+        """Benefits stopped because of work: the 60-month window to ask for them to restart."""
+        return _figures(ssalife.reinstate, "details")
+
+    @app.post("/api/ssi-help")
+    def ssi_help():
+        """SSI lowered by help with housing: the share, the one-third rule and the presumed maximum value."""
+        return _figures(ssalife.ssihelp, "details")
+
+    @app.post("/api/amount-changed")
+    def amount_changed():
+        """A payment amount changed: each part of the change against the year's figures."""
+        return _figures(ssalife.changed, "figures")
+
     @app.post("/api/disability-wait")
     def disability_wait():
         """A slow disability case: critical-case categories that may fit, and letters."""
@@ -421,7 +443,7 @@ def create_app():
         return send_from_directory(ROOT / "benchmark" / "heldout", "PROTOCOL.md", mimetype="text/plain")
 
     SITE = os.environ.get("SITE_URL", "https://deardeadline.org").rstrip("/")
-    PAGES = ("/", "/helpers", "/es", "/about", "/open")
+    PAGES = ("/", "/helpers", "/es", "/about", "/open", "/research")
 
     @app.get("/robots.txt")
     def robots():
@@ -434,8 +456,22 @@ def create_app():
         """The public pages, dated by the day the rules were last checked."""
         day = rules.rules_checked_as_of()
         urls = "".join("  <url><loc>%s%s</loc><lastmod>%s</lastmod></url>\n" % (SITE, p, day) for p in PAGES)
+        urls += "".join("  <url><loc>%s/research/%s</loc><lastmod>%s</lastmod></url>\n" % (SITE, p["slug"], p["date"]) for p in research.load()["papers"])
         body = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n%s</urlset>\n' % urls
         return Response(body, mimetype="application/xml")
+
+    @app.get("/research")
+    def research_index():
+        """Research behind the site: plain-language summaries of the author's papers."""
+        return Response(research.index_page(SITE), mimetype="text/html")
+
+    @app.get("/research/<slug>")
+    def research_paper(slug):
+        """One paper: a plain-language summary, the PDF on this site, and the tags Google Scholar reads."""
+        paper = research.find(slug)
+        if paper is None:
+            abort(404)
+        return Response(research.paper_page(paper, SITE), mimetype="text/html")
 
     @app.get("/es")
     def spanish():
