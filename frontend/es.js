@@ -1090,6 +1090,39 @@
           h("p", { class: "small", text: k.disclaimer + " Reglas revisadas el " + r.rules_as_of + "." }),
           h("p", { class: "small" }, "También puede abrir ", h("a", { href: "/#work-check", text: "esta herramienta en inglés" }), "."), botones);
       }
+    }),
+    "factura-medicare": herramienta({
+      api: "medicare-bill", boton: "Comparar", titulo: "¿La factura de mi médico coincide con mi resumen de Medicare?",
+      entrada: "Su resumen de Medicare (Medicare Summary Notice) muestra lo máximo que le pueden cobrar por cada servicio. Compárelo con la factura de su médico o suplidor, y llévese la pregunta exacta para su oficina de cobros. Tenga a mano la factura y el resumen.",
+      dibujar: function (s, p) {
+        var SNN = [["yes", "Sí"], ["no", "No"], ["unsure", "No estoy seguro"]];
+        return [grupo("De la factura", [campo("bill_service_date", "Fecha del servicio", "La fecha en que vio al médico o recibió el artículo.", "date", s.bill_service_date, p),
+            campo("balance", "Cantidad que la factura le pide pagar ahora", "Escriba 0 si no pide nada.", "dinero", s.balance, p), campo("paid", "Lo que ya pagó por este servicio", "Opcional.", "dinero", s.paid, p),
+            opciones("waiting", "¿La factura dice que está esperando a otro seguro?", SNN, s.waiting || "unsure", p)]),
+          grupo("De su resumen de Medicare (Medicare Summary Notice)", [
+            opciones("on_msn", "¿Este servicio está en su resumen de Medicare?", SNN, s.on_msn || "unsure", p, null), h("p", { class: "hint", text: "Busque el mismo proveedor y la misma fecha. Una visita reciente puede no estar todavía." }),
+            campo("msn_service_date", "Fecha del servicio en esa línea", "Déjela vacía si el servicio no está en el resumen.", "date", s.msn_service_date, p),
+            opciones("approved", "¿La columna \"Service Approved?\" dice Yes para ese servicio?", SNN, s.approved || "unsure", p),
+            campo("maximum", "Lo máximo que le pueden cobrar", "La columna \"Maximum You May Be Billed\".", "dinero", s.maximum, p),
+            opciones("qmb", "¿El resumen dice que usted está en el programa Qualified Medicare Beneficiary (QMB)?", SNN, s.qmb || "unsure", p)]),
+          opciones("other_insurance", "¿Tiene otro seguro que paga después de Medicare?", [["none", "No"], ["medigap", "Una póliza suplementaria de Medicare (Medigap)"], ["medicaid", "Medicaid"], ["employer", "Un plan de empleador o de jubilado"], ["unsure", "No estoy seguro"]], s.other_insurance || "unsure", p)];
+      },
+      leer: function () {
+        var b = {}; ["bill_service_date", "balance", "paid", "msn_service_date", "maximum"].forEach(function (k) { b[k] = valor(k); });
+        ["waiting", "on_msn", "approved", "qmb", "other_insurance"].forEach(function (k) { b[k] = elegido(k); });
+        return b;
+      },
+      ejemplo: function () { return { bill_service_date: hace(40), msn_service_date: hace(40), balance: "120", paid: "", maximum: "45.20", on_msn: "yes", approved: "yes", qmb: "no", other_insurance: "none", waiting: "no" }; },
+      resultado: function (r, volver) {
+        var c = r.comparison, reglas = Object.keys(r.rules).map(function (k) { return r.rules[k]; });
+        mostrar(h("h1", { class: "long", text: r.headline }),
+          c ? tabla(quitar([["Lo máximo que le pueden cobrar, según el resumen", dinero(c.maximum)], ["La factura pide ahora", dinero(c.balance)], c.paid ? ["Ya pagó", dinero(c.paid)] : null, ["La factura pide en total", dinero(c.asked)]])) : null,
+          h("ul", { class: "findings" }, r.findings.map(function (f) { return h("li", { text: f.text }); })),
+          r.steps.length ? [h("h2", { text: "Lo que dicen las reglas" }), r.steps.map(function (x) { return h("p", { text: x }); })] : null,
+          h("h2", { text: "Qué preguntar a la oficina de cobros" }), h("ul", {}, r.questions.map(function (q) { return h("li", { text: q }); })),
+          borrador("Qué decir cuando llame (en inglés)", "Tiene las mismas preguntas, en inglés, por si la oficina no atiende en español.", r.script.join("\n")),
+          cierreEn({ rules: reglas, disclaimer: r.disclaimer, rules_as_of: r.rules_as_of }, volver, "medicare-bill"));
+      }
     })
   };
 

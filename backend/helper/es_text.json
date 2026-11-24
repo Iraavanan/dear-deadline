@@ -1790,5 +1790,33 @@
  "work/ssi_report/plain": {
   "en": "SSI follows different rules. People on SSI report earnings by the sixth day of the next month by phone, or bring pay stubs to a local office by the 10th.",
   "es": "SSI sigue reglas diferentes. Las personas con SSI informan sus ganancias por teléfono a más tardar el sexto día del mes siguiente, o llevan sus talones de pago a una oficina local a más tardar el día 10."
+ },
+ "bill/msn_contents/plain": {
+  "en": "The Medicare Summary Notice lists the services your providers billed to Medicare, what Medicare paid, and the most you may owe the provider.",
+  "es": "El resumen de Medicare (Medicare Summary Notice) muestra los servicios que sus proveedores cobraron a Medicare, lo que Medicare pagó y lo máximo que usted puede deber al proveedor."
+ },
+ "bill/msn_compare/plain": {
+  "en": "Medicare tells people to compare their bills and receipts with the notice, and to check that the amount they paid matches it. If an item was denied, call the provider's office to check they sent the right information; the office may send the claim again.",
+  "es": "Medicare pide a las personas que comparen sus facturas y recibos con el resumen, y que revisen que la cantidad que pagaron coincida. Si negaron un servicio, llame a la oficina del proveedor para revisar que enviaron la información correcta; la oficina puede enviar el reclamo otra vez."
+ },
+ "bill/msn_timing/plain": {
+  "en": "Medicare Summary Notices are mailed every few months, and only for periods when you had services. A recent visit may not be on one yet. You can also see claims sooner in your account on Medicare.gov.",
+  "es": "Los resúmenes de Medicare se envían por correo cada pocos meses, y solo por los períodos en que usted tuvo servicios. Una visita reciente puede no estar todavía en uno. También puede ver los reclamos antes en su cuenta de Medicare.gov."
+ },
+ "bill/assignment/plain": {
+  "en": "A provider who accepts assignment takes the Medicare-approved amount as full payment and can only ask you for the deductible and coinsurance. A non-participating provider who does not accept assignment can charge more, but in most cases no more than 15% above the Medicare-approved amount (the limiting charge).",
+  "es": "Un proveedor que acepta la asignación toma la cantidad aprobada por Medicare como pago completo y solo puede pedirle el deducible y el coseguro. Un proveedor no participante que no acepta la asignación puede cobrar más, pero en la mayoría de los casos no más del 15% por encima de la cantidad aprobada por Medicare (el cargo límite)."
+ },
+ "bill/qmb/plain": {
+  "en": "Federal law says Medicare providers and suppliers, including pharmacies, must not bill people in the Qualified Medicare Beneficiary (QMB) program for Medicare deductibles, coinsurance or copays. Since July 2018 the Medicare Summary Notice says when you are in the QMB program and shows that you should not be billed.",
+  "es": "La ley federal dice que los proveedores y suplidores de Medicare, incluidas las farmacias, no deben cobrar a las personas del programa Qualified Medicare Beneficiary (QMB) los deducibles, coseguros o copagos de Medicare. Desde julio de 2018 el resumen de Medicare dice cuándo usted está en el programa QMB y muestra que no se le debe cobrar."
+ },
+ "bill/qmb_tip/plain": {
+  "en": "If you are in the QMB program and get a bill for Medicare-covered services, tell the provider and show them your Medicare card, your Medicaid or QMB card, and your Medicare Summary Notice. If they keep billing you, call 1-800-MEDICARE (1-800-633-4227).",
+  "es": "Si está en el programa QMB y recibe una factura por servicios cubiertos por Medicare, dígaselo al proveedor y muéstrele su tarjeta de Medicare, su tarjeta de Medicaid o de QMB, y su resumen de Medicare. Si le siguen cobrando, llame al 1-800-MEDICARE (1-800-633-4227)."
+ },
+ "bill/appeal/plain": {
+  "en": "To appeal a decision on a Medicare Summary Notice, follow the steps on the last page of the notice. You must appeal within 120 days of the date you get the notice.",
+  "es": "Para apelar una decisión de un resumen de Medicare, siga los pasos de la última página del resumen. Debe apelar dentro de los 120 días de la fecha en que recibe el resumen."
  }
 }

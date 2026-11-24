@@ -154,6 +154,8 @@ def _tools():
     from . import workrules
     special.update({"work-rules": spanish(workrules.run, english=("letter",)), "missed-interview": spanish(workrules.interview)})
     from . import work
+    from . import bill
+    special["medicare-bill"] = spanish(bill.run, english=("script",))
     special["work-check"] = spanish(lambda raw, today=None, rules_dir=None: work.run(raw, rules_dir=rules_dir))
     return dict({k: spanish(v) for k, v in more.items()}, **dict(special, **_first()))
 
