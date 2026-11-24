@@ -1818,5 +1818,21 @@
  "bill/appeal/plain": {
   "en": "To appeal a decision on a Medicare Summary Notice, follow the steps on the last page of the notice. You must appeal within 120 days of the date you get the notice.",
   "es": "Para apelar una decisión de un resumen de Medicare, siga los pasos de la última página del resumen. Debe apelar dentro de los 120 días de la fecha en que recibe el resumen."
+ },
+ "amount/notice_contents/plain": {
+  "en": "An overpayment notice must give the total overpayment and how and when it happened, including the monthly amount paid, the monthly amount that should have been paid, and why a different amount was due.",
+  "es": "Un aviso de pago de más debe dar el total del pago de más y cómo y cuándo ocurrió, incluida la cantidad mensual que se pagó, la cantidad mensual que se debió pagar, y por qué correspondía una cantidad diferente."
+ },
+ "amount/chart/plain": {
+  "en": "When an overpayment covers several months or amounts, the notice shows a chart of what was paid and what should have been paid for each period, and the total of each.",
+  "es": "Cuando un pago de más cubre varios meses o cantidades, el aviso muestra una tabla de lo que se pagó y lo que se debió pagar en cada período, y el total de cada uno."
+ },
+ "amount/explanation/plain": {
+  "en": "You can ask Social Security for an explanation of the overpayment.",
+  "es": "Puede pedir al Seguro Social una explicación del pago de más."
+ },
+ "amount/audit/plain": {
+  "en": "Social Security's Inspector General reviewed overpayment notices and found that 46 percent of them did not meet the agency's own rules.",
+  "es": "El Inspector General del Seguro Social revisó avisos de pago de más y encontró que el 46 por ciento no cumplía las propias reglas de la agencia."
  }
 }

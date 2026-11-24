@@ -1123,6 +1123,44 @@
           borrador("Qué decir cuando llame (en inglés)", "Tiene las mismas preguntas, en inglés, por si la oficina no atiende en español.", r.script.join("\n")),
           cierreEn({ rules: reglas, disclaimer: r.disclaimer, rules_as_of: r.rules_as_of }, volver, "medicare-bill"));
       }
+    }),
+    "cantidad": herramienta({
+      api: "check-amount", boton: "Sumar los meses", titulo: "No entiendo cómo llegaron a esa cantidad",
+      entrada: "Un aviso de pago de más debe mostrar, mes por mes, lo que le pagaron y lo que le debieron pagar. Copie esas cifras del aviso y vea si suman el total, si falta algo y qué preguntar. Para comparar dos cartas, use la herramienta en inglés.",
+      dibujar: function (s, p) {
+        var L = (s.letters || [{}])[0] || {}, filas = s._filas || [{}, {}, {}, {}], q = {};
+        Object.keys(p).forEach(function (k) { var m = /^a(\d+)_(from|to|paid|due)$/.exec(k); if (m) { var u = (s._usadas || [])[+m[1] - 1]; q["p-" + m[2] + "-" + (u === undefined ? +m[1] - 1 : u)] = p[k]; } else q[k] = p[k]; });
+        return [campo("a_date", "Fecha impresa en la carta", "Opcional.", "date", L.date, q),
+          grupo("Períodos del aviso", [h("p", { class: "hint", text: "Un período es un grupo de meses con las mismas cantidades. Deje en blanco las filas que no use." }),
+            filas.map(function (f, i) {
+              return h("div", { class: "setaside" }, campo("p-from-" + i, "Período " + (i + 1) + ": primer mes", null, "month", f.from, q), campo("p-to-" + i, "Último mes", null, "month", f.to, q),
+                campo("p-paid-" + i, "Lo que le pagaron cada mes", null, "dinero", f.paid, q), campo("p-due-" + i, "Lo que le debieron pagar cada mes", null, "dinero", f.due, q));
+            })]),
+          campo("a_total", "Total del pago de más que dice el aviso", "Opcional.", "dinero", L.stated_total, q),
+          campo("a_repaid", "Lo que ya devolvió o le han retenido", "Opcional.", "dinero", L.repaid, q)];
+      },
+      leer: function () {
+        var filas = [], rows = [], usadas = [];
+        [0, 1, 2, 3].forEach(function (i) { var f = { from: valor("p-from-" + i), to: valor("p-to-" + i), paid: valor("p-paid-" + i), due: valor("p-due-" + i) }; filas.push(f); if (f.from || f.to || f.paid || f.due) { rows.push(f); usadas.push(i); } });
+        return { letters: [{ date: valor("a_date"), stated_total: valor("a_total"), repaid: valor("a_repaid"), rows: rows }], _filas: filas, _usadas: usadas };
+      },
+      ejemplo: function () {
+        var rows = [{ from: "2025-01", to: "2025-06", paid: "1200", due: "1000" }, { from: "2025-07", to: "2025-09", paid: "1200", due: "1100" }];
+        return { letters: [{ date: "", stated_total: "1700", repaid: "", rows: rows }], _filas: rows.concat([{}, {}]), _usadas: [0, 1] };
+      },
+      resultado: function (r, volver) {
+        var L = r.letters[0], reglas = Object.keys(r.rules).map(function (k) { return r.rules[k]; });
+        function d(v) { return v === null || v === undefined ? "—" : dinero(v); }
+        mostrar(h("h1", { class: "long", text: r.headline }),
+          h("table", { class: "plain" }, h("tr", {}, ["Período", "Meses", "Pagado", "Debido", "Diferencia"].map(function (x) { return h("th", { text: x }); })),
+            L.rows.map(function (x) { return h("tr", {}, h("th", { scope: "row", text: x.period }), h("td", { class: "num", text: String(x.months) }), h("td", { class: "num", text: d(x.paid) }), h("td", { class: "num", text: d(x.due) }), h("td", { class: "num", text: d(x.difference) })); }),
+            L.totals ? h("tr", {}, h("th", { scope: "row", text: "Total" }), h("td", {}), h("td", { class: "num", text: dinero(L.totals.paid) }), h("td", { class: "num", text: dinero(L.totals.due) }), h("td", { class: "num", text: dinero(L.totals.overpaid) })) : null),
+          L.compare ? h("p", { class: "lead", text: L.compare.text }) : null, L.repaid ? h("p", { text: L.repaid.text }) : null,
+          L.findings.length ? [h("h2", { text: "Lo que encontramos" }), h("ul", { class: "findings" }, L.findings.map(function (f) { return h("li", { text: f.text }); }))] : null,
+          h("h2", { text: "Qué preguntar al Seguro Social" }), h("ul", {}, r.questions.map(function (q) { return h("li", { text: q }); })),
+          borrador("Las mismas preguntas en inglés", "Para copiarlas en una carta al Seguro Social o leerlas por teléfono.", r.questions_en.join("\n")),
+          cierreEn({ rules: reglas, disclaimer: r.disclaimer, rules_as_of: r.rules_as_of }, volver, "check-amount"));
+      }
     })
   };
 
