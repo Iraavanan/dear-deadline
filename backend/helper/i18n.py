@@ -163,6 +163,8 @@ def _tools():
         out["questions_en"] = amount.run(copy.deepcopy(raw), today=today, rules_dir=rules_dir)["questions"]      # to copy into a letter to Social Security
         return out
     special["check-amount"] = amount_check
+    from . import benefitmath
+    special["benefit-math"] = spanish(benefitmath.run)
     special["work-check"] = spanish(lambda raw, today=None, rules_dir=None: work.run(raw, rules_dir=rules_dir))
     return dict({k: spanish(v) for k, v in more.items()}, **dict(special, **_first()))
 

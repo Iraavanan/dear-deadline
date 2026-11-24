@@ -1161,6 +1161,36 @@
           borrador("Las mismas preguntas en inglés", "Para copiarlas en una carta al Seguro Social o leerlas por teléfono.", r.questions_en.join("\n")),
           cierreEn({ rules: reglas, disclaimer: r.disclaimer, rules_as_of: r.rules_as_of }, volver, "check-amount"));
       }
+    }),
+    "calculo-de-beneficio": herramienta({
+      api: "benefit-math", boton: "Calcular", titulo: "Revisar cómo calcularon mi beneficio de jubilación",
+      entrada: "Escriba las ganancias de su Estado de Cuenta del Seguro Social (Social Security Statement) y vea, paso a paso, el beneficio que dan las reglas, junto a la cantidad de su carta de aprobación. Funciona solo para un beneficio de jubilación que comenzó en 2026.",
+      dibujar: function (s, p) {
+        return [campo("birth", "Su fecha de nacimiento", null, "date", s.birth, p),
+          campo("start", "Mes en que comenzó su beneficio de jubilación", "Está en su carta de aprobación. Esta revisión cubre de enero a noviembre de 2026.", "month", s.start, p),
+          opciones("kind", "¿Qué beneficio es?", [["own", "Mi propio beneficio de jubilación, por mi propio trabajo"], ["other", "Un beneficio como esposo, esposa, viudo, viuda o hijo"]], s.kind, p),
+          opciones("disability", "¿Alguna vez recibió beneficios por incapacidad del Seguro Social?", SN, s.disability || "no", p),
+          opciones("military", "¿Estuvo en servicio militar activo antes de 2002?", SN, s.military || "no", p),
+          [h("label", { for: "earnings" }, "Sus ganancias, un año en cada línea", h("span", { class: "hint", text: "Escriba el año y luego la cantidad, del registro de ganancias de su Estado de Cuenta del Seguro Social. Por ejemplo: 1998 31,250. Use la columna de Social Security, no la de Medicare." })),
+            h("textarea", { id: "earnings", rows: "12", spellcheck: "false", text: s.earnings || "", "aria-invalid": p.earnings ? "true" : null }), p.earnings ? h("p", { class: "err", role: "alert", text: p.earnings }) : null],
+          campo("stated", "Cantidad mensual de su carta de aprobación", "Opcional. La cantidad antes de las primas de Medicare o de cualquier otro descuento.", "dinero", s.stated, p)];
+      },
+      leer: function () { return { birth: valor("birth"), start: valor("start"), kind: elegido("kind"), disability: elegido("disability"), military: elegido("military"), earnings: valor("earnings"), stated: valor("stated") }; },
+      ejemplo: function () {
+        var lineas = [], pago = 18500;
+        for (var y = 1986; y <= 2025; y++) { lineas.push(y + "  " + Math.round(pago)); pago *= 1.035; }
+        return { birth: "1964-01-02", start: "2026-01", kind: "own", disability: "no", military: "no", earnings: lineas.join("\n"), stated: "1650" };
+      },
+      resultado: function (r, volver) {
+        if (!r.checked) { mostrar(h("h1", { class: "long", text: r.headline }), h("p", { class: "lead", text: r.reason }), h("h2", { text: "Qué puede hacer en su lugar" }), pasos(r.steps), cierreEn(r, volver, "benefit-math")); return; }
+        mostrar(h("h1", { class: "long", text: r.headline }),
+          r.stated !== null ? tabla([["En su carta", dinero(r.stated)], ["Con estas ganancias", dinero(r.benefit)],
+            ["Diferencia", dinero(Math.abs(r.difference)) + (r.difference > 0 ? " más en la carta" : r.difference < 0 ? " menos en la carta" : "")]]) : null,
+          h("h2", { text: "El cálculo, paso a paso" }), tabla(r.work.map(function (w) { return [w.label, w.value]; })),
+          h("p", { class: "small", text: "Años que se cuentan: " + r.years_used.join(", ") + "." }),
+          r.notes.length ? h("ul", { class: "small" }, r.notes.map(function (n) { return h("li", { text: n }); })) : null,
+          h("h2", { text: "Qué hacer" }), pasos(r.steps), cierreEn(r, volver, "benefit-math"));
+      }
     })
   };
 

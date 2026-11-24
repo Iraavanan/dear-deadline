@@ -1834,5 +1834,17 @@
  "amount/audit/plain": {
   "en": "Social Security's Inspector General reviewed overpayment notices and found that 46 percent of them did not meet the agency's own rules.",
   "es": "El Inspector General del Seguro Social revisó avisos de pago de más y encontró que el 46 por ciento no cumplía las propias reglas de la agencia."
+ },
+ "benefitmath/engine/plain": {
+  "en": "The arithmetic is done by a reference program written from the Social Security Act and the regulations. It gives the same answer as the Social Security Administration's Detailed Calculator, version 2026.2, for all 1,231 test workers in the published study.",
+  "es": "La aritmética la hace un programa de referencia escrito a partir de la Ley del Seguro Social y de los reglamentos. Da la misma respuesta que la Calculadora Detallada (Detailed Calculator) de la Administración del Seguro Social, versión 2026.2, para los 1,231 trabajadores de prueba del estudio publicado."
+ },
+ "benefitmath/scope/plain": {
+  "en": "The check has been tested on a worker's own retirement benefit that starts between January and November 2026, at or before full retirement age, with no disability benefits, family benefits or military wage credits.",
+  "es": "La revisión se ha probado con el beneficio de jubilación propio de un trabajador que comienza entre enero y noviembre de 2026, en la plena edad de jubilación o antes, sin beneficios por incapacidad, beneficios familiares ni créditos de salario militar."
+ },
+ "benefitmath/official/plain": {
+  "en": "Social Security publishes its own Detailed Calculator, with its source code, which works out a benefit from an earnings record.",
+  "es": "El Seguro Social publica su propia Calculadora Detallada (Detailed Calculator), con su código fuente, que calcula un beneficio a partir de un registro de ganancias."
  }
 }
