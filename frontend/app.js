@@ -74,7 +74,8 @@
     "work-restart": "My benefits stopped after I went back to work", "ssi-help": "My SSI went down because of help I get", "amount-changed": "My benefit amount changed",
     "snap-overpayment": "The state says I was paid too much SNAP", "va-debt": "I got a VA debt letter", "disability-review": "Social Security sent me a disability review form",
     "ra-overpayment": "Florida says I was overpaid unemployment", "voucher-ending": "My housing voucher is being ended", "estate-recovery": "Medicaid wants repayment from an estate",
-    "partb-late": "I missed signing up for Medicare Part B", "fairness-act": "I have a public pension. Did my Social Security change?"
+    "partb-late": "I missed signing up for Medicare Part B", "fairness-act": "I have a public pension. Did my Social Security change?",
+    "benefit-math": "Check how my retirement benefit was worked out"
   };
   var RELATED = {
     "overpayment": ["withholding", "check-amount", "notice-check"], "check-amount": ["overpayment", "notice-check"], "notice-check": ["overpayment", "check-amount"],
@@ -92,7 +93,8 @@
     "ssi-help": ["report-change", "ssi-limit"], "amount-changed": ["withholding", "medicare-irmaa"],
     "snap-overpayment": ["benefit-hearing", "hearing-prep", "filed"], "va-debt": ["benefit-offset", "filed"], "disability-review": ["disability-ended", "ssa-call"],
     "ra-overpayment": ["filed", "benefit-offset"], "voucher-ending": ["rent-check", "hearing-prep"], "estate-recovery": ["after-death", "filed"],
-    "partb-late": ["medicare-costs", "medicare-irmaa"], "fairness-act": ["amount-changed", "ssa-call"]
+    "partb-late": ["medicare-costs", "medicare-irmaa"], "fairness-act": ["amount-changed", "ssa-call"],
+    "benefit-math": ["earnings-record", "amount-changed"]
   };
   function related() {
     var where = (location.hash || "").replace(/^#/, "").split("/")[0], list = RELATED[where === "letter" ? "medicare-letter" : where];
@@ -334,6 +336,7 @@
               way("My SSI went down because of help I get", "Help with rent or utilities can lower SSI. See your share and what may stop the reduction.", go("ssi-help"), null, null, "ssi ism in-kind support maintenance one-third reduction rent living with family pmv vtr"),
               way("My benefits stopped after I went back to work", "Ask to restart disability benefits within 5 years, without a new application.", go("work-restart"), null, null, "expedited reinstatement exr restart ssdi ssi stopped work earnings sga ssa-371"),
               way("Someone who got benefits died", "Which payments to send back, the $255 payment, survivors benefits and who to tell.", go("after-death"), null, null, "death died passed away spouse widow funeral lump sum 255 survivor return payment"),
+              way("Check how my retirement benefit was worked out", "For a retirement benefit that started in 2026: enter your earnings and see each step of the calculation beside your award letter.", go("benefit-math"), null, null, "retirement benefit calculation math check award letter pia aime earnings record amount wrong how much worked out"),
               way("Social Security sent me a disability review form", "The short or long review form: what to send, what to keep, and what happens if it is not returned.", go("disability-review"), null, null, "cdr continuing disability review ssa-455 ssa-454 update report medical review form"),
               way("I have a public pension. Did my Social Security change?", "The 2025 law that ended two reductions for teachers, public workers and their spouses: what to check.", go("fairness-act"), null, null, "fairness act wep gpo windfall elimination government pension offset teacher police firefighter retroactive back pay")
             ]),
@@ -523,6 +526,7 @@
     else if (SSAMORE[where] && window.Modules && window.Modules.ssamore) window.Modules.ssamore[SSAMORE[where]].start();
     else if (SSALIFE[where] && window.Modules && window.Modules.ssalife) window.Modules.ssalife[SSALIFE[where]].start();
     else if (MOREHELP[where] && window.Modules && window.Modules.morehelp) window.Modules.morehelp[MOREHELP[where]].start();
+    else if (where === "benefit-math" && window.Modules && window.Modules.benefitmath) window.Modules.benefitmath.start();
     else if (where === "wic-practice" && window.Modules && window.Modules.wic) window.Modules.wic.start();
     else if (where === "helper-board" && window.Modules && window.Modules.board) window.Modules.board.start();
     else if (where === "ssi-wages" && window.Modules && window.Modules.worksheets) window.Modules.worksheets.start("wages");
@@ -546,7 +550,7 @@
     "missed-interview": "snap", "stolen-snap": "snap", "work-rules": "snap", "renewal": "medicaid", "medicaid-ending": "medicaid", "paperwork": "medicaid", "asked-again": "medicaid",
     "rent-check": "housing", "utility-shutoff": "housing", "benefit-hearing": "hearings", "hearing-prep": "hearings", "hearing-decision": "hearings",
     "after-death": "after-death", "helper-permission": "helping", "helper-board": "helping", "fema-proof": "disaster",
-    "snap-overpayment": "snap", "voucher-ending": "housing", "estate-recovery": "after-death", "disability-review": "disability", "partb-late": "medicare", "fairness-act": "payments"
+    "snap-overpayment": "snap", "voucher-ending": "housing", "estate-recovery": "after-death", "disability-review": "disability", "partb-late": "medicare", "fairness-act": "payments", "benefit-math": "payments"
   };
   var SSALIFE = { "after-death": "died", "work-restart": "restart", "ssi-help": "ssihelp", "amount-changed": "changed" };
   var MOREHELP = { "snap-overpayment": "snap", "va-debt": "va", "disability-review": "review", "ra-overpayment": "ra", "voucher-ending": "voucher", "estate-recovery": "estate",

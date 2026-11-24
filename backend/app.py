@@ -20,7 +20,7 @@ from pathlib import Path
 from flask import Flask, Response, abort, jsonify, request, send_from_directory
 
 import helper
-from helper import ssamore, ssalife, morehelp, research, board, ai_reader, amount, bill, hearing, noticecheck, ssilimit, planappeal, diswait, fixes, utility, budget, cessation, counter, deadlines, denial, engine, letters, renewal, rent, reporting, rules, validate, work, workrules
+from helper import ssamore, ssalife, morehelp, benefitmath, research, board, ai_reader, amount, bill, hearing, noticecheck, ssilimit, planappeal, diswait, fixes, utility, budget, cessation, counter, deadlines, denial, engine, letters, renewal, rent, reporting, rules, validate, work, workrules
 
 ROOT = Path(__file__).resolve().parents[1]
 FRONTEND = ROOT / "frontend"
@@ -444,6 +444,11 @@ def create_app():
     def fairness_act():
         """A public pension and the Social Security Fairness Act: what changed and what to check."""
         return _figures(morehelp.fairness, "details")
+
+    @app.post("/api/benefit-math")
+    def benefit_math():
+        """Re-work a retired worker's first monthly benefit from the earnings record, inside the tested range only."""
+        return _figures(benefitmath.run, "details")
 
     @app.post("/api/disability-wait")
     def disability_wait():

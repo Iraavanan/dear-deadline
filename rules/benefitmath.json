@@ -1,0 +1,27 @@
+{
+ "table": "benefitmath",
+ "about": "Benefit math check: where the arithmetic comes from and what it has been tested on.",
+ "rows": [
+  {
+   "id": "engine",
+   "plain": "The arithmetic is done by a reference program written from the Social Security Act and the regulations. It gives the same answer as the Social Security Administration's Detailed Calculator, version 2026.2, for all 1,231 test workers in the published study.",
+   "source": "https://doi.org/10.5281/zenodo.24375957",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "scope",
+   "plain": "The check has been tested on a worker's own retirement benefit that starts between January and November 2026, at or before full retirement age, with no disability benefits, family benefits or military wage credits.",
+   "source": "https://doi.org/10.5281/zenodo.24375957",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "official",
+   "plain": "Social Security publishes its own Detailed Calculator, with its source code, which works out a benefit from an earnings record.",
+   "source": "https://www.ssa.gov/oact/anypia/source.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  }
+ ]
+}
