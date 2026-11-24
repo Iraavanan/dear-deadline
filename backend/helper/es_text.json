@@ -222,5 +222,277 @@
  "snapclaim/decision/plain": {
   "en": "The state has 60 days from getting a hearing request to hold the hearing, decide and tell the household.",
   "es": "El estado tiene 60 días desde que recibe una solicitud de audiencia para celebrarla, decidir y avisar al hogar."
+ },
+ "vadebt/dispute/plain": {
+  "en": "If you think the debt is wrong, send a written statement saying why. If you dispute it within 30 days, you can avoid collection actions.",
+  "es": "Si cree que la deuda está mal, envíe una declaración por escrito que diga por qué. Si la disputa dentro de 30 días, puede evitar las acciones de cobro."
+ },
+ "vadebt/waiver/plain": {
+  "en": "A waiver means VA agrees to forgive part or all of the debt. Ask with a Financial Status Report (VA Form 5655) and a statement of why you should not have to repay.",
+  "es": "Una exención (waiver) significa que el VA acepta perdonar una parte o toda la deuda. Pídala con un informe de situación financiera (VA Form 5655) y una declaración de por qué no debería tener que pagar."
+ },
+ "vadebt/waiver_stop/plain": {
+  "en": "To stop collection while VA decides a waiver request, ask within 30 days of the first debt letter for an education debt, or within 90 days for a disability compensation or pension debt.",
+  "es": "Para detener el cobro mientras el VA decide una solicitud de exención, pídala dentro de los 30 días de la primera carta de deuda si es una deuda de educación, o dentro de los 90 días si es una deuda de compensación por incapacidad o de pensión."
+ },
+ "vadebt/waiver_limit/plain": {
+  "en": "VA can consider a waiver request only within 1 year of when you received the first debt letter. By law it must deny later requests.",
+  "es": "El VA solo puede considerar una solicitud de exención dentro de 1 año desde que usted recibió la primera carta de deuda. Por ley debe negar las solicitudes posteriores."
+ },
+ "vadebt/plan/plain": {
+  "en": "You can ask for a repayment plan of under 5 years online through Ask VA, by phone or by mail. A plan of 5 years or more needs VA Form 5655.",
+  "es": "Puede pedir un plan de pago de menos de 5 años por internet con Ask VA, por teléfono o por correo. Un plan de 5 años o más necesita el VA Form 5655."
+ },
+ "vadebt/compromise/plain": {
+  "en": "A compromise offer asks VA to accept a lower amount as full payment. It is made with VA Form 5655.",
+  "es": "Una oferta de compromiso pide al VA que acepte una cantidad menor como pago total. Se hace con el VA Form 5655."
+ },
+ "vadebt/withhold/plain": {
+  "en": "If you get monthly VA benefit payments, VA keeps all or part of them to pay the debt unless it approves another repayment or relief option.",
+  "es": "Si recibe pagos mensuales de beneficios del VA, el VA se queda con todos o con parte de ellos para pagar la deuda, a menos que apruebe otra opción de pago o de alivio."
+ },
+ "vadebt/treasury/plain": {
+  "en": "If the debt is not paid and no help is requested, VA tells credit reporting agencies and, after 120 days, refers the debt to the U.S. Treasury, which can add fees and interest and take federal payments such as tax refunds and Social Security.",
+  "es": "Si la deuda no se paga y no se pide ayuda, el VA avisa a las agencias de informes de crédito y, después de 120 días, remite la deuda al Tesoro de los Estados Unidos, que puede añadir cargos e intereses y quitar pagos federales como reembolsos de impuestos y Seguro Social."
+ },
+ "vadebt/appeal/plain": {
+  "en": "If you disagree with a waiver decision, you can ask the Committee on Waivers and Compromises to reconsider, or ask for a Board Appeal within 1 year of the date on the decision letter.",
+  "es": "Si no está de acuerdo con una decisión sobre una exención, puede pedir al Comité de Exenciones y Compromisos que la reconsidere, o pedir una apelación ante la Junta (Board Appeal) dentro de 1 año de la fecha de la carta de decisión."
+ },
+ "vadebt/underlying/plain": {
+  "en": "You can also appeal the VA decision that caused the overpayment, with a Supplemental Claim, a Higher-Level Review or a Board Appeal.",
+  "es": "También puede apelar la decisión del VA que causó el pago de más, con una Reclamación Suplementaria (Supplemental Claim), una Revisión de Nivel Superior (Higher-Level Review) o una apelación ante la Junta (Board Appeal)."
+ },
+ "vadebt/contact/plain": {
+  "en": "Debt Management Center: 800-827-0648 (TTY 711), Monday to Friday, 7:30 a.m. to 7:00 p.m. Eastern. Mail: U.S. Department of Veterans Affairs, Debt Management Center, PO Box 11930, St. Paul, MN 55111.",
+  "es": "Centro de Administración de Deudas (Debt Management Center): 800-827-0648 (TTY 711), de lunes a viernes, de 7:30 a.m. a 7:00 p.m., hora del Este. Correo: U.S. Department of Veterans Affairs, Debt Management Center, PO Box 11930, St. Paul, MN 55111."
+ },
+ "vadebt/helper/plain": {
+  "en": "Someone with legal authority to act for the Veteran can ask for a waiver, including an accredited Veterans Service Organization representative, attorney or claims agent.",
+  "es": "Alguien con autoridad legal para actuar por el Veterano puede pedir una exención, incluso un representante acreditado de una organización de servicio a veteranos, un abogado o un agente de reclamaciones."
+ },
+ "cdr/what/plain": {
+  "en": "Social Security must review the medical condition of everyone who gets disability benefits from time to time. If your health has not improved, or your disability still keeps you from working, benefits generally continue.",
+  "es": "El Seguro Social debe revisar de vez en cuando la condición médica de todas las personas que reciben beneficios por incapacidad. Si su salud no ha mejorado, o su incapacidad todavía le impide trabajar, por lo general los beneficios continúan."
+ },
+ "cdr/often/plain": {
+  "en": "How often depends on the condition: within 6 to 18 months if improvement is expected, about every 3 years if it is possible, and about every 7 years if it is not expected.",
+  "es": "La frecuencia depende de la condición: dentro de 6 a 18 meses si se espera una mejoría, aproximadamente cada 3 años si es posible, y aproximadamente cada 7 años si no se espera."
+ },
+ "cdr/forms/plain": {
+  "en": "Social Security asks for updated information with form SSA-455 (Disability Update Report) or form SSA-454 (Continuing Disability Review Report). People sent the SSA-455 can complete it online.",
+  "es": "El Seguro Social pide información actualizada con el formulario SSA-455 (Disability Update Report) o el formulario SSA-454 (Continuing Disability Review Report). Las personas que reciben el SSA-455 pueden llenarlo por internet."
+ },
+ "cdr/online/plain": {
+  "en": "Adults who do not have a representative payee can complete the SSA-454 online by signing in to a my Social Security account and choosing \"Complete Your Continuing Disability Review\".",
+  "es": "Los adultos que no tienen un representante de beneficiario pueden llenar el SSA-454 por internet: entre a su cuenta my Social Security y elija \"Complete Your Continuing Disability Review\"."
+ },
+ "cdr/also/plain": {
+  "en": "For SSI, Social Security also reviews income, resources and living arrangements. That separate review is called a redetermination.",
+  "es": "Para SSI, el Seguro Social también revisa los ingresos, los recursos y con quién vive. Esa revisión aparte se llama redeterminación."
+ },
+ "cdr/ftc/plain": {
+  "en": "If the information asked for is not given within the time allowed, and Social Security has followed its contact steps, it can find a failure to cooperate and suspend benefits.",
+  "es": "Si la información pedida no se entrega dentro del tiempo permitido, y el Seguro Social siguió sus pasos de contacto, puede decidir que hubo falta de cooperación y suspender los beneficios."
+ },
+ "cdr/suspend/plain": {
+  "en": "Benefits suspended for failure to cooperate end for good after 12 months in suspension, with no medical decision.",
+  "es": "Los beneficios suspendidos por falta de cooperación terminan definitivamente después de 12 meses en suspensión, sin una decisión médica."
+ },
+ "cdr/restore/plain": {
+  "en": "If you give the information during those 12 months, benefits are paid again for the months they were otherwise due, and no appeal is needed.",
+  "es": "Si entrega la información durante esos 12 meses, los beneficios se pagan otra vez por los meses en que correspondían, y no hace falta apelar."
+ },
+ "cdr/stop/plain": {
+  "en": "Benefits can stop if Social Security finds your condition has improved so that you no longer have a disability. The letter that says so explains how to appeal.",
+  "es": "Los beneficios pueden terminar si el Seguro Social decide que su condición mejoró tanto que ya no tiene una incapacidad. La carta que lo dice explica cómo apelar."
+ },
+ "raover/appeal/plain": {
+  "en": "An adverse determination can be appealed to an appeals referee within 20 days after the date the notice was mailed, or delivered if it was not mailed.",
+  "es": "Una determinación adversa se puede apelar ante un árbitro de apelaciones (appeals referee) dentro de los 20 días después de la fecha en que se envió el aviso por correo, o en que se entregó si no se envió por correo."
+ },
+ "raover/nonfraud/plain": {
+  "en": "Benefits paid by mistake, without fraud, must be repaid or are taken from future benefits.",
+  "es": "Los beneficios pagados por error, sin fraude, se deben devolver o se descuentan de beneficios futuros."
+ },
+ "raover/fraud/plain": {
+  "en": "When the overpayment is found to be from fraud, a penalty of 15% of the overpaid amount is added.",
+  "es": "Cuando se decide que el pago de más fue por fraude, se añade una multa del 15% de la cantidad pagada de más."
+ },
+ "raover/employer/plain": {
+  "en": "A person who got benefits in error, without fraud, because an employer did not respond to the claim on time is not liable for repaying those benefits.",
+  "es": "Una persona que recibió beneficios por error, sin fraude, porque un empleador no respondió a la reclamación a tiempo no tiene que devolver esos beneficios."
+ },
+ "raover/no_fault/plain": {
+  "en": "Benefits may not be taken from future benefits if the person got them without fault and taking them back would defeat the purpose of the law or be inequitable and against good conscience.",
+  "es": "No se pueden descontar de beneficios futuros si la persona los recibió sin culpa y quitárselos iría contra el propósito de la ley o sería injusto y contrario a la buena conciencia."
+ },
+ "raover/interest/plain": {
+  "en": "Repayment is collected without interest, by deductions from benefits or by a civil action.",
+  "es": "El pago se cobra sin intereses, con descuentos de los beneficios o con una demanda civil."
+ },
+ "raover/limit/plain": {
+  "en": "Recovery must be started within 7 years after the redetermination or decision.",
+  "es": "El cobro debe comenzar dentro de los 7 años después de la redeterminación o decisión."
+ },
+ "voucher/hearing/plain": {
+  "en": "A housing authority must offer an informal hearing before it ends voucher help because of something the family did or failed to do, or because the family was away from the home too long.",
+  "es": "Una autoridad de vivienda debe ofrecer una audiencia informal antes de terminar la ayuda del vale por algo que la familia hizo o dejó de hacer, o porque la familia estuvo fuera de la vivienda demasiado tiempo."
+ },
+ "voucher/before/plain": {
+  "en": "For those decisions the hearing must be offered before the housing authority stops the housing assistance payments under the current contract.",
+  "es": "Para esas decisiones, la audiencia se debe ofrecer antes de que la autoridad de vivienda deje de hacer los pagos de asistencia del contrato vigente."
+ },
+ "voucher/notice/plain": {
+  "en": "The written notice must give a brief statement of the reasons, say that the family may ask for an informal hearing, and give the deadline for asking.",
+  "es": "El aviso por escrito debe dar una breve explicación de las razones, decir que la familia puede pedir una audiencia informal y dar la fecha límite para pedirla."
+ },
+ "voucher/deadline/plain": {
+  "en": "The federal rule sets no number of days to ask for the hearing. The deadline is the one on the notice, set by the housing authority's own plan.",
+  "es": "La regla federal no fija un número de días para pedir la audiencia. La fecha límite es la que aparece en el aviso, fijada por el plan de la propia autoridad de vivienda."
+ },
+ "voucher/documents/plain": {
+  "en": "Before the hearing the family may look at, and copy at its own cost, the housing authority's documents that bear on the hearing. A document the housing authority does not make available on request may not be used against the family at the hearing.",
+  "es": "Antes de la audiencia, la familia puede ver, y copiar por su cuenta, los documentos de la autoridad de vivienda que tienen que ver con la audiencia. Un documento que la autoridad de vivienda no entregue cuando se le pide no se puede usar contra la familia en la audiencia."
+ },
+ "voucher/representative/plain": {
+  "en": "The family may be represented by a lawyer or another person, at its own cost.",
+  "es": "La familia puede estar representada por un abogado u otra persona, por su cuenta."
+ },
+ "voucher/officer/plain": {
+  "en": "The hearing is run by someone who did not make or approve the decision and who does not work under the person who did.",
+  "es": "La audiencia la dirige alguien que no tomó ni aprobó la decisión y que no trabaja bajo las órdenes de quien la tomó."
+ },
+ "voucher/evidence/plain": {
+  "en": "The family and the housing authority may both present evidence and question witnesses.",
+  "es": "Tanto la familia como la autoridad de vivienda pueden presentar pruebas y hacer preguntas a los testigos."
+ },
+ "voucher/decision/plain": {
+  "en": "The hearing officer must give a written decision with brief reasons and send it to the family promptly. Facts are decided on a preponderance of the evidence.",
+  "es": "El oficial de audiencia debe dar una decisión por escrito con razones breves y enviarla a la familia sin demora. Los hechos se deciden por preponderancia de la prueba."
+ },
+ "estate/who/plain": {
+  "en": "States must seek repayment from the estate of a person who got Medicaid at age 55 or older for nursing facility services, home and community-based services, and related hospital and prescription drug services. States may also seek it for other Medicaid services.",
+  "es": "Los estados deben pedir el reembolso a los bienes (la sucesión) de una persona que recibió Medicaid a los 55 años o más por servicios de hogar de ancianos, servicios en el hogar y en la comunidad, y servicios relacionados de hospital y de medicamentos recetados. Los estados también pueden pedirlo por otros servicios de Medicaid."
+ },
+ "estate/survivors/plain": {
+  "en": "A state may not recover from the estate of a person who is survived by a spouse, a child under age 21, or a blind or disabled child of any age.",
+  "es": "Un estado no puede cobrar de los bienes de una persona a quien le sobrevive un cónyuge, un hijo menor de 21 años, o un hijo ciego o incapacitado de cualquier edad."
+ },
+ "estate/hardship/plain": {
+  "en": "Every state must have a way to waive estate recovery when it would cause an undue hardship.",
+  "es": "Cada estado debe tener una manera de renunciar al cobro cuando este causaría una dificultad excesiva (undue hardship)."
+ },
+ "estate/fl_debt/plain": {
+  "en": "In Florida, Medicaid paid for a person's care after age 55 creates a debt to the state. Medicaid paid before age 55 does not.",
+  "es": "En Florida, el Medicaid pagado por la atención de una persona después de los 55 años crea una deuda con el estado. El Medicaid pagado antes de los 55 años no."
+ },
+ "estate/fl_survivors/plain": {
+  "en": "In Florida the debt is not enforced if the person is survived by a spouse, a child under 21, or a child who is blind or permanently and totally disabled.",
+  "es": "En Florida la deuda no se cobra si a la persona le sobrevive un cónyuge, un hijo menor de 21 años, o un hijo ciego o con incapacidad total y permanente."
+ },
+ "estate/fl_exempt/plain": {
+  "en": "In Florida the debt is not enforced against property that is determined to be exempt from creditors under the state constitution or state law, which includes protected homestead. Real property is never transferred to the agency.",
+  "es": "En Florida la deuda no se cobra contra bienes que se determinan exentos de los acreedores según la constitución o las leyes del estado, lo que incluye la vivienda familiar protegida (homestead). Los bienes inmuebles nunca se transfieren a la agencia."
+ },
+ "estate/fl_claim/plain": {
+  "en": "Florida collects by filing a statement of claim in the probate case, where it stands with the estate's other claimants.",
+  "es": "Florida cobra presentando una reclamación en el caso de sucesión (probate), donde queda junto con los demás acreedores de la sucesión."
+ },
+ "estate/fl_hardship/plain": {
+  "en": "In Florida the personal representative or any heir may ask the agency to waive recovery when it would create a hardship. Losing an expected inheritance is not a hardship by itself.",
+  "es": "En Florida, el representante personal o cualquier heredero puede pedir a la agencia que renuncie al cobro cuando este crearía una dificultad. Perder una herencia esperada no es por sí solo una dificultad."
+ },
+ "estate/fl_factors/plain": {
+  "en": "Florida considers whether an heir lives in the home, lived there at the death and for the 12 months before, and owns no other home; whether an heir would be left without food, clothing, shelter or medical care; whether a sibling or child lived with the person for at least a year and gave full-time care that delayed a nursing home; and whether selling would cost as much as the property is worth.",
+  "es": "Florida considera si un heredero vive en la casa, vivía allí al momento de la muerte y durante los 12 meses anteriores, y no tiene otra vivienda; si un heredero quedaría sin comida, ropa, vivienda o atención médica; si un hermano o un hijo vivió con la persona por lo menos un año y le dio cuidado de tiempo completo que retrasó su ingreso a un hogar de ancianos; y si vender costaría tanto como vale la propiedad."
+ },
+ "partb/penalty/plain": {
+  "en": "The Part B late enrollment penalty is an extra 10% for each full 12-month period you could have had Part B but did not. It is usually charged for as long as you have Part B.",
+  "es": "La multa por inscripción tardía en la Parte B es un 10% adicional por cada período completo de 12 meses en que pudo tener la Parte B y no la tuvo. Por lo general se cobra mientras tenga la Parte B."
+ },
+ "partb/no_penalty/plain": {
+  "en": "You generally do not pay the penalty if a Special Enrollment Period applies to you or you enroll in a Medicare Savings Program.",
+  "es": "Por lo general no paga la multa si le corresponde un Período de Inscripción Especial o si se inscribe en un Programa de Ahorros de Medicare."
+ },
+ "partb/general/plain": {
+  "en": "If you missed your first chance, you can sign up in the General Enrollment Period, January 1 to March 31 each year. Coverage starts the month after you sign up.",
+  "es": "Si perdió su primera oportunidad, puede inscribirse en el Período de Inscripción General, del 1 de enero al 31 de marzo de cada año. La cobertura comienza el mes después de inscribirse."
+ },
+ "partb/employer/plain": {
+  "en": "If you had group health coverage from your own or your spouse's current job, you have a Special Enrollment Period that ends 8 months after that coverage or the job ends, whichever comes first. COBRA does not count as that coverage.",
+  "es": "Si tuvo cobertura de salud de grupo por su propio trabajo actual o el de su cónyuge, tiene un Período de Inscripción Especial que termina 8 meses después de que termine esa cobertura o el trabajo, lo que ocurra primero. COBRA no cuenta como esa cobertura."
+ },
+ "partb/medicaid/plain": {
+  "en": "If you lost Medicaid, you can sign up from the day you are told until 6 months after Medicaid ends.",
+  "es": "Si perdió Medicaid, puede inscribirse desde el día en que se lo avisan hasta 6 meses después de que termine Medicaid."
+ },
+ "partb/misinformed/plain": {
+  "en": "If a health plan or an employer gave you wrong or misleading information, you can sign up for 6 months after you tell Social Security.",
+  "es": "Si un plan de salud o un empleador le dio información incorrecta o engañosa, puede inscribirse durante 6 meses después de avisar al Seguro Social."
+ },
+ "partb/disaster/plain": {
+  "en": "After a declared disaster or emergency, you can sign up until 6 months after the declaration ends.",
+  "es": "Después de un desastre o una emergencia declarados, puede inscribirse hasta 6 meses después de que termine la declaración."
+ },
+ "partb/released/plain": {
+  "en": "After release from incarceration, you can sign up until the end of the 12th month after the month of release.",
+  "es": "Después de salir de la cárcel o prisión, puede inscribirse hasta el final del mes número 12 después del mes de su salida."
+ },
+ "partb/exceptional/plain": {
+  "en": "For other exceptional conditions, Social Security can give a sign-up period of at least 6 months from when you contact it.",
+  "es": "Para otras condiciones excepcionales, el Seguro Social puede dar un período de inscripción de por lo menos 6 meses desde que usted se comunica."
+ },
+ "partb/forms/plain": {
+  "en": "To sign up for Part B only, fill out form CMS-40B (Application for Enrollment in Medicare Part B). If you are using the Special Enrollment Period after a job's health plan ends, also send form CMS-L564 (Request for Employment Information). Form CMS-10797 is for the special situations. Send them to your local Social Security office by fax or mail; the job-plan sign-up can also be done online.",
+  "es": "Para inscribirse solo en la Parte B, llene el formulario CMS-40B (Application for Enrollment in Medicare Part B). Si usa el Período de Inscripción Especial después de que termina el plan de salud de un trabajo, envíe también el formulario CMS-L564 (Request for Employment Information). El formulario CMS-10797 es para las situaciones especiales. Envíelos a su oficina local del Seguro Social por fax o por correo; la inscripción por plan de trabajo también se puede hacer por internet."
+ },
+ "fairness/what/plain": {
+  "en": "The Social Security Fairness Act, signed on January 5, 2025, ended the Windfall Elimination Provision and the Government Pension Offset.",
+  "es": "La Ley de Equidad del Seguro Social (Social Security Fairness Act), firmada el 5 de enero de 2025, eliminó la Eliminación de Ventaja Imprevista (WEP) y el Ajuste por Pensión del Gobierno (GPO)."
+ },
+ "fairness/from/plain": {
+  "en": "It applies to benefits for January 2024 and later. December 2023 was the last month either reduction applied.",
+  "es": "Se aplica a los beneficios de enero de 2024 en adelante. Diciembre de 2023 fue el último mes en que se aplicó alguna de las dos reducciones."
+ },
+ "fairness/monthly/plain": {
+  "en": "Social Security began adjusting monthly payments on February 25, 2025. Most affected people began getting the new monthly amount in April 2025.",
+  "es": "El Seguro Social comenzó a ajustar los pagos mensuales el 25 de febrero de 2025. La mayoría de las personas afectadas comenzó a recibir la nueva cantidad mensual en abril de 2025."
+ },
+ "fairness/backpay/plain": {
+  "en": "Back pay is a one-time payment for the increase back to January 2024, sent to the bank account Social Security has on file.",
+  "es": "El pago retroactivo es un pago único por el aumento desde enero de 2024, enviado a la cuenta de banco que el Seguro Social tiene registrada."
+ },
+ "fairness/notice/plain": {
+  "en": "Affected people get a mailed notice, sometimes two. The back pay may arrive before the notice.",
+  "es": "Las personas afectadas reciben un aviso por correo, a veces dos. El pago retroactivo puede llegar antes que el aviso."
+ },
+ "fairness/apply/plain": {
+  "en": "People who never applied because of these reductions may need to file an application. The date you apply can affect when benefits start and how much they are.",
+  "es": "Las personas que nunca solicitaron por causa de estas reducciones quizás tengan que presentar una solicitud. La fecha en que solicita puede afectar cuándo comienzan los beneficios y de cuánto son."
+ },
+ "fairness/how/plain": {
+  "en": "Retirement or spouse's benefits can be applied for online or by phone. Survivors benefits cannot be applied for online.",
+  "es": "Los beneficios de jubilación o de cónyuge se pueden solicitar por internet o por teléfono. Los beneficios de sobreviviente no se pueden solicitar por internet."
+ },
+ "fairness/retro/plain": {
+  "en": "For retirement and survivors benefits, a new application generally reaches back no more than six months before the month you apply. The Act did not change that rule.",
+  "es": "Para los beneficios de jubilación y de sobreviviente, una solicitud nueva por lo general no alcanza más de seis meses antes del mes en que solicita. La Ley no cambió esa regla."
+ },
+ "fairness/account/plain": {
+  "en": "Check that your mailing address and direct deposit details are right in your my Social Security account, or by phone if you cannot open one.",
+  "es": "Revise que su dirección postal y los datos de depósito directo estén correctos en su cuenta my Social Security, o por teléfono si no puede abrir una."
+ },
+ "fairness/medicare/plain": {
+  "en": "Once benefits start, Social Security takes the Medicare premium out of the monthly payment. If you pay Medicare directly, keep paying the bill until Social Security writes to you.",
+  "es": "Cuando comienzan los beneficios, el Seguro Social descuenta la prima de Medicare del pago mensual. Si paga a Medicare directamente, siga pagando la factura hasta que el Seguro Social le escriba."
+ },
+ "fairness/scam/plain": {
+  "en": "Social Security will never ask for payment to start, increase or speed up benefits.",
+  "es": "El Seguro Social nunca le pedirá un pago para comenzar, aumentar o acelerar los beneficios."
+ },
+ "fairness/phone/plain": {
+  "en": "Social Security: 1-800-772-1213, Monday to Friday, 8:00 a.m. to 7:00 p.m. local time.",
+  "es": "Seguro Social: 1-800-772-1213, de lunes a viernes, de 8:00 a.m. a 7:00 p.m., hora local."
  }
 }

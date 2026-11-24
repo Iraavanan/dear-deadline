@@ -20,7 +20,7 @@ from pathlib import Path
 from flask import Flask, Response, abort, jsonify, request, send_from_directory
 
 import helper
-from helper import ssamore, ssalife, morehelp, benefitmath, es as spanish_tools, research, board, ai_reader, amount, bill, hearing, noticecheck, ssilimit, planappeal, diswait, fixes, utility, budget, cessation, counter, deadlines, denial, engine, letters, renewal, rent, reporting, rules, validate, work, workrules
+from helper import i18n, ssamore, ssalife, morehelp, benefitmath, es as spanish_tools, research, board, ai_reader, amount, bill, hearing, noticecheck, ssilimit, planappeal, diswait, fixes, utility, budget, cessation, counter, deadlines, denial, engine, letters, renewal, rent, reporting, rules, validate, work, workrules
 
 ROOT = Path(__file__).resolve().parents[1]
 FRONTEND = ROOT / "frontend"
@@ -449,7 +449,7 @@ def create_app():
     def spanish_tool(tool):
         """The Spanish step-by-step helpers. Dates and figures come from the same code as the English ones."""
         fn = {"sobrepago": spanish_tools.sobrepago, "negado": spanish_tools.negado, "incapacidad": spanish_tools.incapacidad,
-              "audiencia": spanish_tools.audiencia, "snap": spanish_tools.snap}.get(tool)
+              "audiencia": spanish_tools.audiencia, "snap": spanish_tools.snap}.get(tool) or i18n.TOOLS.get(tool)
         if fn is None:
             abort(404)
         return _figures(fn, "details")
