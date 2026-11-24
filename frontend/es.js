@@ -216,6 +216,10 @@
         h("td", { class: "num", text: x.stated === null || x.stated === undefined ? "No lo escribió" : dinero(x.stated) })); }));
   }
 
+  /* Las exenciones que pueden aplicarse. tests/test_es.py revisa que sean las de rules/workrules.json. */
+  var EXENTO_SNAP = [["age", "Menor de 18 años, o de 65 años o más"], ["unfit", "Un médico u otro profesional de la salud dice que usted no puede trabajar por razones físicas o mentales"], ["pregnant", "Embarazada"], ["child_under_14", "Responsable de un niño menor de 14 años que vive con usted (puede ser su hijo u otro niño del hogar)"], ["general", "Exento de las reglas generales de trabajo de SNAP: por ejemplo, cuida a un niño menor de 6 años o a alguien que no puede cuidarse solo, recibe beneficios por discapacidad, recibe beneficios de desempleo y cumple sus reglas, está en un programa de tratamiento de drogas o alcohol, es estudiante por lo menos a medio tiempo, o ya trabaja 30 horas a la semana (o gana por lo menos 30 veces el salario mínimo federal cada semana)"], ["indian", "Indígena estadounidense (American Indian), Urban Indian o California Indian según la ley federal"]];
+  var EXENTO_MEDICAID = [["caregiver", "Padre, madre o cuidador de un niño de 13 años o menos, o de una persona con discapacidad"], ["frail", "Médicamente frágil, o con necesidades médicas especiales que hacen muy difícil cumplir el requisito"], ["veteran", "Veterano con una calificación de discapacidad total"], ["foster", "Estuvo en cuidado de crianza (menor de 26 años)"], ["indian", "Indígena estadounidense o nativo de Alaska"], ["treatment", "En un programa de tratamiento de drogas o alcohol"], ["snap_tanf", "Cumple las reglas de trabajo de TANF, o está en un hogar de SNAP y no está exento de las reglas de trabajo de SNAP"], ["pregnant", "Embarazada, o con cobertura después de dar a luz"], ["institution", "Detenido en una cárcel o prisión"]];
+
   var HERRAMIENTAS = {
     sobrepago: herramienta({
       api: "sobrepago", boton: "Ver mis fechas", titulo: "El Seguro Social dice que me pagó de más",
@@ -964,6 +968,73 @@
           r["new"].findings.length ? [h("h2", { text: "En la hoja nueva" }), h("ul", { class: "findings" }, r["new"].findings.map(function (f) { return h("li", { text: f.text }); }))] : null,
           h("h2", { text: "Qué preguntar a su autoridad de vivienda" }), h("ul", {}, r.questions.map(function (q) { return h("li", { text: q }); })),
           borrador("Carta sobre la hoja nueva (en inglés)", "Tiene las preguntas sobre la hoja nueva, en inglés. Añada las demás preguntas si las necesita.", r["new"].letter), cierreEn(r, volver, "rent-check"));
+      }
+    }),
+    "reglas-de-trabajo": herramienta({
+      api: "work-rules", boton: "Revisar mis meses", titulo: "Mantener SNAP o Medicaid con las reglas de 80 horas",
+      entrada: "Algunos adultos deben trabajar, hacer voluntariado o estar en un programa 80 horas al mes para mantener SNAP y, desde 2027 en los estados que expandieron Medicaid, para mantener Medicaid. Vea si podría corresponderle una exención y qué meses cuentan, y llévese una carta con sus pruebas.",
+      dibujar: function (s, p) {
+        var ms = s._meses || [{}, {}, {}], q = {}, ex = s.exemptions || {};
+        Object.keys(p).forEach(function (k) { var m = /^m(\d+)_(.*)$/.exec(k); if (m) q["h-" + m[2] + "-" + ((s._usados || [])[+m[1] - 1])] = p[k]; });
+        return [marcas("programs", "¿Qué recibe?", [["snap", "SNAP (asistencia de alimentos)"], ["medicaid", "Medicaid"]], s.programs, p),
+          seleccion("state", "Su estado", [["FL", "Florida"], ["CA", "California"], ["NY", "Nueva York"], ["PA", "Pensilvania"], ["OH", "Ohio"], ["MI", "Michigan"], ["other", "Otro estado"]], s.state || "FL", p),
+          marcas("ex-snap", "Para SNAP: ¿algo de esto podría corresponderle?", EXENTO_SNAP, ex.snap, p, "Marque lo que corresponda. Déjelo en blanco si no recibe SNAP."),
+          marcas("ex-medicaid", "Para Medicaid: ¿algo de esto podría corresponderle?", EXENTO_MEDICAID, ex.medicaid, p, "Marque lo que corresponda. Déjelo en blanco si no tiene Medicaid."),
+          grupo("Sus meses (opcional)", [h("p", { class: "hint", text: "Escriba las horas de cada mes. Deje en blanco las filas que no use." }), p.months ? h("p", { class: "err", role: "alert", text: p.months }) : null,
+            ms.map(function (m, i) {
+              return h("div", { class: "setaside" }, campo("h-month-" + i, "Mes " + (i + 1), null, "month", m.month, q), campo("h-work-" + i, "Horas de trabajo", null, "text", m.work, q),
+                campo("h-volunteer-" + i, "Horas de voluntariado o servicio comunitario", null, "text", m.volunteer, q), campo("h-program-" + i, "Horas en un programa de trabajo o capacitación", null, "text", m.program, q),
+                campo("h-earnings-" + i, "Lo que ganó ese mes, antes de impuestos", "Opcional. Para Medicaid.", "dinero", m.earnings, q),
+                casilla("h-school-" + i, "Estudié por lo menos a medio tiempo ese mes", m.school), casilla("h-snap-" + i, "Recibí SNAP ese mes", m.snap));
+            })])];
+      },
+      leer: function () {
+        var meses = [], months = [], usados = [];
+        [0, 1, 2].forEach(function (i) {
+          var m = { month: valor("h-month-" + i), work: valor("h-work-" + i), volunteer: valor("h-volunteer-" + i), program: valor("h-program-" + i), earnings: valor("h-earnings-" + i), school: marcada("h-school-" + i), snap: marcada("h-snap-" + i) };
+          meses.push(m); if (m.month || m.work || m.volunteer || m.program || m.earnings || m.school) { months.push(m); usados.push(i); }
+        });
+        return { programs: marcados("programs"), state: valor("state"), exemptions: { snap: marcados("ex-snap"), medicaid: marcados("ex-medicaid") }, months: months, _meses: meses, _usados: usados };
+      },
+      ejemplo: function () {
+        var hoy = new Date(), a = new Date(hoy.getFullYear(), hoy.getMonth() - 2, 1), b = new Date(hoy.getFullYear(), hoy.getMonth() - 1, 1);
+        function ym(d) { return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2); }
+        var months = [{ month: ym(a), work: "64", volunteer: "", program: "", earnings: "", school: false, snap: true }, { month: ym(b), work: "70", volunteer: "12", program: "", earnings: "", school: false, snap: true }];
+        return { programs: ["snap"], state: "FL", exemptions: { snap: [], medicaid: [] }, months: months, _meses: months.concat([{}]), _usados: [0, 1] };
+      },
+      resultado: function (r, volver) {
+        var reglas = [];
+        r.sections.forEach(function (sec) { reglas = reglas.concat(sec.rules); });
+        mostrar(h("h1", { class: "long", text: r.headline }),
+          r.sections.map(function (sec) {
+            return [h("h2", { text: sec.title }), h("p", { class: "lead", text: sec.summary }),
+              sec.may_apply.length ? [h("p", { text: "Exenciones que marcó:" }), h("ul", {}, sec.may_apply.map(function (x) { return h("li", { text: x }); }))] : null,
+              sec.months.length ? h("table", { class: "plain" }, h("tr", {}, ["Mes", "Cómo se cuenta", "Resultado"].map(function (x) { return h("th", { text: x }); })),
+                sec.months.map(function (m) { return h("tr", {}, h("th", { scope: "row", text: m.month }), h("td", { text: m.how }),
+                  h("td", { text: m.met ? "Cumple" : "Faltan " + m.short + " horas" + (m.countable ? " (este mes podría contar para el límite)" : "") })); })) : null,
+              sec.notes.map(function (n) { return h("p", {}, n.plain + " ", enlace(n.source, "Fuente (en inglés)")); })];
+          }),
+          h("h2", { text: "Pruebas para guardar y enviar" }), h("ul", {}, r.proof.map(function (x) { return h("li", { text: x }); })),
+          borrador("Carta a la agencia (en inglés)", EN_INGLES, r.letter),
+          r.contact ? h("p", {}, h("b", { text: r.contact_name + ": " }), r.contact) : null,
+          r.hearing ? [h("h2", { text: "Si le quitan o reducen sus beneficios" }), h("p", {}, r.hearing.plain + " ", enlace(r.hearing.source, "Fuente (en inglés)"))] : null,
+          cierreEn({ rules: reglas, disclaimer: r.disclaimer, rules_as_of: r.rules_as_of }, volver, "work-rules"));
+      }
+    }),
+    "entrevista-snap": herramienta({
+      api: "missed-interview", boton: "Ver mi fecha", titulo: "Falté a mi entrevista de SNAP",
+      entrada: "Faltar a la entrevista no cierra su solicitud de inmediato. Si se comunica con el estado dentro de los 30 días de haber solicitado, este debe darle una segunda entrevista. Vea su fecha y qué decir cuando llame.",
+      dibujar: function (s, p) {
+        return [campo("applied", "Fecha en que solicitó SNAP", null, "date", s.applied, p), opciones("state", "¿En qué estado?", [["FL", "Florida"], ["other", "Otro estado"]], s.state || "FL", p)];
+      },
+      leer: function () { return { applied: valor("applied"), state: elegido("state") }; },
+      ejemplo: function () { return { applied: hace(18), state: "FL" }; },
+      resultado: function (r, volver) {
+        mostrar(h("h1", { class: "long", text: r.headline }),
+          fechas([{ etiqueta: "Día 30 después de solicitar", nota: "Si su aviso da una fecha anterior, use la del aviso.", fecha_larga: fechaLarga(r.day30), dias: r.days_left, estado: r.status === "passed" ? "passed" : "upcoming" }]),
+          h("h2", { text: "Qué hacer" }), pasos(r.steps), borrador("Qué decir cuando llame", null, r.script.join("\n"), "es"),
+          r.contact ? h("p", {}, h("b", { text: "DCF de Florida: " }), r.contact) : null,
+          r.hearing ? h("p", {}, r.hearing.plain + " ", enlace(r.hearing.source, "Fuente (en inglés)")) : null, cierreEn(r, volver, "missed-interview"));
       }
     })
   };

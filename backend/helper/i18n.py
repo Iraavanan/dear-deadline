@@ -151,6 +151,8 @@ def _tools():
     more["renewal"] = renewal.run
     from . import rent
     special = {"rent-check": spanish(rent.run, english=("letter",)), "rent-change": spanish(rent.compare, english=("letter",))}
+    from . import workrules
+    special.update({"work-rules": spanish(workrules.run, english=("letter",)), "missed-interview": spanish(workrules.interview)})
     return dict({k: spanish(v) for k, v in more.items()}, **dict(special, **_first()))
 
 

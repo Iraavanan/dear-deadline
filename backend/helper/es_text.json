@@ -1498,5 +1498,229 @@
  "rent/interim/plain": {
   "en": "You can ask your housing authority to review your rent between yearly reviews because of any change. It may decline when your adjusted income is expected to drop by less than 10%, or by less than a lower threshold it has set.",
   "es": "Puede pedir a su autoridad de vivienda que revise su alquiler entre las revisiones anuales por cualquier cambio. Puede negarse cuando se espera que su ingreso ajustado baje menos del 10%, o menos de un umbral más bajo que haya fijado."
+ },
+ "workrules/snap_limit/plain": {
+  "en": "Adults aged 18 to 64 who are able to work and not exempt can get SNAP for only 3 months in a 3-year period, unless they meet the work requirement.",
+  "es": "Los adultos de 18 a 64 años que pueden trabajar y no están exentos pueden recibir SNAP solo 3 meses en un período de 3 años, a menos que cumplan el requisito de trabajo."
+ },
+ "workrules/snap_work/plain": {
+  "en": "The work requirement is met by working, by taking part in a work program, or by a mix of the two, for 20 hours a week averaged monthly: 80 hours a month. Unpaid or volunteer work counts as work when the state can check it.",
+  "es": "El requisito de trabajo se cumple trabajando, participando en un programa de trabajo, o con una mezcla de los dos, 20 horas a la semana en promedio mensual: 80 horas al mes. El trabajo sin pago o voluntario cuenta como trabajo cuando el estado puede comprobarlo."
+ },
+ "workrules/snap_countable/plain": {
+  "en": "A month counts toward the 3 only if you got a full month of SNAP while not exempt, not covered by a waiver for your area, and not meeting the work requirement. Months when you met the requirement or were exempt do not count.",
+  "es": "Un mes cuenta para los 3 solo si usted recibió un mes completo de SNAP sin estar exento, sin estar cubierto por una exención de su zona, y sin cumplir el requisito de trabajo. Los meses en que cumplió el requisito o estuvo exento no cuentan."
+ },
+ "workrules/snap_regain/plain": {
+  "en": "If you lose SNAP under the time limit, you can get it back by working or taking part in a work program for 80 hours in any 30 days in a row, or by becoming exempt. If you later stop meeting the requirement, you get 3 more months in a row, once in the 3-year period.",
+  "es": "Si pierde SNAP por el límite de tiempo, puede recuperarlo trabajando o participando en un programa de trabajo 80 horas en 30 días seguidos, o quedando exento. Si después deja de cumplir el requisito, recibe 3 meses seguidos más, una sola vez en el período de 3 años."
+ },
+ "workrules/snap_removed/plain": {
+  "en": "Since the 2025 law, being homeless, being a veteran, or being 24 or younger and having been in foster care at 18 no longer exempts anyone from the time limit. The exemption for parents now applies only when the child is under 14.",
+  "es": "Desde la ley de 2025, estar sin vivienda, ser veterano, o tener 24 años o menos y haber estado en cuidado de crianza a los 18 ya no exime a nadie del límite de tiempo. La exención para padres ahora se aplica solo cuando el niño tiene menos de 14 años."
+ },
+ "workrules/snap_exemptions/items/0/1": {
+  "en": "Under 18, or 65 or older",
+  "es": "Menor de 18 años, o de 65 años o más"
+ },
+ "workrules/snap_exemptions/items/1/1": {
+  "en": "A doctor or other medical professional says you are physically or mentally unable to work",
+  "es": "Un médico u otro profesional de la salud dice que usted no puede trabajar por razones físicas o mentales"
+ },
+ "workrules/snap_exemptions/items/2/1": {
+  "en": "Pregnant",
+  "es": "Embarazada"
+ },
+ "workrules/snap_exemptions/items/3/1": {
+  "en": "Responsible for a child under 14 who lives with you (they may be your child or another child in the household)",
+  "es": "Responsable de un niño menor de 14 años que vive con usted (puede ser su hijo u otro niño del hogar)"
+ },
+ "workrules/snap_exemptions/items/4/1": {
+  "en": "Exempt from SNAP's general work rules: for example caring for a child under 6 or for someone who cannot care for themselves, getting disability benefits, getting unemployment benefits and following its rules, in a drug or alcohol treatment program, a student at least half-time, or already working 30 hours a week (or earning at least 30 times the federal minimum wage each week)",
+  "es": "Exento de las reglas generales de trabajo de SNAP: por ejemplo, cuida a un niño menor de 6 años o a alguien que no puede cuidarse solo, recibe beneficios por discapacidad, recibe beneficios de desempleo y cumple sus reglas, está en un programa de tratamiento de drogas o alcohol, es estudiante por lo menos a medio tiempo, o ya trabaja 30 horas a la semana (o gana por lo menos 30 veces el salario mínimo federal cada semana)"
+ },
+ "workrules/snap_exemptions/items/5/1": {
+  "en": "An American Indian, an Urban Indian, or a California Indian under federal law",
+  "es": "Indígena estadounidense (American Indian), Urban Indian o California Indian según la ley federal"
+ },
+ "workrules/snap_florida_waiver/plain": {
+  "en": "Florida has no waiver of the time limit for any area, so the 3-month limit applies across the state.",
+  "es": "Florida no tiene una exención del límite de tiempo para ninguna zona, así que el límite de 3 meses se aplica en todo el estado."
+ },
+ "workrules/snap_florida/plain": {
+  "en": "In Florida, the Department of Children and Families (DCF) runs SNAP, which it calls food assistance. It sends a Food Assistance Work Rules notice saying who in the household must meet work rules. People who must take part in the work program get a referral letter by mail from FloridaCommerce and their local CareerSource center. If you think an exemption applies, tell DCF: (850) 300-4323. Keep your mailing address current in your MyACCESS account.",
+  "es": "En Florida, el Departamento de Niños y Familias (DCF) maneja SNAP, al que llama asistencia de alimentos. Envía un aviso (Food Assistance Work Rules) que dice quién en el hogar debe cumplir las reglas de trabajo. Las personas que deben participar en el programa de trabajo reciben por correo una carta de referido de FloridaCommerce y de su centro local de CareerSource. Si cree que le corresponde una exención, avise al DCF: (850) 300-4323. Mantenga al día su dirección postal en su cuenta MyACCESS."
+ },
+ "workrules/medicaid_rule/plain": {
+  "en": "From January 1, 2027 (earlier in some states), adults aged 19 to 64 covered by Medicaid expansion must show 80 hours a month of work, community service, a work program or school (at least half-time), or a mix, or monthly income of at least 80 times the federal minimum wage ($580). It does not apply to people who are pregnant or who have Medicare.",
+  "es": "Desde el 1 de enero de 2027 (antes en algunos estados), los adultos de 19 a 64 años cubiertos por la expansión de Medicaid deben mostrar 80 horas al mes de trabajo, servicio comunitario, un programa de trabajo o estudios (por lo menos a medio tiempo), o una mezcla, o un ingreso mensual de por lo menos 80 veces el salario mínimo federal ($580). No se aplica a las personas embarazadas ni a quienes tienen Medicare."
+ },
+ "workrules/medicaid_lookback/plain": {
+  "en": "New applicants must meet the requirement for at least one month before the month they apply. People already covered must meet it for one or more months between renewals. Each state decides how many months.",
+  "es": "Quienes solicitan por primera vez deben cumplir el requisito por lo menos un mes antes del mes en que solicitan. Quienes ya tienen cobertura deben cumplirlo uno o más meses entre renovaciones. Cada estado decide cuántos meses."
+ },
+ "workrules/medicaid_notice/plain": {
+  "en": "If the state cannot confirm you met the requirement, it must send a notice of noncompliance. You then have 30 days to show you met it or that you are exempt. People who lose coverage can apply again at any time.",
+  "es": "Si el estado no puede confirmar que usted cumplió el requisito, debe enviarle un aviso de incumplimiento. Usted tiene entonces 30 días para mostrar que lo cumplió o que está exento. Quienes pierden la cobertura pueden solicitar otra vez en cualquier momento."
+ },
+ "workrules/medicaid_exemptions/items/0/1": {
+  "en": "A parent or caregiver of a child aged 13 or under, or of a person with a disability",
+  "es": "Padre, madre o cuidador de un niño de 13 años o menos, o de una persona con discapacidad"
+ },
+ "workrules/medicaid_exemptions/items/1/1": {
+  "en": "Medically frail, or with special medical needs that make it very hard to meet the requirement",
+  "es": "Médicamente frágil, o con necesidades médicas especiales que hacen muy difícil cumplir el requisito"
+ },
+ "workrules/medicaid_exemptions/items/2/1": {
+  "en": "A veteran with a total disability rating",
+  "es": "Veterano con una calificación de discapacidad total"
+ },
+ "workrules/medicaid_exemptions/items/3/1": {
+  "en": "Formerly in foster care (under age 26)",
+  "es": "Estuvo en cuidado de crianza (menor de 26 años)"
+ },
+ "workrules/medicaid_exemptions/items/4/1": {
+  "en": "An American Indian or Alaska Native",
+  "es": "Indígena estadounidense o nativo de Alaska"
+ },
+ "workrules/medicaid_exemptions/items/5/1": {
+  "en": "In a drug or alcohol treatment program",
+  "es": "En un programa de tratamiento de drogas o alcohol"
+ },
+ "workrules/medicaid_exemptions/items/6/1": {
+  "en": "Meeting TANF work rules, or in a SNAP household and not exempt from SNAP's work rules",
+  "es": "Cumple las reglas de trabajo de TANF, o está en un hogar de SNAP y no está exento de las reglas de trabajo de SNAP"
+ },
+ "workrules/medicaid_exemptions/items/7/1": {
+  "en": "Pregnant, or covered after giving birth",
+  "es": "Embarazada, o con cobertura después de dar a luz"
+ },
+ "workrules/medicaid_exemptions/items/8/1": {
+  "en": "Held in a jail or prison",
+  "es": "Detenido en una cárcel o prisión"
+ },
+ "workrules/medicaid_hardship/plain": {
+  "en": "States may also give short-term exceptions: a hospital or nursing home stay, living in a county with a declared disaster or high unemployment, or travelling for long medical care.",
+  "es": "Los estados también pueden dar excepciones de corto plazo: una estadía en un hospital o en un hogar de ancianos, vivir en un condado con un desastre declarado o con alto desempleo, o viajar para recibir atención médica prolongada."
+ },
+ "workrules/medicaid_florida/plain": {
+  "en": "Florida did not expand Medicaid, so the federal 80-hour Medicaid rule for the expansion group does not apply to Florida Medicaid. Florida's own work rules for food assistance still apply.",
+  "es": "Florida no expandió Medicaid, así que la regla federal de 80 horas de Medicaid para el grupo de expansión no se aplica al Medicaid de Florida. Las reglas de trabajo propias de Florida para la asistencia de alimentos sí se siguen aplicando."
+ },
+ "workrules/interview_missed/plain": {
+  "en": "If you miss your SNAP interview, the state must send you a notice saying you missed it and that you are responsible for rescheduling. If you contact the state within 30 days of applying, it must schedule a second interview. It may not deny your application for a missed first interview before the 30th day after you applied.",
+  "es": "Si falta a su entrevista de SNAP, el estado debe enviarle un aviso que diga que faltó y que a usted le toca pedir una nueva fecha. Si usted se comunica con el estado dentro de los 30 días de haber solicitado, este debe programar una segunda entrevista. No puede negar su solicitud por faltar a la primera entrevista antes del día 30 después de que solicitó."
+ },
+ "workrules/interview_denial/plain": {
+  "en": "If you miss the interview and do not contact the state, it sends a denial notice on the 30th day after you applied. You can apply again.",
+  "es": "Si falta a la entrevista y no se comunica con el estado, este envía un aviso de denegación el día 30 después de que usted solicitó. Puede solicitar otra vez."
+ },
+ "workrules/verification/plain": {
+  "en": "When the state asks for proof, it must give you at least 10 days to provide it.",
+  "es": "Cuando el estado pide pruebas, debe darle por lo menos 10 días para entregarlas."
+ },
+ "medicaid_states/hold/plain": {
+  "en": "Each state chooses whether to use a federal \"hold harmless\" period through June 30, 2027. In a state that uses it, people are not denied or cut off only for not meeting the work rule until then. The state still checks hours and exemptions, so keep reporting. States had until December 11, 2026 to tell the federal government.",
+  "es": "Cada estado decide si usa un período federal de protección (\"hold harmless\") hasta el 30 de junio de 2027. En un estado que lo usa, hasta entonces no se niega ni se quita la cobertura a nadie solo por no cumplir la regla de trabajo. El estado igual revisa las horas y las exenciones, así que siga informando. Los estados tenían hasta el 11 de diciembre de 2026 para avisar al gobierno federal."
+ },
+ "medicaid_states/CA/start": {
+  "en": "The rule applies to adults in the Medi-Cal New Adult Group from January 1, 2027. The state's work rules page says people who do not meet it could lose Medi-Cal after June 30, 2027.",
+  "es": "La regla se aplica a los adultos del New Adult Group de Medi-Cal desde el 1 de enero de 2027. La página del estado sobre las reglas de trabajo dice que quienes no la cumplan podrían perder Medi-Cal después del 30 de junio de 2027."
+ },
+ "medicaid_states/CA/report": {
+  "en": "Keep your address and phone number up to date with your county, and ask your county office for help. You can report changes and upload proof in BenefitsCal (benefitscal.com), or call the Medi-Cal Helpline at (800) 541-5555.",
+  "es": "Mantenga al día su dirección y su número de teléfono con su condado, y pida ayuda a la oficina de su condado. Puede informar cambios y subir pruebas en BenefitsCal (benefitscal.com), o llamar a la línea de ayuda de Medi-Cal al (800) 541-5555."
+ },
+ "medicaid_states/CA/hearing_plain": {
+  "en": "In California, you can ask for a state hearing about Medi-Cal within 90 days of the notice (the Notice of Action). You may be able to ask later if you had a good reason, such as illness.",
+  "es": "En California, puede pedir una audiencia estatal sobre Medi-Cal dentro de los 90 días del aviso (Notice of Action). Es posible que pueda pedirla después si tuvo una buena razón, como una enfermedad."
+ },
+ "medicaid_states/CA/keep_plain": {
+  "en": "Medi-Cal continues while you wait (aid paid pending) if you ask for the hearing by the effective date on the notice. If the notice did not have to be sent 10 days ahead, ask within 10 days of the notice date.",
+  "es": "Medi-Cal continúa mientras espera (aid paid pending) si pide la audiencia a más tardar en la fecha de vigencia del aviso. Si el aviso no tenía que enviarse con 10 días de anticipación, pídala dentro de los 10 días de la fecha del aviso."
+ },
+ "medicaid_states/CA/hearing_how": {
+  "en": "Ask online through the California Department of Social Services at cdss.ca.gov/hearingrequests, or fill in the Request for State Hearing on the back of your Notice of Action. The notice also lists a phone number.",
+  "es": "Pídala por internet al Departamento de Servicios Sociales de California en cdss.ca.gov/hearingrequests, o llene la solicitud (Request for State Hearing) que está al reverso de su Notice of Action. El aviso también da un número de teléfono."
+ },
+ "medicaid_states/NY/start": {
+  "en": "The rule applies to new applicants from January 1, 2027, and to people already enrolled from their renewals starting March 1, 2027. On November 19, 2026, New York announced it will use the hold harmless period: until June 30, 2027, members will not lose coverage only for not meeting the work rule.",
+  "es": "La regla se aplica a quienes solicitan por primera vez desde el 1 de enero de 2027, y a quienes ya están inscritos desde sus renovaciones a partir del 1 de marzo de 2027. El 19 de noviembre de 2026, Nueva York anunció que usará el período de protección: hasta el 30 de junio de 2027, los miembros no perderán la cobertura solo por no cumplir la regla de trabajo."
+ },
+ "medicaid_states/NY/report": {
+  "en": "Update your NY State of Health account at nystateofhealth.ny.gov, or call the NY State of Health Customer Service Center at 1-855-355-5777 (TTY 1-800-662-1220). If you enrolled through your county's Department of Social Services, contact that office instead.",
+  "es": "Actualice su cuenta de NY State of Health en nystateofhealth.ny.gov, o llame al centro de servicio al cliente de NY State of Health al 1-855-355-5777 (TTY 1-800-662-1220). Si se inscribió por medio del Departamento de Servicios Sociales de su condado, comuníquese con esa oficina."
+ },
+ "medicaid_states/NY/hearing_plain": {
+  "en": "In New York, you can ask for a fair hearing about Medicaid within 60 days of the date of the notice.",
+  "es": "En Nueva York, puede pedir una audiencia imparcial (fair hearing) sobre Medicaid dentro de los 60 días de la fecha del aviso."
+ },
+ "medicaid_states/NY/keep_plain": {
+  "en": "Your Medicaid stays the same until the hearing decision (aid continuing) if you ask for the hearing before the effective date on the notice.",
+  "es": "Su Medicaid sigue igual hasta la decisión de la audiencia (aid continuing) si pide la audiencia antes de la fecha de vigencia del aviso."
+ },
+ "medicaid_states/NY/hearing_how": {
+  "en": "Ask online at otda.ny.gov/hearings/request, by phone at 1-800-342-3334, by fax at 518-473-6735, or by mail to NYS OTDA, Office of Administrative Hearings, P.O. Box 1930, Albany, NY 12201-1930.",
+  "es": "Pídala por internet en otda.ny.gov/hearings/request, por teléfono al 1-800-342-3334, por fax al 518-473-6735, o por correo a NYS OTDA, Office of Administrative Hearings, P.O. Box 1930, Albany, NY 12201-1930."
+ },
+ "medicaid_states/PA/start": {
+  "en": "The rule applies to applicants from January 1, 2027. People already enrolled report that they meet it, or are exempt, at their next renewal in 2027; coverage does not change on January 1 by itself.",
+  "es": "La regla se aplica a quienes solicitan desde el 1 de enero de 2027. Quienes ya están inscritos informan que la cumplen, o que están exentos, en su próxima renovación en 2027; la cobertura no cambia sola el 1 de enero."
+ },
+ "medicaid_states/PA/report": {
+  "en": "Report through COMPASS (dhs.pa.gov/COMPASS) or the myCOMPASS PA app, call the Customer Service Center at 877-395-8930 (215-560-7226 in Philadelphia), or go to your County Assistance Office. PA DHS texts come from 69217 and its recorded calls from 1-877-839-4782.",
+  "es": "Informe por medio de COMPASS (dhs.pa.gov/COMPASS) o de la aplicación myCOMPASS PA, llame al centro de servicio al cliente al 877-395-8930 (215-560-7226 en Filadelfia), o vaya a su oficina de asistencia del condado (County Assistance Office). Los mensajes de texto de PA DHS llegan del 69217 y sus llamadas grabadas del 1-877-839-4782."
+ },
+ "medicaid_states/PA/hearing_plain": {
+  "en": "In Pennsylvania, you have 30 days from the mail date on the notice to appeal. The appeal must be in writing, postmarked or given to your County Assistance Office within the 30 days.",
+  "es": "En Pensilvania, tiene 30 días desde la fecha de envío que aparece en el aviso para apelar. La apelación debe ser por escrito, con matasellos o entregada a su County Assistance Office dentro de los 30 días."
+ },
+ "medicaid_states/PA/keep_plain": {
+  "en": "To keep your Medical Assistance while you wait, appeal within 10 days of the date the notice was mailed. The notice gives the exact date.",
+  "es": "Para mantener su Medical Assistance mientras espera, apele dentro de los 10 días de la fecha en que se envió el aviso. El aviso da la fecha exacta."
+ },
+ "medicaid_states/PA/hearing_how": {
+  "en": "Fill in the Appeal and Fair Hearing Form that came with your notice and send it to your County Assistance Office by mail, or take it there. Keep proof of the date you sent it.",
+  "es": "Llene el formulario de apelación (Appeal and Fair Hearing Form) que vino con su aviso y envíelo por correo a su County Assistance Office, o llévelo allí. Guarde un comprobante de la fecha en que lo envió."
+ },
+ "medicaid_states/OH/start": {
+  "en": "The rule applies to new applications from January 1, 2027, and to renewals started on or after that date, beginning with renewals due in April 2027.",
+  "es": "La regla se aplica a las solicitudes nuevas desde el 1 de enero de 2027, y a las renovaciones que comiencen en esa fecha o después, empezando por las renovaciones que vencen en abril de 2027."
+ },
+ "medicaid_states/OH/report": {
+  "en": "Use the Ohio Benefits self-service portal (benefits.ohio.gov), call the Ohio Medicaid Consumer Hotline at 1-800-324-8680, or contact your county job and family services office.",
+  "es": "Use el portal de autoservicio de Ohio Benefits (benefits.ohio.gov), llame a la línea del consumidor de Medicaid de Ohio al 1-800-324-8680, o comuníquese con la oficina de servicios de empleo y familia de su condado."
+ },
+ "medicaid_states/OH/hearing_plain": {
+  "en": "In Ohio, the Bureau of State Hearings must receive your hearing request within 90 days of the date the notice was mailed.",
+  "es": "En Ohio, la oficina de audiencias estatales (Bureau of State Hearings) debe recibir su solicitud de audiencia dentro de los 90 días de la fecha en que se envió el aviso."
+ },
+ "medicaid_states/OH/keep_plain": {
+  "en": "If the Bureau receives your request within 15 days of the notice's mailing date, your benefits will not be stopped or lowered until the hearing decision.",
+  "es": "Si la oficina recibe su solicitud dentro de los 15 días de la fecha de envío del aviso, sus beneficios no se detendrán ni se reducirán hasta la decisión de la audiencia."
+ },
+ "medicaid_states/OH/hearing_how": {
+  "en": "Call State Hearings at 1-866-635-3748, email bsh@jfs.ohio.gov with \"State Hearing Request\" in the subject, fax (614) 728-9574, or mail ODJFS Bureau of State Hearings, P.O. Box 182825, Columbus, Ohio 43218-2825.",
+  "es": "Llame a State Hearings al 1-866-635-3748, escriba a bsh@jfs.ohio.gov con \"State Hearing Request\" en el asunto, envíe un fax al (614) 728-9574, o escriba por correo a ODJFS Bureau of State Hearings, P.O. Box 182825, Columbus, Ohio 43218-2825."
+ },
+ "medicaid_states/MI/start": {
+  "en": "The rule applies to Healthy Michigan Plan applications from January 1, 2027, and to people already enrolled at renewals on or after March 1, 2027. Michigan first tries to confirm it from data it already has.",
+  "es": "La regla se aplica a las solicitudes del Healthy Michigan Plan desde el 1 de enero de 2027, y a quienes ya están inscritos en las renovaciones del 1 de marzo de 2027 o después. Michigan primero trata de confirmarlo con los datos que ya tiene."
+ },
+ "medicaid_states/MI/report": {
+  "en": "Report through your MI Bridges account (Report My Changes) or your local MDHHS office, or call the Beneficiary Help Line at 1-800-642-3195.",
+  "es": "Informe por medio de su cuenta MI Bridges (Report My Changes) o de su oficina local del MDHHS, o llame a la línea de ayuda para beneficiarios al 1-800-642-3195."
+ },
+ "medicaid_states/MI/hearing_plain": {
+  "en": "In Michigan, you have 90 days from the date of the notice to ask for a hearing about your Medicaid.",
+  "es": "En Michigan, tiene 90 días desde la fecha del aviso para pedir una audiencia sobre su Medicaid."
+ },
+ "medicaid_states/MI/keep_plain": {
+  "en": "Your coverage continues while you wait if you file a written hearing request within 10 calendar days of the date of the notice.",
+  "es": "Su cobertura continúa mientras espera si presenta una solicitud de audiencia por escrito dentro de los 10 días calendario de la fecha del aviso."
+ },
+ "medicaid_states/MI/hearing_how": {
+  "en": "Send a signed, written request: form DCH-0018 or a signed letter. Your notice says where to send it, usually your local MDHHS office.",
+  "es": "Envíe una solicitud firmada y por escrito: el formulario DCH-0018 o una carta firmada. Su aviso dice adónde enviarla, por lo general a su oficina local del MDHHS."
  }
 }
