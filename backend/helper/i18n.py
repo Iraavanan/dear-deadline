@@ -64,6 +64,30 @@ def month_name(d):
     return "%s de %d" % (MESES[d.month - 1], d.year) if es() else "%s %d" % (MONTHS[d.month - 1], d.year)
 
 
+NO_REVISADA = (" La traducción al español todavía no ha sido revisada por un traductor profesional: si algo no está claro, use la fecha y las instrucciones "
+               "impresas en su carta.")
+
+
+def tr(text):
+    """A sentence taken from a rule row, in Spanish when there is a translation for exactly that sentence."""
+    return BY_EN.get(text, text) if es() else text
+
+
+def listed(used):
+    """The rules behind an answer, for helpers that list them without removing repeats."""
+    return [dict({"plain": r["plain"], "source": r["source"]}, **({"lang": "en"} if es() and r["plain"] not in SPANISH else {})) for r in used]
+
+
+def as_of(rules_dir=None):
+    day = rules.rules_checked_as_of(rules_dir)
+    return long_date(dt.date.fromisoformat(day)) if es() else day
+
+
+def note(text):
+    """A helper's closing note. In Spanish it also says the translation has not been reviewed."""
+    return text + NO_REVISADA if es() else text
+
+
 def finish(out, used, rules_dir, disclaimer):
     """The same ending as fixes._done, in the language the helper is running in."""
     seen, listed = set(), []
@@ -98,6 +122,8 @@ def _tools():
     more = {"medicare-costs": fixes.msp, "stolen-snap": fixes.stolen, "locked-out": fixes.lockout, "ssa-call": fixes.ssacall, "withholding": fixes.withhold, "paperwork": fixes.procedural,
             "late-appeal": ssamore.latefiling, "payment-missing": ssamore.payday, "offset": ssamore.offset, "irmaa": ssamore.irmaa,
             "after-death": ssalife.died, "reinstate": ssalife.reinstate, "ssi-help": ssalife.ssihelp, "amount-changed": ssalife.changed}
+    from . import diswait, noticecheck, planappeal, ssilimit, utility
+    more.update({"ssi-limit": ssilimit.run, "plan-appeal": planappeal.run, "disability-wait": diswait.run, "utility": utility.run, "notice-check": noticecheck.run})
     return dict({k: spanish(v) for k, v in more.items()}, **_first())
 
 

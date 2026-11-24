@@ -994,5 +994,205 @@
  "partb/premium/plain@2027-01-01": {
   "en": "The standard Part B premium is $209.40 a month in 2027.",
   "es": "La prima estándar de la Parte B es de $209.40 al mes en 2027."
+ },
+ "ssilimit/limit/plain": {
+  "en": "SSI counts what you own against a limit of $2,000 for one person and $3,000 for a married couple. Your home, one car, and some other things do not count.",
+  "es": "SSI cuenta lo que usted tiene contra un límite de $2,000 para una persona y $3,000 para una pareja casada. Su casa, un carro y algunas otras cosas no cuentan."
+ },
+ "ssilimit/first_moment/plain": {
+  "en": "Social Security checks what you own as of the first moment of each month. Money you receive during a month counts as income that month; if you still have it on the 1st of the next month, it counts toward the limit.",
+  "es": "El Seguro Social revisa lo que usted tiene en el primer momento de cada mes. El dinero que recibe durante un mes cuenta como ingreso de ese mes; si todavía lo tiene el día 1 del mes siguiente, cuenta para el límite."
+ },
+ "ssilimit/tax_refund/plain": {
+  "en": "Federal tax refunds, including the Earned Income Tax Credit and Child Tax Credit, do not count toward the limit for 12 months after the month you get them. State tax refunds do count.",
+  "es": "Los reembolsos de impuestos federales, incluidos el Crédito por Ingreso del Trabajo (EITC) y el Crédito Tributario por Hijos, no cuentan para el límite durante 12 meses después del mes en que los recibe. Los reembolsos de impuestos estatales sí cuentan."
+ },
+ "ssilimit/retro/plain": {
+  "en": "Past-due SSI or Social Security benefits you have not spent do not count for 9 months after the month you get them.",
+  "es": "Los beneficios atrasados de SSI o del Seguro Social que no ha gastado no cuentan durante 9 meses después del mes en que los recibe."
+ },
+ "ssilimit/able/plain": {
+  "en": "Money in an ABLE account, up to $100,000, does not count toward the SSI limit. Since January 1, 2026, you can have an ABLE account if your disability or blindness began before age 46 (before 26 until then).",
+  "es": "El dinero en una cuenta ABLE, hasta $100,000, no cuenta para el límite de SSI. Desde el 1 de enero de 2026, puede tener una cuenta ABLE si su discapacidad o ceguera comenzó antes de los 46 años (antes de los 26 hasta esa fecha)."
+ },
+ "ssilimit/burial/plain": {
+  "en": "Up to $1,500 set aside for your burial expenses does not count. The $1,500 is lowered by the face value of certain life insurance and by irrevocable burial contracts.",
+  "es": "Hasta $1,500 apartados para sus gastos de entierro no cuentan. Los $1,500 se reducen por el valor nominal de ciertos seguros de vida y por los contratos de entierro irrevocables."
+ },
+ "ssilimit/tolerance/plain": {
+  "en": "If you were overpaid only because you were over the limit by $50 or less, and it was not your fault, Social Security waives that overpayment.",
+  "es": "Si le pagaron de más solo porque pasó el límite por $50 o menos, y no fue su culpa, el Seguro Social perdona ese pago de más."
+ },
+ "ssilimit/leading_cause/plain": {
+  "en": "Social Security names bank balances over the limit as the leading cause of SSI overpayments, and checks bank accounts electronically.",
+  "es": "El Seguro Social señala los saldos de banco por encima del límite como la causa principal de los pagos de más de SSI, y revisa las cuentas de banco electrónicamente."
+ },
+ "ssilimit/transfer/plain": {
+  "en": "Giving things away, or selling them for less than they are worth, to get under the limit can stop SSI for up to 36 months.",
+  "es": "Regalar cosas, o venderlas por menos de lo que valen, para quedar por debajo del límite puede detener el SSI hasta por 36 meses."
+ },
+ "ssilimit/suspension/plain": {
+  "en": "When you are over the limit, SSI stops for that month. If SSI stays stopped for 12 months in a row, it ends and you have to apply again.",
+  "es": "Cuando usted está por encima del límite, el SSI se detiene ese mes. Si el SSI sigue detenido 12 meses seguidos, termina y usted tiene que solicitar otra vez."
+ },
+ "reporting/ssi_deadline/plain": {
+  "en": "For SSI, report a change as soon as possible and no later than 10 days after the end of the month in which the change occurred.",
+  "es": "Para SSI, informe un cambio lo antes posible y a más tardar 10 días después del final del mes en que ocurrió el cambio."
+ },
+ "planappeal/ma_deadline/plain": {
+  "en": "For a Medicare Advantage plan, you have 65 days from the date on the plan's denial notice to ask the plan to reconsider (the first level of appeal).",
+  "es": "Para un plan Medicare Advantage, tiene 65 días desde la fecha del aviso de denegación del plan para pedir al plan que reconsidere (el primer nivel de apelación)."
+ },
+ "planappeal/ma_times/plain": {
+  "en": "A Medicare Advantage plan must decide a standard appeal within 30 days for care you have not yet received, 60 days for a bill, and 7 days for a Part B drug. It can take up to 14 more days in some cases, with written notice.",
+  "es": "Un plan Medicare Advantage debe decidir una apelación estándar en 30 días para atención que todavía no ha recibido, 60 días para una factura y 7 días para un medicamento de la Parte B. En algunos casos puede tomar hasta 14 días más, con aviso por escrito."
+ },
+ "planappeal/ma_fast/plain": {
+  "en": "If waiting could seriously harm your life, health or ability to regain function, ask for a fast appeal. The plan must decide within 72 hours if it agrees, or if your doctor tells the plan that waiting could seriously harm your health.",
+  "es": "Si esperar podría dañar gravemente su vida, su salud o su capacidad de recuperarse, pida una apelación rápida. El plan debe decidir en 72 horas si está de acuerdo, o si su médico le dice al plan que esperar podría dañar gravemente su salud."
+ },
+ "planappeal/ma_next/plain": {
+  "en": "If the plan says no again, fully or partly, your appeal goes on to an Independent Review Entity automatically.",
+  "es": "Si el plan dice que no otra vez, en todo o en parte, su apelación pasa automáticamente a una Entidad de Revisión Independiente."
+ },
+ "planappeal/pd_deadline/plain": {
+  "en": "For a Medicare drug plan, you, your representative or your prescriber must ask for an appeal within 65 days from the date on the plan's denial notice. If you miss it, you must give a reason for being late.",
+  "es": "Para un plan de medicamentos de Medicare, usted, su representante o quien le receta debe pedir una apelación dentro de los 65 días desde la fecha del aviso de denegación del plan. Si se le pasa, debe dar una razón por el retraso."
+ },
+ "planappeal/pd_times/plain": {
+  "en": "A drug plan must decide a standard appeal within 7 days for a drug you need, or 14 days for a payment, and a fast appeal within 72 hours.",
+  "es": "Un plan de medicamentos debe decidir una apelación estándar en 7 días para un medicamento que necesita, o en 14 días para un pago, y una apelación rápida en 72 horas."
+ },
+ "planappeal/pd_next/plain": {
+  "en": "If the drug plan says no again, you can ask the Independent Review Entity, in writing, within 65 days of the plan's decision.",
+  "es": "Si el plan de medicamentos dice que no otra vez, puede pedir la revisión a la Entidad de Revisión Independiente, por escrito, dentro de los 65 días de la decisión del plan."
+ },
+ "planappeal/why/plain": {
+  "en": "Few denials are appealed, but most appeals succeed: in 2024, 11.5% of Medicare Advantage prior-authorization denials were appealed, and 80.7% of those appeals were partly or fully overturned.",
+  "es": "Pocas denegaciones se apelan, pero la mayoría de las apelaciones tienen éxito: en 2024 se apeló el 11.5% de las denegaciones de autorización previa de Medicare Advantage, y el 80.7% de esas apelaciones se revocó en todo o en parte."
+ },
+ "diswait/critical/plain": {
+  "en": "Social Security's hearing offices speed up 'critical' cases: terminal illness; a 100% permanent and total VA compensation rating; a military injury on active duty since October 1, 2001; a Compassionate Allowances condition; homelessness; dire need; and a risk of harm to self or others.",
+  "es": "Las oficinas de audiencias del Seguro Social aceleran los casos \"críticos\": enfermedad terminal; una calificación de compensación del VA del 100% permanente y total; una lesión militar en servicio activo desde el 1 de octubre de 2001; una condición de Beneficios por Compasión (Compassionate Allowances); falta de vivienda; necesidad extrema; y riesgo de hacerse daño o hacer daño a otros."
+ },
+ "diswait/dire_need/plain": {
+  "en": "Dire need means you do not have enough income or resources to deal with an immediate threat to your health or safety, such as no food, medicine or medical care, or no heat, water or electricity. Staff accept what you say unless there is evidence against it, and lean toward marking the case.",
+  "es": "Necesidad extrema (dire need) significa que no tiene suficientes ingresos o recursos para enfrentar una amenaza inmediata a su salud o seguridad, como no tener comida, medicinas o atención médica, o no tener calefacción, agua o electricidad. El personal acepta lo que usted dice a menos que haya pruebas en contra, y se inclina por marcar el caso."
+ },
+ "diswait/homeless/plain": {
+  "en": "Homeless means you have no fixed, regular and adequate place to sleep at night, or expect to lose your housing within 14 days with nowhere to go.",
+  "es": "Sin vivienda significa que no tiene un lugar fijo, regular y adecuado para dormir de noche, o que espera perder su vivienda dentro de 14 días sin tener adónde ir."
+ },
+ "diswait/how/plain": {
+  "en": "You can tell Social Security about a critical situation by fax, by mail, by phone or in person. Staff record it and pass it to the person who can mark the case.",
+  "es": "Puede avisar al Seguro Social de una situación crítica por fax, por correo, por teléfono o en persona. El personal lo anota y lo pasa a la persona que puede marcar el caso."
+ },
+ "diswait/vapt/plain": {
+  "en": "For the VA rating category, Social Security needs proof of the 100% permanent and total compensation rating, such as your VA letter. A VA pension does not qualify.",
+  "es": "Para la categoría de calificación del VA, el Seguro Social necesita prueba de la calificación de compensación del 100% permanente y total, como su carta del VA. Una pensión del VA no califica."
+ },
+ "diswait/waits/plain": {
+  "en": "Social Security publishes how long hearings take, by office, each month.",
+  "es": "El Seguro Social publica cada mes cuánto tardan las audiencias, por oficina."
+ },
+ "diswait/fo_dire_need/plain": {
+  "en": "Before a hearing, the Social Security office and the state agency that decides disability (DDS) can also mark a claim 'dire need' and handle it first. They accept what you say unless there is evidence against it.",
+  "es": "Antes de una audiencia, la oficina del Seguro Social y la agencia estatal que decide la incapacidad (DDS) también pueden marcar una solicitud como \"necesidad extrema\" y atenderla primero. Aceptan lo que usted dice a menos que haya pruebas en contra."
+ },
+ "diswait/ssi_advance/plain": {
+  "en": "On a new SSI disability claim, the Social Security office can pay up to 6 months of SSI before the medical decision for some conditions (presumptive disability), and can make a one-time emergency advance payment when there is a financial emergency.",
+  "es": "En una solicitud nueva de SSI por incapacidad, la oficina del Seguro Social puede pagar hasta 6 meses de SSI antes de la decisión médica para algunas condiciones (incapacidad presunta), y puede hacer un pago adelantado de emergencia único cuando hay una emergencia económica."
+ },
+ "diswait/congress/plain": {
+  "en": "Your U.S. representative's and senators' offices have caseworkers who can ask Social Security about a delayed case. They will ask you to sign a privacy release first. They cannot force Social Security to decide faster.",
+  "es": "Las oficinas de su representante y de sus senadores en el Congreso tienen personal que puede preguntar al Seguro Social por un caso atrasado. Primero le pedirán que firme una autorización de privacidad. No pueden obligar al Seguro Social a decidir más rápido."
+ },
+ "diswait/find_rep/plain": {
+  "en": "Find your U.S. representative by ZIP code.",
+  "es": "Busque a su representante en el Congreso por código postal."
+ },
+ "utility/notice/plain": {
+  "en": "For electric companies regulated by the Florida Public Service Commission, service can be shut off for an unpaid bill only after at least 5 working days' written notice, separate from the bill.",
+  "es": "Para las compañías eléctricas reguladas por la Comisión de Servicio Público de Florida, el servicio se puede cortar por una factura sin pagar solo después de un aviso por escrito de por lo menos 5 días hábiles, aparte de la factura."
+ },
+ "utility/who/plain": {
+  "en": "The Public Service Commission sets these rules for the investor-owned electric and gas companies. Utilities run by a city or a cooperative set their own rules for shutoffs, so ask yours which apply.",
+  "es": "La Comisión de Servicio Público fija estas reglas para las compañías de electricidad y de gas propiedad de inversionistas. Las empresas de servicios de una ciudad o de una cooperativa fijan sus propias reglas de corte, así que pregunte a la suya cuáles se aplican."
+ },
+ "utility/medical/plain": {
+  "en": "If someone in the home needs electricity for medical reasons, a doctor can certify it as medically essential. The utility must then try to reach you by phone at least 24 hours before a shutoff, and visit by 4 p.m. the day before if it cannot reach you. Ask your utility how to register.",
+  "es": "Si alguien en la casa necesita electricidad por razones médicas, un médico puede certificar que es médicamente esencial. La compañía entonces debe tratar de comunicarse con usted por teléfono por lo menos 24 horas antes de un corte, y visitarlo antes de las 4 p.m. del día anterior si no logra comunicarse. Pregunte a su compañía cómo registrarse."
+ },
+ "utility/dispute/plain": {
+  "en": "If you file a complaint with the Public Service Commission about a bill, the company may not shut off service over the disputed amount while the complaint is open. Call 1-800-342-3552.",
+  "es": "Si presenta una queja ante la Comisión de Servicio Público sobre una factura, la compañía no puede cortar el servicio por la cantidad en disputa mientras la queja esté abierta. Llame al 1-800-342-3552."
+ },
+ "utility/liheap/plain": {
+  "en": "Crisis help with an electric or gas bill comes from LIHEAP, run in Florida by FloridaCommerce through a local community action agency in each county. It can be used for a disconnection notice, deposits and reconnection. Call 850-717-8450 or dial 211 to find your local agency.",
+  "es": "La ayuda de crisis con una factura de luz o de gas viene de LIHEAP, que en Florida maneja FloridaCommerce por medio de una agencia de acción comunitaria local en cada condado. Se puede usar para un aviso de corte, depósitos y reconexión. Llame al 850-717-8450 o marque 211 para encontrar su agencia local."
+ },
+ "utility/liheap_bring/plain": {
+  "en": "When you apply, bring your most recent energy bill and the shutoff or final notice.",
+  "es": "Cuando solicite, lleve su factura de energía más reciente y el aviso de corte o aviso final."
+ },
+ "utility/elder/plain": {
+  "en": "If someone in the home is 60 or older, the Emergency Home Energy Assistance for the Elderly Program may help. Call the Elder Helpline: 1-800-963-5337.",
+  "es": "Si alguien en la casa tiene 60 años o más, el programa Emergency Home Energy Assistance for the Elderly puede ayudar. Llame a la línea de ayuda para personas mayores (Elder Helpline): 1-800-963-5337."
+ },
+ "noticecheck/total/ask": {
+  "en": "The total amount you were overpaid",
+  "es": "La cantidad total que le pagaron de más"
+ },
+ "noticecheck/months/ask": {
+  "en": "The months the overpayment happened in",
+  "es": "Los meses en que ocurrió el pago de más"
+ },
+ "noticecheck/paid_due/ask": {
+  "en": "What you were paid and what you should have been paid, for each month (a single sentence is enough when only one month or one amount is involved)",
+  "es": "Lo que le pagaron y lo que le debieron pagar, por cada mes (una sola oración basta cuando se trata de un solo mes o una sola cantidad)"
+ },
+ "noticecheck/cause/ask": {
+  "en": "Why a different amount was due: what happened to cause the overpayment",
+  "es": "Por qué correspondía una cantidad diferente: qué pasó para causar el pago de más"
+ },
+ "noticecheck/recon/ask": {
+  "en": "Your right to ask for reconsideration if you think the overpayment is wrong, and how to ask",
+  "es": "Su derecho a pedir una reconsideración si cree que el pago de más está mal, y cómo pedirla"
+ },
+ "noticecheck/waiver/ask": {
+  "en": "Your right to ask Social Security not to collect the money (a waiver), and how to ask",
+  "es": "Su derecho a pedir al Seguro Social que no cobre el dinero (una exención), y cómo pedirla"
+ },
+ "noticecheck/refund/ask": {
+  "en": "A request to pay back the full amount",
+  "es": "Una solicitud de que devuelva la cantidad completa"
+ },
+ "noticecheck/withholding/ask": {
+  "en": "What will be held back from your payments if you do not pay it all back (for SSI: 10% of the payment, if you still get SSI)",
+  "es": "Lo que le retendrán de sus pagos si no devuelve todo (para SSI: el 10% del pago, si todavía recibe SSI)"
+ },
+ "noticecheck/start/ask": {
+  "en": "The month and year the holding back will start",
+  "es": "El mes y el año en que comenzará la retención"
+ },
+ "noticecheck/options/ask": {
+  "en": "Other ways to repay: a different amount held back, monthly installments, or recovery from another Social Security payment",
+  "es": "Otras maneras de pagar: una cantidad retenida diferente, pagos mensuales, o el cobro de otro pago del Seguro Social"
+ },
+ "noticecheck/explain/plain": {
+  "en": "You can ask Social Security to explain an overpayment, by phone, in person or in writing, and ask for the explanation in writing. Its own procedure for retirement, survivor and disability benefits says: \"We must stop recovery efforts until we provide the overpaid person an explanation.\"",
+  "es": "Puede pedir al Seguro Social que le explique un pago de más, por teléfono, en persona o por escrito, y pedir la explicación por escrito. Su propio procedimiento para los beneficios de jubilación, sobrevivientes e incapacidad dice que debe detener el cobro hasta dar la explicación a la persona."
+ },
+ "noticecheck/explain_deadline/plain": {
+  "en": "Social Security's explanation procedure does not say that asking for an explanation changes the 60-day time limit to ask for reconsideration. If you think the overpayment is wrong, you can ask for reconsideration at the same time.",
+  "es": "El procedimiento de explicación del Seguro Social no dice que pedir una explicación cambie el plazo de 60 días para pedir una reconsideración. Si cree que el pago de más está mal, puede pedir la reconsideración al mismo tiempo."
+ },
+ "noticecheck/new_notice/plain": {
+  "en": "Social Security's instructions to its staff say that if a notice was not sent, was inadequate, or was not received at least 30 days before money was held back, staff send a new notice with all the required information and repay any money already held back.",
+  "es": "Las instrucciones del Seguro Social para su personal dicen que si un aviso no se envió, fue insuficiente o no se recibió por lo menos 30 días antes de que se retuviera dinero, el personal envía un aviso nuevo con toda la información requerida y devuelve el dinero ya retenido."
+ },
+ "noticecheck/audit/plain": {
+  "en": "In September 2026, Social Security's Inspector General reported that 46% of the overpayment notices it reviewed did not meet these rules. The most common gaps were how and when the overpayment happened, and the right to ask for reconsideration or a waiver.",
+  "es": "En septiembre de 2026, el Inspector General del Seguro Social informó que el 46% de los avisos de pago de más que revisó no cumplía estas reglas. Las faltas más comunes fueron cómo y cuándo ocurrió el pago de más, y el derecho a pedir una reconsideración o una exención."
  }
 }

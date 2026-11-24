@@ -88,7 +88,8 @@
       var mal = caja.querySelector("[aria-invalid=true]"); if (mal) { (mal.querySelector("input") || mal).focus(); }
     }
     function enviar() {
-      fetch("/api/es/" + cfg.api, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(s) })
+      var enviado = {}; Object.keys(s).forEach(function (k) { if (k.charAt(0) !== "_") enviado[k] = s[k]; });
+      fetch("/api/es/" + cfg.api, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(enviado) })
         .then(function (res) { return res.json().then(function (d) { return { ok: res.ok, d: d }; }); })
         .then(function (res) { if (!res.ok) { formulario(res.d.problems || {}); return; } cfg.resultado(res.d, function () { formulario(); }); })
         .catch(function () { mostrar(h("h1", { text: "No se pudo conectar" }), h("p", { text: "Revise su conexión e inténtelo otra vez." }), h("div", { class: "row" }, h("button", { class: "go", type: "button", text: "Intentar otra vez", on: { click: function () { formulario(); } } }))); });
@@ -139,6 +140,28 @@
   function mesActual() { return new Date().toISOString().slice(0, 7); }
   function quitar(lista) { return lista.filter(function (x) { return x; }); }
   var SS3 = [["ss", "Seguro Social (jubilación, sobreviviente o incapacidad)"], ["ssi", "SSI"]];
+
+  var MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+  function fechaLarga(iso) { var x = String(iso).split("-"); return x.length === 3 ? Number(x[2]) + " de " + MESES[Number(x[1]) - 1] + " de " + x[0] : iso; }
+  function seleccion(id, etiqueta, lista, v, p) {
+    return [h("label", { for: id }, etiqueta), h("select", { id: id }, lista.map(function (o) { return h("option", { value: o[0], text: o[1], selected: v === o[0] ? "selected" : null }); })),
+      p[id] ? h("p", { class: "err", role: "alert", text: p[id] }) : null];
+  }
+  function casilla(id, etiqueta, v) { return h("label", { class: "tick", for: id }, h("input", { type: "checkbox", id: id, checked: v ? "checked" : null }), h("span", { text: etiqueta })); }
+  function marcada(id) { var el = document.getElementById(id); return !!(el && el.checked); }
+  function ultimosMeses() {
+    var hoy = new Date(), out = [];
+    for (var i = 5; i >= 0; i--) { var d = new Date(hoy.getFullYear(), hoy.getMonth() - i, 1); out.push(d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2)); }
+    return out;
+  }
+  function siNo(v) { return v === "yes" ? true : (v === "no" ? false : null); }
+  /* Las partes que todo aviso de pago de más debe tener. tests/test_es.py revisa que sean las mismas de rules/noticecheck.json. */
+  var PARTES = [["total", "La cantidad total que le pagaron de más"], ["months", "Los meses en que ocurrió el pago de más"],
+    ["paid_due", "Lo que le pagaron y lo que le debieron pagar, por cada mes (una sola oración basta cuando se trata de un solo mes o una sola cantidad)"],
+    ["cause", "Por qué correspondía una cantidad diferente: qué pasó para causar el pago de más"], ["recon", "Su derecho a pedir una reconsideración si cree que el pago de más está mal, y cómo pedirla"],
+    ["waiver", "Su derecho a pedir al Seguro Social que no cobre el dinero (una exención), y cómo pedirla"], ["refund", "Una solicitud de que devuelva la cantidad completa"],
+    ["withholding", "Lo que le retendrán de sus pagos si no devuelve todo (para SSI: el 10% del pago, si todavía recibe SSI)"], ["start", "El mes y el año en que comenzará la retención", "ssi"],
+    ["options", "Otras maneras de pagar: una cantidad retenida diferente, pagos mensuales, o el cobro de otro pago del Seguro Social"]];
 
   var HERRAMIENTAS = {
     sobrepago: herramienta({
@@ -643,6 +666,136 @@
               h("td", { class: "num", text: x.change ? (x.change < 0 ? "−" : "+") + dinero(Math.abs(x.change)) : dinero(0) })); })),
           h("h2", { text: "Qué cambió" }), h("ul", {}, r.why.map(function (w) { return h("li", { text: w }); })),
           h("h2", { text: "Qué hacer" }), pasos(r.steps), cierreEn(r, volver, "amount-changed"));
+      }
+    }),
+    "limite-ssi": herramienta({
+      api: "ssi-limit", boton: "Calcular", titulo: "¿Estoy por debajo del límite de $2,000 de SSI?",
+      entrada: "SSI mira lo que usted tiene el día 1 de cada mes. Escriba lo que había en sus cuentas de banco y en efectivo el día 1, y el dinero que las reglas le dejan no contar. Verá, mes por mes, lo que podría contar. Nada de lo que escribe se guarda.",
+      dibujar: function (s, p) {
+        var meses = ultimosMeses(), q = {}, dados = s._dados || [], usados = s._usados || [];
+        Object.keys(p).forEach(function (k) {
+          var m = /^months\.(\d+)\.on_the_1st$/.exec(k), a = /^set_aside\.(\d+)\.(kind|amount|month)$/.exec(k);
+          if (m) q["m-" + dados[+m[1]]] = p[k]; else if (a) q["sa-" + a[2] + "-" + usados[+a[1]]] = p[k];
+        });
+        var sm = s._meses || {}, sa = s._aparte || [{}, {}, {}];
+        return [opciones("household", "¿Para quién es?", [["single", "Una persona (límite de $2,000)"], ["couple", "Una pareja casada (límite de $3,000)"]], s.household, p),
+          h("fieldset", { class: "ticks", id: "months", "aria-invalid": p.months ? "true" : null }, h("legend", { text: "Dinero en todas sus cuentas de banco y en efectivo, el día 1 del mes" }),
+            h("p", { class: "hint", text: "Deje un mes en blanco para saltarlo. Use su estado de cuenta o la aplicación del banco para ver el saldo al comienzo del día 1. No incluya una cuenta ABLE." }),
+            p.months ? h("p", { class: "err", role: "alert", text: p.months }) : null,
+            h("div", { class: "money-grid" }, meses.map(function (m) { return h("div", { class: "field" }, campo("m-" + m, "1 de " + MESES[+m.slice(5) - 1] + " de " + m.slice(0, 4), null, "dinero", sm[m], q)); }))),
+          grupo("Dinero que las reglas le pueden dejar no contar (opcional)", [
+            h("p", { class: "hint", text: "Solo si es parte de los saldos de arriba. Un reembolso de impuestos federales no se cuenta durante 12 meses después del mes en que lo recibió, los beneficios atrasados durante 9 meses, y un fondo de entierro hasta $1,500." }),
+            sa.map(function (it, i) {
+              return h("div", { class: "setaside" },
+                seleccion("sa-kind-" + i, "Qué es", [["", "Nada"], ["tax_refund", "Reembolso de impuestos federales (incluye EITC o el Crédito Tributario por Hijos)"], ["retro", "Beneficios atrasados de SSI o del Seguro Social"], ["burial", "Dinero apartado para el entierro"]], it.kind || "", q),
+                campo("sa-amount-" + i, "Cantidad", null, "dinero", it.amount, q), campo("sa-month-" + i, "Mes en que lo recibió o lo apartó", null, "month", it.month, q));
+            })])];
+      },
+      leer: function () {
+        var meses = ultimosMeses(), sm = {}, months = [], dados = [], usados = [], set_aside = [], aparte = [];
+        meses.forEach(function (m) { sm[m] = valor("m-" + m); if (sm[m] !== "") { months.push({ month: m, on_the_1st: sm[m] }); dados.push(m); } });
+        [0, 1, 2].forEach(function (i) { var it = { kind: valor("sa-kind-" + i), amount: valor("sa-amount-" + i), month: valor("sa-month-" + i) }; aparte.push(it); if (it.kind) { set_aside.push(it); usados.push(i); } });
+        return { household: elegido("household"), months: months, set_aside: set_aside, _meses: sm, _aparte: aparte, _dados: dados, _usados: usados };
+      },
+      ejemplo: function () {
+        var m = ultimosMeses(), sm = {}, months = [];
+        [1650, 1820, 3150, 2310, 3600, 1700].forEach(function (v, i) { sm[m[i]] = String(v); months.push({ month: m[i], on_the_1st: String(v) }); });
+        var it = { kind: "tax_refund", amount: "1400", month: m[1] };
+        return { household: "single", months: months, set_aside: [it], _meses: sm, _aparte: [it, {}, {}], _dados: m, _usados: [0] };
+      },
+      resultado: function (r, volver) {
+        mostrar(h("h1", { class: "long", text: r.headline }),
+          h("table", { class: "months ssi" }, h("thead", {}, h("tr", {}, ["El día", "Tenía", "No se cuenta", "Podría contar", "Contra " + dinero(r.limit)].map(function (t) { return h("th", { scope: "col", text: t }); }))),
+            h("tbody", {}, r.months.map(function (m) {
+              return h("tr", { class: m.status }, h("th", { scope: "row", text: m.first_of_month }), h("td", { text: dinero(m.on_the_1st) }),
+                h("td", { text: m.left_out ? dinero(m.left_out) + " (" + m.left_out_items.map(function (x) { return x.what; }).join(", ") + ")" : "—" }), h("td", { text: dinero(m.may_count) }),
+                h("td", { text: m.status === "over" ? "Pasa el límite por " + dinero(m.over_by) + (m.small ? " (poco)" : "") : (m.status === "close" ? "Quedan " + dinero(m.room) + ": cerca" : "Quedan " + dinero(m.room)) }));
+            }))),
+          h("h2", { text: "Qué hacer" }), pasos(r.steps), cierreEn(r, volver, "ssi-limit"));
+      }
+    }),
+    "apelar-plan": herramienta({
+      api: "plan-appeal", boton: "Ver mi fecha", titulo: "Mi plan de Medicare negó atención o un medicamento",
+      entrada: "Puede pedir al plan que lo revise otra vez. Pocas personas apelan, pero la mayoría de las denegaciones de Medicare Advantage que se apelan se revocan al menos en parte. Encuentre su fecha, pida una decisión rápida si la necesita, y llévese una carta y una declaración para su médico.",
+      dibujar: function (s, p) {
+        return [opciones("plan", "¿Qué tipo de plan envió la denegación?", [["ma", "Un plan Medicare Advantage (Parte C): cubre médicos y hospital"], ["pd", "Un plan de medicamentos de Medicare (Parte D): cubre solo recetas"]], s.plan, p),
+          opciones("what", "¿Qué negó el plan?", [["care", "Plan Medicare Advantage: atención, un examen o un equipo que todavía no he recibido"], ["partb_drug", "Plan Medicare Advantage: un medicamento de la Parte B (que se da en una clínica o lo da un médico)"],
+            ["drug", "Plan de medicamentos: una receta que todavía no he surtido"], ["payment", "Cualquiera de los dos: pagar algo que ya recibí o que ya pagué"]], s.what, p),
+          campo("notice_date", "Fecha impresa en el aviso del plan", "Muchas veces se llama \"Notice of Denial\".", "date", s.notice_date, p),
+          opciones("urgent", "¿Esperar varias semanas podría dañar gravemente su salud?", [["yes", "Sí"], ["no", "No"]], s.urgent === true ? "yes" : (s.urgent === false ? "no" : ""), p)];
+      },
+      leer: function () { return { plan: elegido("plan"), what: elegido("what"), notice_date: valor("notice_date"), urgent: siNo(elegido("urgent")) }; },
+      ejemplo: function () { return { plan: "pd", what: "drug", notice_date: hace(12), urgent: true }; },
+      resultado: function (r, volver) {
+        mostrar(h("h1", { class: "long", text: r.headline }),
+          r.days_left >= 0 ? h("p", { class: "lead", text: (r.days_left === 1 ? "Queda 1 día" : "Quedan " + r.days_left + " días") + " desde hoy. Cuente desde la fecha de su aviso, y revise la fecha límite que da el aviso mismo." }) : null,
+          h("h2", { text: "Qué hacer" }), pasos(r.steps), borrador("Solicitud de apelación al plan (en inglés)", EN_INGLES, r.letter),
+          borrador("Declaración para que la firme su médico (en inglés)", "Está en inglés para el plan y para su médico.", r.doctor), cierreEn(r, volver, "plan-appeal"));
+      }
+    }),
+    "caso-lento": herramienta({
+      api: "disability-wait", boton: "Ver qué puedo pedir", titulo: "Mi caso de incapacidad está tardando demasiado",
+      entrada: "El Seguro Social atiende primero algunos casos: cuando alguien no tiene dinero para comida, medicinas o servicios públicos, enfrenta un desalojo, no tiene vivienda o está muy enfermo. El personal acepta lo que usted les dice. Vea cuáles podrían corresponderle, y obtenga la solicitud y una nota para su representante en el Congreso.",
+      dibujar: function (s, p) {
+        return [opciones("stage", "¿En qué etapa está su caso?", [["initial", "Mi primera solicitud"], ["recon", "Reconsideración (pedí que lo revisaran otra vez)"], ["hearing", "Esperando una audiencia con un juez"]], s.stage, p),
+          campo("filed", "Fecha en que solicitó o apeló", "Opcional. Se pone en sus cartas.", "date", s.filed, p),
+          marcas("situations", "¿Alguna de estas situaciones es la suya ahora?", [["no_food", "No tengo suficiente dinero para comida"], ["no_medicine", "No puedo pagar las medicinas o la atención médica que necesito"],
+            ["no_utilities", "No tengo calefacción, agua o electricidad, o tengo un aviso de corte"], ["eviction", "Tengo un aviso de desalojo o de ejecución hipotecaria"],
+            ["homeless", "No tengo un lugar fijo para dormir, o voy a perder mi vivienda dentro de 14 días"], ["terminal", "Un médico dice que mi enfermedad es terminal"],
+            ["va100", "El VA me calificó con 100% permanente y total (compensación, no pensión)"], ["military", "Me lesioné o me enfermé en servicio militar activo desde el 1 de octubre de 2001"],
+            ["danger", "Podría hacerme daño o hacer daño a otra persona"]], s.situations, p, "Marque todas las que correspondan, o ninguna."),
+          opciones("ssi", "¿Solicitó SSI (Seguridad de Ingreso Suplementario)?", [["yes", "Sí"], ["no", "No"], ["unsure", "No estoy seguro"]], s.ssi === true ? "yes" : (s.ssi === false ? "no" : (s._ssi || "")), p)];
+      },
+      leer: function () { var v = elegido("ssi"); return { stage: elegido("stage"), situations: marcados("situations"), filed: valor("filed"), ssi: siNo(v), _ssi: v }; },
+      ejemplo: function () { return { stage: "hearing", situations: ["no_utilities", "eviction"], filed: "2025-06-02", ssi: false }; },
+      resultado: function (r, volver) {
+        mostrar(h("h1", { class: "long", text: r.headline }),
+          r.days_waiting !== null ? h("p", { class: "lead", text: "Lleva " + r.days_waiting + " días esperando." }) : null,
+          r.fits.length ? h("ul", { class: "gaps" }, r.fits.map(function (f) { return h("li", {}, h("b", { text: f.name + ". " }), f.bring); })) : null,
+          h("h2", { text: "Qué hacer" }), pasos(r.steps), borrador("Solicitud para marcar su caso como crítico (en inglés)", EN_INGLES, r.letter),
+          borrador("Nota para la oficina de su representante o senador (en inglés)", EN_INGLES, r.congress), cierreEn(r, volver, "disability-wait"));
+      }
+    }),
+    "corte-de-luz": herramienta({
+      api: "utility", boton: "Preparar mi lista de llamadas", titulo: "Me pueden cortar la luz o el gas",
+      entrada: "Solo para Florida. Convierta su aviso en una lista de llamadas para hacer hoy: su compañía de servicios, la ayuda de crisis con la factura, y a quién avisar si algo está mal.",
+      dibujar: function (s, p) {
+        return [opciones("kind", "¿Cuál es su compañía?", [["regulated", "Una compañía como FPL, Duke Energy, Tampa Electric o una compañía de gas"], ["city_coop", "Una empresa de una ciudad (como OUC) o una cooperativa"], ["unsure", "No estoy seguro"]], s.kind || "unsure", p),
+          campo("notice_date", "Fecha del aviso de corte", "Opcional.", "date", s.notice_date, p), campo("shutoff_date", "Fecha de corte que dice el aviso", "Opcional.", "date", s.shutoff_date, p),
+          grupo("Marque lo que corresponda", [casilla("off", "Ya me cortaron el servicio", s.off), casilla("medical", "Alguien aquí necesita electricidad por razones médicas", s.medical),
+            casilla("older", "Alguien aquí tiene 60 años o más", s.older), casilla("dispute", "Creo que la factura está mal", s.dispute)])];
+      },
+      leer: function () { return { kind: elegido("kind") || "unsure", notice_date: valor("notice_date"), shutoff_date: valor("shutoff_date"), off: marcada("off"), medical: marcada("medical"), older: marcada("older"), dispute: marcada("dispute") }; },
+      ejemplo: function () { return { kind: "regulated", notice_date: hace(2), shutoff_date: en(6), medical: true, off: false, older: false, dispute: false }; },
+      resultado: function (r, volver) {
+        mostrar(h("h1", { class: "long", text: r.headline }),
+          r.findings.length ? h("ul", { class: "findings" }, r.findings.map(function (f) { return h("li", { text: f.text }); })) : null,
+          h("h2", { text: "Llamadas para hacer hoy" }),
+          h("ol", { class: "calls" }, r.steps.map(function (st) { return h("li", {}, h("h3", { text: st.who }), h("ul", {}, st.ask.map(function (q) { return h("li", { text: q }); })),
+            h("p", { class: "small", text: "Anote lo que le digan, con quién habló y cualquier número de referencia." })); })),
+          h("h2", { text: "Tenga esto a mano" }), h("ul", {}, r.bring.map(function (b) { return h("li", { text: b }); })), cierreEn(r, volver, "utility-shutoff"));
+      }
+    }),
+    "aviso-completo": herramienta({
+      api: "notice-check", boton: "Revisar mi aviso", titulo: "¿Está completo mi aviso de pago de más?",
+      entrada: "Las propias reglas del Seguro Social dicen lo que todo aviso de pago de más le debe decir: cuánto, qué meses, por qué, y sus derechos. Revise el suyo parte por parte, mirando todas las páginas. Si falta algo, obtiene una carta para pedir una explicación por escrito.",
+      dibujar: function (s, p) {
+        var a = s.answers || {};
+        return [opciones("program", "¿De qué tipo de beneficio trata el aviso?", [["t2", "Beneficios de jubilación, sobreviviente o incapacidad"], ["ssi", "SSI (Supplemental Security Income)"], ["unsure", "No estoy seguro"]], s.program, p),
+          campo("notice_date", "Fecha impresa en el aviso", "Opcional. Se pone en su carta.", "date", s.notice_date, p),
+          h("h2", { text: "¿Su aviso le dice estas cosas?" }),
+          PARTES.map(function (x, i) { return opciones(x[0], (i + 1) + ". " + x[1] + (x[2] ? " (solo para avisos de SSI; déjela en blanco si su aviso no es de SSI)" : ""), [["yes", "Sí"], ["no", "No"], ["unsure", "No estoy seguro"]], a[x[0]] || "", p); })];
+      },
+      leer: function () { var a = {}; PARTES.forEach(function (x) { var v = elegido(x[0]); if (v) a[x[0]] = v; }); return { program: elegido("program"), notice_date: valor("notice_date"), answers: a }; },
+      ejemplo: function () { var a = {}; PARTES.forEach(function (x) { a[x[0]] = "yes"; }); a.cause = "no"; a.paid_due = "no"; a.waiver = "unsure"; delete a.start; return { program: "t2", notice_date: hace(15), answers: a }; },
+      resultado: function (r, volver) {
+        function lista(xs) { return h("ul", { class: "gaps" }, xs.map(function (g) { return h("li", {}, g.ask, h("span", { class: "small", text: " (" + g.rule + ")" })); })); }
+        var f = r.appeal_dates || [];
+        mostrar(h("h1", { class: "long", text: r.headline }),
+          h("p", { class: "lead", text: f.length === 2 ? "Pedir una explicación es aparte de apelar. Para pedir una reconsideración, planee actuar a más tardar el " + fechaLarga(f[0].date) + " (60 días desde la fecha impresa). Si el aviso tardó 5 días en llegar, la última fecha es el " + fechaLarga(f[1].date) + "."
+            : "Pedir una explicación es aparte de apelar. Por lo general la reconsideración se debe pedir dentro de los 60 días de recibir el aviso." }),
+          r.missing.length ? [h("h2", { text: "Puede que falte" }), lista(r.missing)] : null, r.unsure.length ? [h("h2", { text: "No está seguro: mire otra vez" }), lista(r.unsure)] : null,
+          h("h2", { text: "Qué hacer" }), pasos(r.steps), borrador("Carta para pedir una explicación por escrito (en inglés)", EN_INGLES, r.letter), cierreEn(r, volver, "notice-check"));
       }
     })
   };
