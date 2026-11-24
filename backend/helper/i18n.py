@@ -21,6 +21,9 @@ LANG = contextvars.ContextVar("helper_lang", default="en")
 GLUE = json.loads((HERE / "es_glue.json").read_text(encoding="utf-8"))
 RULES = json.loads((HERE / "es_text.json").read_text(encoding="utf-8"))
 SPANISH = {v["es"] for v in RULES.values()}
+BY_EN = {v["en"]: v["es"] for v in RULES.values()}
+DIAS = ("lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo")
+DAYS = ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
 MESES = ("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre")
 MONTHS = ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
 AVISO = (" Esta herramienta es independiente. No es una agencia del gobierno y no da consejos legales. La traducción al español todavía no ha sido "
@@ -41,11 +44,7 @@ def rows(table, on, rules_dir=None):
     found = rules.rows_as_of(table, on, rules_dir)
     if not es():
         return found
-    out = {}
-    for rid, row in found.items():
-        entry = RULES.get("%s/%s/plain" % (table, rid))
-        out[rid] = dict(row, plain=entry["es"]) if entry and entry["en"] == row.get("plain") else row
-    return out
+    return {rid: dict(row, plain=BY_EN[row["plain"]]) if row.get("plain") in BY_EN else row for rid, row in found.items()}
 
 
 def long_date(d):
@@ -55,6 +54,10 @@ def long_date(d):
 def english_date(d):
     """For letters to an agency, which stay in English in both languages."""
     return "%s %d, %d" % (MONTHS[d.month - 1], d.day, d.year)
+
+
+def weekday(d):
+    return (DIAS if es() else DAYS)[d.weekday()]
 
 
 def month_name(d):
@@ -84,14 +87,21 @@ def spanish(fn):
         try:
             return fn(raw, today=today, rules_dir=rules_dir)
         except InputError as err:
-            known = set(GLUE.values())
-            raise InputError({k: v if v in known else GLUE.get(v, "Revise esta respuesta.") for k, v in err.problems.items()})
+            raise InputError({k: GLUE.get(v, v) for k, v in err.problems.items()})
         finally:
             LANG.reset(token)
     return run
 
 
 def _tools():
+    from . import fixes, morehelp, ssalife, ssamore
+    more = {"medicare-costs": fixes.msp, "stolen-snap": fixes.stolen, "locked-out": fixes.lockout, "ssa-call": fixes.ssacall, "withholding": fixes.withhold, "paperwork": fixes.procedural,
+            "late-appeal": ssamore.latefiling, "payment-missing": ssamore.payday, "offset": ssamore.offset, "irmaa": ssamore.irmaa,
+            "after-death": ssalife.died, "reinstate": ssalife.reinstate, "ssi-help": ssalife.ssihelp, "amount-changed": ssalife.changed}
+    return dict({k: spanish(v) for k, v in more.items()}, **_first())
+
+
+def _first():
     from . import morehelp
     return {"va-debt": spanish(morehelp.vadebt), "disability-review": spanish(morehelp.cdr), "ra-overpayment": spanish(morehelp.raover),
             "voucher-ending": spanish(morehelp.voucher), "estate-recovery": spanish(morehelp.estate), "partb-late": spanish(morehelp.partb),

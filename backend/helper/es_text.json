@@ -494,5 +494,505 @@
  "fairness/phone/plain": {
   "en": "Social Security: 1-800-772-1213, Monday to Friday, 8:00 a.m. to 7:00 p.m. local time.",
   "es": "Seguro Social: 1-800-772-1213, de lunes a viernes, de 8:00 a.m. a 7:00 p.m., hora local."
+ },
+ "msp/qmb/plain": {
+  "en": "QMB pays your Part A and Part B premiums, deductibles, coinsurance and copays. 2026 limits: $1,350 a month in income and $9,950 in resources for one person; $1,824 and $14,910 for a married couple.",
+  "es": "QMB paga sus primas de la Parte A y la Parte B, deducibles, coseguros y copagos. Límites de 2026: $1,350 al mes de ingresos y $9,950 en recursos para una persona; $1,824 y $14,910 para una pareja casada."
+ },
+ "msp/slmb/plain": {
+  "en": "SLMB pays your Part B premium. 2026 limits: $1,616 a month in income and $9,950 in resources for one person; $2,184 and $14,910 for a married couple.",
+  "es": "SLMB paga su prima de la Parte B. Límites de 2026: $1,616 al mes de ingresos y $9,950 en recursos para una persona; $2,184 y $14,910 para una pareja casada."
+ },
+ "msp/qi/plain": {
+  "en": "QI pays your Part B premium. 2026 limits: $1,816 a month in income and $9,950 in resources for one person; $2,455 and $14,910 for a married couple. You apply each year, and money is given out first come, first served.",
+  "es": "QI paga su prima de la Parte B. Límites de 2026: $1,816 al mes de ingresos y $9,950 en recursos para una persona; $2,455 y $14,910 para una pareja casada. Se solicita cada año, y el dinero se reparte por orden de llegada."
+ },
+ "msp/extra_help/plain": {
+  "en": "Extra Help lowers what you pay for Medicare drug coverage. 2026 limits: $23,940 a year in income and $18,090 in resources for one person; $32,460 and $36,100 for a married couple living together.",
+  "es": "La Ayuda Adicional (Extra Help) reduce lo que usted paga por la cobertura de medicamentos de Medicare. Límites de 2026: $23,940 al año de ingresos y $18,090 en recursos para una persona; $32,460 y $36,100 para una pareja casada que vive junta."
+ },
+ "msp/auto/plain": {
+  "en": "If you qualify for QMB, SLMB or QI, you also get Extra Help automatically.",
+  "es": "Si califica para QMB, SLMB o QI, también recibe la Ayuda Adicional (Extra Help) automáticamente."
+ },
+ "msp/higher/plain": {
+  "en": "Some states have higher limits or do not count some income, so you may qualify even above these limits. If you work, part of your pay is not counted. Florida uses the federal limits.",
+  "es": "Algunos estados tienen límites más altos o no cuentan algunos ingresos, así que usted podría calificar aunque esté por encima de estos límites. Si trabaja, una parte de su sueldo no se cuenta. Florida usa los límites federales."
+ },
+ "msp/apply_msp/plain": {
+  "en": "Apply for a Medicare Savings Program through your state Medicaid office. In Florida that is the Department of Children and Families (ACCESS Florida).",
+  "es": "Solicite un Programa de Ahorros de Medicare en la oficina de Medicaid de su estado. En Florida es el Departamento de Niños y Familias (DCF, ACCESS Florida)."
+ },
+ "msp/apply_eh/plain": {
+  "en": "Apply for Extra Help with Social Security, online or with form SSA-1020.",
+  "es": "Solicite la Ayuda Adicional (Extra Help) al Seguro Social, por internet o con el formulario SSA-1020."
+ },
+ "stolen/ended/plain": {
+  "en": "The federal program that replaced stolen SNAP benefits ended on December 20, 2024. Replacing stolen benefits is no longer guaranteed.",
+  "es": "El programa federal que reponía los beneficios de SNAP robados terminó el 20 de diciembre de 2024. Ya no está garantizado que se repongan los beneficios robados."
+ },
+ "stolen/fl_steps/plain": {
+  "en": "In Florida, file a police report with your local law enforcement agency and ask for a replacement EBT card. Call EBT Customer Service at 1-888-356-3281, or use your MyACCESS account.",
+  "es": "En Florida, presente una denuncia ante la policía local y pida una tarjeta EBT de reemplazo. Llame al Servicio al Cliente de EBT al 1-888-356-3281, o use su cuenta MyACCESS."
+ },
+ "stolen/fl_lock/plain": {
+  "en": "Florida offers ebtEDGE (website or app): you can freeze your card so no transactions go through, and block out-of-state and online transactions. Unfreeze it when you shop.",
+  "es": "Florida ofrece ebtEDGE (sitio web o aplicación): puede congelar su tarjeta para que no pase ninguna transacción, y bloquear las transacciones fuera del estado y por internet. Descongélela cuando vaya a comprar."
+ },
+ "stolen/other/plain": {
+  "en": "In other states, contact your local SNAP office if your benefits were stolen, and change your PIN right away. USDA lists each state's EBT customer service number.",
+  "es": "En otros estados, comuníquese con su oficina local de SNAP si le robaron sus beneficios, y cambie su PIN de inmediato. El USDA publica el número de servicio al cliente de EBT de cada estado."
+ },
+ "stolen/phishing/plain": {
+  "en": "State agencies and EBT processors never call or text to ask for your card number or PIN. Anyone who does is a scammer.",
+  "es": "Las agencias estatales y las compañías que procesan EBT nunca llaman ni envían mensajes de texto para pedir el número de su tarjeta o su PIN. Quien lo haga es un estafador."
+ },
+ "stolen/pin/plain": {
+  "en": "Change your PIN often, right before your benefits are added each month.",
+  "es": "Cambie su PIN con frecuencia, justo antes de que le depositen los beneficios cada mes."
+ },
+ "lockout/two/plain": {
+  "en": "Social Security's online services use Login.gov or ID.me. You only need one of them.",
+  "es": "Los servicios por internet del Seguro Social usan Login.gov o ID.me. Solo necesita uno de los dos."
+ },
+ "lockout/lg_wait/plain": {
+  "en": "If Login.gov locked you during identity checks (too many tries on your ID, personal information or phone), you must wait six hours before trying again.",
+  "es": "Si Login.gov lo bloqueó durante la verificación de identidad (demasiados intentos con su identificación, sus datos personales o su teléfono), debe esperar seis horas antes de intentarlo otra vez."
+ },
+ "lockout/lg_post/plain": {
+  "en": "Login.gov can check your identity in person at a participating Post Office. Start online first and choose the Post Office option; bring the barcode it emails you and your state-issued ID or driver's license.",
+  "es": "Login.gov puede verificar su identidad en persona en una oficina de correos (Post Office) participante. Comience primero por internet y elija la opción de la oficina de correos; lleve el código de barras que le envían por correo electrónico y su identificación estatal o licencia de conducir."
+ },
+ "lockout/idme_video/plain": {
+  "en": "With ID.me, if you do not have a personal phone or use a shared device, you can verify on a video call.",
+  "es": "Con ID.me, si no tiene un teléfono propio o usa un aparato compartido, puede verificarse por videollamada."
+ },
+ "lockout/idme_store/plain": {
+  "en": "ID.me also offers in-person checks at participating UPS Store locations.",
+  "es": "ID.me también ofrece verificación en persona en tiendas The UPS Store participantes."
+ },
+ "lockout/no_phone/plain": {
+  "en": "You do not need a mobile phone: you can use a security key, a landline or backup codes for the second step.",
+  "es": "No necesita un teléfono celular: puede usar una llave de seguridad, un teléfono fijo o códigos de respaldo para el segundo paso."
+ },
+ "lockout/ssa_office/plain": {
+  "en": "You can also verify your identity at a local Social Security office. Bring your driver's license, state ID or passport.",
+  "es": "También puede verificar su identidad en una oficina local del Seguro Social. Lleve su licencia de conducir, identificación estatal o pasaporte."
+ },
+ "lockout/phone/plain": {
+  "en": "Most things you would do online, you can also do by calling Social Security at 1-800-772-1213 (TTY 1-800-325-0778).",
+  "es": "La mayoría de las cosas que haría por internet también las puede hacer llamando al Seguro Social al 1-800-772-1213 (TTY 1-800-325-0778)."
+ },
+ "ssacall/hours/plain": {
+  "en": "Social Security's national number is 1-800-772-1213 (TTY 1-800-325-0778), Monday to Friday, 8 a.m. to 7 p.m. local time. Automated services work 24 hours a day.",
+  "es": "El número nacional del Seguro Social es 1-800-772-1213 (TTY 1-800-325-0778), de lunes a viernes, de 8 a.m. a 7 p.m., hora local. Los servicios automáticos funcionan las 24 horas del día."
+ },
+ "ssacall/best/plain": {
+  "en": "Social Security says wait times tend to be shorter early in the morning, later in the week and later in the month.",
+  "es": "El Seguro Social dice que la espera suele ser más corta temprano en la mañana, más tarde en la semana y más tarde en el mes."
+ },
+ "ssacall/callback/plain": {
+  "en": "When offered, you can choose a callback instead of holding. Keep your phone near you and answer calls from unknown numbers.",
+  "es": "Cuando se lo ofrezcan, puede elegir que le devuelvan la llamada en vez de esperar en la línea. Tenga su teléfono cerca y conteste las llamadas de números desconocidos."
+ },
+ "ssacall/office/plain": {
+  "en": "You can call or visit your local office. Most in-person services need an appointment; ask for one by phone.",
+  "es": "Puede llamar o visitar su oficina local. La mayoría de los servicios en persona necesitan una cita; pídala por teléfono."
+ },
+ "ssacall/waits/plain": {
+  "en": "Social Security publishes its current phone and office wait times.",
+  "es": "El Seguro Social publica sus tiempos de espera actuales por teléfono y en las oficinas."
+ },
+ "withhold/lower/plain": {
+  "en": "If you cannot meet your ordinary and necessary living expenses because of the withholding, you can ask for a lower rate.",
+  "es": "Si no puede cubrir sus gastos de vida ordinarios y necesarios por el descuento, puede pedir una tasa más baja."
+ },
+ "withhold/twelve/plain": {
+  "en": "Social Security first tries to agree on an amount that repays the whole debt within 12 months.",
+  "es": "El Seguro Social primero trata de acordar una cantidad que pague toda la deuda en 12 meses."
+ },
+ "withhold/sixty/plain": {
+  "en": "If the amount you ask for would repay the debt within 60 months, Social Security does not need form SSA-634. If it would take longer, you fill in form SSA-634 with your income, expenses and resources.",
+  "es": "Si la cantidad que usted pide pagaría la deuda en 60 meses, el Seguro Social no necesita el formulario SSA-634. Si tomaría más tiempo, usted llena el formulario SSA-634 con sus ingresos, gastos y recursos."
+ },
+ "withhold/resources/plain": {
+  "en": "For a rate that takes longer than 60 months, Social Security looks at whether your resources are below $3,000 and whether your income is more than your expenses.",
+  "es": "Para una tasa que toma más de 60 meses, el Seguro Social revisa si sus recursos son menos de $3,000 y si sus ingresos son más que sus gastos."
+ },
+ "withhold/partd/plain": {
+  "en": "If you get full Extra Help with Medicare drug costs, Social Security grants any request of at least $10 a month without form SSA-634.",
+  "es": "Si recibe la Ayuda Adicional (Extra Help) completa para los medicamentos de Medicare, el Seguro Social aprueba cualquier solicitud de por lo menos $10 al mes sin el formulario SSA-634."
+ },
+ "withhold/fraud/plain": {
+  "en": "A lower rate is not approved if the overpayment involved fraud or similar fault.",
+  "es": "No se aprueba una tasa más baja si el pago de más tuvo que ver con fraude o una falta parecida."
+ },
+ "withhold/ssi/plain": {
+  "en": "For SSI, you can ask for a different rate at any time.",
+  "es": "Para SSI, puede pedir una tasa diferente en cualquier momento."
+ },
+ "withhold/form/plain": {
+  "en": "Form SSA-634, Request for Change in Overpayment Recovery Rate.",
+  "es": "Formulario SSA-634, Request for Change in Overpayment Recovery Rate (solicitud para cambiar la tasa de cobro de un pago de más)."
+ },
+ "withholding/benefits_default/plain": {
+  "en": "For retirement, survivor and disability overpayment notices sent on or after April 25, 2025, Social Security's default is to withhold 50% of the monthly benefit if you do not repay, ask for a lower rate, appeal or ask for a waiver. You can ask for a lower rate with form SSA-634.",
+  "es": "Para los avisos de pago de más por jubilación, sobrevivientes e incapacidad enviados desde el 25 de abril de 2025, el Seguro Social por defecto descuenta el 50% del beneficio mensual si usted no paga, no pide una tasa más baja, no apela y no pide una exención. Puede pedir una tasa más baja con el formulario SSA-634."
+ },
+ "withholding/ssi_default/plain": {
+  "en": "For SSI, Social Security withholds 10% of the monthly payment by default. The 2025 change to 50% did not apply to SSI.",
+  "es": "Para SSI, el Seguro Social por defecto descuenta el 10% del pago mensual. El cambio de 2025 al 50% no se aplicó a SSI."
+ },
+ "procedural/medicaid_magi/plain": {
+  "en": "If your Medicaid is based on income (most children, parents, pregnant people and adults under 65) and it ended because the renewal form or papers were not sent, the state must look at it again without a new application if you send them within 90 days after coverage ended (longer in some states).",
+  "es": "Si su Medicaid se basa en los ingresos (la mayoría de los niños, padres, personas embarazadas y adultos menores de 65 años) y terminó porque no se envió el formulario de renovación o los documentos, el estado debe revisarlo otra vez sin una solicitud nueva si usted los envía dentro de los 90 días después de que terminó la cobertura (más tiempo en algunos estados)."
+ },
+ "procedural/medicaid_abd/plain": {
+  "en": "If your Medicaid is based on age, blindness or disability, the state may use the same 90-day rule. Ask your Medicaid office.",
+  "es": "Si su Medicaid se basa en la edad, la ceguera o una discapacidad, el estado puede usar la misma regla de 90 días. Pregunte a su oficina de Medicaid."
+ },
+ "procedural/snap_late_proof/plain": {
+  "en": "For SNAP, if you send the missing papers within 30 days after your certification period ended, the state reopens your case. Benefits start from the day you send them, so send them as soon as you can.",
+  "es": "Para SNAP, si envía los documentos que faltan dentro de los 30 días después de que terminó su período de certificación, el estado reabre su caso. Los beneficios comienzan desde el día en que los envía, así que envíelos lo antes posible."
+ },
+ "procedural/snap_late_app/plain": {
+  "en": "If you did not send the renewal at all, sending it within 30 days after the certification period ended counts as your application, and benefits are counted from that date.",
+  "es": "Si no envió la renovación, enviarla dentro de los 30 días después de que terminó el período de certificación cuenta como su solicitud, y los beneficios se cuentan desde esa fecha."
+ },
+ "procedural/hearing/plain": {
+  "en": "You can also ask for a fair hearing if you think the case was closed by mistake, for example because you did send the papers.",
+  "es": "También puede pedir una audiencia imparcial (fair hearing) si cree que cerraron el caso por error, por ejemplo porque usted sí envió los documentos."
+ },
+ "renewal/fl_ways/plain": {
+  "en": "In Florida, you can renew and upload proof in your MyACCESS account, or mail, fax or bring documents to a local DCF office or a community partner. When you fax or scan, use the ACCESS Florida Fax/Scanning Cover Sheet.",
+  "es": "En Florida, puede renovar y subir pruebas en su cuenta MyACCESS, o enviar por correo o fax, o llevar los documentos a una oficina local del DCF o a un socio comunitario. Cuando envíe por fax o escanee, use la hoja de portada ACCESS Florida Fax/Scanning Cover Sheet."
+ },
+ "latefiling/appeal/plain": {
+  "en": "You generally have 60 days from the date you received a decision letter to ask for an appeal.",
+  "es": "Por lo general tiene 60 días desde la fecha en que recibió una carta de decisión para pedir una apelación."
+ },
+ "latefiling/mail/plain": {
+  "en": "Social Security assumes you received the letter 5 days after the date on it, unless you show it arrived later.",
+  "es": "El Seguro Social supone que usted recibió la carta 5 días después de la fecha que aparece en ella, a menos que usted demuestre que llegó más tarde."
+ },
+ "latefiling/extension/plain": {
+  "en": "If the time limit has passed, you can still ask for the appeal. The request for more time must be in writing and say why it is late.",
+  "es": "Si el plazo ya pasó, todavía puede pedir la apelación. La solicitud de más tiempo debe ser por escrito y decir por qué llega tarde."
+ },
+ "latefiling/consider/plain": {
+  "en": "Social Security looks at what kept you from filing on time, whether its own action misled you, whether a change in the law confused you, and any physical, mental, educational or language limitation, including limited English.",
+  "es": "El Seguro Social considera qué le impidió presentar a tiempo, si una acción del propio Seguro Social lo confundió, si un cambio en la ley lo confundió, y cualquier limitación física, mental, educativa o de idioma, incluso un inglés limitado."
+ },
+ "latefiling/ssi/plain": {
+  "en": "The same good-cause rule applies to SSI decisions.",
+  "es": "La misma regla de buena causa (good cause) se aplica a las decisiones de SSI."
+ },
+ "latefiling/reason_illness/plain": {
+  "en": "A serious illness kept you from contacting Social Security in any way, even through someone else.",
+  "es": "Una enfermedad grave le impidió comunicarse con el Seguro Social de cualquier manera, ni siquiera por medio de otra persona."
+ },
+ "latefiling/reason_family/plain": {
+  "en": "There was a death or serious illness in your immediate family.",
+  "es": "Hubo una muerte o una enfermedad grave en su familia inmediata."
+ },
+ "latefiling/reason_records/plain": {
+  "en": "Important records were destroyed or damaged by fire or another accident.",
+  "es": "Documentos importantes fueron destruidos o dañados por un incendio u otro accidente."
+ },
+ "latefiling/reason_searching/plain": {
+  "en": "You were trying hard to find information you needed, but could not find it in time.",
+  "es": "Usted trató con empeño de encontrar información que necesitaba, pero no pudo encontrarla a tiempo."
+ },
+ "latefiling/reason_explained/plain": {
+  "en": "You asked Social Security to explain the decision before the deadline, and you appeal within 60 days of getting the explanation (30 days if you are asking the Appeals Council or going to court).",
+  "es": "Usted pidió al Seguro Social que le explicara la decisión antes de la fecha límite, y apela dentro de los 60 días de recibir la explicación (30 días si pide la revisión al Consejo de Apelaciones o va a un tribunal)."
+ },
+ "latefiling/reason_wrong_info/plain": {
+  "en": "Social Security gave you wrong or incomplete information about how or when to appeal.",
+  "es": "El Seguro Social le dio información incorrecta o incompleta sobre cómo o cuándo apelar."
+ },
+ "latefiling/reason_no_notice/plain": {
+  "en": "You never received the decision letter.",
+  "es": "Usted nunca recibió la carta de decisión."
+ },
+ "latefiling/reason_other_agency/plain": {
+  "en": "You sent the request on time to another government agency in good faith, and it reached Social Security late.",
+  "es": "Usted envió la solicitud a tiempo y de buena fe a otra agencia del gobierno, y llegó tarde al Seguro Social."
+ },
+ "latefiling/reason_limits/plain": {
+  "en": "A physical, mental, educational or language limitation kept you from filing on time or from knowing about the deadline.",
+  "es": "Una limitación física, mental, educativa o de idioma le impidió presentar a tiempo o saber de la fecha límite."
+ },
+ "latefiling/reason_unusual/plain": {
+  "en": "Something unusual or unavoidable kept you from filing on time or from knowing you needed to.",
+  "es": "Algo fuera de lo común o inevitable le impidió presentar a tiempo o saber que tenía que hacerlo."
+ },
+ "payday/ss_birthday/plain": {
+  "en": "Social Security payments are paid on a Wednesday chosen by the birth date of the worker whose record you are paid on (your own, if it is your own benefit): the 1st to 10th get the second Wednesday, the 11th to 20th the third Wednesday, and the 21st to 31st the fourth Wednesday.",
+  "es": "Los pagos del Seguro Social se hacen un miércoles que depende del día de nacimiento del trabajador en cuyo registro le pagan (el suyo, si es su propio beneficio): del 1 al 10 les toca el segundo miércoles, del 11 al 20 el tercer miércoles, y del 21 al 31 el cuarto miércoles."
+ },
+ "payday/ss_third/plain": {
+  "en": "If you got Social Security before May 1997, or you get both Social Security and SSI, your Social Security payment is due on the 3rd of the month.",
+  "es": "Si recibía Seguro Social antes de mayo de 1997, o recibe tanto Seguro Social como SSI, su pago del Seguro Social corresponde al día 3 del mes."
+ },
+ "payday/ssi_first/plain": {
+  "en": "SSI is paid on the 1st of the month. When a payment day falls on a weekend or federal holiday, it is paid on the business day before.",
+  "es": "SSI se paga el día 1 del mes. Cuando el día de pago cae en fin de semana o en un feriado federal, se paga el día hábil anterior."
+ },
+ "payday/wait/plain": {
+  "en": "Payments are sometimes delayed. Social Security asks you to contact it if the payment has not arrived by the third mail delivery day after the payment date.",
+  "es": "A veces los pagos se retrasan. El Seguro Social pide que se comunique si el pago no ha llegado para el tercer día de reparto de correo después de la fecha de pago."
+ },
+ "payday/history/plain": {
+  "en": "Your my Social Security account shows your benefit and payment information and your benefit letter.",
+  "es": "Su cuenta my Social Security muestra la información de sus beneficios y pagos y su carta de beneficios."
+ },
+ "offset/protected/plain": {
+  "en": "Most creditors cannot take Social Security benefits, even with a court judgment.",
+  "es": "La mayoría de los acreedores no pueden quitar los beneficios del Seguro Social, ni siquiera con una sentencia de un tribunal."
+ },
+ "offset/exceptions/plain": {
+  "en": "Social Security benefits can be taken for unpaid federal taxes, child support or alimony, and debts owed to other federal agencies, such as student loans.",
+  "es": "Los beneficios del Seguro Social se pueden quitar por impuestos federales sin pagar, manutención de hijos o pensión alimenticia, y deudas con otras agencias federales, como los préstamos estudiantiles."
+ },
+ "offset/top/plain": {
+  "en": "For federal debts such as defaulted federal student loans, the Treasury Offset Program can take up to 15% of a Social Security retirement, survivor or disability payment, but must leave at least $750 a month. The payment counted is the amount after deductions the law requires, such as the Medicare premium; amounts taken to repay an overpayment are not subtracted.",
+  "es": "Para deudas federales como los préstamos estudiantiles federales en incumplimiento, el Programa de Compensación del Tesoro (Treasury Offset Program) puede quitar hasta el 15% de un pago de jubilación, de sobreviviente o de incapacidad del Seguro Social, pero debe dejar por lo menos $750 al mes. El pago que se cuenta es la cantidad después de los descuentos que exige la ley, como la prima de Medicare; las cantidades que se quitan para devolver un pago de más no se restan."
+ },
+ "offset/ssi/plain": {
+  "en": "SSI cannot be taken to collect a federal student loan.",
+  "es": "SSI no se puede quitar para cobrar un préstamo estudiantil federal."
+ },
+ "offset/student_status/plain": {
+  "en": "Collection of defaulted federal student loans from Social Security has been paused and restarted since 2025. Check your notice, or call the Default Resolution Group at 1-800-621-3115, for the current status.",
+  "es": "El cobro de préstamos estudiantiles federales en incumplimiento contra el Seguro Social se ha pausado y reanudado desde 2025. Revise su aviso, o llame al Default Resolution Group al 1-800-621-3115, para saber la situación actual."
+ },
+ "offset/notice/plain": {
+  "en": "Before an offset starts, the agency owed the money must send a notice saying how to see its records, how to ask for a review, and how to set up repayment.",
+  "es": "Antes de que comience un descuento, la agencia a la que se le debe el dinero tiene que enviar un aviso que diga cómo ver sus registros, cómo pedir una revisión y cómo acordar un plan de pago."
+ },
+ "offset/bank/plain": {
+  "en": "When federal benefits are deposited directly, the bank must protect the benefits deposited in the past two months (or the whole balance, if that is less) from most garnishment orders.",
+  "es": "Cuando los beneficios federales se depositan directamente, el banco debe proteger los beneficios depositados en los últimos dos meses (o todo el saldo, si es menos) de la mayoría de las órdenes de embargo."
+ },
+ "irmaa/standard/plain@2026-01-01": {
+  "en": "The standard 2026 Part B premium is $202.90 a month.",
+  "es": "La prima estándar de la Parte B en 2026 es de $202.90 al mes."
+ },
+ "irmaa/based_on/plain@2026-01-01": {
+  "en": "Your 2026 premium is generally based on your modified adjusted gross income from your 2024 tax return (from 2023 if 2024 is not available).",
+  "es": "Su prima de 2026 por lo general se basa en su ingreso bruto ajustado modificado de su declaración de impuestos de 2024 (de 2023 si la de 2024 no está disponible)."
+ },
+ "irmaa/tiers_single/plain@2026-01-01": {
+  "en": "2026 tiers for an individual return: up to $109,000 standard; to $137,000 +$81.20; to $171,000 +$202.90; to $205,000 +$324.60; under $500,000 +$446.30; $500,000 or more +$487.00. Part D adds $14.50 to $91.00.",
+  "es": "Niveles de 2026 para una declaración individual: hasta $109,000, estándar; hasta $137,000, +$81.20; hasta $171,000, +$202.90; hasta $205,000, +$324.60; menos de $500,000, +$446.30; $500,000 o más, +$487.00. La Parte D añade de $14.50 a $91.00."
+ },
+ "irmaa/tiers_joint/plain@2026-01-01": {
+  "en": "2026 tiers for a joint return: up to $218,000 standard; to $274,000 +$81.20; to $342,000 +$202.90; to $410,000 +$324.60; under $750,000 +$446.30; $750,000 or more +$487.00.",
+  "es": "Niveles de 2026 para una declaración conjunta: hasta $218,000, estándar; hasta $274,000, +$81.20; hasta $342,000, +$202.90; hasta $410,000, +$324.60; menos de $750,000, +$446.30; $750,000 o más, +$487.00."
+ },
+ "irmaa/tiers_separate/plain@2026-01-01": {
+  "en": "2026 tiers for married filing separately while living with your spouse: up to $109,000 standard; under $391,000 +$446.30; $391,000 or more +$487.00.",
+  "es": "Niveles de 2026 para personas casadas que declaran por separado y viven con su cónyuge: hasta $109,000, estándar; menos de $391,000, +$446.30; $391,000 o más, +$487.00."
+ },
+ "irmaa/standard/plain@2027-01-01": {
+  "en": "The standard 2027 Part B premium is $209.40 a month.",
+  "es": "La prima estándar de la Parte B en 2027 es de $209.40 al mes."
+ },
+ "irmaa/based_on/plain@2027-01-01": {
+  "en": "Your 2027 premium is generally based on your modified adjusted gross income from your 2025 tax return.",
+  "es": "Su prima de 2027 por lo general se basa en su ingreso bruto ajustado modificado de su declaración de impuestos de 2025."
+ },
+ "irmaa/tiers_single/plain@2027-01-01": {
+  "en": "2027 tiers for an individual return: up to $112,000 standard; to $141,000 +$83.70; to $177,000 +$209.40; to $212,000 +$335.00; under $500,000 +$460.60; $500,000 or more +$502.40. Part D adds $15.40 to $96.40.",
+  "es": "Niveles de 2027 para una declaración individual: hasta $112,000, estándar; hasta $141,000, +$83.70; hasta $177,000, +$209.40; hasta $212,000, +$335.00; menos de $500,000, +$460.60; $500,000 o más, +$502.40. La Parte D añade de $15.40 a $96.40."
+ },
+ "irmaa/tiers_joint/plain@2027-01-01": {
+  "en": "2027 tiers for a joint return: up to $224,000 standard; to $282,000 +$83.70; to $354,000 +$209.40; to $424,000 +$335.00; under $750,000 +$460.60; $750,000 or more +$502.40.",
+  "es": "Niveles de 2027 para una declaración conjunta: hasta $224,000, estándar; hasta $282,000, +$83.70; hasta $354,000, +$209.40; hasta $424,000, +$335.00; menos de $750,000, +$460.60; $750,000 o más, +$502.40."
+ },
+ "irmaa/tiers_separate/plain@2027-01-01": {
+  "en": "2027 tiers for married filing separately while living with your spouse: up to $112,000 standard; under $388,000 +$460.60; $388,000 or more +$502.40.",
+  "es": "Niveles de 2027 para personas casadas que declaran por separado y viven con su cónyuge: hasta $112,000, estándar; menos de $388,000, +$460.60; $388,000 o más, +$502.40."
+ },
+ "irmaa/events/plain": {
+  "en": "You can ask for a new decision with form SSA-44 if your income went down because of a life-changing event: marriage, divorce or annulment, or a spouse's death; you or your spouse stopping or reducing work; losing income-producing property through no choice of your own, for example in a disaster or through arson, fraud or theft; a pension plan ending, being cut or reorganized; or an employer settlement after closure or bankruptcy.",
+  "es": "Puede pedir una nueva decisión con el formulario SSA-44 si sus ingresos bajaron por un evento que cambió su vida: matrimonio, divorcio o anulación, o la muerte de su cónyuge; que usted o su cónyuge dejó de trabajar o redujo su trabajo; la pérdida de una propiedad que producía ingresos sin que fuera su decisión, por ejemplo en un desastre o por incendio provocado, fraude o robo; un plan de pensión que terminó, se redujo o se reorganizó; o un acuerdo de pago de un empleador después de un cierre o una quiebra."
+ },
+ "irmaa/proof/plain": {
+  "en": "Send proof of the event and of the lower income, such as a death certificate or a letter from your employer, and a signed copy of your tax return if you filed one.",
+  "es": "Envíe pruebas del evento y de los ingresos más bajos, como un certificado de defunción o una carta de su empleador, y una copia firmada de su declaración de impuestos si presentó una."
+ },
+ "irmaa/appeal/plain": {
+  "en": "If the information Social Security used is wrong, give it the correct information; you do not need to appeal. To appeal the decision itself, ask for reconsideration (form SSA-561-U2). If the IRS figure is wrong, it must be corrected with the IRS.",
+  "es": "Si la información que usó el Seguro Social está mal, dele la información correcta; no necesita apelar. Para apelar la decisión misma, pida una reconsideración (formulario SSA-561-U2). Si la cifra del IRS está mal, hay que corregirla con el IRS."
+ },
+ "death/report/plain": {
+  "en": "A funeral home usually reports the death to Social Security. If not, report it by phone at 1-800-772-1213 (TTY 1-800-325-0778) or in person. A death cannot be reported online.",
+  "es": "Por lo general la funeraria informa la muerte al Seguro Social. Si no, infórmela por teléfono al 1-800-772-1213 (TTY 1-800-325-0778) o en persona. Una muerte no se puede informar por internet."
+ },
+ "death/return_ss/plain": {
+  "en": "If the person was getting Social Security, the benefit for the month of death and any later months must be returned.",
+  "es": "Si la persona recibía Seguro Social, hay que devolver el beneficio del mes de la muerte y de los meses siguientes."
+ },
+ "death/arrears/plain": {
+  "en": "Each Social Security payment is for the month before it is paid, so the benefit for the month of death is paid in the following month.",
+  "es": "Cada pago del Seguro Social corresponde al mes anterior al mes en que se paga, así que el beneficio del mes de la muerte se paga en el mes siguiente."
+ },
+ "death/return_ssi/plain": {
+  "en": "SSI ends the month after the month of death, so no SSI is due for any later month. SSI paid for a later month has to be returned.",
+  "es": "SSI termina el mes después del mes de la muerte, así que no corresponde SSI por ningún mes posterior. El SSI pagado por un mes posterior se tiene que devolver."
+ },
+ "death/bank/plain": {
+  "en": "A bank must send back federal benefit payments that arrive after it learns of the death. Payments made by mistake can also be taken back from the account later.",
+  "es": "Un banco debe devolver los pagos de beneficios federales que lleguen después de que se entera de la muerte. Los pagos hechos por error también se pueden retirar de la cuenta más adelante."
+ },
+ "death/lump/plain": {
+  "en": "A one-time $255 payment may go to a spouse. A spouse who did not live in the same home may be eligible if they can get benefits on the record of the person who died. If there is no spouse, some children may be eligible. Apply within 2 years of the death.",
+  "es": "Un pago único de $255 puede ir a un cónyuge. Un cónyuge que no vivía en la misma casa puede ser elegible si puede recibir beneficios en el registro de la persona que murió. Si no hay cónyuge, algunos hijos pueden ser elegibles. Solicítelo dentro de los 2 años de la muerte."
+ },
+ "death/lump_order/plain": {
+  "en": "The $255 is paid first to a spouse who lived in the same household, then to a spouse who can get monthly benefits on the record, then to children who can get benefits on the record, who share it.",
+  "es": "Los $255 se pagan primero a un cónyuge que vivía en el mismo hogar, luego a un cónyuge que puede recibir beneficios mensuales en el registro, y luego a los hijos que pueden recibir beneficios en el registro, quienes lo comparten."
+ },
+ "death/survivors/plain": {
+  "en": "A widow or widower, some divorced spouses, children and dependent parents may be able to get monthly survivors benefits on the record of the person who died.",
+  "es": "Un viudo o una viuda, algunos cónyuges divorciados, los hijos y los padres dependientes pueden recibir beneficios mensuales de sobreviviente en el registro de la persona que murió."
+ },
+ "reinstate/who/plain": {
+  "en": "You can ask to restart benefits without a new application if they stopped because of earnings from work, you cannot work at the substantial gainful activity level now, your condition is the same as or related to the one you got benefits for, and you ask within 5 years of the month benefits ended.",
+  "es": "Puede pedir que sus beneficios se reanuden sin una solicitud nueva si se detuvieron por ganancias de trabajo, ahora no puede trabajar al nivel de trabajo sustancial y lucrativo (SGA), su condición es la misma o está relacionada con la condición por la que recibía beneficios, y lo pide dentro de los 5 años del mes en que terminaron los beneficios."
+ },
+ "reinstate/window/plain": {
+  "en": "The request must be made within 60 months of the month benefits ended: that month plus 59 more.",
+  "es": "La solicitud se debe hacer dentro de los 60 meses del mes en que terminaron los beneficios: ese mes más otros 59."
+ },
+ "reinstate/same_month/plain": {
+  "en": "You can ask in the same month you stop working at the substantial gainful activity level.",
+  "es": "Puede pedirlo en el mismo mes en que deja de trabajar al nivel de trabajo sustancial y lucrativo (SGA)."
+ },
+ "reinstate/provisional/plain": {
+  "en": "While Social Security reviews your condition, you can get up to 6 months of temporary benefits, and you may get Medicare or Medicaid during that time.",
+  "es": "Mientras el Seguro Social revisa su condición, puede recibir hasta 6 meses de beneficios temporales, y puede tener Medicare o Medicaid durante ese tiempo."
+ },
+ "reinstate/not_repaid/plain": {
+  "en": "Temporary benefits usually do not have to be paid back if the request is denied.",
+  "es": "Por lo general los beneficios temporales no se tienen que devolver si niegan la solicitud."
+ },
+ "reinstate/forms/plain": {
+  "en": "The request is made on form SSA-371 for Social Security disability or form SSA-372 for SSI.",
+  "es": "La solicitud se hace con el formulario SSA-371 para Seguro Social por incapacidad o con el formulario SSA-372 para SSI."
+ },
+ "reinstate/late/plain": {
+  "en": "If a reinstatement request is denied, it can protect your filing date for a new application.",
+  "es": "Si niegan una solicitud de restablecimiento, esta puede proteger su fecha de presentación para una solicitud nueva."
+ },
+ "reinstate/sga/plain@2026-01-01": {
+  "en": "In 2026, work is substantial gainful activity at earnings over $1,690 a month ($2,830 if you are blind).",
+  "es": "En 2026, el trabajo es sustancial y lucrativo (SGA) cuando las ganancias pasan de $1,690 al mes ($2,830 si usted es ciego)."
+ },
+ "reinstate/sga/plain@2027-01-01": {
+  "en": "In 2027, work is substantial gainful activity at earnings over $1,770 a month ($2,950 if you are blind).",
+  "es": "En 2027, el trabajo es sustancial y lucrativo (SGA) cuando las ganancias pasan de $1,770 al mes ($2,950 si usted es ciego)."
+ },
+ "ssihelp/fbr/plain@2026-01-01": {
+  "en": "The 2026 federal SSI amount is $994 a month for one person and $1,491 for a couple.",
+  "es": "La cantidad federal de SSI en 2026 es de $994 al mes para una persona y $1,491 para una pareja."
+ },
+ "ssihelp/fbr/plain@2027-01-01": {
+  "en": "The 2027 federal SSI amount is $1,029 a month for one person and $1,544 for a couple.",
+  "es": "La cantidad federal de SSI en 2027 es de $1,029 al mes para una persona y $1,544 para una pareja."
+ },
+ "ssihelp/food/plain": {
+  "en": "Since September 30, 2024, food someone gives you is no longer counted. Of the help you get in kind, only help with shelter can lower SSI. Money you are given still counts as income.",
+  "es": "Desde el 30 de septiembre de 2024, la comida que alguien le da ya no se cuenta. De la ayuda que recibe en especie, solo la ayuda con la vivienda puede reducir el SSI. El dinero que le dan sí cuenta como ingreso."
+ },
+ "ssihelp/shelter/plain": {
+  "en": "Shelter costs are rent, mortgage, electricity, heating fuel and similar utilities. Phone and cable TV are not shelter costs.",
+  "es": "Los costos de vivienda son el alquiler, la hipoteca, la electricidad, el combustible para calefacción y servicios públicos parecidos. El teléfono y la televisión por cable no son costos de vivienda."
+ },
+ "ssihelp/share/plain": {
+  "en": "If you live with others and pay your full share of the household's shelter costs, the help is not counted and SSI is not reduced.",
+  "es": "Si vive con otras personas y paga toda su parte de los costos de vivienda del hogar, la ayuda no se cuenta y el SSI no se reduce."
+ },
+ "ssihelp/vtr/plain": {
+  "en": "If you live in another person's household for a whole month and others provide your shelter without you paying your share, SSI may be reduced by one-third of the federal amount.",
+  "es": "Si vive en el hogar de otra persona durante un mes completo y otros le dan la vivienda sin que usted pague su parte, el SSI se puede reducir en un tercio de la cantidad federal."
+ },
+ "ssihelp/pmv/plain": {
+  "en": "In other cases, the help counted is limited to one-third of the federal amount plus $20 (the presumed maximum value).",
+  "es": "En otros casos, la ayuda que se cuenta se limita a un tercio de la cantidad federal más $20 (el valor máximo presunto)."
+ },
+ "ssihelp/exclusion/plain": {
+  "en": "The first $20 of unearned income each month is not counted, so help worth $100 can lower SSI by $80.",
+  "es": "Los primeros $20 de ingresos no ganados de cada mes no se cuentan, así que una ayuda que vale $100 puede reducir el SSI en $80."
+ },
+ "ssihelp/pa/plain": {
+  "en": "If at least one other person in your household gets SNAP, TANF, SSI or another need-based payment, the household may count as a public assistance household.",
+  "es": "Si por lo menos otra persona de su hogar recibe SNAP, TANF, SSI u otro pago basado en la necesidad, el hogar puede contar como un hogar de asistencia pública."
+ },
+ "ssihelp/rental/plain": {
+  "en": "If you rent from your parent or child, the arrangement is not counted as help when your rent is at least the lower of the presumed maximum value or the local market rent.",
+  "es": "Si le alquila a su padre, su madre o su hijo, el arreglo no se cuenta como ayuda cuando su alquiler es por lo menos el menor entre el valor máximo presunto y el alquiler del mercado local."
+ },
+ "ssihelp/report/plain": {
+  "en": "Report a change in where you live or who pays the shelter costs no later than 10 days after the end of the month it happens.",
+  "es": "Informe un cambio en dónde vive o en quién paga los costos de vivienda a más tardar 10 días después del final del mes en que ocurre."
+ },
+ "ssihelp/appeal/plain": {
+  "en": "If you ask for reconsideration in writing within 10 days of getting the notice, your payment continues until it is decided. You have 60 days to appeal.",
+  "es": "Si pide una reconsideración por escrito dentro de los 10 días de recibir el aviso, su pago continúa hasta que se decida. Tiene 60 días para apelar."
+ },
+ "ssihelp/statement/plain": {
+  "en": "Social Security may ask for a statement of household expenses and contributions (form SSA-8012).",
+  "es": "El Seguro Social puede pedir una declaración de los gastos y las contribuciones del hogar (formulario SSA-8012)."
+ },
+ "changed/cola/plain@2026-01-01": {
+  "en": "Social Security and SSI payments went up 2.8% starting with January 2026 payments.",
+  "es": "Los pagos del Seguro Social y de SSI subieron 2.8% a partir de los pagos de enero de 2026."
+ },
+ "changed/cola/plain@2027-01-01": {
+  "en": "Social Security and SSI payments go up 3.6% starting with January 2027 payments. SSI's January payment arrives on December 31, 2026, because January 1 is a holiday.",
+  "es": "Los pagos del Seguro Social y de SSI suben 3.6% a partir de los pagos de enero de 2027. El pago de SSI de enero llega el 31 de diciembre de 2026, porque el 1 de enero es feriado."
+ },
+ "changed/part_b/plain@2026-01-01": {
+  "en": "The standard Medicare Part B premium is $202.90 a month in 2026.",
+  "es": "La prima estándar de la Parte B de Medicare es de $202.90 al mes en 2026."
+ },
+ "changed/part_b/plain@2027-01-01": {
+  "en": "The standard Medicare Part B premium is $209.40 a month in 2027.",
+  "es": "La prima estándar de la Parte B de Medicare es de $209.40 al mes en 2027."
+ },
+ "changed/earnings/plain@2026-01-01": {
+  "en": "If you are under full retirement age and work, $1 of benefits is withheld for every $2 earned over $24,480 in 2026. In the year you reach full retirement age, $1 for every $3 over $65,160, counting only what you earn before the month you reach that age.",
+  "es": "Si no ha llegado a la plena edad de jubilación y trabaja, se retiene $1 de beneficios por cada $2 que gane por encima de $24,480 en 2026. En el año en que llega a la plena edad de jubilación, $1 por cada $3 por encima de $65,160, contando solo lo que gane antes del mes en que llega a esa edad."
+ },
+ "changed/earnings/plain@2027-01-01": {
+  "en": "If you are under full retirement age and work, $1 of benefits is withheld for every $2 earned over $25,560 in 2027. In the year you reach full retirement age, $1 for every $3 over $67,920, counting only what you earn before the month you reach that age.",
+  "es": "Si no ha llegado a la plena edad de jubilación y trabaja, se retiene $1 de beneficios por cada $2 que gane por encima de $25,560 en 2027. En el año en que llega a la plena edad de jubilación, $1 por cada $3 por encima de $67,920, contando solo lo que gane antes del mes en que llega a esa edad."
+ },
+ "changed/tax/plain": {
+  "en": "You can ask Social Security to withhold federal income tax, or change or stop it, with form W-4V.",
+  "es": "Puede pedir al Seguro Social que retenga impuestos federales sobre los ingresos, o que cambie o detenga esa retención, con el formulario W-4V."
+ },
+ "changed/ssi_income/plain": {
+  "en": "SSI goes down as your countable income goes up, and can change with where you live and who pays the shelter costs.",
+  "es": "El SSI baja cuando suben sus ingresos contables, y puede cambiar según dónde vive y quién paga los costos de vivienda."
+ },
+ "changed/history/plain": {
+  "en": "Your my Social Security account shows your benefit and payment information and your benefit letter.",
+  "es": "Su cuenta my Social Security muestra la información de sus beneficios y pagos y su carta de beneficios."
+ },
+ "changed/appeal/plain": {
+  "en": "If you disagree with a change, you generally have 60 days from receiving the notice to ask for reconsideration.",
+  "es": "Si no está de acuerdo con un cambio, por lo general tiene 60 días desde que recibe el aviso para pedir una reconsideración."
+ },
+ "partb/premium/plain@2026-01-01": {
+  "en": "The standard Part B premium is $202.90 a month in 2026.",
+  "es": "La prima estándar de la Parte B es de $202.90 al mes en 2026."
+ },
+ "partb/premium/plain@2027-01-01": {
+  "en": "The standard Part B premium is $209.40 a month in 2027.",
+  "es": "La prima estándar de la Parte B es de $209.40 al mes en 2027."
  }
 }
