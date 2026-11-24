@@ -10,6 +10,8 @@ No accounts and no human reviewer, so the safety work is done here, before anyth
   written down: the limiter keeps a salted hash that is thrown away when the process restarts.
 - Three reports hide a post. Posts are deleted after 365 days.
 - Only the post text, its topic, the day it was posted and a report count are stored.
+- The owner can delete any post with a key. Only the key's SHA-256 is kept, in backend/settings.json
+  ("board_admin_sha256"); HELPER_BOARD_ADMIN on the server also works. The key itself is never in the code.
 - The off switch: set "community_board" to "off" in backend/settings.json and push. The board,
   its API and every link to it disappear; stored posts are kept until it is turned back on.
   HELPER_BOARD=off on the server does the same and wins over the file.
@@ -88,6 +90,21 @@ def is_on():
     except (OSError, ValueError, AttributeError):
         value = "on"
     return str(value).lower() not in ("off", "0", "false", "no")
+
+
+def is_admin(given):
+    """Is this the owner's key? Checked against HELPER_BOARD_ADMIN, or the SHA-256 kept in settings.json."""
+    given = given or ""
+    if len(given) < 20:
+        return False
+    env = os.environ.get("HELPER_BOARD_ADMIN", "")
+    if len(env) >= 20 and secrets.compare_digest(env.encode(), given.encode()):
+        return True
+    try:
+        want = str(json.loads(SETTINGS.read_text(encoding="utf-8")).get("board_admin_sha256") or "")
+    except (OSError, ValueError, AttributeError):
+        want = ""
+    return len(want) == 64 and secrets.compare_digest(want.lower(), hashlib.sha256(given.encode()).hexdigest())
 
 
 class Limiter:

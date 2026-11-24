@@ -11,7 +11,6 @@ Run locally:  python backend/app.py   then open http://127.0.0.1:5050
 import csv
 import datetime as dt
 import os
-import secrets
 import io
 import json
 import logging
@@ -285,11 +284,9 @@ def create_app():
 
     @app.post("/api/board/remove/<int:post_id>")
     def board_remove(post_id):
-        """For the site owner only: delete a post. Works only when HELPER_BOARD_ADMIN is set on the server."""
+        """For the site owner only: delete a post and its replies. Needs the owner's key (see helper/board.py)."""
         _board_on()
-        key = os.environ.get("HELPER_BOARD_ADMIN", "")
-        given = request.headers.get("X-Board-Admin", "")
-        if len(key) < 20 or not secrets.compare_digest(key, given):
+        if not posts.limits.allow(_visitor(), "admin", 20) or not board.is_admin(request.headers.get("X-Board-Admin", "")):
             abort(404)
         posts.remove(post_id)
         return jsonify({"removed": post_id})

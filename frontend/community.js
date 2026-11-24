@@ -6,6 +6,7 @@
   if (typeof window === "undefined" || !window.UI) return;
   var U = window.UI, h = U.h;
   var topics = null, limits = { min: 20, max: 1500, keep_days: 365 };
+  var ownerKey = "";                                       // the site owner's key: kept in memory only, gone when the tab closes
 
   var RULES = [
     "Do not share your name, Social Security number, claim or case number, address, phone number, email or photos.",
@@ -64,6 +65,35 @@
     return box;
   }
 
+  // For the site owner: a Delete button on every post, shown only after the key is entered at #community/owner.
+  function deleteButton(id, reload) {
+    var box = h("span", { class: "board-report" });
+    var btn = h("button", { type: "button", class: "linkish", text: "Delete", on: { click: function () {
+      box.replaceChildren(h("span", { text: "Delete this post and its replies? " }),
+        h("button", { type: "button", class: "linkish", text: "Yes, delete it", on: { click: function () {
+          fetch("/api/board/remove/" + id, { method: "POST", headers: { "X-Board-Admin": ownerKey } }).then(function (r) {
+            if (r.ok) reload(); else box.replaceChildren(h("span", { text: "Not deleted. The key was not accepted." }));
+          }).catch(function () { box.replaceChildren(h("span", { text: "Not deleted. Check your connection." })); });
+        } } }),
+        h("button", { type: "button", class: "linkish", text: "Cancel", on: { click: function () { box.replaceChildren(btn); } } }));
+    } } });
+    box.appendChild(btn);
+    return box;
+  }
+
+  function owner() {
+    var msg = h("p", { class: "board-msg", role: "alert" });
+    var key = h("input", { type: "password", id: "owner-key", autocomplete: "off" });
+    U.show(h("h1", { text: "Site owner" }),
+      h("p", { text: "Enter the owner key to show a Delete button on every post. The key is not saved; it is forgotten when this tab closes." }),
+      h("form", { class: "board-form", on: { submit: function (ev) {
+        ev.preventDefault();
+        if (key.value.trim().length < 20) { msg.textContent = "That key is too short."; return; }
+        ownerKey = key.value.trim();
+        window.location.hash = "#community";
+      } } }, h("label", { for: "owner-key", text: "Owner key" }), key, msg, h("button", { class: "go", type: "submit", text: "Continue" })));
+  }
+
   function form(topic, replyTo, done) {
     var n = replyTo ? "r" + replyTo : "new";
     var msg = h("p", { class: "board-msg", role: "alert" });
@@ -95,7 +125,7 @@
 
   function post(p, topic, isReply, reload) {
     var replyBox = h("div", { class: "board-replyform" });
-    var bits = [h("p", { class: "board-meta" }, h("span", { text: "Posted " + U.niceDate(p.day) }), " · ", reportButton(p.id))].concat(paragraphs(p.body));
+    var bits = [h("p", { class: "board-meta" }, h("span", { text: "Posted " + U.niceDate(p.day) }), " · ", reportButton(p.id), ownerKey ? deleteButton(p.id, reload) : null)].concat(paragraphs(p.body));
     if (!isReply) {
       bits.push(h("ul", { class: "board-replies" }, p.replies.map(function (r) { return h("li", {}, post(r, topic, true, reload)); })));
       bits.push(h("button", { type: "button", class: "linkish", text: "Reply", on: { click: function () {
@@ -130,5 +160,5 @@
     .catch(function () {});
 
   window.Modules = window.Modules || {};
-  window.Modules.community = { start: function (topic) { if (topic) board(topic); else index(); } };
+  window.Modules.community = { start: function (topic) { if (topic === "owner") owner(); else if (topic) board(topic); else index(); } };
 })();
