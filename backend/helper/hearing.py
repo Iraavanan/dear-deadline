@@ -64,45 +64,45 @@ def run(raw, today=None, rules_dir=None):
     if f["program"] == "medicaid" and f["plan"] and f["state"] in PACKS:
         notes.append("When your Medicaid health plan refuses a service, you usually appeal to the plan first. The plan's decision letter says how long you then have to ask for a state hearing: use that date.")
 
-    def add(d, label, note, rows):
+    def add(kind, d, label, note, rows):
         left = (d - today).days
-        dates.append({"date": d.isoformat(), "label": label, "note": note, "days_left": left, "status": "passed" if left < 0 else ("today" if left == 0 else "upcoming"),
+        dates.append({"id": kind, "date": d.isoformat(), "label": label, "note": note, "days_left": left, "status": "passed" if left < 0 else ("today" if left == 0 else "upcoming"),
                       "sources": [{"plain": r["plain"], "source": r["source"]} for r in rows]})
 
     keep = f["action"] in ("reduced", "stopped")
     if keep and pack and pack["keep"]["kind"] == "after_notice":
         n = pack["keep"]["days"]
-        add(f["notice_date"] + dt.timedelta(days=n), "Ask for a hearing by this date to keep your benefits the same while you wait",
+        add("keep", f["notice_date"] + dt.timedelta(days=n), "Ask for a hearing by this date to keep your benefits the same while you wait",
             "%d days from the date on the notice, under %s's rule. If your notice gives a different date, use the notice." % (n, pack["name"]),
             [{"plain": pack["keep_plain"], "source": pack["keep_source"]}])
         rule_rows.append(t["medicaid_repay"])
     elif keep:
         if f["effective_date"]:
             last = f["effective_date"] - dt.timedelta(days=1)
-            add(last, "Ask for a hearing by this date to keep your benefits the same while you wait",
+            add("keep", last, "Ask for a hearing by this date to keep your benefits the same while you wait",
                 "The day before the change takes effect (%s). Asking earlier is safer." % _long(f["effective_date"]),
                 [t["snap_continue"]] if f["program"] == "snap" else [t["medicaid_continue"]])
             if f["program"] == "medicaid":
-                add(f["effective_date"] + dt.timedelta(days=10), "If you missed that: ask by this date and Medicaid may restore coverage until the decision",
+                add("restore", f["effective_date"] + dt.timedelta(days=10), "If you missed that: ask by this date and Medicaid may restore coverage until the decision",
                     "Ten days after the date of action. This one is up to the agency, not guaranteed.", [t["medicaid_reinstate"]])
         else:
             notes.append("Your notice should say the date the change takes effect. To keep your benefits the same while you wait for the hearing, ask before that date.")
         rule_rows.append(t["snap_repay"] if f["program"] == "snap" else t["medicaid_repay"])
 
     if f["state"] == "FL":
-        add(f["notice_date"] + dt.timedelta(days=t["fl_deadline"]["days"]), "Last day to ask for a fair hearing",
+        add("last", f["notice_date"] + dt.timedelta(days=t["fl_deadline"]["days"]), "Last day to ask for a fair hearing",
             "90 days from the date on the Notice of Case Action.", [t["fl_deadline"], t["fl_rule"]])
         if f["program"] == "medicaid" and f["plan"]:
             notes.append(t["fl_plan_first"]["plain"])
             rule_rows.append(t["fl_plan_first"])
     elif pack:
-        add(f["notice_date"] + dt.timedelta(days=pack["hearing_days"]), "Last day to ask for a hearing",
+        add("last", f["notice_date"] + dt.timedelta(days=pack["hearing_days"]), "Last day to ask for a hearing",
             "%d days from the date on the notice, under %s's rule." % (pack["hearing_days"], pack["name"]),
             [{"plain": pack["hearing_plain"], "source": pack["hearing_source"]}])
         if pack["keep"]["kind"] == "before_effective" and keep:
             notes.append(pack["keep_plain"])
     elif f["program"] == "snap":
-        add(f["notice_date"] + dt.timedelta(days=t["snap_deadline"]["days"]), "Last day to ask for a fair hearing (federal rule)",
+        add("last", f["notice_date"] + dt.timedelta(days=t["snap_deadline"]["days"]), "Last day to ask for a fair hearing (federal rule)",
             "Counted 90 days from the date on the notice. If your state's notice gives a different date, use the notice.", [t["snap_deadline"]])
     else:
         notes.append("Your state sets the time limit for a Medicaid hearing, and your notice must say it. This tool does not guess it: use the date on your notice.")

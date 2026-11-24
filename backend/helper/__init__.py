@@ -5,4 +5,4 @@ deadlines, the request that may fit, and the take-away kit are all computed
 from the dated rule tables in /rules.
 """
 
-__version__ = "0.14.1"
+__version__ = "0.15.0"

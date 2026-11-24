@@ -10,7 +10,7 @@
   var STEPS = ["Your notice", "Your dates", "A few questions", "Your options"];
   // The page and the helper behind it are released together. If the helper
   // answering is older than this page, say so plainly instead of failing later.
-  var NEEDS_VERSION = "0.14.1";
+  var NEEDS_VERSION = "0.15.0";
   var stale = false;
 
   function reset() {

@@ -1,0 +1,226 @@
+{
+ "deadlines/collection_protection/plain": {
+  "en": "If you ask for an appeal or a waiver within 30 days, Social Security says it will not collect until it decides.",
+  "es": "Si pide una apelación o una exención (waiver) dentro de 30 días, el Seguro Social dice que no cobrará hasta que decida."
+ },
+ "deadlines/appeal/plain": {
+  "en": "An appeal (request for reconsideration) is due within 60 days of the date you received the notice.",
+  "es": "La apelación (solicitud de reconsideración) se debe presentar dentro de los 60 días desde la fecha en que recibió la carta."
+ },
+ "deadlines/mail_presumption/plain": {
+  "en": "Social Security assumes you received the notice 5 days after the date printed on it, unless you show otherwise.",
+  "es": "El Seguro Social supone que usted recibió la carta 5 días después de la fecha impresa en ella, a menos que usted demuestre otra cosa."
+ },
+ "deadlines/weekend/plain": {
+  "en": "If the last day falls on a weekend or national holiday, the deadline moves to the next workday.",
+  "es": "Si el último día cae en fin de semana o en un feriado nacional, el plazo pasa al siguiente día hábil."
+ },
+ "requests/appeal/when": {
+  "en": "You think you were not overpaid, or the amount is wrong.",
+  "es": "Usted cree que no le pagaron de más, o que la cantidad está mal."
+ },
+ "requests/appeal/time_limit": {
+  "en": "60 days from the date you received the notice. A later appeal needs a good reason.",
+  "es": "60 días desde la fecha en que recibió la carta. Una apelación posterior necesita una buena razón."
+ },
+ "requests/waiver/when": {
+  "en": "The overpayment was not your fault, and paying it back would cause hardship or be unfair for another reason.",
+  "es": "El pago de más no fue su culpa, y devolverlo le causaría dificultades o sería injusto por otra razón."
+ },
+ "requests/waiver/time_limit": {
+  "en": "No time limit. Asking within 30 days of the notice also holds off collection while Social Security decides.",
+  "es": "No tiene plazo. Pedirla dentro de los 30 días de la carta también detiene el cobro mientras el Seguro Social decide."
+ },
+ "requests/waiver/phone_note": {
+  "en": "When you ask for a waiver today, if the original overpayment is $2,000 or less and you believe it was not your fault, call Social Security or your local office. They may be able to process the waiver by phone.",
+  "es": "Cuando pida una exención hoy, si el pago de más original es de $2,000 o menos y usted cree que no fue su culpa, llame al Seguro Social o a su oficina local. Es posible que puedan tramitar la exención por teléfono."
+ },
+ "requests/lower_rate/when": {
+  "en": "You agree you owe the money, but the amount being taken each month leaves you unable to meet necessary living expenses.",
+  "es": "Usted está de acuerdo en que debe el dinero, pero la cantidad que le quitan cada mes no le deja cubrir sus gastos necesarios."
+ },
+ "requests/lower_rate/time_limit": {
+  "en": "No stated time limit.",
+  "es": "No hay un plazo indicado."
+ },
+ "denial/appeal/plain": {
+  "en": "You generally have 60 days from the date you received the letter to ask for an appeal.",
+  "es": "Por lo general tiene 60 días desde la fecha en que recibió la carta para pedir una apelación."
+ },
+ "denial/mail_presumption/plain": {
+  "en": "Social Security assumes you received the letter 5 days after the date on it, unless you show otherwise.",
+  "es": "El Seguro Social supone que usted recibió la carta 5 días después de la fecha que aparece en ella, a menos que usted demuestre otra cosa."
+ },
+ "denial/weekend/plain": {
+  "en": "If the last day falls on a weekend or national holiday, the deadline moves to the next workday.",
+  "es": "Si el último día cae en fin de semana o en un feriado nacional, el plazo pasa al siguiente día hábil."
+ },
+ "denial/late/plain": {
+  "en": "If you do not appeal within 60 days you may lose the right to appeal. If you had a good reason for the delay, Social Security may give you more time, but you must ask in writing and give the reason.",
+  "es": "Si no apela dentro de los 60 días, puede perder el derecho a apelar. Si tuvo una buena razón para la demora, el Seguro Social puede darle más tiempo, pero debe pedirlo por escrito y dar la razón."
+ },
+ "denial/level_reconsideration/plain": {
+  "en": "Reconsideration is a fresh look by someone who took no part in the first decision. It reviews the evidence from the first decision plus anything new.",
+  "es": "La reconsideración es una revisión nueva hecha por alguien que no participó en la primera decisión. Revisa las pruebas de la primera decisión y todo lo nuevo."
+ },
+ "denial/level_hearing/plain": {
+  "en": "A hearing is held by an administrative law judge who took no part in the earlier decisions. The hearing office tells you when it is scheduled.",
+  "es": "La audiencia la dirige un juez de derecho administrativo que no participó en las decisiones anteriores. La oficina de audiencias le avisa cuándo está programada."
+ },
+ "denial/level_appeals_council/plain": {
+  "en": "The Appeals Council can deny, dismiss or grant review. If it grants review it issues a new decision or sends the case back to a judge.",
+  "es": "El Consejo de Apelaciones puede negar, desestimar o conceder la revisión. Si la concede, emite una nueva decisión o devuelve el caso a un juez."
+ },
+ "denial/level_federal_court/plain": {
+  "en": "After an Appeals Council decision or denial of review, the next step is a civil action in a federal district court.",
+  "es": "Después de una decisión del Consejo de Apelaciones, o de que este niegue la revisión, el siguiente paso es una demanda civil en un tribunal federal de distrito."
+ },
+ "denial/medical_extra/plain": {
+  "en": "For a decision about whether you are disabled, the reconsideration request also needs Form SSA-827, which lets Social Security get your medical records.",
+  "es": "Para una decisión sobre si usted está incapacitado, la solicitud de reconsideración también necesita el formulario SSA-827, que permite al Seguro Social obtener sus expedientes médicos."
+ },
+ "denial/representative/plain": {
+  "en": "You may have a representative, such as a lawyer or another qualified person. You appoint one in writing with Form SSA-1696, and a representative cannot charge a fee without Social Security's written approval.",
+  "es": "Puede tener un representante, como un abogado u otra persona calificada. Se nombra por escrito con el formulario SSA-1696, y un representante no puede cobrar honorarios sin la aprobación por escrito del Seguro Social."
+ },
+ "denial/paper/plain": {
+  "en": "You can also ask for the appeal form by phone or at a local office instead of going online.",
+  "es": "También puede pedir el formulario de apelación por teléfono o en una oficina local, en vez de hacerlo por internet."
+ },
+ "cessation/continuation_received_by/plain": {
+  "en": "To keep benefits coming during your appeal, Social Security must receive your choice on Form SSA-792 no later than 15 calendar days from the date on the notice.",
+  "es": "Para seguir recibiendo beneficios durante su apelación, el Seguro Social debe recibir su decisión en el formulario SSA-792 a más tardar 15 días calendario después de la fecha de la carta."
+ },
+ "cessation/continuation_aim/plain": {
+  "en": "The rule gives 10 days from when you receive the notice, and Social Security allows 5 days for the mail. Aim to hand the form in within 10 days of the notice date so it is in their hands in time.",
+  "es": "La regla da 10 días desde que usted recibe la carta, y el Seguro Social permite 5 días para el correo. Trate de entregar el formulario dentro de los 10 días de la fecha de la carta, para que lo tengan a tiempo."
+ },
+ "cessation/appeal/plain": {
+  "en": "An appeal is due within 60 days of the date you received the notice.",
+  "es": "La apelación se debe presentar dentro de los 60 días desde la fecha en que recibió la carta."
+ },
+ "cessation/mail_presumption/plain": {
+  "en": "Social Security assumes you received the notice 5 days after the date printed on it, unless you show otherwise.",
+  "es": "El Seguro Social supone que usted recibió la carta 5 días después de la fecha impresa en ella, a menos que usted demuestre otra cosa."
+ },
+ "cessation/weekend/plain": {
+  "en": "If the last day falls on a weekend or national holiday, the deadline moves to the next workday.",
+  "es": "Si el último día cae en fin de semana o en un feriado nacional, el plazo pasa al siguiente día hábil."
+ },
+ "cessation/appeal_form/plain": {
+  "en": "The appeal of a disability-ended decision uses Form SSA-789. It cannot be filed online. It asks for your reasons, any new evidence, and whether you want to appear at a disability hearing.",
+  "es": "La apelación de una decisión de que la incapacidad terminó usa el formulario SSA-789. No se puede presentar por internet. Pide sus razones, cualquier prueba nueva y si quiere presentarse en una audiencia de incapacidad."
+ },
+ "cessation/election_form/plain": {
+  "en": "Form SSA-792 records whether you want benefits to continue while a medical appeal is pending. It is also the form for saying you do not want them continued.",
+  "es": "El formulario SSA-792 registra si usted quiere que los beneficios continúen mientras está pendiente una apelación médica. También es el formulario para decir que no quiere que continúen."
+ },
+ "cessation/repayment/plain": {
+  "en": "If your appeal is not successful, the payments you received during it are an overpayment that you must pay back. You can ask Social Security not to collect it with Form SSA-632-BK. You are not asked to repay Medicare received during the appeal.",
+  "es": "Si su apelación no tiene éxito, los pagos que recibió durante ella son un pago de más que debe devolver. Puede pedir al Seguro Social que no lo cobre con el formulario SSA-632-BK. No se le pide devolver el Medicare recibido durante la apelación."
+ },
+ "cessation/late_continuation/plain": {
+  "en": "If your SSA-792 will arrive after the 15 days, fill in its good-cause section and explain why. Social Security then decides whether to accept the reason.",
+  "es": "Si su SSA-792 va a llegar después de los 15 días, llene la sección de buena causa (good cause) y explique por qué. El Seguro Social decide entonces si acepta la razón."
+ },
+ "cessation/late_appeal/plain": {
+  "en": "If the notice is dated more than 65 days ago, Form SSA-789 asks for the reason your request is late and the date you received the notice.",
+  "es": "Si la carta tiene fecha de hace más de 65 días, el formulario SSA-789 pide la razón por la que su solicitud llega tarde y la fecha en que recibió la carta."
+ },
+ "cessation/evidence/plain": {
+  "en": "You can send evidence until the hearing date, and sending it earlier is better.",
+  "es": "Puede enviar pruebas hasta la fecha de la audiencia, y es mejor enviarlas antes."
+ },
+ "hearing/fl_deadline/plain": {
+  "en": "In Florida, you can ask for a fair hearing about SNAP, cash assistance or Medicaid within 90 days of the Notice of Case Action.",
+  "es": "En Florida, puede pedir una audiencia imparcial (fair hearing) sobre SNAP, asistencia en efectivo o Medicaid dentro de los 90 días del aviso (Notice of Case Action)."
+ },
+ "hearing/fl_rule/plain": {
+  "en": "Florida's hearing rule gives 90 calendar days to appeal in these programs.",
+  "es": "La regla de audiencias de Florida da 90 días calendario para apelar en estos programas."
+ },
+ "hearing/fl_contact/plain": {
+  "en": "Ask by phone (850) 488-1429, fax (850) 487-0662, email appeal.hearings@myflfamilies.com, or mail to the Appeal Hearings Section, 2415 North Monroe Street, Suite 400-I, Tallahassee, FL 32303-4190. You can also ask at a local DCF office or through the DCF call center.",
+  "es": "Pídala por teléfono al (850) 488-1429, por fax al (850) 487-0662, por correo electrónico a appeal.hearings@myflfamilies.com, o por correo a Appeal Hearings Section, 2415 North Monroe Street, Suite 400-I, Tallahassee, FL 32303-4190. También puede pedirla en una oficina local de DCF o por el centro de llamadas de DCF."
+ },
+ "hearing/fl_plan_first/plain": {
+  "en": "If your Medicaid health plan refused a service, you must first finish the plan's own appeal before a Medicaid fair hearing. The plan's phone number is on your plan ID card.",
+  "es": "Si su plan de salud de Medicaid negó un servicio, primero debe terminar la apelación del propio plan antes de una audiencia imparcial de Medicaid. El teléfono del plan está en su tarjeta de identificación del plan."
+ },
+ "hearing/snap_deadline/plain": {
+  "en": "Under federal SNAP rules, a household can ask for a hearing on any action or loss of benefits in the prior 90 days.",
+  "es": "Según las reglas federales de SNAP, un hogar puede pedir una audiencia sobre cualquier acción o pérdida de beneficios de los últimos 90 días."
+ },
+ "hearing/snap_continue/plain": {
+  "en": "If you ask for a hearing within the period your notice gives, SNAP continues at the amount you got before the notice until the hearing decision, unless you say you do not want that or your certification period ends.",
+  "es": "Si pide una audiencia dentro del plazo que da su aviso, SNAP continúa en la cantidad que recibía antes del aviso hasta la decisión de la audiencia, a menos que usted diga que no lo quiere o que termine su período de certificación."
+ },
+ "hearing/snap_decision/plain": {
+  "en": "The state must hold the hearing and decide within 60 days of your request.",
+  "es": "El estado debe celebrar la audiencia y decidir dentro de los 60 días de su solicitud."
+ },
+ "hearing/medicaid_continue/plain": {
+  "en": "If you ask for a hearing before the date the action takes effect, Medicaid generally may not stop or reduce your coverage until the hearing decision.",
+  "es": "Si pide una audiencia antes de la fecha en que la acción entra en vigor, por lo general Medicaid no puede quitar ni reducir su cobertura hasta la decisión de la audiencia."
+ },
+ "hearing/medicaid_reinstate/plain": {
+  "en": "If you ask within 10 days after the date of action, the agency may reinstate your coverage until the decision.",
+  "es": "Si la pide dentro de los 10 días después de la fecha de la acción, la agencia puede restablecer su cobertura hasta la decisión."
+ },
+ "hearing/medicaid_repay/plain": {
+  "en": "If the hearing decision agrees with the agency, it may seek back the cost of services you got only because coverage continued.",
+  "es": "Si la decisión de la audiencia le da la razón a la agencia, esta puede pedirle que devuelva el costo de los servicios que recibió solo porque la cobertura continuó."
+ },
+ "hearing/snap_repay/plain": {
+  "en": "If you lose the hearing, SNAP you got while waiting can be counted as an overpayment that you have to pay back.",
+  "es": "Si pierde la audiencia, el SNAP que recibió mientras esperaba puede contarse como un pago de más que usted tiene que devolver."
+ },
+ "snapclaim/types/plain": {
+  "en": "A SNAP claim is one of three kinds: an intentional program violation, a household mistake, or an agency mistake. The letter must say which kind it is and why.",
+  "es": "Un reclamo de SNAP es de una de tres clases: una violación intencional del programa, un error del hogar o un error de la agencia. La carta debe decir de qué clase es y por qué."
+ },
+ "snapclaim/hearing/plain": {
+  "en": "Unless a hearing already set the amount, the household has 90 days to ask for a fair hearing about the claim.",
+  "es": "A menos que una audiencia ya haya fijado la cantidad, el hogar tiene 90 días para pedir una audiencia imparcial sobre el reclamo."
+ },
+ "snapclaim/due/plain": {
+  "en": "The date to pay or make an arrangement is set by the letter and is no later than 30 days after the first notice.",
+  "es": "La fecha para pagar o hacer un acuerdo la fija la carta, y no es posterior a 30 días después del primer aviso."
+ },
+ "snapclaim/inspect/plain": {
+  "en": "The letter must give the amount, the months covered, how it was worked out and a phone number, and must say you can look at the records.",
+  "es": "La carta debe dar la cantidad, los meses que cubre, cómo se calculó y un número de teléfono, y debe decir que usted puede ver los registros."
+ },
+ "snapclaim/agreement/plain": {
+  "en": "You can make a written agreement to repay in installments before the claim is sent for federal collection.",
+  "es": "Puede hacer un acuerdo por escrito para pagar en cuotas antes de que el reclamo se envíe a cobro federal."
+ },
+ "snapclaim/reduce_mistake/plain": {
+  "en": "For a household mistake or an agency mistake, the state can take the greater of $10 a month or 10% of the monthly SNAP amount, unless the household agrees to more.",
+  "es": "Por un error del hogar o de la agencia, el estado puede quitar lo que sea mayor: $10 al mes o el 10% de la cantidad mensual de SNAP, a menos que el hogar acepte más."
+ },
+ "snapclaim/reduce_ipv/plain": {
+  "en": "For an intentional program violation, the state can take the greater of $20 a month or 20% of the monthly SNAP amount.",
+  "es": "Por una violación intencional del programa, el estado puede quitar lo que sea mayor: $20 al mes o el 20% de la cantidad mensual de SNAP."
+ },
+ "snapclaim/compromise/plain": {
+  "en": "A state may lower (compromise) a claim when the household's finances show it will not be paid in three years.",
+  "es": "Un estado puede reducir (compromise) un reclamo cuando la situación económica del hogar muestra que no se pagará en tres años."
+ },
+ "snapclaim/delinquent/plain": {
+  "en": "A claim is delinquent when it is not paid by its due date and there is no payment arrangement, or when an installment is missed.",
+  "es": "Un reclamo está en mora cuando no se paga para su fecha de vencimiento y no hay un acuerdo de pago, o cuando no se paga una cuota."
+ },
+ "snapclaim/offset/plain": {
+  "en": "A claim that has been delinquent for 180 days or more must be sent to the Treasury Offset Program, which can take federal payments such as tax refunds.",
+  "es": "Un reclamo que lleva 180 días o más en mora debe enviarse al Programa de Compensación del Tesoro (Treasury Offset Program), que puede quitar pagos federales como los reembolsos de impuestos."
+ },
+ "snapclaim/file/plain": {
+  "en": "Before a hearing you can look at the documents the state will use and get a free copy of the relevant parts of your case file. Someone else, such as a lawyer or a friend, can present your case.",
+  "es": "Antes de una audiencia, usted puede ver los documentos que el estado va a usar y recibir gratis una copia de las partes pertinentes de su expediente. Otra persona, como un abogado o un amigo, puede presentar su caso."
+ },
+ "snapclaim/decision/plain": {
+  "en": "The state has 60 days from getting a hearing request to hold the hearing, decide and tell the household.",
+  "es": "El estado tiene 60 días desde que recibe una solicitud de audiencia para celebrarla, decidir y avisar al hogar."
+ }
+}
