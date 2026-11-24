@@ -185,6 +185,37 @@
   /* Lo que más hace que devuelvan una renovación. tests/test_es.py revisa que sea la lista de renewal.py. */
   var REVISIONES = [["signed", "Cada página que pide una firma está firmada y con fecha"], ["all_pages", "Están todas las páginas del formulario, incluso las que no tienen cambios"], ["case_number", "Su nombre y su número de caso están en cada página que envía"], ["copies", "Está enviando copias y se queda con los originales"], ["readable", "Cada foto o copia se puede leer: se ven las cuatro esquinas, no hay nada cortado y no está borrosa"], ["changes", "Informó cualquier cambio: dirección, ingresos, quién vive con usted"]];
 
+  var CIFRAS = ["annual_income", "adjusted_income", "dependent_deduction", "elderly_deduction", "medical_deduction", "childcare_deduction", "other_deduction", "ttp", "utility_allowance", "your_rent", "gross_rent",
+    "payment_standard", "minimum_rent", "childcare_costs", "medical_costs", "income_now"];
+  /* Una hoja de alquiler. pre es "" para una sola hoja, o "old_" y "new_" cuando se comparan dos. */
+  function hojaAlquiler(pre, f, p) {
+    f = f || {};
+    function c(k, etiqueta, ayuda) { return h("div", { class: "field" }, campo(pre + k, etiqueta, ayuda, "dinero", f[k], p)); }
+    return [opciones(pre + "program", "¿Qué tipo de ayuda tiene?", [["voucher", "Un Vale de Elección de Vivienda (Sección 8)"], ["public_housing", "Vivienda pública"]], f.program, p),
+      campo(pre + "dependents", "Número de dependientes", "Niños menores de 18 años, y adultos que estudian a tiempo completo o tienen una discapacidad, sin contar al jefe de familia, su cónyuge o el otro jefe de familia.", "text", f.dependents, p),
+      casilla(pre + "elderly_disabled", "El jefe de familia, su cónyuge o el otro jefe de familia tiene 62 años o más, o tiene una discapacidad", f.elderly_disabled),
+      grupo("De su aviso u hoja de cálculo del alquiler", [h("p", { class: "hint", text: "Deje una casilla vacía si sus papeles no lo muestran. Si solo muestran el pago total del inquilino, puede escribir eso en vez del ingreso." }),
+        h("div", { class: "money-grid" }, c("annual_income", "Ingreso anual", "El ingreso anual total que se usó para su alquiler."), c("adjusted_income", "Ingreso anual ajustado", "Después de las deducciones, si aparece."),
+          c("dependent_deduction", "Deducción por dependientes"), c("elderly_deduction", "Deducción para familias de personas mayores o con discapacidad"), c("medical_deduction", "Deducción por gastos médicos"),
+          c("childcare_deduction", "Deducción por cuidado de niños"), c("other_deduction", "Cualquier otra deducción"), c("ttp", "Pago total del inquilino (TTP)", "Una cifra mensual."),
+          c("utility_allowance", "Asignación para servicios públicos", "Mensual. Si usted paga los servicios."), c("your_rent", "Alquiler que paga cada mes", "Lo que el aviso dice que usted paga."),
+          c("gross_rent", "Alquiler bruto (vales)", "El alquiler al dueño más la asignación para servicios públicos."), c("payment_standard", "Estándar de pago (vales)"),
+          c("minimum_rent", "Alquiler mínimo, si su aviso menciona uno", "Como máximo $50."))]),
+      casilla(pre + "new_lease", "Esto es para un contrato nuevo o una mudanza a otra unidad (vales)", f.new_lease),
+      grupo("Sus propios gastos y cambios (opcional)", h("div", { class: "money-grid" }, c("childcare_costs", "Cuidado de niños que paga cada año", "Para que alguien pueda trabajar o estudiar."),
+        c("medical_costs", "Gastos médicos que el seguro no paga, cada año", "Cuenta solo para familias de personas mayores o con discapacidad."), c("income_now", "Su ingreso anual ahora, si bajó")))];
+  }
+  function leerHoja(pre) {
+    var f = { program: elegido(pre + "program"), dependents: valor(pre + "dependents"), elderly_disabled: marcada(pre + "elderly_disabled"), new_lease: marcada(pre + "new_lease") };
+    CIFRAS.forEach(function (k) { f[k] = valor(pre + k); });
+    return f;
+  }
+  function pasosAlquiler(r) {
+    return h("table", { class: "plain" }, h("tr", {}, ["Paso", "Con sus cifras", "Sus papeles dicen"].map(function (x) { return h("th", { text: x }); })),
+      r.steps.map(function (x) { return h("tr", {}, h("td", {}, h("b", { text: x.what }), h("br"), h("span", { class: "small", text: x.how })), h("td", { class: "num", text: dinero(x.value) }),
+        h("td", { class: "num", text: x.stated === null || x.stated === undefined ? "No lo escribió" : dinero(x.stated) })); }));
+  }
+
   var HERRAMIENTAS = {
     sobrepago: herramienta({
       api: "sobrepago", boton: "Ver mis fechas", titulo: "El Seguro Social dice que me pagó de más",
@@ -899,6 +930,40 @@
           h("h2", { text: "Preguntas para hacer" }), h("ul", {}, r.questions.map(function (x) { return h("li", { text: x }); })),
           r.hearing ? [h("h2", { text: "Si de todos modos termina su cobertura o terminan sus beneficios" }), h("p", {}, r.hearing.plain + " ", enlace(r.hearing.source, "Fuente (en inglés)"))] : null,
           cierreEn(r, volver, "renewal"));
+      }
+    }),
+    "alquiler": herramienta({
+      api: "rent-check", boton: "Revisar mi alquiler", titulo: "Revisar cómo calcularon mi alquiler de vivienda",
+      entrada: "Si tiene un Vale de Elección de Vivienda (Sección 8) o vive en vivienda pública, su alquiler sale de una fórmula. Copie las cifras de su aviso de alquiler o de su hoja de cálculo, y vea si cuadran y si falta alguna deducción. Todavía no cubre: alquiler fijado por un pago de asistencia pública para vivienda, ayuda prorrateada para familias con miembros sin estatus elegible, ni alquileres fijos (flat rent) en vivienda pública.",
+      dibujar: function (s, p) { return hojaAlquiler("", s, p); },
+      leer: function () { return leerHoja(""); },
+      ejemplo: function () { return { program: "voucher", dependents: "2", elderly_disabled: false, new_lease: false, annual_income: "24500", dependent_deduction: "", ttp: "613", utility_allowance: "90", gross_rent: "1300", payment_standard: "1400", your_rent: "523", childcare_costs: "2400" }; },
+      resultado: function (r, volver) {
+        mostrar(h("h1", { class: "long", text: r.headline }), pasosAlquiler(r), r.rent_note ? h("p", { class: "small", text: r.rent_note }) : null,
+          r.matches.length ? h("p", { text: "Sus deducciones corresponden a las " + r.matches.join(" o ") + " de HUD." }) : null,
+          r.findings.length ? [h("h2", { text: "Lo que encontramos" }), h("ul", { class: "findings" }, r.findings.map(function (f) { return h("li", { text: f.text }); }))] : null,
+          r.interim ? [h("h2", { text: "Su ingreso bajó" }), h("p", { text: r.interim.text })] : null,
+          h("h2", { text: "Qué preguntar a su autoridad de vivienda" }), h("ul", {}, r.questions.map(function (q) { return h("li", { text: q }); })),
+          borrador("Carta a su autoridad de vivienda (en inglés)", "Tiene las mismas preguntas, en inglés. Complete lo que está entre corchetes [ ] con sus datos.", r.letter), cierreEn(r, volver, "rent-check"));
+      }
+    }),
+    "cambio-de-alquiler": herramienta({
+      api: "rent-change", boton: "Comparar las dos hojas", titulo: "¿Por qué cambió mi alquiler?",
+      entrada: "Copie las cifras de su hoja de alquiler de antes y de la nueva. Verá qué cambió entre las dos y cuánto del cambio viene de cada cosa: el pago total del inquilino, el estándar de pago o la asignación para servicios públicos.",
+      dibujar: function (s, p) { return [h("h2", { text: "Su hoja de alquiler de antes" }), hojaAlquiler("old_", s.old, p), h("h2", { text: "Su hoja de alquiler nueva" }), hojaAlquiler("new_", s["new"], p)]; },
+      leer: function () { return { old: leerHoja("old_"), "new": leerHoja("new_") }; },
+      ejemplo: function () {
+        return { old: { program: "voucher", dependents: "2", annual_income: "24500", dependent_deduction: "960", ttp: "589", utility_allowance: "90", gross_rent: "1300", payment_standard: "1400", your_rent: "499" },
+          "new": { program: "voucher", dependents: "2", annual_income: "26000", dependent_deduction: "960", ttp: "626", utility_allowance: "60", gross_rent: "1500", payment_standard: "1400", your_rent: "666" } };
+      },
+      resultado: function (r, volver) {
+        mostrar(h("h1", { class: "long", text: r.headline }),
+          r.parts.length ? tabla(r.parts.map(function (x) { return [x.what, (x.amount < 0 ? "−" : "+") + dinero(Math.abs(x.amount))]; })) : null,
+          h("ul", {}, r.why.map(function (w) { return h("li", { text: w }); })),
+          r.moved.length ? [h("h2", { text: "Qué cambió en las hojas" }), h("ul", {}, r.moved.map(function (m) { return h("li", { text: m.text }); }))] : null,
+          r["new"].findings.length ? [h("h2", { text: "En la hoja nueva" }), h("ul", { class: "findings" }, r["new"].findings.map(function (f) { return h("li", { text: f.text }); }))] : null,
+          h("h2", { text: "Qué preguntar a su autoridad de vivienda" }), h("ul", {}, r.questions.map(function (q) { return h("li", { text: q }); })),
+          borrador("Carta sobre la hoja nueva (en inglés)", "Tiene las preguntas sobre la hoja nueva, en inglés. Añada las demás preguntas si las necesita.", r["new"].letter), cierreEn(r, volver, "rent-check"));
       }
     })
   };

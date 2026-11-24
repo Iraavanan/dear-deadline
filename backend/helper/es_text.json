@@ -1466,5 +1466,37 @@
  "workrules/fl_hearing/plain": {
   "en": "In Florida, you can ask for a fair hearing about SNAP, cash assistance or Medicaid within 90 days of the Notice of Case Action. Ask by phone (850) 488-1429, fax (850) 487-0662, email appeal.hearings@myflfamilies.com, or mail to the Appeal Hearings Section, 2415 North Monroe Street, Suite 400-I, Tallahassee, FL 32303-4190. To keep your benefits the same while you wait, ask before the change takes effect; the notice says when.",
   "es": "En Florida, puede pedir una audiencia imparcial (fair hearing) sobre SNAP, asistencia en efectivo o Medicaid dentro de los 90 días del aviso (Notice of Case Action). Pídala por teléfono al (850) 488-1429, por fax al (850) 487-0662, por correo electrónico a appeal.hearings@myflfamilies.com, o por correo a Appeal Hearings Section, 2415 North Monroe Street, Suite 400-I, Tallahassee, FL 32303-4190. Para mantener sus beneficios iguales mientras espera, pídala antes de que el cambio entre en vigor; el aviso dice cuándo."
+ },
+ "rent/ttp/plain": {
+  "en": "Your total tenant payment is the highest of: 30% of your adjusted monthly income, 10% of your monthly income, any welfare payment set aside for housing, or the housing authority's minimum rent. It is rounded to the nearest dollar.",
+  "es": "Su pago total del inquilino (TTP) es el más alto de: el 30% de su ingreso mensual ajustado, el 10% de su ingreso mensual, cualquier pago de asistencia pública apartado para vivienda, o el alquiler mínimo de la autoridad de vivienda. Se redondea al dólar más cercano."
+ },
+ "rent/minimum_rent/plain": {
+  "en": "A housing authority may set a minimum rent of up to $50 a month, and must grant a hardship exemption in some cases.",
+  "es": "Una autoridad de vivienda puede fijar un alquiler mínimo de hasta $50 al mes, y en algunos casos debe dar una exención por dificultades."
+ },
+ "rent/deductions/plain": {
+  "en": "Adjusted income is your yearly income minus these deductions: an amount for each dependent; an amount for an elderly or disabled family; for an elderly or disabled family, unreimbursed medical expenses above a share of yearly income; and reasonable child care costs that let a family member work or go to school.",
+  "es": "El ingreso ajustado es su ingreso anual menos estas deducciones: una cantidad por cada dependiente; una cantidad para una familia de personas mayores o con discapacidad; para una familia de personas mayores o con discapacidad, los gastos médicos no reembolsados que pasen de una parte del ingreso anual; y los costos razonables de cuidado de niños que permiten a un miembro de la familia trabajar o estudiar."
+ },
+ "rent/amounts/plain": {
+  "en": "HUD now changes the deduction amounts each year. The amounts used depend on the date of your rent review and on whether your housing authority has moved to the new rules.",
+  "es": "HUD ahora cambia las cantidades de las deducciones cada año. Las cantidades que se usan dependen de la fecha de su revisión de alquiler y de si su autoridad de vivienda ya pasó a las reglas nuevas."
+ },
+ "rent/medical_phase/plain": {
+  "en": "Families who had a medical deduction above 3% of income on January 1, 2024 move to the 10% level in steps: 5%, then 7.5% a year later, then 10%.",
+  "es": "Las familias que tenían una deducción médica por encima del 3% del ingreso el 1 de enero de 2024 pasan al nivel del 10% por pasos: 5%, luego 7.5% un año después, y luego 10%."
+ },
+ "rent/voucher/plain": {
+  "en": "With a voucher, you pay your total tenant payment, plus any amount by which the rent and utility allowance together are above the housing authority's payment standard. The utility allowance comes off what you pay the owner when you pay utilities yourself.",
+  "es": "Con un vale, usted paga su pago total del inquilino, más cualquier cantidad en que el alquiler y la asignación para servicios públicos juntos pasen del estándar de pago de la autoridad de vivienda. La asignación para servicios públicos se resta de lo que usted paga al dueño cuando usted paga los servicios."
+ },
+ "rent/public_housing/plain": {
+  "en": "In public housing with income-based rent, your rent is your total tenant payment minus the utility allowance, if you pay utilities yourself.",
+  "es": "En vivienda pública con alquiler basado en los ingresos, su alquiler es su pago total del inquilino menos la asignación para servicios públicos, si usted paga los servicios."
+ },
+ "rent/interim/plain": {
+  "en": "You can ask your housing authority to review your rent between yearly reviews because of any change. It may decline when your adjusted income is expected to drop by less than 10%, or by less than a lower threshold it has set.",
+  "es": "Puede pedir a su autoridad de vivienda que revise su alquiler entre las revisiones anuales por cualquier cambio. Puede negarse cuando se espera que su ingreso ajustado baje menos del 10%, o menos de un umbral más bajo que haya fijado."
  }
 }

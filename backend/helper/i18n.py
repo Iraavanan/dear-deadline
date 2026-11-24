@@ -8,6 +8,7 @@ never translated: they are the same values in both languages.
 """
 
 import contextvars
+import copy
 import datetime as dt
 import functools
 import json
@@ -103,13 +104,33 @@ def finish(out, used, rules_dir, disclaimer):
     return out
 
 
-def spanish(fn):
-    """The same helper, answering in Spanish."""
+def _restore(sp, en, keys):
+    """Copy the named keys, at any depth, from the English answer into the Spanish one."""
+    if isinstance(sp, dict) and isinstance(en, dict):
+        for k in sp:
+            if k in keys and k in en:
+                sp[k] = en[k]
+            elif k in en:
+                _restore(sp[k], en[k], keys)
+    elif isinstance(sp, list) and isinstance(en, list) and len(sp) == len(en):
+        for a, b in zip(sp, en):
+            _restore(a, b, keys)
+
+
+def spanish(fn, english=()):
+    """The same helper, answering in Spanish. Keys named in `english` hold papers for an agency: they are taken from the English answer."""
     @functools.wraps(fn)
     def run(raw, today=None, rules_dir=None):
         token = LANG.set("es")
         try:
-            return fn(raw, today=today, rules_dir=rules_dir)
+            out = fn(copy.deepcopy(raw), today=today, rules_dir=rules_dir)
+            if english:
+                again = LANG.set("en")
+                try:
+                    _restore(out, fn(copy.deepcopy(raw), today=today, rules_dir=rules_dir), english)
+                finally:
+                    LANG.reset(again)
+            return out
         except InputError as err:
             raise InputError({k: GLUE.get(v, v) for k, v in err.problems.items()})
         finally:
@@ -128,7 +149,9 @@ def _tools():
     more["report-change"] = reporting.run
     from . import renewal
     more["renewal"] = renewal.run
-    return dict({k: spanish(v) for k, v in more.items()}, **_first())
+    from . import rent
+    special = {"rent-check": spanish(rent.run, english=("letter",)), "rent-change": spanish(rent.compare, english=("letter",))}
+    return dict({k: spanish(v) for k, v in more.items()}, **dict(special, **_first()))
 
 
 def _first():
