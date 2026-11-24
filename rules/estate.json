@@ -1,0 +1,75 @@
+{
+ "table": "estate",
+ "about": "Medicaid estate recovery: a claim against the estate of someone who got Medicaid, and when it may not be collected.",
+ "rows": [
+  {
+   "id": "who",
+   "plain": "States must seek repayment from the estate of a person who got Medicaid at age 55 or older for nursing facility services, home and community-based services, and related hospital and prescription drug services. States may also seek it for other Medicaid services.",
+   "source": "https://www.medicaid.gov/medicaid/eligibility/estate-recovery/index.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "survivors",
+   "plain": "A state may not recover from the estate of a person who is survived by a spouse, a child under age 21, or a blind or disabled child of any age.",
+   "source": "https://www.medicaid.gov/medicaid/eligibility/estate-recovery/index.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "hardship",
+   "plain": "Every state must have a way to waive estate recovery when it would cause an undue hardship.",
+   "source": "https://www.medicaid.gov/medicaid/eligibility/estate-recovery/index.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "fl_debt",
+   "plain": "In Florida, Medicaid paid for a person's care after age 55 creates a debt to the state. Medicaid paid before age 55 does not.",
+   "source": "https://m.flsenate.gov/Statutes/409.9101",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "state": "FL"
+  },
+  {
+   "id": "fl_survivors",
+   "plain": "In Florida the debt is not enforced if the person is survived by a spouse, a child under 21, or a child who is blind or permanently and totally disabled.",
+   "source": "https://m.flsenate.gov/Statutes/409.9101",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "state": "FL"
+  },
+  {
+   "id": "fl_exempt",
+   "plain": "In Florida the debt is not enforced against property that is determined to be exempt from creditors under the state constitution or state law, which includes protected homestead. Real property is never transferred to the agency.",
+   "source": "https://m.flsenate.gov/Statutes/409.9101",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "state": "FL"
+  },
+  {
+   "id": "fl_claim",
+   "plain": "Florida collects by filing a statement of claim in the probate case, where it stands with the estate's other claimants.",
+   "source": "https://m.flsenate.gov/Statutes/409.9101",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "state": "FL"
+  },
+  {
+   "id": "fl_hardship",
+   "plain": "In Florida the personal representative or any heir may ask the agency to waive recovery when it would create a hardship. Losing an expected inheritance is not a hardship by itself.",
+   "source": "https://m.flsenate.gov/Statutes/409.9101",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "state": "FL"
+  },
+  {
+   "id": "fl_factors",
+   "plain": "Florida considers whether an heir lives in the home, lived there at the death and for the 12 months before, and owns no other home; whether an heir would be left without food, clothing, shelter or medical care; whether a sibling or child lived with the person for at least a year and gave full-time care that delayed a nursing home; and whether selling would cost as much as the property is worth.",
+   "source": "https://m.flsenate.gov/Statutes/409.9101",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "state": "FL"
+  }
+ ]
+}

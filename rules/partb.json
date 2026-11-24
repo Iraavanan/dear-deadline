@@ -1,0 +1,99 @@
+{
+ "table": "partb",
+ "about": "Signing up for Medicare Part B late: the penalty, the next chance to sign up and the special enrollment periods.",
+ "rows": [
+  {
+   "id": "penalty",
+   "plain": "The Part B late enrollment penalty is an extra 10% for each full 12-month period you could have had Part B but did not. It is usually charged for as long as you have Part B.",
+   "source": "https://www.medicare.gov/basics/costs/medicare-costs/avoid-penalties",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "percent": 10
+  },
+  {
+   "id": "premium",
+   "plain": "The standard Part B premium is $202.90 a month in 2026.",
+   "source": "https://www.medicare.gov/basics/costs/medicare-costs/avoid-penalties",
+   "effective_from": "2026-01-01",
+   "checked_on": "2026-11-24",
+   "amount": 202.9
+  },
+  {
+   "id": "premium",
+   "plain": "The standard Part B premium is $209.40 a month in 2027.",
+   "source": "https://www.medicare.gov/basics/costs/medicare-costs/avoid-penalties",
+   "effective_from": "2027-01-01",
+   "checked_on": "2026-11-24",
+   "amount": 209.4
+  },
+  {
+   "id": "no_penalty",
+   "plain": "You generally do not pay the penalty if a Special Enrollment Period applies to you or you enroll in a Medicare Savings Program.",
+   "source": "https://www.medicare.gov/basics/costs/medicare-costs/avoid-penalties",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "general",
+   "plain": "If you missed your first chance, you can sign up in the General Enrollment Period, January 1 to March 31 each year. Coverage starts the month after you sign up.",
+   "source": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-does-medicare-coverage-start",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "employer",
+   "plain": "If you had group health coverage from your own or your spouse's current job, you have a Special Enrollment Period that ends 8 months after that coverage or the job ends, whichever comes first. COBRA does not count as that coverage.",
+   "source": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-does-medicare-coverage-start",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "months": 8
+  },
+  {
+   "id": "medicaid",
+   "plain": "If you lost Medicaid, you can sign up from the day you are told until 6 months after Medicaid ends.",
+   "source": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-does-medicare-coverage-start",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "months": 6
+  },
+  {
+   "id": "misinformed",
+   "plain": "If a health plan or an employer gave you wrong or misleading information, you can sign up for 6 months after you tell Social Security.",
+   "source": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-does-medicare-coverage-start",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "months": 6
+  },
+  {
+   "id": "disaster",
+   "plain": "After a declared disaster or emergency, you can sign up until 6 months after the declaration ends.",
+   "source": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-does-medicare-coverage-start",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "months": 6
+  },
+  {
+   "id": "released",
+   "plain": "After release from incarceration, you can sign up until the end of the 12th month after the month of release.",
+   "source": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-does-medicare-coverage-start",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "months": 12
+  },
+  {
+   "id": "forms",
+   "plain": "To sign up for Part B only, fill out form CMS-40B (Application for Enrollment in Medicare Part B). If you are using the Special Enrollment Period after a job's health plan ends, also send form CMS-L564 (Request for Employment Information). Form CMS-10797 is for the special situations. Send them to your local Social Security office by fax or mail; the job-plan sign-up can also be done online.",
+   "source": "https://www.ssa.gov/medicare/sign-up/part-b-only",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "exceptional",
+   "plain": "For other exceptional conditions, Social Security can give a sign-up period of at least 6 months from when you contact it.",
+   "source": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-does-medicare-coverage-start",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "months": 6
+  }
+ ]
+}

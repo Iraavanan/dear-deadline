@@ -1,0 +1,91 @@
+{
+ "table": "fairness",
+ "about": "The Social Security Fairness Act: the end of the two reductions for people with a pension from work not covered by Social Security.",
+ "rows": [
+  {
+   "id": "what",
+   "plain": "The Social Security Fairness Act, signed on January 5, 2025, ended the Windfall Elimination Provision and the Government Pension Offset.",
+   "source": "https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "from",
+   "plain": "It applies to benefits for January 2024 and later. December 2023 was the last month either reduction applied.",
+   "source": "https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "monthly",
+   "plain": "Social Security began adjusting monthly payments on February 25, 2025. Most affected people began getting the new monthly amount in April 2025.",
+   "source": "https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "backpay",
+   "plain": "Back pay is a one-time payment for the increase back to January 2024, sent to the bank account Social Security has on file.",
+   "source": "https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "notice",
+   "plain": "Affected people get a mailed notice, sometimes two. The back pay may arrive before the notice.",
+   "source": "https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "apply",
+   "plain": "People who never applied because of these reductions may need to file an application. The date you apply can affect when benefits start and how much they are.",
+   "source": "https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "how",
+   "plain": "Retirement or spouse's benefits can be applied for online or by phone. Survivors benefits cannot be applied for online.",
+   "source": "https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "retro",
+   "plain": "For retirement and survivors benefits, a new application generally reaches back no more than six months before the month you apply. The Act did not change that rule.",
+   "source": "https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "months": 6
+  },
+  {
+   "id": "account",
+   "plain": "Check that your mailing address and direct deposit details are right in your my Social Security account, or by phone if you cannot open one.",
+   "source": "https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "medicare",
+   "plain": "Once benefits start, Social Security takes the Medicare premium out of the monthly payment. If you pay Medicare directly, keep paying the bill until Social Security writes to you.",
+   "source": "https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "scam",
+   "plain": "Social Security will never ask for payment to start, increase or speed up benefits.",
+   "source": "https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "phone",
+   "plain": "Social Security: 1-800-772-1213, Monday to Friday, 8:00 a.m. to 7:00 p.m. local time.",
+   "source": "https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "table": "voucher",
+ "about": "A notice that a housing authority is ending Housing Choice Voucher (Section 8) help: the informal hearing.",
+ "rows": [
+  {
+   "id": "hearing",
+   "plain": "A housing authority must offer an informal hearing before it ends voucher help because of something the family did or failed to do, or because the family was away from the home too long.",
+   "source": "https://www.law.cornell.edu/cfr/text/24/982.555",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "before",
+   "plain": "For those decisions the hearing must be offered before the housing authority stops the housing assistance payments under the current contract.",
+   "source": "https://www.law.cornell.edu/cfr/text/24/982.555",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "notice",
+   "plain": "The written notice must give a brief statement of the reasons, say that the family may ask for an informal hearing, and give the deadline for asking.",
+   "source": "https://www.law.cornell.edu/cfr/text/24/982.555",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "deadline",
+   "plain": "The federal rule sets no number of days to ask for the hearing. The deadline is the one on the notice, set by the housing authority's own plan.",
+   "source": "https://www.law.cornell.edu/cfr/text/24/982.555",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "documents",
+   "plain": "Before the hearing the family may look at, and copy at its own cost, the housing authority's documents that bear on the hearing. A document the housing authority does not make available on request may not be used against the family at the hearing.",
+   "source": "https://www.law.cornell.edu/cfr/text/24/982.555",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "representative",
+   "plain": "The family may be represented by a lawyer or another person, at its own cost.",
+   "source": "https://www.law.cornell.edu/cfr/text/24/982.555",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "officer",
+   "plain": "The hearing is run by someone who did not make or approve the decision and who does not work under the person who did.",
+   "source": "https://www.law.cornell.edu/cfr/text/24/982.555",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "evidence",
+   "plain": "The family and the housing authority may both present evidence and question witnesses.",
+   "source": "https://www.law.cornell.edu/cfr/text/24/982.555",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "decision",
+   "plain": "The hearing officer must give a written decision with brief reasons and send it to the family promptly. Facts are decided on a preponderance of the evidence.",
+   "source": "https://www.law.cornell.edu/cfr/text/24/982.555",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "others",
+   "plain": "A family may also ask for a hearing about how its income was counted, the utility allowance or the unit size it was given.",
+   "source": "https://www.law.cornell.edu/cfr/text/24/982.555",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  }
+ ]
+}

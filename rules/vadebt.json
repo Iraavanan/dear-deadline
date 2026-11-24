@@ -1,0 +1,96 @@
+{
+ "table": "vadebt",
+ "about": "A first debt letter from the VA Debt Management Center about a benefit overpayment: the dates and the choices.",
+ "rows": [
+  {
+   "id": "dispute",
+   "plain": "If you think the debt is wrong, send a written statement saying why. If you dispute it within 30 days, you can avoid collection actions.",
+   "source": "https://www.va.gov/resources/options-to-request-help-with-va-debt/",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "days": 30
+  },
+  {
+   "id": "waiver",
+   "plain": "A waiver means VA agrees to forgive part or all of the debt. Ask with a Financial Status Report (VA Form 5655) and a statement of why you should not have to repay.",
+   "source": "https://www.va.gov/resources/waivers-for-va-benefit-debt/",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "waiver_stop",
+   "plain": "To stop collection while VA decides a waiver request, ask within 30 days of the first debt letter for an education debt, or within 90 days for a disability compensation or pension debt.",
+   "source": "https://www.va.gov/resources/waivers-for-va-benefit-debt/",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "education": 30,
+   "comp": 90
+  },
+  {
+   "id": "waiver_limit",
+   "plain": "VA can consider a waiver request only within 1 year of when you received the first debt letter. By law it must deny later requests.",
+   "source": "https://www.va.gov/resources/waivers-for-va-benefit-debt/",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "years": 1
+  },
+  {
+   "id": "plan",
+   "plain": "You can ask for a repayment plan of under 5 years online through Ask VA, by phone or by mail. A plan of 5 years or more needs VA Form 5655.",
+   "source": "https://www.va.gov/resources/options-to-request-help-with-va-debt/",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "compromise",
+   "plain": "A compromise offer asks VA to accept a lower amount as full payment. It is made with VA Form 5655.",
+   "source": "https://www.va.gov/resources/options-to-request-help-with-va-debt/",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "withhold",
+   "plain": "If you get monthly VA benefit payments, VA keeps all or part of them to pay the debt unless it approves another repayment or relief option.",
+   "source": "https://www.va.gov/resources/va-debt-management/",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "treasury",
+   "plain": "If the debt is not paid and no help is requested, VA tells credit reporting agencies and, after 120 days, refers the debt to the U.S. Treasury, which can add fees and interest and take federal payments such as tax refunds and Social Security.",
+   "source": "https://www.va.gov/resources/va-debt-management/",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "days": 120
+  },
+  {
+   "id": "appeal",
+   "plain": "If you disagree with a waiver decision, you can ask the Committee on Waivers and Compromises to reconsider, or ask for a Board Appeal within 1 year of the date on the decision letter.",
+   "source": "https://www.va.gov/resources/options-to-request-help-with-va-debt/",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "years": 1
+  },
+  {
+   "id": "underlying",
+   "plain": "You can also appeal the VA decision that caused the overpayment, with a Supplemental Claim, a Higher-Level Review or a Board Appeal.",
+   "source": "https://www.va.gov/resources/options-to-request-help-with-va-debt/",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "contact",
+   "plain": "Debt Management Center: 800-827-0648 (TTY 711), Monday to Friday, 7:30 a.m. to 7:00 p.m. Eastern. Mail: U.S. Department of Veterans Affairs, Debt Management Center, PO Box 11930, St. Paul, MN 55111.",
+   "source": "https://www.va.gov/resources/va-debt-management/",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "helper",
+   "plain": "Someone with legal authority to act for the Veteran can ask for a waiver, including an accredited Veterans Service Organization representative, attorney or claims agent.",
+   "source": "https://www.va.gov/resources/waivers-for-va-benefit-debt/",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  }
+ ]
+}

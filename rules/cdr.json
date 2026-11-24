@@ -1,0 +1,70 @@
+{
+ "table": "cdr",
+ "about": "A form from Social Security reviewing a disability (continuing disability review): what it is and what happens if it is not returned.",
+ "rows": [
+  {
+   "id": "what",
+   "plain": "Social Security must review the medical condition of everyone who gets disability benefits from time to time. If your health has not improved, or your disability still keeps you from working, benefits generally continue.",
+   "source": "https://www.ssa.gov/benefits/disability/work.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "often",
+   "plain": "How often depends on the condition: within 6 to 18 months if improvement is expected, about every 3 years if it is possible, and about every 7 years if it is not expected.",
+   "source": "https://www.ssa.gov/benefits/disability/work.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "forms",
+   "plain": "Social Security asks for updated information with form SSA-455 (Disability Update Report) or form SSA-454 (Continuing Disability Review Report). People sent the SSA-455 can complete it online.",
+   "source": "https://www.ssa.gov/ssi/text-cdrs-ussi.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "online",
+   "plain": "Adults who do not have a representative payee can complete the SSA-454 online by signing in to a my Social Security account and choosing \"Complete Your Continuing Disability Review\".",
+   "source": "https://www.ssa.gov/benefits/disability/work.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "also",
+   "plain": "For SSI, Social Security also reviews income, resources and living arrangements. That separate review is called a redetermination.",
+   "source": "https://www.ssa.gov/ssi/text-cdrs-ussi.htm",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "ftc",
+   "plain": "If the information asked for is not given within the time allowed, and Social Security has followed its contact steps, it can find a failure to cooperate and suspend benefits.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0413015001",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "suspend",
+   "plain": "Benefits suspended for failure to cooperate end for good after 12 months in suspension, with no medical decision.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0413015001",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "months": 12
+  },
+  {
+   "id": "restore",
+   "plain": "If you give the information during those 12 months, benefits are paid again for the months they were otherwise due, and no appeal is needed.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0413015001",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "stop",
+   "plain": "Benefits can stop if Social Security finds your condition has improved so that you no longer have a disability. The letter that says so explains how to appeal.",
+   "source": "https://www.ssa.gov/benefits/disability/work.html",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  }
+ ]
+}

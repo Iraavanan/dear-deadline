@@ -71,7 +71,10 @@
     "helper-board": "I help several people", "earnings-record": "Is a year missing from my earnings record?", "fema-proof": "FEMA is asking for proof that I lived there",
     "late-appeal": "I missed my appeal deadline", "payment-missing": "My payment didn't arrive", "benefit-offset": "Part of my benefit is taken for a debt",
     "medicare-irmaa": "My Medicare premium is higher because of income", "after-death": "Someone who got benefits died",
-    "work-restart": "My benefits stopped after I went back to work", "ssi-help": "My SSI went down because of help I get", "amount-changed": "My benefit amount changed"
+    "work-restart": "My benefits stopped after I went back to work", "ssi-help": "My SSI went down because of help I get", "amount-changed": "My benefit amount changed",
+    "snap-overpayment": "The state says I was paid too much SNAP", "va-debt": "I got a VA debt letter", "disability-review": "Social Security sent me a disability review form",
+    "ra-overpayment": "Florida says I was overpaid unemployment", "voucher-ending": "My housing voucher is being ended", "estate-recovery": "Medicaid wants repayment from an estate",
+    "partb-late": "I missed signing up for Medicare Part B", "fairness-act": "I have a public pension. Did my Social Security change?"
   };
   var RELATED = {
     "overpayment": ["withholding", "check-amount", "notice-check"], "check-amount": ["overpayment", "notice-check"], "notice-check": ["overpayment", "check-amount"],
@@ -86,7 +89,10 @@
     "is-it-real": ["stolen-snap", "locked-out"], "helper-permission": ["helper-board"], "helper-board": ["helper-permission"],
     "late-appeal": ["decision-appeal", "filed"], "payment-missing": ["ssa-call", "locked-out"], "benefit-offset": ["withholding", "ssa-call"],
     "medicare-irmaa": ["medicare-costs", "filed"], "after-death": ["ssa-call", "filed"], "work-restart": ["work-check", "ssa-call"],
-    "ssi-help": ["report-change", "ssi-limit"], "amount-changed": ["withholding", "medicare-irmaa"]
+    "ssi-help": ["report-change", "ssi-limit"], "amount-changed": ["withholding", "medicare-irmaa"],
+    "snap-overpayment": ["benefit-hearing", "hearing-prep", "filed"], "va-debt": ["benefit-offset", "filed"], "disability-review": ["disability-ended", "ssa-call"],
+    "ra-overpayment": ["filed", "benefit-offset"], "voucher-ending": ["rent-check", "hearing-prep"], "estate-recovery": ["after-death", "filed"],
+    "partb-late": ["medicare-costs", "medicare-irmaa"], "fairness-act": ["amount-changed", "ssa-call"]
   };
   function related() {
     var where = (location.hash || "").replace(/^#/, "").split("/")[0], list = RELATED[where === "letter" ? "medicare-letter" : where];
@@ -327,7 +333,9 @@
               way("My benefit amount changed", "Compare the old and new amounts: the cost-of-living increase, the Medicare premium, or something taken out.", go("amount-changed"), null, null, "amount changed lower less more cola increase payment different went down"),
               way("My SSI went down because of help I get", "Help with rent or utilities can lower SSI. See your share and what may stop the reduction.", go("ssi-help"), null, null, "ssi ism in-kind support maintenance one-third reduction rent living with family pmv vtr"),
               way("My benefits stopped after I went back to work", "Ask to restart disability benefits within 5 years, without a new application.", go("work-restart"), null, null, "expedited reinstatement exr restart ssdi ssi stopped work earnings sga ssa-371"),
-              way("Someone who got benefits died", "Which payments to send back, the $255 payment, survivors benefits and who to tell.", go("after-death"), null, null, "death died passed away spouse widow funeral lump sum 255 survivor return payment")
+              way("Someone who got benefits died", "Which payments to send back, the $255 payment, survivors benefits and who to tell.", go("after-death"), null, null, "death died passed away spouse widow funeral lump sum 255 survivor return payment"),
+              way("Social Security sent me a disability review form", "The short or long review form: what to send, what to keep, and what happens if it is not returned.", go("disability-review"), null, null, "cdr continuing disability review ssa-455 ssa-454 update report medical review form"),
+              way("I have a public pension. Did my Social Security change?", "The 2025 law that ended two reductions for teachers, public workers and their spouses: what to check.", go("fairness-act"), null, null, "fairness act wep gpo windfall elimination government pension offset teacher police firefighter retroactive back pay")
             ]),
           h("div", { class: "band band-med", "data-band": "med" },
             h("p", { class: "group", text: "I have a letter about Medicare" }),
@@ -336,13 +344,14 @@
                 way("A Medicare notice, bill or denial", "A claims summary, a premium bill, a plan's refusal to cover care, or care that is ending.", go("medicare-letter"), null, null, "msn summary notice premium irmaa hospital discharge"),
                 way("Does my doctor's bill match my Medicare notice?", "Compare the bill with your Medicare Summary Notice and get the question to ask the billing office.", go("medicare-bill"), null, null, "doctor bill billing qmb balance"),
                 way("Could a program pay my Medicare costs?", "Compare your income and savings with the limits for Medicare Savings Programs and Extra Help.", go("medicare-costs"), null, null, "qmb slmb qi extra help part b premium savings program"),
-                way("My Medicare plan refused care or a drug", "Advantage or drug plan: the date to appeal, a fast appeal, a letter and a statement for your doctor.", go("plan-appeal"), "65 days", null, "advantage part d drug prescription denied prior authorization appeal")),
+                way("My Medicare plan refused care or a drug", "Advantage or drug plan: the date to appeal, a fast appeal, a letter and a statement for your doctor.", go("plan-appeal"), "65 days", null, "advantage part d drug prescription denied prior authorization appeal"),
+                way("I missed signing up for Medicare Part B", "The late penalty for the years you went without, the special sign-up periods, and your next chance.", go("partb-late"), null, null, "part b late enrollment penalty general enrollment special enrollment period cms-40b cms-l564 employer coverage 65")),
               h("div", { class: "med-quick" },
                 h("p", { text: "Or go straight to a common one:" }),
                 h("ul", {}, MEDICARE_QUICK.map(function (q) {
                   return h("li", {}, h("button", { type: "button", class: "quick", on: { click: go("letter/" + q[0]) }, text: q[1] }));
                 }))))),
-          band("state", "SNAP, Medicaid, housing or utilities", [
+          band("state", "SNAP, Medicaid, housing and other programs", [
               way("Check my renewal before I send it", "Medicaid or SNAP: dates, what is missing, each page, and a cover sheet.", go("renewal"), null, null, "renewal recertification review form documents proof pay stubs"),
               way("They asked again for proof I already sent", "Match what the new notice asks for with what you sent, person by person and date by date, and get the question to ask.", go("asked-again"), null, null, "proof pay stubs documents again already sent verification receipt upload"),
               way("My SNAP or Medicaid was denied, cut or stopped", "The date to ask for a hearing, the earlier date to keep benefits while you wait, and a request.", go("benefit-hearing"), "30 to 90 days", null, "denied cut stopped hearing appeal fair hearing reduced"),
@@ -356,7 +365,12 @@
               way("My SNAP benefits were stolen", "Stop more theft today, lock the card, and a statement for the police report.", go("stolen-snap"), null, null, "ebt card stolen skimming theft fraud lock"),
               way("Check how my housing rent was worked out", "Voucher or public housing: redo the rent formula, find missing deductions, or see why your rent changed.", go("rent-check"), null, null, "rent housing section 8 voucher hud public housing"),
               way("My electricity or gas may be shut off", "Florida: who to call today, what to ask, crisis help with the bill, and what to bring.", go("utility-shutoff"), null, null, "electric gas utility shutoff disconnect bill liheap"),
-              way("FEMA is asking for proof that I lived there", "After a disaster: what the letter may be asking for, which papers can show you lived in the home, and your response date.", go("fema-proof"), null, null, "fema disaster hurricane flood occupancy proof residence home lived")
+              way("FEMA is asking for proof that I lived there", "After a disaster: what the letter may be asking for, which papers can show you lived in the home, and your response date.", go("fema-proof"), null, null, "fema disaster hurricane flood occupancy proof residence home lived"),
+              way("The state says I was paid too much SNAP", "The date to ask for a hearing, what can be taken each month, and words for your request.", go("snap-overpayment"), "90 days", null, "snap overpayment claim overissuance owe repay food stamps demand letter ebt recoup"),
+              way("My housing voucher is being ended", "Section 8: the informal hearing, your right to see the file, and a request to hand in.", go("voucher-ending"), "Date on the notice", null, "voucher section 8 termination terminated informal hearing housing authority pha hcv"),
+              way("Medicaid wants repayment from an estate", "After a death: who the state cannot collect from, and how to ask for a hardship waiver.", go("estate-recovery"), null, null, "medicaid estate recovery merp claim probate died nursing home heir hardship waiver"),
+              way("I got a VA debt letter", "A benefit overpayment: the dates to dispute it, ask for a waiver or set up a plan.", go("va-debt"), "30 days", null, "va veterans debt management center overpayment waiver 5655 dispute compensation pension gi bill education"),
+              way("Florida says I was overpaid unemployment", "Reemployment assistance: the appeal date and what Florida's law says about repaying.", go("ra-overpayment"), "20 days", null, "unemployment reemployment assistance overpayment florida floridacommerce deo appeal fraud repay")
             ]),
           band("none", "No letter, or not sure", [
               way("I work while getting benefits", "Check whether your pay could lead to an overpayment, before a letter comes.", go("work-check"), null, null, "work earnings job ssdi ssi income pay stubs paycheck"),
@@ -508,6 +522,7 @@
     else if (FIXES[where] && window.Modules && window.Modules.fixes) window.Modules.fixes[FIXES[where]].start();
     else if (SSAMORE[where] && window.Modules && window.Modules.ssamore) window.Modules.ssamore[SSAMORE[where]].start();
     else if (SSALIFE[where] && window.Modules && window.Modules.ssalife) window.Modules.ssalife[SSALIFE[where]].start();
+    else if (MOREHELP[where] && window.Modules && window.Modules.morehelp) window.Modules.morehelp[MOREHELP[where]].start();
     else if (where === "wic-practice" && window.Modules && window.Modules.wic) window.Modules.wic.start();
     else if (where === "helper-board" && window.Modules && window.Modules.board) window.Modules.board.start();
     else if (where === "ssi-wages" && window.Modules && window.Modules.worksheets) window.Modules.worksheets.start("wages");
@@ -530,9 +545,12 @@
     "medicare-letter": "medicare", "medicare-bill": "medicare", "medicare-costs": "medicare", "plan-appeal": "medicare", "medicare-irmaa": "medicare",
     "missed-interview": "snap", "stolen-snap": "snap", "work-rules": "snap", "renewal": "medicaid", "medicaid-ending": "medicaid", "paperwork": "medicaid", "asked-again": "medicaid",
     "rent-check": "housing", "utility-shutoff": "housing", "benefit-hearing": "hearings", "hearing-prep": "hearings", "hearing-decision": "hearings",
-    "after-death": "after-death", "helper-permission": "helping", "helper-board": "helping", "fema-proof": "disaster"
+    "after-death": "after-death", "helper-permission": "helping", "helper-board": "helping", "fema-proof": "disaster",
+    "snap-overpayment": "snap", "voucher-ending": "housing", "estate-recovery": "after-death", "disability-review": "disability", "partb-late": "medicare", "fairness-act": "payments"
   };
   var SSALIFE = { "after-death": "died", "work-restart": "restart", "ssi-help": "ssihelp", "amount-changed": "changed" };
+  var MOREHELP = { "snap-overpayment": "snap", "va-debt": "va", "disability-review": "review", "ra-overpayment": "ra", "voucher-ending": "voucher", "estate-recovery": "estate",
+    "partb-late": "partb", "fairness-act": "fairness" };
 
   function start() {
     count("overpayment", "start");

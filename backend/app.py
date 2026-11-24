@@ -20,7 +20,7 @@ from pathlib import Path
 from flask import Flask, Response, abort, jsonify, request, send_from_directory
 
 import helper
-from helper import ssamore, ssalife, research, board, ai_reader, amount, bill, hearing, noticecheck, ssilimit, planappeal, diswait, fixes, utility, budget, cessation, counter, deadlines, denial, engine, letters, renewal, rent, reporting, rules, validate, work, workrules
+from helper import ssamore, ssalife, morehelp, research, board, ai_reader, amount, bill, hearing, noticecheck, ssilimit, planappeal, diswait, fixes, utility, budget, cessation, counter, deadlines, denial, engine, letters, renewal, rent, reporting, rules, validate, work, workrules
 
 ROOT = Path(__file__).resolve().parents[1]
 FRONTEND = ROOT / "frontend"
@@ -404,6 +404,46 @@ def create_app():
     def amount_changed():
         """A payment amount changed: each part of the change against the year's figures."""
         return _figures(ssalife.changed, "figures")
+
+    @app.post("/api/snap-overpayment")
+    def snap_overpayment():
+        """The state says a household was paid too much SNAP: the hearing date, repayment and what can be taken."""
+        return _figures(morehelp.snapclaim, "details")
+
+    @app.post("/api/va-debt")
+    def va_debt():
+        """A first VA debt letter: the dates to dispute, ask for a waiver or set up a plan."""
+        return _figures(morehelp.vadebt, "details")
+
+    @app.post("/api/disability-review")
+    def disability_review():
+        """A disability review form from Social Security: what to send and what happens if it is not returned."""
+        return _figures(morehelp.cdr, "details")
+
+    @app.post("/api/ra-overpayment")
+    def ra_overpayment():
+        """Florida reemployment assistance overpayment: the 20-day appeal date and the repayment rules."""
+        return _figures(morehelp.raover, "details")
+
+    @app.post("/api/voucher-ending")
+    def voucher_ending():
+        """A housing authority is ending voucher help: the informal hearing and the family's rights."""
+        return _figures(morehelp.voucher, "details")
+
+    @app.post("/api/estate-recovery")
+    def estate_recovery():
+        """Medicaid estate recovery: when a claim may not be collected and how to ask for a hardship waiver."""
+        return _figures(morehelp.estate, "details")
+
+    @app.post("/api/partb-late")
+    def partb_late():
+        """Signing up for Medicare Part B late: the penalty and the sign-up periods."""
+        return _figures(morehelp.partb, "details")
+
+    @app.post("/api/fairness-act")
+    def fairness_act():
+        """A public pension and the Social Security Fairness Act: what changed and what to check."""
+        return _figures(morehelp.fairness, "details")
 
     @app.post("/api/disability-wait")
     def disability_wait():

@@ -1,0 +1,58 @@
+{
+ "table": "raover",
+ "about": "Florida reemployment assistance (unemployment): a determination that benefits were overpaid.",
+ "rows": [
+  {
+   "id": "appeal",
+   "plain": "An adverse determination can be appealed to an appeals referee within 20 days after the date the notice was mailed, or delivered if it was not mailed.",
+   "source": "https://www.flsenate.gov/Laws/Statutes/2025/443.151",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "days": 20
+  },
+  {
+   "id": "nonfraud",
+   "plain": "Benefits paid by mistake, without fraud, must be repaid or are taken from future benefits.",
+   "source": "https://www.flsenate.gov/Laws/Statutes/2025/443.151",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "fraud",
+   "plain": "When the overpayment is found to be from fraud, a penalty of 15% of the overpaid amount is added.",
+   "source": "https://www.flsenate.gov/Laws/Statutes/2025/443.151",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "percent": 15
+  },
+  {
+   "id": "employer",
+   "plain": "A person who got benefits in error, without fraud, because an employer did not respond to the claim on time is not liable for repaying those benefits.",
+   "source": "https://www.flsenate.gov/Laws/Statutes/2025/443.151",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "no_fault",
+   "plain": "Benefits may not be taken from future benefits if the person got them without fault and taking them back would defeat the purpose of the law or be inequitable and against good conscience.",
+   "source": "https://www.flsenate.gov/Laws/Statutes/2025/443.151",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "interest",
+   "plain": "Repayment is collected without interest, by deductions from benefits or by a civil action.",
+   "source": "https://www.flsenate.gov/Laws/Statutes/2025/443.151",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "limit",
+   "plain": "Recovery must be started within 7 years after the redetermination or decision.",
+   "source": "https://www.flsenate.gov/Laws/Statutes/2025/443.151",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "years": 7
+  }
+ ]
+}

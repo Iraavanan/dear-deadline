@@ -1,0 +1,106 @@
+{
+ "table": "snapclaim",
+ "about": "A letter saying a household was paid too much SNAP (a claim): the hearing date, repayment and what the state can take.",
+ "rows": [
+  {
+   "id": "types",
+   "plain": "A SNAP claim is one of three kinds: an intentional program violation, a household mistake, or an agency mistake. The letter must say which kind it is and why.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.18",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "hearing",
+   "plain": "Unless a hearing already set the amount, the household has 90 days to ask for a fair hearing about the claim.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.18",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "days": 90
+  },
+  {
+   "id": "due",
+   "plain": "The date to pay or make an arrangement is set by the letter and is no later than 30 days after the first notice.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.18",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "days": 30
+  },
+  {
+   "id": "inspect",
+   "plain": "The letter must give the amount, the months covered, how it was worked out and a phone number, and must say you can look at the records.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.18",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "agreement",
+   "plain": "You can make a written agreement to repay in installments before the claim is sent for federal collection.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.18",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "reduce_mistake",
+   "plain": "For a household mistake or an agency mistake, the state can take the greater of $10 a month or 10% of the monthly SNAP amount, unless the household agrees to more.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.18",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "percent": 10,
+   "dollars": 10
+  },
+  {
+   "id": "reduce_ipv",
+   "plain": "For an intentional program violation, the state can take the greater of $20 a month or 20% of the monthly SNAP amount.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.18",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "percent": 20,
+   "dollars": 20
+  },
+  {
+   "id": "compromise",
+   "plain": "A state may lower (compromise) a claim when the household's finances show it will not be paid in three years.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.18",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "years": 3
+  },
+  {
+   "id": "delinquent",
+   "plain": "A claim is delinquent when it is not paid by its due date and there is no payment arrangement, or when an installment is missed.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.18",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "offset",
+   "plain": "A claim that has been delinquent for 180 days or more must be sent to the Treasury Offset Program, which can take federal payments such as tax refunds.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.18",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "days": 180
+  },
+  {
+   "id": "lookback",
+   "plain": "A claim is worked out back to at least 12 months before the state learned of the overpayment, and never for months more than six years before that.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.18",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "file",
+   "plain": "Before a hearing you can look at the documents the state will use and get a free copy of the relevant parts of your case file. Someone else, such as a lawyer or a friend, can present your case.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.15",
+   "effective_from": null,
+   "checked_on": "2026-11-24"
+  },
+  {
+   "id": "decision",
+   "plain": "The state has 60 days from getting a hearing request to hold the hearing, decide and tell the household.",
+   "source": "https://www.law.cornell.edu/cfr/text/7/273.15",
+   "effective_from": null,
+   "checked_on": "2026-11-24",
+   "days": 60
+  }
+ ]
+}
