@@ -163,6 +163,28 @@
     ["withholding", "Lo que le retendrán de sus pagos si no devuelve todo (para SSI: el 10% del pago, si todavía recibe SSI)"], ["start", "El mes y el año en que comenzará la retención", "ssi"],
     ["options", "Otras maneras de pagar: una cantidad retenida diferente, pagos mensuales, o el cobro de otro pago del Seguro Social"]];
 
+  /* Los cambios que se pueden informar, y para qué beneficio (r, d, s). tests/test_es.py revisa que sean los de rules/reporting.json. */
+  var CAMBIOS = [["address", "Dirección o número de teléfono", "rds"],
+    ["direct_deposit", "Cuenta de banco para el depósito directo", "rd"],
+    ["work", "Empezar o dejar de trabajar, o un cambio de sueldo o de horas", "ds"],
+    ["earnings", "Ganancias del año que serán más altas o más bajas de lo que dijo al Seguro Social", "r"],
+    ["income", "Otros ingresos, incluidos los de su cónyuge", "s"],
+    ["resources", "Ahorros o cosas que usted tiene (recursos)", "s"],
+    ["living", "Dónde o con quién vive, o ayuda con los gastos de vida", "s"],
+    ["marriage", "Matrimonio, separación o divorcio", "rds"],
+    ["name", "Cambio de nombre", "rds"],
+    ["death", "Una muerte en la familia o en el hogar", "rds"],
+    ["travel", "Salir de los Estados Unidos por 30 días o más", "rds"],
+    ["child", "Un niño a su cargo se muda o cambia de dirección", "rd"],
+    ["other_benefit", "Otro beneficio o pago empieza, cambia o termina", "ds"],
+    ["pension", "Una pensión de un trabajo que no pagó impuestos del Seguro Social", "rd"],
+    ["medical", "Su condición médica mejora", "ds"],
+    ["institution", "Entrar o salir de un hospital, un hogar de ancianos u otra institución", "s"],
+    ["school", "Asistencia a la escuela, si tiene menos de 22 años", "s"]];
+
+  /* Lo que más hace que devuelvan una renovación. tests/test_es.py revisa que sea la lista de renewal.py. */
+  var REVISIONES = [["signed", "Cada página que pide una firma está firmada y con fecha"], ["all_pages", "Están todas las páginas del formulario, incluso las que no tienen cambios"], ["case_number", "Su nombre y su número de caso están en cada página que envía"], ["copies", "Está enviando copias y se queda con los originales"], ["readable", "Cada foto o copia se puede leer: se ven las cuatro esquinas, no hay nada cortado y no está borrosa"], ["changes", "Informó cualquier cambio: dirección, ingresos, quién vive con usted"]];
+
   var HERRAMIENTAS = {
     sobrepago: herramienta({
       api: "sobrepago", boton: "Ver mis fechas", titulo: "El Seguro Social dice que me pagó de más",
@@ -796,6 +818,87 @@
             : "Pedir una explicación es aparte de apelar. Por lo general la reconsideración se debe pedir dentro de los 60 días de recibir el aviso." }),
           r.missing.length ? [h("h2", { text: "Puede que falte" }), lista(r.missing)] : null, r.unsure.length ? [h("h2", { text: "No está seguro: mire otra vez" }), lista(r.unsure)] : null,
           h("h2", { text: "Qué hacer" }), pasos(r.steps), borrador("Carta para pedir una explicación por escrito (en inglés)", EN_INGLES, r.letter), cierreEn(r, volver, "notice-check"));
+      }
+    }),
+    "informar-cambio": herramienta({
+      api: "report-change", boton: "Preparar mi informe", titulo: "Algo cambió en mi vida",
+      entrada: "Si recibe beneficios del Seguro Social o SSI, tiene que informar ciertos cambios. Vea para cuándo, qué tener a mano, y un informe escrito para enviar o leer por teléfono.",
+      dibujar: function (s, p) {
+        function filtrar() {
+          var b = { retirement: "r", disability: "d", ssi: "s" }[elegido("benefit")] || "";
+          Array.prototype.forEach.call(document.querySelectorAll("#changes label.tick"), function (l) {
+            var c = l.querySelector("input"), ver = !b || CAMBIOS.some(function (x) { return x[0] === c.value && x[2].indexOf(b) >= 0; });
+            l.hidden = !ver; if (!ver) c.checked = false;
+          });
+        }
+        setTimeout(function () { filtrar(); var f = document.getElementById("benefit"); if (f) f.addEventListener("change", filtrar); }, 0);
+        return [opciones("benefit", "¿Qué beneficio recibe?", [["retirement", "Beneficios de jubilación o de sobrevivientes"], ["disability", "Beneficios por incapacidad del Seguro Social (SSDI)"], ["ssi", "Seguridad de Ingreso Suplementario (SSI)"]], s.benefit, p),
+          marcas("changes", "¿Qué cambió?", CAMBIOS, s.changes, p, "Elija primero el beneficio. Marque todo lo que cambió."),
+          campo("change_date", "Fecha en que ocurrió el cambio", "Opcional. Para SSI, sirve para calcular el último día para informar.", "date", s.change_date, p),
+          texto("what_changed", "En sus propias palabras, qué cambió", "Opcional. Se pone tal como lo escriba en su informe, que va en inglés. Si puede, escríbalo en inglés.", (s.statements || {}).what_changed, p)];
+      },
+      leer: function () { return { benefit: elegido("benefit"), changes: marcados("changes"), change_date: valor("change_date"), statements: { what_changed: valor("what_changed") } }; },
+      ejemplo: function () { return { benefit: "ssi", changes: ["living", "work"], change_date: hace(12), statements: {} }; },
+      resultado: function (r, volver) {
+        var d = r.deadline, k = r.kit;
+        mostrar(h("h1", { class: "long", text: k.summary }),
+          d && d.date ? fechas([{ etiqueta: d.label, nota: d.rule, fecha_larga: fechaLarga(d.date), dias: d.days_left, estado: d.status }]) : h("p", { class: "lead", text: r.timing.rule }),
+          d ? h("p", { text: d.penalty }) : null, r.notes.map(function (n) { return h("p", { text: n }); }),
+          h("h2", { text: "Qué informar y qué tener a mano" }),
+          h("ul", {}, r.changes.map(function (c) { return h("li", {}, h("b", { text: c.label }), " (" + c.when + ")", h("ul", {}, c.have_ready.map(function (x) { return h("li", { text: x }); }))); })),
+          h("h2", { text: "Cómo informar" }), pasos(k.how), h("p", {}, enlace(k.office_locator, "Buscar su oficina local (en inglés)")),
+          borrador("Su informe (en inglés)", "Está en inglés porque así lo lee el Seguro Social. Puede enviarlo por correo o leerlo por teléfono.", k.draft.join("\n")),
+          h("h2", { text: "Anote cuando informe" }), h("ul", {}, k.record.map(function (x) { return h("li", { text: x + ": ________" }); })), h("p", { class: "small", text: k.record_note }),
+          h("p", {}, r.more.text + " ", enlace(r.more.url, "Leer la lista (en inglés)")),
+          h("p", { class: "small", text: k.disclaimer + " Reglas revisadas el " + r.rules_as_of + "." }),
+          h("p", { class: "small" }, "También puede abrir ", h("a", { href: "/#report-change", text: "esta herramienta en inglés" }), "."),
+          h("div", { class: "row" }, h("button", { class: "go", type: "button", text: "Imprimir", on: { click: function () { window.print(); } } }),
+            h("button", { class: "quiet", type: "button", text: "Cambiar mis respuestas", on: { click: volver } }),
+            h("button", { class: "quiet", type: "button", text: "Volver al inicio", on: { click: function () { location.hash = ""; } } })));
+      }
+    }),
+    "renovacion": herramienta({
+      api: "renewal", boton: "Revisar mi renovación", titulo: "Revisar mi renovación de Medicaid o SNAP antes de enviarla",
+      entrada: "La mayoría de las personas que pierden Medicaid en la renovación lo pierden por papeles, no porque dejaron de calificar. Revise las fechas, lo que todavía falta y cada página; luego envíela con una hoja de portada y guarde un comprobante.",
+      dibujar: function (s, p) {
+        var it = s._cosas || [{}, {}, {}, {}], q = {};
+        Object.keys(p).forEach(function (k) { var m = /^i(\d+)_status$/.exec(k); if (m) q["c-status-" + ((s._usadas || [])[+m[1] - 1])] = p[k]; });
+        return [marcas("programs", "¿Qué está renovando?", [["medicaid", "Medicaid"], ["snap", "SNAP (asistencia de alimentos)"]], s.programs, p),
+          opciones("state", "¿En qué estado?", [["FL", "Florida"], ["other", "Otro estado"]], s.state || "FL", p),
+          grupo("Fechas impresas en sus papeles", [h("p", { class: "hint", text: "Escriba por lo menos una. Deje en blanco las que no aparezcan." }),
+            campo("form_due", "Fecha en que vence el formulario de renovación", null, "date", s.form_due, p), campo("proof_due", "Fecha en que vencen las pruebas que le piden", null, "date", s.proof_due, p),
+            campo("coverage_ends", "Fecha en que termina la cobertura o terminan los beneficios", null, "date", s.coverage_ends, p)]),
+          opciones("method", "¿Cómo lo va a enviar?", [["online", "Lo subo por internet"], ["mail", "Por correo"], ["fax", "Por fax"], ["in_person", "En persona"], ["unsure", "Todavía no sé"]], s.method || "unsure", p),
+          grupo("¿Qué le pide el aviso?", [h("p", { class: "hint", text: "Escriba cada documento o dato que pide el aviso, uno por uno, con las palabras del aviso (por ejemplo \"pay stubs\" o \"proof of address\"). Deje en blanco las filas que no use." }),
+            p.items ? h("p", { class: "err", role: "alert", text: p.items }) : null,
+            it.map(function (x, i) {
+              return h("div", { class: "setaside" }, campo("c-what-" + i, "Cosa " + (i + 1) + ": qué piden", null, "text", x.what, q), campo("c-who-" + i, "Para quién", "Opcional.", "text", x.who, q),
+                campo("c-period-" + i, "De qué período", "Opcional.", "text", x.period, q),
+                seleccion("c-status-" + i, "¿Lo tiene?", [["have", "Sí, lo tengo"], ["get", "Todavía lo estoy consiguiendo"], ["unsure", "No estoy seguro de qué quieren decir"]], x.status || "have", q));
+            })]),
+          marcas("checks", "Marque lo que ya hizo", REVISIONES, s.checks, p, "Estas son las cosas que más hacen que devuelvan una renovación.")];
+      },
+      leer: function () {
+        var cosas = [], items = [], usadas = [];
+        [0, 1, 2, 3].forEach(function (i) { var x = { what: valor("c-what-" + i), who: valor("c-who-" + i), period: valor("c-period-" + i), status: valor("c-status-" + i) }; cosas.push(x); if (x.what) { items.push(x); usadas.push(i); } });
+        return { programs: marcados("programs"), state: elegido("state"), form_due: valor("form_due"), proof_due: valor("proof_due"), coverage_ends: valor("coverage_ends"), method: elegido("method"), items: items, checks: marcados("checks"),
+          _cosas: cosas, _usadas: usadas };
+      },
+      ejemplo: function () {
+        var items = [{ what: "pay stubs", who: "me", period: "last 30 days", status: "have" }, { what: "proof of address", who: "", period: "", status: "get" }];
+        return { programs: ["medicaid"], state: "FL", form_due: en(9), proof_due: en(4), coverage_ends: en(20), method: "fax", items: items, checks: ["signed", "copies"], _cosas: items.concat([{}, {}]), _usadas: [0, 1] };
+      },
+      resultado: function (r, volver) {
+        function lista(titulo, xs) { return xs.length ? [h("h2", { text: titulo }), h("ul", { class: "findings" }, xs.map(function (x) { return h("li", { text: x }); }))] : null; }
+        mostrar(h("h1", { class: "long", text: r.headline }),
+          fechas(r.dates.map(function (d) { return { etiqueta: d.label, nota: d.note, fecha_larga: fechaLarga(d.date), dias: d.days_left, estado: d.status }; })),
+          r.two_dates ? h("p", { class: "lead", text: r.two_dates }) : null,
+          lista("Todavía falta conseguir", r.missing), lista("Pregunte qué quieren decir", r.unsure), lista("Todavía falta revisar en las páginas", r.checks_left),
+          h("h2", { text: "Cómo enviarlo, y guardar un comprobante" }), pasos(r.how),
+          borrador("Hoja de portada (en inglés)", EN_INGLES, r.cover),
+          h("h2", { text: "Preguntas para hacer" }), h("ul", {}, r.questions.map(function (x) { return h("li", { text: x }); })),
+          r.hearing ? [h("h2", { text: "Si de todos modos termina su cobertura o terminan sus beneficios" }), h("p", {}, r.hearing.plain + " ", enlace(r.hearing.source, "Fuente (en inglés)"))] : null,
+          cierreEn(r, volver, "renewal"));
       }
     })
   };

@@ -124,6 +124,10 @@ def _tools():
             "after-death": ssalife.died, "reinstate": ssalife.reinstate, "ssi-help": ssalife.ssihelp, "amount-changed": ssalife.changed}
     from . import diswait, noticecheck, planappeal, ssilimit, utility
     more.update({"ssi-limit": ssilimit.run, "plan-appeal": planappeal.run, "disability-wait": diswait.run, "utility": utility.run, "notice-check": noticecheck.run})
+    from . import reporting
+    more["report-change"] = reporting.run
+    from . import renewal
+    more["renewal"] = renewal.run
     return dict({k: spanish(v) for k, v in more.items()}, **_first())
 
 

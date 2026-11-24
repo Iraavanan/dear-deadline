@@ -1194,5 +1194,277 @@
  "noticecheck/audit/plain": {
   "en": "In September 2026, Social Security's Inspector General reported that 46% of the overpayment notices it reviewed did not meet these rules. The most common gaps were how and when the overpayment happened, and the right to ask for reconsideration or a waiver.",
   "es": "En septiembre de 2026, el Inspector General del Seguro Social informó que el 46% de los avisos de pago de más que revisó no cumplía estas reglas. Las faltas más comunes fueron cómo y cuándo ocurrió el pago de más, y el derecho a pedir una reconsideración o una exención."
+ },
+ "reporting/ssi_penalty/plain": {
+  "en": "For SSI, a late or missed report can reduce your payment by $25 to $100 for each time you fail to report a change.",
+  "es": "Para SSI, un informe tardío o que no se hace puede reducir su pago entre $25 y $100 por cada vez que no informe un cambio."
+ },
+ "reporting/title2_timing/plain": {
+  "en": "For retirement, survivors and disability benefits, Social Security's booklets say to report changes promptly. They give no fixed number of days.",
+  "es": "Para los beneficios de jubilación, sobrevivientes e incapacidad, los folletos del Seguro Social dicen que los cambios se informen sin demora. No dan un número fijo de días."
+ },
+ "reporting/overpaid/plain": {
+  "en": "If a change is not reported, you may be paid too much and have to pay the money back.",
+  "es": "Si no se informa un cambio, le pueden pagar de más y usted tendría que devolver el dinero."
+ },
+ "reporting/how/hours": {
+  "en": "Monday through Friday, 8 a.m. to 7 p.m.",
+  "es": "de lunes a viernes, de 8 a.m. a 7 p.m."
+ },
+ "reporting/online/plain": {
+  "en": "A change of address or direct deposit can be made online in a personal my Social Security account.",
+  "es": "Un cambio de dirección o de depósito directo se puede hacer por internet en una cuenta personal my Social Security."
+ },
+ "reporting/more/plain": {
+  "en": "Social Security's booklets list other changes that must be reported, such as a warrant, a conviction, time in an institution, or a change in citizenship or immigration status. Read the list for your benefit.",
+  "es": "Los folletos del Seguro Social tienen una lista de otros cambios que se deben informar, como una orden de arresto, una condena, tiempo en una institución, o un cambio de ciudadanía o de estatus migratorio. Lea la lista de su beneficio."
+ },
+ "reporting/change_address/label": {
+  "en": "Address or phone number",
+  "es": "Dirección o número de teléfono"
+ },
+ "reporting/change_address/when": {
+  "en": "as soon as you know the new one",
+  "es": "en cuanto sepa los nuevos"
+ },
+ "reporting/change_address/have_ready/0": {
+  "en": "The new address and phone number",
+  "es": "La nueva dirección y el nuevo número de teléfono"
+ },
+ "reporting/change_address/have_ready/1": {
+  "en": "The date of the move",
+  "es": "La fecha de la mudanza"
+ },
+ "reporting/change_address/have_ready/2": {
+  "en": "The names of family members getting benefits who are moving with you",
+  "es": "Los nombres de los familiares que reciben beneficios y se mudan con usted"
+ },
+ "reporting/change_direct_deposit/label": {
+  "en": "Bank account for direct deposit",
+  "es": "Cuenta de banco para el depósito directo"
+ },
+ "reporting/change_direct_deposit/have_ready/0": {
+  "en": "The new account and routing numbers (give these only to Social Security, never to this tool)",
+  "es": "Los nuevos números de cuenta y de ruta (délos solo al Seguro Social, nunca a esta herramienta)"
+ },
+ "reporting/change_work/label": {
+  "en": "Starting or stopping work, or a change in pay or hours",
+  "es": "Empezar o dejar de trabajar, o un cambio de sueldo o de horas"
+ },
+ "reporting/change_work/when": {
+  "en": "promptly",
+  "es": "sin demora"
+ },
+ "reporting/change_work/have_ready/0": {
+  "en": "The date work started or stopped",
+  "es": "La fecha en que empezó o dejó de trabajar"
+ },
+ "reporting/change_work/have_ready/1": {
+  "en": "Your employer's name",
+  "es": "El nombre de su empleador"
+ },
+ "reporting/change_work/have_ready/2": {
+  "en": "Your pay before tax and your hours",
+  "es": "Su sueldo antes de impuestos y sus horas"
+ },
+ "reporting/change_work/have_ready/3": {
+  "en": "Any work expenses caused by your disability",
+  "es": "Cualquier gasto de trabajo causado por su discapacidad"
+ },
+ "reporting/change_earnings/label": {
+  "en": "Yearly earnings that will be higher or lower than you told Social Security",
+  "es": "Ganancias del año que serán más altas o más bajas de lo que dijo al Seguro Social"
+ },
+ "reporting/change_earnings/when": {
+  "en": "as soon as possible",
+  "es": "lo antes posible"
+ },
+ "reporting/change_earnings/have_ready/0": {
+  "en": "Your new estimate of earnings for the year",
+  "es": "Su nuevo cálculo de ganancias para el año"
+ },
+ "reporting/change_earnings/have_ready/1": {
+  "en": "The month work started, stopped or changed",
+  "es": "El mes en que el trabajo empezó, terminó o cambió"
+ },
+ "reporting/change_income/label": {
+  "en": "Other income, including a spouse's income",
+  "es": "Otros ingresos, incluidos los de su cónyuge"
+ },
+ "reporting/change_income/have_ready/0": {
+  "en": "What the income is and who pays it",
+  "es": "Qué ingreso es y quién lo paga"
+ },
+ "reporting/change_income/have_ready/1": {
+  "en": "The amount and the date it started or changed",
+  "es": "La cantidad y la fecha en que empezó o cambió"
+ },
+ "reporting/change_resources/label": {
+  "en": "Savings or things you own (resources)",
+  "es": "Ahorros o cosas que usted tiene (recursos)"
+ },
+ "reporting/change_resources/have_ready/0": {
+  "en": "What changed: a new resource, a sale, a transfer or a change in value",
+  "es": "Qué cambió: un recurso nuevo, una venta, una transferencia o un cambio de valor"
+ },
+ "reporting/change_resources/have_ready/1": {
+  "en": "The amount and the date",
+  "es": "La cantidad y la fecha"
+ },
+ "reporting/change_living/label": {
+  "en": "Where or with whom you live, or help with living expenses",
+  "es": "Dónde o con quién vive, o ayuda con los gastos de vida"
+ },
+ "reporting/change_living/have_ready/0": {
+  "en": "The new living arrangement and the date",
+  "es": "El nuevo arreglo de vivienda y la fecha"
+ },
+ "reporting/change_living/have_ready/1": {
+  "en": "Who lives in the household",
+  "es": "Quiénes viven en el hogar"
+ },
+ "reporting/change_living/have_ready/2": {
+  "en": "Any help you get with food or shelter costs",
+  "es": "Cualquier ayuda que recibe con la comida o los costos de vivienda"
+ },
+ "reporting/change_marriage/label": {
+  "en": "Marriage, separation or divorce",
+  "es": "Matrimonio, separación o divorcio"
+ },
+ "reporting/change_marriage/have_ready/0": {
+  "en": "The date",
+  "es": "La fecha"
+ },
+ "reporting/change_marriage/have_ready/1": {
+  "en": "Your spouse's or former spouse's name",
+  "es": "El nombre de su cónyuge o excónyuge"
+ },
+ "reporting/change_name/label": {
+  "en": "Name change",
+  "es": "Cambio de nombre"
+ },
+ "reporting/change_name/when": {
+  "en": "right away",
+  "es": "de inmediato"
+ },
+ "reporting/change_name/have_ready/0": {
+  "en": "Your old and new name",
+  "es": "Su nombre anterior y el nuevo"
+ },
+ "reporting/change_name/have_ready/1": {
+  "en": "The marriage, divorce or court paper that shows it",
+  "es": "El papel de matrimonio, de divorcio o del tribunal que lo muestra"
+ },
+ "reporting/change_death/label": {
+  "en": "A death in the family or household",
+  "es": "Una muerte en la familia o en el hogar"
+ },
+ "reporting/change_death/have_ready/0": {
+  "en": "The person's name and date of death",
+  "es": "El nombre de la persona y la fecha de la muerte"
+ },
+ "reporting/change_travel/label": {
+  "en": "Leaving the United States for 30 days or more",
+  "es": "Salir de los Estados Unidos por 30 días o más"
+ },
+ "reporting/change_travel/have_ready/0": {
+  "en": "The date you leave and the date you plan to return",
+  "es": "La fecha en que sale y la fecha en que piensa volver"
+ },
+ "reporting/change_travel/have_ready/1": {
+  "en": "The country or countries",
+  "es": "El país o los países"
+ },
+ "reporting/change_child/label": {
+  "en": "A child in your care moves out or changes address",
+  "es": "Un niño a su cargo se muda o cambia de dirección"
+ },
+ "reporting/change_child/have_ready/0": {
+  "en": "The child's name",
+  "es": "El nombre del niño"
+ },
+ "reporting/change_child/have_ready/1": {
+  "en": "The name and address of the person the child now lives with",
+  "es": "El nombre y la dirección de la persona con quien vive ahora el niño"
+ },
+ "reporting/change_other_benefit/label": {
+  "en": "Another benefit or payment starts, changes or stops",
+  "es": "Otro beneficio o pago empieza, cambia o termina"
+ },
+ "reporting/change_other_benefit/have_ready/0": {
+  "en": "What the benefit is and who pays it",
+  "es": "Qué beneficio es y quién lo paga"
+ },
+ "reporting/change_pension/label": {
+  "en": "A pension from work that did not pay Social Security taxes",
+  "es": "Una pensión de un trabajo que no pagó impuestos del Seguro Social"
+ },
+ "reporting/change_pension/have_ready/0": {
+  "en": "Who pays the pension",
+  "es": "Quién paga la pensión"
+ },
+ "reporting/change_medical/label": {
+  "en": "Your medical condition improves",
+  "es": "Su condición médica mejora"
+ },
+ "reporting/change_medical/have_ready/0": {
+  "en": "What has changed",
+  "es": "Qué ha cambiado"
+ },
+ "reporting/change_medical/have_ready/1": {
+  "en": "The date you noticed it",
+  "es": "La fecha en que lo notó"
+ },
+ "reporting/change_medical/have_ready/2": {
+  "en": "Your doctor's name",
+  "es": "El nombre de su médico"
+ },
+ "reporting/change_institution/label": {
+  "en": "Going into or leaving a hospital, nursing home or other institution",
+  "es": "Entrar o salir de un hospital, un hogar de ancianos u otra institución"
+ },
+ "reporting/change_institution/have_ready/0": {
+  "en": "The name of the place",
+  "es": "El nombre del lugar"
+ },
+ "reporting/change_institution/have_ready/1": {
+  "en": "The date you went in or left",
+  "es": "La fecha en que entró o salió"
+ },
+ "reporting/change_school/label": {
+  "en": "School attendance, if under age 22",
+  "es": "Asistencia a la escuela, si tiene menos de 22 años"
+ },
+ "reporting/change_school/have_ready/0": {
+  "en": "The school's name",
+  "es": "El nombre de la escuela"
+ },
+ "reporting/change_school/have_ready/1": {
+  "en": "The date attendance started, stopped or changed",
+  "es": "La fecha en que la asistencia empezó, terminó o cambió"
+ },
+ "renewal/why/plain": {
+  "en": "During the Medicaid unwinding, 69% of the people who lost coverage lost it for paperwork or procedural reasons, not because they were found ineligible. Many of them may still have been eligible.",
+  "es": "Durante la revisión de Medicaid después de la pandemia (unwinding), el 69% de las personas que perdieron la cobertura la perdieron por papeles o razones de procedimiento, no porque se determinara que ya no eran elegibles. Muchas de ellas quizás seguían siendo elegibles."
+ },
+ "renewal/medicaid_auto/plain": {
+  "en": "Medicaid must first try to renew you from information it already has. You only get a renewal form if it cannot.",
+  "es": "Medicaid primero debe tratar de renovarle con la información que ya tiene. Solo recibe un formulario de renovación si no puede."
+ },
+ "renewal/medicaid_form/plain": {
+  "en": "If you get a Medicaid renewal form, the agency must give you at least 30 days from the date of the form to respond.",
+  "es": "Si recibe un formulario de renovación de Medicaid, la agencia debe darle por lo menos 30 días desde la fecha del formulario para contestar."
+ },
+ "renewal/medicaid_reconsider/plain": {
+  "en": "If Medicaid based on income ended because the renewal form was not returned, you can send it in within 90 days after coverage ended (longer in some states) and have your eligibility looked at again without a new application. For Medicaid based on age or disability, states may do the same.",
+  "es": "Si el Medicaid basado en los ingresos terminó porque no se devolvió el formulario de renovación, puede enviarlo dentro de los 90 días después de que terminó la cobertura (más tiempo en algunos estados) y hacer que revisen su elegibilidad otra vez sin una solicitud nueva. Para el Medicaid basado en la edad o una discapacidad, los estados pueden hacer lo mismo."
+ },
+ "renewal/snap_proof/plain": {
+  "en": "When the state asks for proof for SNAP, it must give you at least 10 days to provide it.",
+  "es": "Cuando el estado pide pruebas para SNAP, debe darle por lo menos 10 días para entregarlas."
+ },
+ "workrules/fl_hearing/plain": {
+  "en": "In Florida, you can ask for a fair hearing about SNAP, cash assistance or Medicaid within 90 days of the Notice of Case Action. Ask by phone (850) 488-1429, fax (850) 487-0662, email appeal.hearings@myflfamilies.com, or mail to the Appeal Hearings Section, 2415 North Monroe Street, Suite 400-I, Tallahassee, FL 32303-4190. To keep your benefits the same while you wait, ask before the change takes effect; the notice says when.",
+  "es": "En Florida, puede pedir una audiencia imparcial (fair hearing) sobre SNAP, asistencia en efectivo o Medicaid dentro de los 90 días del aviso (Notice of Case Action). Pídala por teléfono al (850) 488-1429, por fax al (850) 487-0662, por correo electrónico a appeal.hearings@myflfamilies.com, o por correo a Appeal Hearings Section, 2415 North Monroe Street, Suite 400-I, Tallahassee, FL 32303-4190. Para mantener sus beneficios iguales mientras espera, pídala antes de que el cambio entre en vigor; el aviso dice cuándo."
  }
 }
