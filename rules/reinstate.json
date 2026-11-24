@@ -11,8 +11,8 @@
   },
   {
    "id": "window",
-   "plain": "Social Security counts the 60 months as the month benefits ended plus 59 more months.",
-   "source": "https://secure.ssa.gov/poms.nsf/lnx/0413050050",
+   "plain": "The request must be made within 60 months of the month benefits ended: that month plus 59 more.",
+   "source": "https://secure.ssa.gov/poms.nsf/lnx/0428057001",
    "effective_from": null,
    "checked_on": "2026-11-23",
    "months": 60

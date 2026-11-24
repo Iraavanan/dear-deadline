@@ -527,3 +527,27 @@ table.plain th[scope="row"] { font-weight: 600; border-bottom: 1px solid var(--l
 .research .cite { font-size: var(--small); border: 1px solid var(--line); border-radius: 6px; padding: var(--s2) var(--s3); overflow-wrap: anywhere; }
 .research .paper-group { margin: var(--s4) 0; }
 .research .paper-cards { margin-top: var(--s2); }
+
+/* Community boards */
+.board-warning { background: var(--yellow-tint); border: 1px solid var(--yellow); border-left-width: 6px; border-radius: 6px; padding: var(--s2) var(--s3); margin: 0 0 var(--s3); }
+.board-warning p { margin: 0; }
+.board-rules { font-size: var(--small); color: var(--soft); }
+.board-rules-box { margin: 0 0 var(--s3); }
+.board-rules-box summary { cursor: pointer; font-weight: 700; }
+.board-form { display: grid; gap: var(--s2); margin: 0 0 var(--s4); }
+.board-form textarea { width: 100%; font: inherit; padding: var(--s2); border: 2px solid var(--ink); border-radius: 5px; }
+.board-form .tick { display: flex; gap: var(--s2); align-items: flex-start; font-size: var(--small); }
+.board-form .tick input { margin-top: 4px; flex: none; width: 20px; height: 20px; }
+.board-form .go { justify-self: start; }
+.board-msg { color: var(--red); font-weight: 700; margin: 0; }
+.board-msg:empty { display: none; }
+.board-trap { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.board-post { border: 1px solid var(--line); border-radius: 6px; padding: var(--s2) var(--s3); margin: 0 0 var(--s3); overflow-wrap: anywhere; }
+.board-post p { margin: 0 0 var(--s1); }
+.board-meta { font-size: var(--small); color: var(--soft); }
+.board-replies { list-style: none; margin: var(--s2) 0; padding: 0 0 0 var(--s3); border-left: 3px solid var(--line); }
+.board-reply { margin: 0 0 var(--s2); }
+.board-replyform { margin-top: var(--s2); }
+button.linkish { background: none; border: 0; padding: 0; font: inherit; color: var(--teal-dark); text-decoration: underline; cursor: pointer; margin-right: var(--s2); min-height: 0; }
+.help-community { margin: var(--s2) 0 var(--s3); }
+.no-community .community-link { display: none !important; }

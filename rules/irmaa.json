@@ -12,7 +12,7 @@
   },
   {
    "id": "based_on",
-   "plain": "Your 2026 premium is based on your modified adjusted gross income from your 2024 tax return.",
+   "plain": "Your 2026 premium is generally based on your modified adjusted gross income from your 2024 tax return (from 2023 if 2024 is not available).",
    "source": "https://www.ssa.gov/benefits/medicare/medicare-premiums.html",
    "effective_from": "2026-01-01",
    "checked_on": "2026-11-23",
@@ -99,7 +99,7 @@
   {
    "id": "tiers_separate",
    "plain": "2026 tiers for married filing separately while living with your spouse: up to $109,000 standard; under $391,000 +$446.30; $391,000 or more +$487.00.",
-   "source": "https://www.ssa.gov/benefits/medicare/medicare-premiums.html",
+   "source": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles",
    "effective_from": "2026-01-01",
    "checked_on": "2026-11-23",
    "tiers": [
@@ -122,8 +122,8 @@
   },
   {
    "id": "events",
-   "plain": "You can ask for a new decision with form SSA-44 if your income went down because of a life-changing event: marriage, divorce or a spouse's death; you or your spouse stopping or reducing work; losing income-producing property in a disaster; a pension plan ending or being cut; or an employer settlement after closure or bankruptcy.",
-   "source": "https://www.ssa.gov/forms/ssa-44.html",
+   "plain": "You can ask for a new decision with form SSA-44 if your income went down because of a life-changing event: marriage, divorce or annulment, or a spouse's death; you or your spouse stopping or reducing work; losing income-producing property through no choice of your own, for example in a disaster or through arson, fraud or theft; a pension plan ending, being cut or reorganized; or an employer settlement after closure or bankruptcy.",
+   "source": "https://www.ssa.gov/forms/ssa-44.pdf",
    "effective_from": null,
    "checked_on": "2026-11-23"
   },
@@ -136,7 +136,7 @@
   },
   {
    "id": "appeal",
-   "plain": "If the information Social Security used is wrong, you can ask for reconsideration (form SSA-561). If the IRS figure itself is wrong, it must be corrected with the IRS.",
+   "plain": "If the information Social Security used is wrong, give it the correct information; you do not need to appeal. To appeal the decision itself, ask for reconsideration (form SSA-561-U2). If the IRS figure is wrong, it must be corrected with the IRS.",
    "source": "https://www.ssa.gov/benefits/medicare/medicare-premiums.html",
    "effective_from": null,
    "checked_on": "2026-11-23"
@@ -151,8 +151,8 @@
   },
   {
    "id": "based_on",
-   "plain": "Your 2027 premium is based on your modified adjusted gross income from your 2025 tax return.",
-   "source": "https://www.ssa.gov/benefits/medicare/medicare-premiums.html",
+   "plain": "Your 2027 premium is generally based on your modified adjusted gross income from your 2025 tax return.",
+   "source": "https://www.ssa.gov/OP_Home/cfr20/418/418-1115.htm",
    "effective_from": "2027-01-01",
    "checked_on": "2026-11-23",
    "tax_year": 2025

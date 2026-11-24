@@ -4,8 +4,8 @@
  "rows": [
   {
    "id": "ss_birthday",
-   "plain": "Social Security payments are paid on a Wednesday chosen by your birth date: the 1st to 10th get the second Wednesday, the 11th to 20th the third Wednesday, and the 21st to 31st the fourth Wednesday.",
-   "source": "https://www.ssa.gov/pubs/EN-05-10031.pdf",
+   "plain": "Social Security payments are paid on a Wednesday chosen by the birth date of the worker whose record you are paid on (your own, if it is your own benefit): the 1st to 10th get the second Wednesday, the 11th to 20th the third Wednesday, and the 21st to 31st the fourth Wednesday.",
+   "source": "https://www.ssa.gov/OP_Home/handbook/handbook.01/handbook-0121.html",
    "effective_from": null,
    "checked_on": "2026-11-23"
   },
@@ -19,7 +19,7 @@
   {
    "id": "ssi_first",
    "plain": "SSI is paid on the 1st of the month. When a payment day falls on a weekend or federal holiday, it is paid on the business day before.",
-   "source": "https://www.ssa.gov/pubs/EN-05-10031.pdf",
+   "source": "https://www.ssa.gov/OP_Home/handbook/handbook.01/handbook-0121.html",
    "effective_from": null,
    "checked_on": "2026-11-23"
   },
@@ -32,8 +32,8 @@
   },
   {
    "id": "history",
-   "plain": "Your my Social Security account shows your payment history, so you can see whether a payment was sent.",
-   "source": "https://www.ssa.gov/myaccount/",
+   "plain": "Your my Social Security account shows your benefit and payment information and your benefit letter.",
+   "source": "https://www.ssa.gov/myaccount/what.html",
    "effective_from": null,
    "checked_on": "2026-11-23"
   }

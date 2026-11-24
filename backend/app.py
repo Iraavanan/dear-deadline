@@ -1,7 +1,9 @@
 """Small web service for Release 1.
 
 It keeps nothing about the person: no accounts, no cookies, and request bodies are
-never written to a log. The only stored data is the anonymous daily use count (helper/counter.py). Each request is answered from memory and forgotten.
+never written to a log. The only stored data is the anonymous daily use count (helper/counter.py)
+and posts people choose to write on the community boards (helper/board.py). Every other request
+is answered from memory and forgotten.
 
 Run locally:  python backend/app.py   then open http://127.0.0.1:5050
 """
@@ -9,6 +11,7 @@ Run locally:  python backend/app.py   then open http://127.0.0.1:5050
 import csv
 import datetime as dt
 import os
+import secrets
 import io
 import json
 import logging
@@ -18,7 +21,7 @@ from pathlib import Path
 from flask import Flask, Response, abort, jsonify, request, send_from_directory
 
 import helper
-from helper import ssamore, ssalife, research, ai_reader, amount, bill, hearing, noticecheck, ssilimit, planappeal, diswait, fixes, utility, budget, cessation, counter, deadlines, denial, engine, letters, renewal, rent, reporting, rules, validate, work, workrules
+from helper import ssamore, ssalife, research, board, ai_reader, amount, bill, hearing, noticecheck, ssilimit, planappeal, diswait, fixes, utility, budget, cessation, counter, deadlines, denial, engine, letters, renewal, rent, reporting, rules, validate, work, workrules
 
 ROOT = Path(__file__).resolve().parents[1]
 FRONTEND = ROOT / "frontend"
@@ -42,6 +45,7 @@ def create_app():
     provider = ai_reader.get_provider()      # None unless the operator has switched the AI reader on
     cap = ai_reader.DailyCap()
     counts = counter.Counter()
+    posts = board.Board()
 
     @app.after_request
     def no_store(response):
@@ -229,6 +233,66 @@ def create_app():
             return jsonify(fn(body))
         except validate.InputError as err:
             return jsonify({"error": "Some details need fixing.", "problems": err.problems}), 422
+
+    # ---------------------------------------------------------------- community board
+
+    def _visitor():
+        # Behind Caddy every request comes from 127.0.0.1; Caddy adds the real address last.
+        # Used only for in-memory rate limits, never stored.
+        hops = [h.strip() for h in request.headers.get("X-Forwarded-For", "").split(",") if h.strip()]
+        return hops[-1] if hops and request.remote_addr in ("127.0.0.1", "::1") else (request.remote_addr or "")
+
+    def _board_on():
+        if not posts.enabled:
+            abort(404)
+
+    @app.get("/api/board")
+    def board_topics():
+        """The community boards, one per topic the site covers."""
+        _board_on()
+        return jsonify({"topics": posts.topics(), "min": board.MIN_LEN, "max": board.MAX_LEN, "keep_days": board.KEEP_DAYS})
+
+    @app.get("/api/board/<topic>")
+    def board_list(topic):
+        """Posts on one board, newest conversation first. Reported posts are hidden."""
+        _board_on()
+        try:
+            return jsonify(posts.list(topic))
+        except validate.InputError as err:
+            return jsonify({"error": "Some details need fixing.", "problems": err.problems}), 404
+
+    @app.post("/api/board/<topic>")
+    def board_post(topic):
+        """Add a post or a reply. The text is screened for personal details and contact requests first."""
+        _board_on()
+        body = request.get_json(silent=True)
+        if not isinstance(body, dict):
+            return jsonify({"error": "Send the post as JSON."}), 400
+        body["topic"] = topic
+        try:
+            return jsonify(posts.post(body, _visitor()))
+        except validate.InputError as err:
+            return jsonify({"error": "Some details need fixing.", "problems": err.problems}), 422
+
+    @app.post("/api/board/report/<post_id>")
+    def board_report(post_id):
+        """Report a post. Three reports hide it."""
+        _board_on()
+        try:
+            return jsonify(posts.report(post_id, _visitor()))
+        except validate.InputError as err:
+            return jsonify({"error": "Some details need fixing.", "problems": err.problems}), 422
+
+    @app.post("/api/board/remove/<int:post_id>")
+    def board_remove(post_id):
+        """For the site owner only: delete a post. Works only when HELPER_BOARD_ADMIN is set on the server."""
+        _board_on()
+        key = os.environ.get("HELPER_BOARD_ADMIN", "")
+        given = request.headers.get("X-Board-Admin", "")
+        if len(key) < 20 or not secrets.compare_digest(key, given):
+            abort(404)
+        posts.remove(post_id)
+        return jsonify({"removed": post_id})
 
     @app.post("/api/bill")
     def check_bill():

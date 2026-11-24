@@ -4,15 +4,22 @@
  "rows": [
   {
    "id": "protected",
-   "plain": "Under section 207 of the Social Security Act, most creditors cannot take Social Security benefits. Child support, alimony, federal taxes and some federal debts are exceptions.",
+   "plain": "Most creditors cannot take Social Security benefits, even with a court judgment.",
    "source": "https://www.ssa.gov/OP_Home/ssact/title02/0207.htm",
    "effective_from": null,
    "checked_on": "2026-11-23"
   },
   {
+   "id": "exceptions",
+   "plain": "Social Security benefits can be taken for unpaid federal taxes, child support or alimony, and debts owed to other federal agencies, such as student loans.",
+   "source": "https://www.ssa.gov/OP_Home/handbook/handbook.01/handbook-0129.html",
+   "effective_from": null,
+   "checked_on": "2026-11-23"
+  },
+  {
    "id": "top",
-   "plain": "For federal debts such as defaulted federal student loans, the Treasury Offset Program can take up to 15% of a Social Security retirement, survivor or disability payment, but must leave at least $750 a month.",
-   "source": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-II/part-285/subpart-A/section-285.4",
+   "plain": "For federal debts such as defaulted federal student loans, the Treasury Offset Program can take up to 15% of a Social Security retirement, survivor or disability payment, but must leave at least $750 a month. The payment counted is the amount after deductions the law requires, such as the Medicare premium; amounts taken to repay an overpayment are not subtracted.",
+   "source": "https://www.law.cornell.edu/cfr/text/31/285.4",
    "effective_from": null,
    "checked_on": "2026-11-23",
    "percent": 15,
@@ -27,21 +34,21 @@
   },
   {
    "id": "student_status",
-   "plain": "Collection of defaulted federal student loans from Social Security has been paused and restarted more than once since 2025. Check your notice, or call the Default Resolution Group at 1-800-621-3115, for the current status.",
-   "source": "https://studentaid.gov/manage-loans/default",
+   "plain": "Collection of defaulted federal student loans from Social Security has been paused and restarted since 2025. Check your notice, or call the Default Resolution Group at 1-800-621-3115, for the current status.",
+   "source": "https://studentaid.gov/articles/default/",
    "effective_from": null,
    "checked_on": "2026-11-23"
   },
   {
    "id": "notice",
-   "plain": "Before an offset starts, the agency owed the money must send a notice saying how to see the records, ask for a review, or set up repayment.",
-   "source": "https://fiscal.treasury.gov/top/",
+   "plain": "Before an offset starts, the agency owed the money must send a notice saying how to see its records, how to ask for a review, and how to set up repayment.",
+   "source": "https://www.law.cornell.edu/uscode/text/31/3716",
    "effective_from": null,
    "checked_on": "2026-11-23"
   },
   {
    "id": "bank",
-   "plain": "When federal benefits are deposited directly, the bank must protect two months of benefits in the account from most garnishment orders.",
+   "plain": "When federal benefits are deposited directly, the bank must protect the benefits deposited in the past two months (or the whole balance, if that is less) from most garnishment orders.",
    "source": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-II/part-212",
    "effective_from": null,
    "checked_on": "2026-11-23"

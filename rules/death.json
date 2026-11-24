@@ -12,7 +12,7 @@
   {
    "id": "return_ss",
    "plain": "If the person was getting Social Security, the benefit for the month of death and any later months must be returned.",
-   "source": "https://www.ssa.gov/benefits/survivors/ifyou.html",
+   "source": "https://www.usa.gov/social-security-report-a-death",
    "effective_from": null,
    "checked_on": "2026-11-23"
   },
@@ -25,7 +25,7 @@
   },
   {
    "id": "return_ssi",
-   "plain": "SSI ends the month after the month of death. SSI paid for any month after the month of death must be returned.",
+   "plain": "SSI ends the month after the month of death, so no SSI is due for any later month. SSI paid for a later month has to be returned.",
    "source": "https://secure.ssa.gov/poms.nsf/lnx/0502301250",
    "effective_from": null,
    "checked_on": "2026-11-23"

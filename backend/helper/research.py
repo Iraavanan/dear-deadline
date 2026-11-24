@@ -10,6 +10,8 @@ import json
 from html import escape
 from pathlib import Path
 
+from . import board
+
 FRONTEND = Path(__file__).resolve().parents[2] / "frontend"
 DATA = FRONTEND / "research" / "papers.json"
 MONTHS = ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
@@ -66,13 +68,14 @@ def _page(title, description, canonical, head_extra, body):
   <footer class="foot">
     <div class="foot-in">
       <p class="foot-lead">This tool is independent. It is not affiliated with the Social Security Administration, Medicare, HUD, or any state agency.</p>
-      <p class="foot-small"><a href="/">The tool</a> &nbsp; <a href="/about">About, privacy and testing</a> &nbsp; <a href="/research">Research</a> &nbsp; <a href="/helpers">Helping someone else</a> &nbsp; <a href="/open">Open data and embedding</a></p>
+      <p class="foot-small"><a href="/">The tool</a> &nbsp; <a href="/about">About, privacy and testing</a> &nbsp; %s<a href="/research">Research</a> &nbsp; <a href="/helpers">Helping someone else</a> &nbsp; <a href="/open">Open data and embedding</a></p>
       <p class="foot-small">A project by Shirshak J. Thapa.</p>
     </div>
   </footer>
 </body>
 </html>
-""" % (_e(title), _e(description), _e(canonical), ICON, head_extra, body)
+""" % (_e(title), _e(description), _e(canonical), ICON, head_extra, body,
+       '<a class="community-link" href="/#community">Community</a> &nbsp; ' if board.is_on() else "")
 
 
 def _name_line(data):

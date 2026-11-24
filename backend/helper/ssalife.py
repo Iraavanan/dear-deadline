@@ -207,14 +207,14 @@ def ssihelp(raw, today=None, rules_dir=None):
             steps.append(t["rental"]["plain"])
             used.append(t["rental"])
         else:
-            headline = "Living in your own place, only help with shelter costs from someone else can lower SSI"
+            headline = "In your own place, help with food does not count; help with shelter costs from someone else can"
     if outside:
         extra = round(max(0.0, min(outside, pmv) - t["exclusion"]["amount"]), 2)
         out["outside"] = outside
         if home == "own" and not (family and rent is not None):
             cut = extra
             headline = "Help of $%s a month with shelter may lower SSI by up to $%s" % (_fmt(outside), _fmt(extra))
-        steps.append("Someone outside your household paying $%s toward your rent or utilities counts as help, up to $%s, less the $20 not counted." % (_fmt(outside), _fmt(pmv)))
+        steps.append("Someone outside your household paying $%s toward your rent or utilities counts as help, up to $%s a month. The first $20 of unearned income each month is not counted, if it is not already used for other income." % (_fmt(outside), _fmt(pmv)))
         used += [t["pmv"], t["exclusion"]]
     out["may_lower_by"] = cut
     steps += [t["food"]["plain"], t["statement"]["plain"], t["report"]["plain"], t["appeal"]["plain"]]
@@ -267,7 +267,7 @@ def changed(raw, today=None, rules_dir=None):
     elif g > 0:
         why.append("The amount before deductions went up by $%s." % _fmt(g))
     if g < 0 and kind == "ss":
-        why.append(t["earnings"]["plain"])
+        why.append("One possible reason, if you work: " + t["earnings"]["plain"])
         used.append(t["earnings"])
     if kind == "ssi" and g != 0:
         why.append(t["ssi_income"]["plain"])

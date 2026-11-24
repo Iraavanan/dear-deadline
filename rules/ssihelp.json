@@ -22,7 +22,7 @@
   },
   {
    "id": "food",
-   "plain": "Since September 30, 2024, food someone gives you is no longer counted. Only help with shelter can lower SSI.",
+   "plain": "Since September 30, 2024, food someone gives you is no longer counted. Of the help you get in kind, only help with shelter can lower SSI. Money you are given still counts as income.",
    "source": "https://www.ssa.gov/news/en/advocates/2024-09-30.html",
    "effective_from": null,
    "checked_on": "2026-11-23"
@@ -72,7 +72,7 @@
   },
   {
    "id": "rental",
-   "plain": "If you rent from your parent or child, the rent is not counted as help when it is at least the lower of the presumed maximum value or the local market rent.",
+   "plain": "If you rent from your parent or child, the arrangement is not counted as help when your rent is at least the lower of the presumed maximum value or the local market rent.",
    "source": "https://www.ssa.gov/ssi/spotlights/spot-living-arrangements-reg.htm",
    "effective_from": null,
    "checked_on": "2026-11-23"

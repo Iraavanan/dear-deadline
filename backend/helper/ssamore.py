@@ -56,7 +56,7 @@ def latefiling(raw, today=None, rules_dir=None):
     else:
         headline = "The usual deadline passed %d day%s ago. You can still ask" % (late_by, "" if late_by == 1 else "s")
         steps = [t["extension"]["plain"],
-                 "Send the appeal form and the statement below together. Online appeals have a place to explain why you are late.",
+                 "Send the appeal form and the statement below together.",
                  "Add copies of anything that backs up your reasons, such as a hospital discharge paper or a death notice.",
                  "Keep a copy and proof of the day you sent it."]
         used.append(t["extension"])
@@ -138,7 +138,7 @@ def payday(raw, today=None, rules_dir=None):
             if not 1 <= birth <= 31:
                 raise ValueError
         except (TypeError, ValueError):
-            p["birth_day"] = "Enter the day of the month you were born (1 to 31)."
+            p["birth_day"] = "Enter the birth day (1 to 31) of the worker whose record you are paid on."
     month = body.get("month") or today.strftime("%Y-%m")
     try:
         year, mon = (int(x) for x in str(month).split("-"))
@@ -173,7 +173,7 @@ def payday(raw, today=None, rules_dir=None):
         headline = "The payment is not due yet"
     else:
         headline = "Wait until %s before reporting it missing" % out[0]["report_from_long"]
-    steps = ["Check your bank account or Direct Express card for a deposit on the due date. Deposits sometimes show under a different name, such as \"SSA TREAS 310\" or \"SUPP SEC\".",
+    steps = ["Check your bank account or Direct Express card for a deposit on the due date.",
              t["history"]["plain"],
              "If you moved, changed banks or closed an account recently, the payment may have gone to the old address or account. Say so when you call.",
              "To report it: call Social Security at 1-800-772-1213 (TTY 1-800-325-0778) or visit a local office. Ask them to trace the payment.",
@@ -199,7 +199,7 @@ def offset(raw, today=None, rules_dir=None):
     if p:
         raise InputError(p)
     top = t["top"]
-    used, limit, over = [t["protected"]], None, False
+    used, limit, over = [t["protected"], t["exceptions"]], None, False
     steps = []
     if benefit == "ssi":
         if debt in ("student_loan", "federal"):

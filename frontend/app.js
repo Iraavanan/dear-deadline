@@ -95,6 +95,7 @@
     if (!printing) return;
     screen.appendChild(h("nav", { class: "related", "aria-label": "Often needed next" }, h("p", { text: "Often needed next" }),
       h("ul", {}, list.map(function (k) { return h("li", {}, h("a", { href: "#" + k, text: NAMES[k] })); }),
+        BOARD_FOR[where] && window.Modules && window.Modules.community ? h("li", { class: "community-link" }, h("a", { href: "#community/" + BOARD_FOR[where], text: "Talk with others about this" })) : null,
         h("li", {}, h("a", { href: "/", text: "All helpers", on: { click: function (ev) { ev.preventDefault(); location.hash = ""; } } })))));
   }
 
@@ -285,7 +286,7 @@
             h("li", {}, h("b", { text: "Find your dates" }), h("span", { text: "Worked out from the date on your letter, with weekends and holidays counted." })),
             h("li", {}, h("b", { text: "See your options" }), h("span", { text: "What you can ask for, which form it uses, and which request may fit you." })),
             h("li", {}, h("b", { text: "Leave with a kit" }), h("span", { text: "A filled-in draft, a checklist of what to include, and dates for your calendar." }))),
-          h("p", { class: "hero-trust", text: "Free and independent. No sign-up, no Social Security number, nothing saved." }),
+          h("p", { class: "hero-trust", text: "Free and independent. No sign-up, no Social Security number, no answers saved." }),
           h("form", { class: "hero-find", role: "search", on: { submit: function (ev) {
               ev.preventDefault();
               var q = document.getElementById("hero-q").value, box = document.getElementById("finder");
@@ -368,6 +369,7 @@
               way("I help several people with their paperwork", "A deadline board with nicknames only. Saved as a file on your device, never on this site.", go("helper-board"), null, null, "caseworker volunteer board deadlines several people"),
               way("Practise a first WIC grocery trip", "Two short puzzles with a made-up balance, using Florida WIC's size rules.", go("wic-practice"), null, null, "wic grocery practice")
             ])),
+        h("p", { class: "help-community community-link" }, "Want to hear from people in the same situation? ", h("a", { href: "#community", text: "Talk with others" })),
         h("div", { class: "resume" },
           h("label", { for: "progressfile" }, "Open work you saved earlier", h("span", { class: "hint", text: "A progress file or a record you saved from this site. It is opened on this device." })),
           h("input", { id: "progressfile", type: "file", accept: ".json,application/json", on: { change: function (ev) {
@@ -479,7 +481,8 @@
   function route() {
     if (!state.meta || stale) return;                     // not loaded yet, or the program behind the page is out of date
     var where = location.hash.replace("#", "");
-    if (where === "overpayment") start();
+    if ((where === "community" || where.indexOf("community/") === 0) && window.Modules && window.Modules.community) window.Modules.community.start(where.split("/")[1]);
+    else if (where === "overpayment") start();
     else if (where === "disability-ended" && window.Modules && window.Modules.cessation) window.Modules.cessation.start();
     else if (where === "work-check" && window.Modules && window.Modules.work) window.Modules.work.start();
     else if (where === "decision-appeal" && window.Modules && window.Modules.denial) window.Modules.denial.start();
@@ -518,6 +521,17 @@
   var NEXT = { "helper-permission": "permission", "hearing-prep": "hearingPrep", "hearing-decision": "decision", "medicaid-ending": "medicaidEnd" };
   var FIXES = { "medicare-costs": "costs", "stolen-snap": "stolen", "locked-out": "locked", "ssa-call": "calls", "withholding": "withhold", "paperwork": "paperwork" };
   var SSAMORE = { "late-appeal": "late", "payment-missing": "payday", "benefit-offset": "offset", "medicare-irmaa": "irmaa" };
+  // Which community board goes with each helper ("Talk with others about this").
+  var BOARD_FOR = {
+    "overpayment": "overpayment", "check-amount": "overpayment", "notice-check": "overpayment", "withholding": "overpayment",
+    "decision-appeal": "appeals", "late-appeal": "appeals", "disability-ended": "disability", "disability-wait": "disability", "work-restart": "disability", "work-check": "disability",
+    "payment-missing": "payments", "amount-changed": "payments", "benefit-offset": "payments", "earnings-record": "payments",
+    "ssi-limit": "ssi", "ssi-help": "ssi", "report-change": "ssi", "ssa-call": "reaching-ssa", "locked-out": "reaching-ssa", "find-letter": "reaching-ssa", "is-it-real": "reaching-ssa",
+    "medicare-letter": "medicare", "medicare-bill": "medicare", "medicare-costs": "medicare", "plan-appeal": "medicare", "medicare-irmaa": "medicare",
+    "missed-interview": "snap", "stolen-snap": "snap", "work-rules": "snap", "renewal": "medicaid", "medicaid-ending": "medicaid", "paperwork": "medicaid", "asked-again": "medicaid",
+    "rent-check": "housing", "utility-shutoff": "housing", "benefit-hearing": "hearings", "hearing-prep": "hearings", "hearing-decision": "hearings",
+    "after-death": "after-death", "helper-permission": "helping", "helper-board": "helping", "fema-proof": "disaster"
+  };
   var SSALIFE = { "after-death": "died", "work-restart": "restart", "ssi-help": "ssihelp", "amount-changed": "changed" };
 
   function start() {

@@ -106,3 +106,9 @@
     held.replaceChildren.apply(held, out);
   }).catch(function () { held.replaceChildren(el("p", "The results could not be loaded.", "small")); });
 })();
+
+/* Community boards: when they are switched off, hide every link to them. */
+(function () {
+  if (typeof fetch !== "function" || typeof document === "undefined") return;
+  fetch("/api/board").then(function (r) { if (!r.ok) document.documentElement.classList.add("no-community"); }).catch(function () {});
+})();

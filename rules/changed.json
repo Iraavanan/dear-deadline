@@ -4,7 +4,7 @@
  "rows": [
   {
    "id": "cola",
-   "plain": "Social Security and SSI payments went up 2.8% in January 2026.",
+   "plain": "Social Security and SSI payments went up 2.8% starting with January 2026 payments.",
    "source": "https://www.ssa.gov/cola/factsheets/2026.html",
    "effective_from": "2026-01-01",
    "checked_on": "2026-11-23",
@@ -12,7 +12,7 @@
   },
   {
    "id": "cola",
-   "plain": "Social Security and SSI payments go up 3.6% in January 2027.",
+   "plain": "Social Security and SSI payments go up 3.6% starting with January 2027 payments. SSI's January payment arrives on December 31, 2026, because January 1 is a holiday.",
    "source": "https://www.ssa.gov/news/en/press/releases/2026-10-14.html",
    "effective_from": "2027-01-01",
    "checked_on": "2026-11-23",
@@ -36,14 +36,14 @@
   },
   {
    "id": "earnings",
-   "plain": "If you are under full retirement age and work, $1 of benefits is withheld for every $2 earned over $24,480 in 2026. In the year you reach full retirement age, $1 for every $3 over $65,160.",
+   "plain": "If you are under full retirement age and work, $1 of benefits is withheld for every $2 earned over $24,480 in 2026. In the year you reach full retirement age, $1 for every $3 over $65,160, counting only what you earn before the month you reach that age.",
    "source": "https://www.ssa.gov/benefits/retirement/planner/whileworking.html",
    "effective_from": "2026-01-01",
    "checked_on": "2026-11-23"
   },
   {
    "id": "earnings",
-   "plain": "If you are under full retirement age and work, $1 of benefits is withheld for every $2 earned over $25,560 in 2027. In the year you reach full retirement age, $1 for every $3 over $67,920.",
+   "plain": "If you are under full retirement age and work, $1 of benefits is withheld for every $2 earned over $25,560 in 2027. In the year you reach full retirement age, $1 for every $3 over $67,920, counting only what you earn before the month you reach that age.",
    "source": "https://www.ssa.gov/cola/factsheets/2027.html",
    "effective_from": "2027-01-01",
    "checked_on": "2026-11-23"
@@ -64,8 +64,8 @@
   },
   {
    "id": "history",
-   "plain": "Your my Social Security account has your benefit letter and payment history.",
-   "source": "https://www.ssa.gov/myaccount/",
+   "plain": "Your my Social Security account shows your benefit and payment information and your benefit letter.",
+   "source": "https://www.ssa.gov/myaccount/what.html",
    "effective_from": null,
    "checked_on": "2026-11-23"
   },

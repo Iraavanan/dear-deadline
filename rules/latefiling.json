@@ -34,7 +34,7 @@
   },
   {
    "id": "consider",
-   "plain": "Social Security looks at what kept you from filing on time, whether its own action misled you, and any physical, mental, educational or language limitation, including limited English.",
+   "plain": "Social Security looks at what kept you from filing on time, whether its own action misled you, whether a change in the law confused you, and any physical, mental, educational or language limitation, including limited English.",
    "source": "https://www.ssa.gov/OP_Home/cfr20/404/404-0911.htm",
    "effective_from": null,
    "checked_on": "2026-11-23"
@@ -76,7 +76,7 @@
   },
   {
    "id": "reason_explained",
-   "plain": "You asked Social Security to explain the decision before the deadline, and you appeal within 60 days of getting the explanation.",
+   "plain": "You asked Social Security to explain the decision before the deadline, and you appeal within 60 days of getting the explanation (30 days if you are asking the Appeals Council or going to court).",
    "source": "https://www.ssa.gov/OP_Home/cfr20/404/404-0911.htm",
    "effective_from": null,
    "checked_on": "2026-11-23"

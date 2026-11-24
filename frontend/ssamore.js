@@ -43,7 +43,7 @@
     lead: "Payments come on set days. Social Security asks you to wait three mail delivery days after the due date before reporting one missing. See when yours was due and when you can report it.",
     draw: function (s, p) {
       return [U.choice("kind", "Which payment are you waiting for?", [["ss", "Social Security (retirement, survivor or disability)"], ["ssi", "SSI"], ["both", "I get both"]], s.kind, p),
-        U.field("birth_day", "Day of the month you were born", "Only for Social Security. For example, 14 if you were born on June 14.", input("text", s.birth_day, { inputmode: "numeric", maxlength: "2" }), p),
+        U.field("birth_day", "Birth day of the worker whose record you are paid on", "Only for Social Security. Your own birth day if it is your own benefit; for a spouse or child benefit, the worker's. For example, 14 for June 14.", input("text", s.birth_day, { inputmode: "numeric", maxlength: "2" }), p),
         U.choice("before_1997", "Did you start getting Social Security before May 1997?", [["no", "No"], ["yes", "Yes"]], s.before_1997 || "no", p),
         U.field("month", "Month of the payment", null, input("month", s.month || new Date().toISOString().slice(0, 7)), p)];
     },
@@ -67,7 +67,7 @@
     draw: function (s, p) {
       return [U.choice("benefit", "Which benefit?", [["ss", "Social Security (retirement, survivor or disability)"], ["ssi", "SSI"]], s.benefit, p),
         U.choice("debt", "What is the debt for?", [["student_loan", "A federal student loan"], ["federal", "Another federal debt (not taxes)"], ["taxes", "Federal income taxes"], ["child_support", "Child support or alimony"], ["private", "A credit card, medical bill or other private debt"]], s.debt, p),
-        U.field("monthly_benefit", "Your monthly benefit before anything is taken", "Before the Medicare premium and the amount taken.", input("money", s.monthly_benefit), p),
+        U.field("monthly_benefit", "Your monthly benefit after the Medicare premium", "Do not subtract anything taken for this debt or to repay an overpayment.", input("money", s.monthly_benefit), p),
         U.field("taken", "How much is taken each month", "Optional.", input("money", s.taken), p)];
     },
     read: function () { return { benefit: U.picked("benefit"), debt: U.picked("debt"), monthly_benefit: val("monthly_benefit"), taken: val("taken") }; },
@@ -75,7 +75,7 @@
     show: function (r, s, back) {
       U.count("benefit-offset", "kit");
       U.show(h("h1", { class: "long", text: r.headline }),
-        r.limit !== null ? table([["Monthly benefit", money(r.monthly_benefit)], ["Most that may be taken", money(r.limit)], r.taken !== null ? ["Taken now", money(r.taken)] : null,
+        r.limit !== null ? table([["Monthly benefit after the Medicare premium", money(r.monthly_benefit)], ["Most that may be taken", money(r.limit)], r.taken !== null ? ["Taken now", money(r.taken)] : null,
           ["Left after the most that may be taken", money(r.monthly_benefit - r.limit)]]) : null,
         h("h2", { text: "What you can do" }), steps(r.steps),
         tail(r, "benefit-offset.txt", function (r) { return plain(r, [["LIMIT", r.limit !== null ? money(r.limit) + " a month" : ""], ["WHAT YOU CAN DO", r.steps]]); }, [U.quiet("Change my figures", back)]));
