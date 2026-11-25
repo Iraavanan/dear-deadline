@@ -1846,5 +1846,1657 @@
  "benefitmath/official/plain": {
   "en": "Social Security publishes its own Detailed Calculator, with its source code, which works out a benefit from an earnings record.",
   "es": "El Seguro Social publica su propia Calculadora Detallada (Detailed Calculator), con su código fuente, que calcula un beneficio a partir de un registro de ganancias."
+ },
+ "askedagain/ten_days/plain": {
+  "en": "For SNAP, the state must give you at least 10 days to provide proof it asks for.",
+  "es": "Para SNAP, el estado debe darle al menos 10 días para entregar las pruebas que le pide."
+ },
+ "askedagain/notice/plain": {
+  "en": "The state's request for proof must say, in plain language, which documents to send and the period they should cover.",
+  "es": "El pedido de pruebas del estado debe decir, en lenguaje sencillo, qué documentos enviar y qué período deben cubrir."
+ },
+ "askedagain/help/plain": {
+  "en": "If you are cooperating but cannot get a document, the state must help you get the proof, for example by contacting your employer itself.",
+  "es": "Si usted está cooperando pero no puede conseguir un documento, el estado debe ayudarle a conseguir la prueba, por ejemplo comunicándose él mismo con su empleador."
+ },
+ "askedagain/unchanged/plain": {
+  "en": "At SNAP renewal, information that has not changed is not checked again unless it is incomplete, inaccurate, inconsistent or outdated. You can ask why something is needed again.",
+  "es": "En la renovación de SNAP, la información que no ha cambiado no se vuelve a verificar, a menos que esté incompleta, sea inexacta, sea contradictoria o esté desactualizada. Usted puede preguntar por qué se necesita algo otra vez."
+ },
+ "askedagain/receipt/plain": {
+  "en": "A receipt or an upload in your account shows the agency got something. Agencies say documents must still be reviewed for completeness and accepted by a worker.",
+  "es": "Un recibo o un documento subido a su cuenta muestra que la agencia recibió algo. Las agencias dicen que un trabajador todavía debe revisar que los documentos estén completos y aceptarlos."
+ },
+ "askedagain/fl_employer/plain": {
+  "en": "Florida DCF's Verification of Employment/Loss of Income form can be filled in by your employer when you cannot get pay stubs.",
+  "es": "El formulario Verification of Employment/Loss of Income del DCF de Florida lo puede llenar su empleador cuando usted no puede conseguir talones de pago."
+ },
+ "askedagain/ssa_letter/plain": {
+  "en": "For Social Security or SSI income, a benefit verification letter is proof of income. Download it from your my Social Security account, or call 1-800-772-1213 any time and say \"proof of income\".",
+  "es": "Para ingresos del Seguro Social o de SSI, una carta de verificación de beneficios sirve como prueba de ingresos. Descárguela de su cuenta my Social Security, o llame al 1-800-772-1213 a cualquier hora y diga \"proof of income\" (prueba de ingresos)."
+ },
+ "permission/ssa_rep/plain": {
+  "en": "To have someone act for you on a Social Security claim or appeal, you appoint them with form SSA-1696. The representative must be a person, not an organization.",
+  "es": "Para que alguien actúe por usted en una solicitud o apelación del Seguro Social, usted lo nombra con el formulario SSA-1696. El representante debe ser una persona, no una organización."
+ },
+ "permission/ssa_release/plain": {
+  "en": "To let Social Security give your information to someone without making them your representative, sign form SSA-3288. It lets them receive information; it does not let them act for you.",
+  "es": "Para permitir que el Seguro Social dé su información a alguien sin nombrarlo su representante, firme el formulario SSA-3288. Le permite recibir información; no le permite actuar por usted."
+ },
+ "permission/ssa_sign/plain": {
+  "en": "A paper consent needs your own handwritten signature. A legal guardian can sign for an adult they are guardian for.",
+  "es": "Un consentimiento en papel necesita su propia firma a mano. Un tutor legal puede firmar por el adulto del que es tutor."
+ },
+ "permission/medicare/plain": {
+  "en": "To let 1-800-MEDICARE talk with someone about your Medicare, fill in form CMS-10106, Authorization to Disclose Personal Health Information.",
+  "es": "Para permitir que 1-800-MEDICARE hable con alguien sobre su Medicare, llene el formulario CMS-10106, Authorization to Disclose Personal Health Information."
+ },
+ "permission/fl_rep/plain": {
+  "en": "For Florida food assistance, name an authorized representative with DCF's Authorized Representative Designation form.",
+  "es": "Para la asistencia de alimentos de Florida, nombre a un representante autorizado con el formulario Authorized Representative Designation del DCF."
+ },
+ "permission/fl_disclose/plain": {
+  "en": "For Florida Medicaid, let DCF share your information with someone using the Authorization to Disclose Information form.",
+  "es": "Para Medicaid de Florida, permita que el DCF comparta su información con alguien por medio del formulario Authorization to Disclose Information."
+ },
+ "permission/prepare/plain": {
+  "en": "Anyone can help you read letters, fill in forms, make copies and sit with you on a call without a form. A form is needed for the agency to talk with them without you, or for them to act for you.",
+  "es": "Cualquier persona puede ayudarle a leer cartas, llenar formularios, hacer copias y acompañarle en una llamada sin ningún formulario. Se necesita un formulario para que la agencia hable con esa persona sin usted, o para que esa persona actúe por usted."
+ },
+ "hearingnext/snap_file/plain": {
+  "en": "For a SNAP hearing, you can look at every document and record the state will use, before the hearing and during it.",
+  "es": "Para una audiencia de SNAP, usted puede ver todos los documentos y registros que el estado va a usar, antes de la audiencia y durante ella."
+ },
+ "hearingnext/snap_rights/plain": {
+  "en": "At a SNAP hearing you can bring witnesses, submit evidence, and question or refute any testimony or evidence.",
+  "es": "En una audiencia de SNAP usted puede llevar testigos, presentar pruebas, y cuestionar o refutar cualquier testimonio o prueba."
+ },
+ "hearingnext/medicaid_rights/plain": {
+  "en": "At a Medicaid hearing you can look at your case file and the documents the agency will use, before and during the hearing, bring witnesses, present your side and question witnesses.",
+  "es": "En una audiencia de Medicaid usted puede ver el expediente de su caso y los documentos que la agencia va a usar, antes de la audiencia y durante ella, llevar testigos, presentar su versión e interrogar a los testigos."
+ },
+ "hearingnext/snap_increase/plain": {
+  "en": "If a SNAP hearing decision raises your benefits, the increase must reach your EBT account within 10 days of when the state receives the decision. The state may instead use your normal payment date if that is within 60 days of your hearing request.",
+  "es": "Si la decisión de una audiencia de SNAP aumenta sus beneficios, el aumento debe llegar a su cuenta EBT dentro de los 10 días desde que el estado recibe la decisión. El estado puede usar en su lugar su fecha normal de pago, si esa fecha está dentro de los 60 días de su solicitud de audiencia."
+ },
+ "hearingnext/snap_lost/plain": {
+  "en": "If the decision says you were wrongly denied or underpaid, the benefits you lost must be given back.",
+  "es": "Si la decisión dice que le negaron beneficios o le pagaron de menos por error, los beneficios que perdió se le deben devolver."
+ },
+ "hearingnext/medicaid_fix/plain": {
+  "en": "If a Medicaid hearing decision is in your favor, the agency must promptly make corrective payments, back to the date of the wrong action.",
+  "es": "Si la decisión de una audiencia de Medicaid es a su favor, la agencia debe hacer sin demora los pagos correctivos, desde la fecha de la acción equivocada."
+ },
+ "hearingnext/medicaid_time/plain": {
+  "en": "A Medicaid hearing decision is ordinarily due within 90 days of the hearing request.",
+  "es": "La decisión de una audiencia de Medicaid normalmente debe darse dentro de los 90 días de la solicitud de audiencia."
+ },
+ "hearingnext/snap_time/plain": {
+  "en": "A SNAP hearing decision is due within 60 days of the hearing request.",
+  "es": "La decisión de una audiencia de SNAP debe darse dentro de los 60 días de la solicitud de audiencia."
+ },
+ "medicaidend/kids/plain": {
+  "en": "For children under 19 who no longer qualify for Medicaid, Florida KidCare may cover them, sometimes with a monthly premium. When DCF finds a child not eligible for Medicaid, it shares the application with Florida KidCare.",
+  "es": "A los niños menores de 19 años que ya no califican para Medicaid, Florida KidCare puede cubrirlos, a veces con una prima mensual. Cuando el DCF determina que un niño no es elegible para Medicaid, comparte la solicitud con Florida KidCare."
+ },
+ "medicaidend/marketplace/plain": {
+  "en": "You can apply on HealthCare.gov if you lost Medicaid in the past 90 days or will lose it in the next 60 days. Coverage starts once you pay the first premium.",
+  "es": "Puede solicitar en HealthCare.gov si perdió Medicaid en los últimos 90 días o lo va a perder en los próximos 60 días. La cobertura empieza cuando usted paga la primera prima."
+ },
+ "medicaidend/gap/plain": {
+  "en": "In a state that has not expanded Medicaid, an adult with income below the federal poverty level who does not qualify for Medicaid for another reason gets neither Medicaid nor Marketplace savings.",
+  "es": "En un estado que no ha ampliado Medicaid, un adulto con ingresos por debajo del nivel federal de pobreza que no califica para Medicaid por otra razón no recibe ni Medicaid ni los ahorros del Mercado de Seguros (Marketplace)."
+ },
+ "medicaidend/fl_not_expanded/plain": {
+  "en": "Florida has not expanded Medicaid to adults under the Affordable Care Act.",
+  "es": "Florida no ha ampliado Medicaid a los adultos bajo la Ley del Cuidado de Salud a Bajo Precio (Affordable Care Act)."
+ },
+ "medicaidend/fpl/plain": {
+  "en": "2026 federal poverty guideline: $15,960 a year for one person, plus $5,680 for each extra person (48 states and DC).",
+  "es": "Guía federal de pobreza de 2026: $15,960 al año para una persona, más $5,680 por cada persona adicional (48 estados y DC)."
+ },
+ "wic/cereal/plain": {
+  "en": "WIC breakfast cereal must be a box or bag of 9 oz or more. Your cereal is in ounces for the month; plan your boxes so you can use all of it. Buying 12, 18, 24 and 36 oz sizes makes that easier.",
+  "es": "El cereal de desayuno de WIC debe venir en una caja o bolsa de 9 oz o más. Su cereal se cuenta en onzas para el mes; planee sus cajas para poder usarlo todo. Comprar tamaños de 12, 18, 24 y 36 oz lo hace más fácil."
+ },
+ "wic/whole_grain/plain": {
+  "en": "WIC whole grains, such as 100% whole wheat bread, can be any package from 12 to 42 oz.",
+  "es": "Los granos integrales de WIC, como el pan 100% de trigo integral, pueden venir en cualquier paquete de 12 a 42 oz."
+ },
+ "wic/family/plain": {
+  "en": "Foods for everyone in your family are added together on one card. For example, 3 people with 36 oz of cereal each have 108 oz on the card.",
+  "es": "Los alimentos de todas las personas de su familia se suman en una sola tarjeta. Por ejemplo, 3 personas con 36 oz de cereal cada una tienen 108 oz en la tarjeta."
+ },
+ "wic/check/plain": {
+  "en": "Check a real product with the Florida WIC app, which scans items to see if they are approved, or with the Florida WIC Foods pamphlet. Check your receipt before you leave the store.",
+  "es": "Revise un producto real con la aplicación Florida WIC, que escanea los artículos para ver si están aprobados, o con el folleto Florida WIC Foods. Revise su recibo antes de salir de la tienda."
+ },
+ "scam/pay_method/ask": {
+  "en": "It told me to pay with gift cards, a prepaid card, cryptocurrency, a wire transfer, gold or cash",
+  "es": "Me dijo que pagara con tarjetas de regalo, una tarjeta prepagada, criptomonedas, una transferencia, oro o dinero en efectivo"
+ },
+ "scam/pay_method/plain": {
+  "en": "Scammers tell you to pay in a specific way. Social Security says: do not pay with gift cards, precious metals, prepaid debit cards, cryptocurrency, wire transfers or cash.",
+  "es": "Los estafadores le dicen que pague de una manera específica. El Seguro Social dice: no pague con tarjetas de regalo, metales preciosos, tarjetas de débito prepagadas, criptomonedas, transferencias de dinero ni efectivo."
+ },
+ "scam/pay_method/other/plain": {
+  "en": "No government agency will demand that you pay with gift cards, a wire transfer, cryptocurrency or a payment app. Only a scammer insists on that.",
+  "es": "Ninguna agencia del gobierno le exigirá pagar con tarjetas de regalo, una transferencia de dinero, criptomonedas o una aplicación de pagos. Solo un estafador insiste en eso."
+ },
+ "scam/pressure/ask": {
+  "en": "It threatened me or said I must act right away",
+  "es": "Me amenazó o dijo que debo actuar de inmediato"
+ },
+ "scam/pressure/plain": {
+  "en": "Scammers pressure you to act immediately. Social Security will never threaten, scare or pressure you to take an immediate action.",
+  "es": "Los estafadores le presionan para que actúe de inmediato. El Seguro Social nunca le amenazará, asustará ni presionará para que haga algo de inmediato."
+ },
+ "scam/pressure/other/plain": {
+  "en": "Real government staff won't call to threaten to arrest you, freeze your accounts or take your property, even if you owe money.",
+  "es": "El personal verdadero del gobierno no llama para amenazar con arrestarle, congelar sus cuentas o quitarle sus bienes, aunque usted deba dinero."
+ },
+ "scam/problem_or_prize/ask": {
+  "en": "It said there is a problem with my number, card, account or benefits, or that I won something",
+  "es": "Dijo que hay un problema con mi número, tarjeta, cuenta o beneficios, o que gané algo"
+ },
+ "scam/problem_or_prize/plain": {
+  "en": "Scammers claim there is a problem or a prize.",
+  "es": "Los estafadores dicen que hay un problema o un premio."
+ },
+ "scam/problem_or_prize/other/plain": {
+  "en": "Scammers pretend to be from an agency you know, often saying there is a problem or a prize. The FTC notes that it, for one, never runs sweepstakes or lotteries.",
+  "es": "Los estafadores se hacen pasar por una agencia que usted conoce, y a menudo dicen que hay un problema o un premio. La Comisión Federal de Comercio (FTC) señala que ella, por ejemplo, nunca organiza sorteos ni loterías."
+ },
+ "scam/personal_info/ask": {
+  "en": "It asked for my Social Security number, Medicare number, bank details, card number or a password",
+  "es": "Pidió mi número de Seguro Social, mi número de Medicare, datos de mi banco, el número de una tarjeta o una contraseña"
+ },
+ "scam/personal_info/plain": {
+  "en": "Social Security will never ask for sensitive or personal information through social media, email or text message.",
+  "es": "El Seguro Social nunca le pedirá información personal o delicada por redes sociales, correo electrónico o mensaje de texto."
+ },
+ "scam/personal_info/other/plain": {
+  "en": "Government agencies will never call, email, text, or message you on social media to ask for money or personal information.",
+  "es": "Las agencias del gobierno nunca le llamarán, le enviarán correos electrónicos o mensajes de texto, ni le escribirán por redes sociales para pedirle dinero o información personal."
+ },
+ "scam/protect_money/ask": {
+  "en": "It told me to move my money somewhere to keep it safe",
+  "es": "Me dijo que moviera mi dinero a otro lugar para protegerlo"
+ },
+ "scam/protect_money/plain": {
+  "en": "Social Security and its Inspector General will never ask you to transfer money to protect it.",
+  "es": "El Seguro Social y su Inspector General nunca le pedirán que transfiera dinero para protegerlo."
+ },
+ "scam/protect_money/other/plain": {
+  "en": "No one from the government will tell you to move your money to keep it safe. Only a scammer will.",
+  "es": "Nadie del gobierno le dirá que mueva su dinero para protegerlo. Solo un estafador lo hará."
+ },
+ "scam/meet_in_person/ask": {
+  "en": "Someone wants to meet me or send a courier to collect cash, cards or gold",
+  "es": "Alguien quiere verme en persona o enviar a un mensajero a recoger efectivo, tarjetas u oro"
+ },
+ "scam/meet_in_person/plain": {
+  "en": "They will never meet you in person to exchange cash, gift cards, cryptocurrency or gold bars.",
+  "es": "Nunca se reunirán con usted en persona para recibir efectivo, tarjetas de regalo, criptomonedas o lingotes de oro."
+ },
+ "scam/meet_in_person/other/plain": {
+  "en": "Someone who works for the government won't tell you to get cash or gold and give it to someone.",
+  "es": "Alguien que trabaja para el gobierno no le dirá que consiga efectivo u oro y se lo entregue a otra persona."
+ },
+ "scam/secrecy/ask": {
+  "en": "It told me to keep this secret",
+  "es": "Me dijo que lo mantuviera en secreto"
+ },
+ "scam/secrecy/plain": {
+  "en": "They will never require you to keep information secret or confidential.",
+  "es": "Nunca le exigirán que mantenga información en secreto o de forma confidencial."
+ },
+ "scam/secrecy/other/plain": {
+  "en": "Scammers often tell you to keep the conversation secret from your friends and family.",
+  "es": "Los estafadores a menudo le dicen que mantenga la conversación en secreto y no se la cuente a sus amigos ni a su familia."
+ },
+ "scam/badge/ask": {
+  "en": "It sent a photo of a badge or an ID card",
+  "es": "Envió una foto de una placa o de una tarjeta de identificación"
+ },
+ "scam/badge/plain": {
+  "en": "Federal law enforcement will never send photographs of credentials or badges to demand any kind of payment.",
+  "es": "Los agentes federales del orden público nunca enviarán fotografías de credenciales o placas para exigir ningún tipo de pago."
+ },
+ "scam/link/ask": {
+  "en": "It has a link or an attachment I was told to open",
+  "es": "Tiene un enlace o un archivo adjunto que me dijeron que abriera"
+ },
+ "scam/link/plain": {
+  "en": "Social Security's advice for a suspicious message: do not click links or open attachments.",
+  "es": "El consejo del Seguro Social ante un mensaje sospechoso: no haga clic en enlaces ni abra archivos adjuntos."
+ },
+ "scam/link/other/plain": {
+  "en": "Don't click on links in unexpected emails or text messages.",
+  "es": "No haga clic en los enlaces de correos electrónicos o mensajes de texto que no esperaba."
+ },
+ "scam/what_to_do/plain": {
+  "en": "Pause. Hang up or ignore the message. Do not click links or open attachments, do not pay, and do not share personal information with an unexpected contact about a problem you do not recognize.",
+  "es": "Deténgase. Cuelgue o ignore el mensaje. No haga clic en enlaces ni abra archivos adjuntos, no pague, y no dé información personal a alguien que se comunica sin que usted lo espere por un problema que usted no reconoce."
+ },
+ "scam/report/plain": {
+  "en": "Report a Social Security-related scam to the Inspector General.",
+  "es": "Denuncie una estafa relacionada con el Seguro Social ante el Inspector General."
+ },
+ "scam/verify/plain": {
+  "en": "To check whether a letter or call is real, contact Social Security yourself, using the phone number or website you look up yourself and not one given in the message.",
+  "es": "Para saber si una carta o una llamada es real, comuníquese usted mismo con el Seguro Social, usando el número de teléfono o el sitio web que usted mismo busque, y no el que da el mensaje."
+ },
+ "scam/mc_sell/ask": {
+  "en": "Someone said they were from Medicare and tried to sell me something, or wanted to come to my home",
+  "es": "Alguien dijo que era de Medicare y trató de venderme algo, o quería venir a mi casa"
+ },
+ "scam/mc_sell/plain": {
+  "en": "Medicare will not call you to sell you anything, and will not visit your home.",
+  "es": "Medicare no le llamará para venderle nada, y no visitará su casa."
+ },
+ "scam/mc_number/ask": {
+  "en": "A caller I did not call first asked for my Medicare number or other personal details",
+  "es": "Alguien a quien yo no llamé primero me pidió mi número de Medicare u otros datos personales"
+ },
+ "scam/mc_number/plain": {
+  "en": "Medicare will not call you or ask for personal information, except in limited cases, such as returning a call you made or after you reported fraud.",
+  "es": "Medicare no le llamará ni le pedirá información personal, salvo en casos limitados, como cuando devuelve una llamada que usted hizo o después de que usted denunció un fraude."
+ },
+ "scam/mc_free/ask": {
+  "en": "It offered free equipment, tests, care or a gift if I share my Medicare number",
+  "es": "Ofreció equipos, pruebas, atención o un regalo gratis si doy mi número de Medicare"
+ },
+ "scam/mc_free/plain": {
+  "en": "Medicare's advice: don't accept money or gifts in exchange for free medical care, and share your Medicare number only with your doctor or people who should have it.",
+  "es": "El consejo de Medicare: no acepte dinero ni regalos a cambio de atención médica gratis, y dé su número de Medicare solo a su médico o a las personas que deben tenerlo."
+ },
+ "scam/mc_plan_phone/ask": {
+  "en": "It wanted me to join or switch a Medicare plan on a call I did not ask for",
+  "es": "Quería que me inscribiera en un plan de Medicare o lo cambiara en una llamada que yo no pedí"
+ },
+ "scam/mc_plan_phone/plain": {
+  "en": "Medicare's advice: don't join a Medicare health or drug plan over the phone unless you called and asked for help.",
+  "es": "El consejo de Medicare: no se inscriba en un plan de salud o de medicamentos de Medicare por teléfono, a menos que usted haya llamado para pedir ayuda."
+ },
+ "scam/snap_pin/ask": {
+  "en": "It asked for my EBT card number or PIN",
+  "es": "Pidió el número o el PIN de mi tarjeta EBT"
+ },
+ "scam/snap_pin/plain": {
+  "en": "State agencies and EBT processors will never call or text to ask for your PIN or card number.",
+  "es": "Las agencias estatales y las empresas que procesan las tarjetas EBT nunca llamarán ni enviarán mensajes de texto para pedir su PIN o el número de su tarjeta."
+ },
+ "scam/snap_locked/ask": {
+  "en": "It says my EBT card is locked or my benefits are stopped, and gives a number or link to fix it",
+  "es": "Dice que mi tarjeta EBT está bloqueada o que mis beneficios se detuvieron, y da un número o un enlace para arreglarlo"
+ },
+ "scam/snap_locked/plain": {
+  "en": "USDA has warned of fake text messages saying a SNAP EBT card has been locked, with a phone number to call for help.",
+  "es": "El USDA ha advertido sobre mensajes de texto falsos que dicen que una tarjeta EBT de SNAP fue bloqueada, con un número de teléfono para pedir ayuda."
+ },
+ "scam/md_pay/ask": {
+  "en": "It asked me to pay, or for card or bank details, to keep, renew or restart Medicaid",
+  "es": "Me pidió pagar, o dar datos de una tarjeta o de mi banco, para mantener, renovar o reactivar Medicaid"
+ },
+ "scam/md_pay/plain": {
+  "en": "Medicaid won't charge you to renew or enroll. A state Medicaid program will never threaten you, or ask for your credit card information or a payment, to keep or qualify for coverage.",
+  "es": "Medicaid no le cobrará por renovar ni por inscribirse. Un programa estatal de Medicaid nunca le amenazará, ni le pedirá los datos de su tarjeta de crédito o un pago, para mantener la cobertura o calificar para ella."
+ },
+ "scam/h_fee/ask": {
+  "en": "It asks for a fee to apply, or to get on a Section 8 or housing waiting list",
+  "es": "Pide un pago para solicitar, o para entrar en una lista de espera de Sección 8 o de vivienda"
+ },
+ "scam/h_fee/plain": {
+  "en": "Never pay anyone to be added to an assisted housing waitlist. Housing authorities and government agencies will never ask you to pay to join a waitlist or to be admitted to a housing assistance program.",
+  "es": "Nunca le pague a nadie para que le agregue a una lista de espera de vivienda asistida. Las autoridades de vivienda y las agencias del gobierno nunca le pedirán pagar para entrar en una lista de espera ni para ser admitido en un programa de asistencia de vivienda."
+ },
+ "scam/h_contact/ask": {
+  "en": "Someone contacted me by phone, email or social media to suggest I join a waiting list",
+  "es": "Alguien se comunicó conmigo por teléfono, correo electrónico o redes sociales para sugerirme que entre en una lista de espera"
+ },
+ "scam/h_contact/plain": {
+  "en": "Housing authorities do not charge fees, and they won't reach out to you by phone or email to suggest that you join a waiting list.",
+  "es": "Las autoridades de vivienda no cobran cuotas, y no se comunicarán con usted por teléfono o correo electrónico para sugerirle que entre en una lista de espera."
+ },
+ "scam/verify_medicare/plain": {
+  "en": "To check, call Medicare yourself at 1-800-MEDICARE (1-800-633-4227), or look at your claims in your Medicare.gov account. If it is about a Medicare Advantage or drug plan, call the number on your plan card.",
+  "es": "Para comprobarlo, llame usted mismo a Medicare al 1-800-MEDICARE (1-800-633-4227), o revise sus reclamos en su cuenta de Medicare.gov. Si se trata de un plan Medicare Advantage o de medicamentos, llame al número de la tarjeta de su plan."
+ },
+ "scam/report_medicare/plain": {
+  "en": "Report Medicare fraud to 1-800-MEDICARE or to the HHS Office of Inspector General. For a Medicare Advantage or drug plan, you can also call the I-MEDIC line, 1-877-772-3379.",
+  "es": "Denuncie un fraude de Medicare al 1-800-MEDICARE o a la Oficina del Inspector General del HHS. Si se trata de un plan Medicare Advantage o de medicamentos, también puede llamar a la línea I-MEDIC, 1-877-772-3379."
+ },
+ "scam/verify_snap/plain": {
+  "en": "If you are not sure a message about SNAP is real, contact your local SNAP office yourself. In Florida that is DCF at (850) 300-4323. For other states, find your state's contact in USDA's directory.",
+  "es": "Si no está seguro de que un mensaje sobre SNAP sea real, comuníquese usted mismo con su oficina local de SNAP. En Florida es el DCF, al (850) 300-4323. Para otros estados, busque el contacto de su estado en el directorio del USDA."
+ },
+ "scam/report_snap/plain": {
+  "en": "If you think you were caught by a SNAP scam or your benefits were stolen, tell your local SNAP office right away and change your PIN. Report scam texts to the Federal Trade Commission.",
+  "es": "Si cree que cayó en una estafa de SNAP o que le robaron sus beneficios, avise de inmediato a su oficina local de SNAP y cambie su PIN. Denuncie los mensajes de texto fraudulentos ante la Comisión Federal de Comercio (FTC)."
+ },
+ "scam/verify_medicaid/plain": {
+  "en": "To check a message about Medicaid, contact your state Medicaid agency yourself, using the number on your Medicaid card or the state's own website. In Florida, eligibility is handled by DCF: (850) 300-4323.",
+  "es": "Para comprobar un mensaje sobre Medicaid, comuníquese usted mismo con la agencia de Medicaid de su estado, usando el número de su tarjeta de Medicaid o el sitio web del propio estado. En Florida, la elegibilidad la maneja el DCF: (850) 300-4323."
+ },
+ "scam/report_medicaid/plain": {
+  "en": "Report a Medicaid scam to the Federal Trade Commission and to your state.",
+  "es": "Denuncie una estafa de Medicaid ante la Comisión Federal de Comercio (FTC) y ante su estado."
+ },
+ "scam/verify_housing/plain": {
+  "en": "To get on a real waiting list, contact your local housing authority yourself and ask how to apply. It is free.",
+  "es": "Para entrar en una lista de espera verdadera, comuníquese usted mismo con su autoridad de vivienda local y pregunte cómo solicitar. Es gratis."
+ },
+ "scam/report_housing/plain": {
+  "en": "Report a housing voucher scam to the HUD Office of Inspector General hotline, 1-800-347-3735, and to the Federal Trade Commission.",
+  "es": "Denuncie una estafa de vales de vivienda a la línea directa de la Oficina del Inspector General de HUD, 1-800-347-3735, y ante la Comisión Federal de Comercio (FTC)."
+ },
+ "scam/verify_other/plain": {
+  "en": "Contact the agency yourself, using a phone number or website you look up yourself, not one given in the message.",
+  "es": "Comuníquese usted mismo con la agencia, usando un número de teléfono o un sitio web que usted mismo busque, y no el que da el mensaje."
+ },
+ "scam/report_other/plain": {
+  "en": "Report imposter scams to the Federal Trade Commission.",
+  "es": "Denuncie las estafas de impostores ante la Comisión Federal de Comercio (FTC)."
+ },
+ "letters/overpayment/title": {
+  "en": "It says I was paid too much",
+  "es": "Dice que me pagaron de más"
+ },
+ "letters/overpayment/cue": {
+  "en": "An overpayment notice asking for money back.",
+  "es": "Un aviso de pago de más que pide devolver dinero."
+ },
+ "letters/overpayment/plain": {
+  "en": "Social Security says it paid you more than you were due and wants the money back.",
+  "es": "El Seguro Social dice que le pagó más de lo que le correspondía y quiere que devuelva el dinero."
+ },
+ "letters/overpayment/do/0": {
+  "en": "Use the overpayment helper. It shows the 30-day and 60-day dates and what you can ask for.",
+  "es": "Use la herramienta de pago de más. Muestra las fechas de 30 y 60 días y lo que usted puede pedir."
+ },
+ "letters/overpayment/chip": {
+  "en": "30 and 60 days",
+  "es": "30 y 60 días"
+ },
+ "letters/overpayment/contact": {
+  "en": "Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+  "es": "Seguro Social: 1-800-772-1213 (TTY 1-800-325-0778)"
+ },
+ "letters/disability-ended/title": {
+  "en": "It says my disability has ended",
+  "es": "Dice que mi incapacidad terminó"
+ },
+ "letters/disability-ended/cue": {
+  "en": "After a medical review of your condition.",
+  "es": "Después de una revisión médica de su condición."
+ },
+ "letters/disability-ended/plain": {
+  "en": "Social Security reviewed your condition and decided you are no longer disabled, so your benefits will stop.",
+  "es": "El Seguro Social revisó su condición y decidió que usted ya no está incapacitado, así que sus beneficios se van a detener."
+ },
+ "letters/disability-ended/do/0": {
+  "en": "Use the disability-ended helper. Part of this letter has a 15-day window.",
+  "es": "Use la herramienta de incapacidad terminada. Una parte de esta carta tiene un plazo de 15 días."
+ },
+ "letters/disability-ended/chip": {
+  "en": "15 and 60 days",
+  "es": "15 y 60 días"
+ },
+ "letters/decision-denied/title": {
+  "en": "It says my claim or appeal was denied",
+  "es": "Dice que negaron mi solicitud o mi apelación"
+ },
+ "letters/decision-denied/cue": {
+  "en": "A denied application, a reconsideration, a judge's decision or an Appeals Council letter.",
+  "es": "Una solicitud negada, una reconsideración, la decisión de un juez o una carta del Consejo de Apelaciones."
+ },
+ "letters/decision-denied/plain": {
+  "en": "Social Security decided against you on an application or an appeal.",
+  "es": "El Seguro Social decidió en su contra en una solicitud o en una apelación."
+ },
+ "letters/decision-denied/do/0": {
+  "en": "Use the appeal helper. It shows your date and which step of appeal comes next.",
+  "es": "Use la herramienta de apelación. Muestra su fecha y cuál es el siguiente paso de la apelación."
+ },
+ "letters/decision-denied/chip": {
+  "en": "60 days",
+  "es": "60 días"
+ },
+ "letters/award/title": {
+  "en": "It says my benefits were approved (award letter)",
+  "es": "Dice que aprobaron mis beneficios (carta de aprobación)"
+ },
+ "letters/award/cue": {
+  "en": "Often titled Notice of Award. It gives your monthly amount and the date payments start.",
+  "es": "A menudo se titula Notice of Award. Da su cantidad mensual y la fecha en que empiezan los pagos."
+ },
+ "letters/award/plain": {
+  "en": "Social Security approved your benefits. The letter states how much you will get and from when.",
+  "es": "El Seguro Social aprobó sus beneficios. La carta dice cuánto va a recibir y desde cuándo."
+ },
+ "letters/award/do/0": {
+  "en": "Check the monthly amount, the start date and any back payment against what you expected.",
+  "es": "Compare la cantidad mensual, la fecha de inicio y cualquier pago retroactivo con lo que usted esperaba."
+ },
+ "letters/award/do/1": {
+  "en": "If you think any of them is wrong, you can appeal like any other decision. The appeal helper shows the steps.",
+  "es": "Si cree que algo de eso está mal, puede apelar como con cualquier otra decisión. La herramienta de apelación muestra los pasos."
+ },
+ "letters/award/do/2": {
+  "en": "Keep this letter. Other agencies and landlords often ask for it.",
+  "es": "Guarde esta carta. Otras agencias y los dueños de vivienda la piden con frecuencia."
+ },
+ "letters/award/clocks/0/label": {
+  "en": "Appeal by this date",
+  "es": "Apele a más tardar en esta fecha"
+ },
+ "letters/award/clocks/0/rule": {
+  "en": "You have 60 days after you receive the letter to ask for an appeal.",
+  "es": "Tiene 60 días desde que recibe la carta para pedir una apelación."
+ },
+ "letters/award/clocks/0/note": {
+  "en": "Counted from the date printed on the letter, which is the cautious reading.",
+  "es": "Contados desde la fecha impresa en la carta, que es la lectura más prudente."
+ },
+ "letters/award/clocks/1/label": {
+  "en": "Latest appeal date if the letter took 5 days to arrive",
+  "es": "Última fecha para apelar si la carta tardó 5 días en llegar"
+ },
+ "letters/award/clocks/1/note": {
+  "en": "Do not aim for this date. Use it only if the earlier date has passed.",
+  "es": "No apunte a esta fecha. Úsela solo si la fecha anterior ya pasó."
+ },
+ "letters/award/date/label": {
+  "en": "Date printed on the letter",
+  "es": "Fecha impresa en la carta"
+ },
+ "letters/award/date/hint": {
+  "en": "Usually at the top of the first page.",
+  "es": "Por lo general está arriba, en la primera página."
+ },
+ "letters/award/chip": {
+  "en": "60 days if you disagree",
+  "es": "60 días si no está de acuerdo"
+ },
+ "letters/award/see_label": {
+  "en": "Open the appeal helper",
+  "es": "Abrir la herramienta de apelación"
+ },
+ "letters/ssi-planned-action/title": {
+  "en": "It says my SSI will go down or stop (Notice of Planned Action)",
+  "es": "Dice que mi SSI va a bajar o a detenerse (Notice of Planned Action)"
+ },
+ "letters/ssi-planned-action/cue": {
+  "en": "Supplemental Security Income only. It says what Social Security plans to do and from which month.",
+  "es": "Solo para la Seguridad de Ingreso Suplementario (SSI). Dice lo que el Seguro Social planea hacer y desde qué mes."
+ },
+ "letters/ssi-planned-action/plain": {
+  "en": "Social Security plans to lower, suspend or stop your SSI for a reason other than your medical condition. This is an advance notice: the change has not happened yet.",
+  "es": "El Seguro Social planea bajar, suspender o detener su SSI por una razón que no es su condición médica. Este es un aviso por adelantado: el cambio todavía no ha ocurrido."
+ },
+ "letters/ssi-planned-action/do/0": {
+  "en": "If you disagree, ask for reconsideration in writing. Form SSA-561 can be used, or the online appeal.",
+  "es": "Si no está de acuerdo, pida una reconsideración por escrito. Se puede usar el formulario SSA-561 o la apelación por internet."
+ },
+ "letters/ssi-planned-action/do/1": {
+  "en": "Ask within 10 days of getting the letter if you can. Then the payment you get now continues until Social Security decides.",
+  "es": "Si puede, pídala dentro de los 10 días de recibir la carta. Así el pago que recibe ahora continúa hasta que el Seguro Social decida."
+ },
+ "letters/ssi-planned-action/do/2": {
+  "en": "You still have 60 days to appeal. Social Security's page says payments may be continued or put back if you appeal within that time.",
+  "es": "De todos modos tiene 60 días para apelar. La página del Seguro Social dice que los pagos pueden continuar o restablecerse si usted apela dentro de ese plazo."
+ },
+ "letters/ssi-planned-action/do/3": {
+  "en": "If the letter is about your medical condition, use the disability-ended helper instead.",
+  "es": "Si la carta trata de su condición médica, use en su lugar la herramienta de incapacidad terminada."
+ },
+ "letters/ssi-planned-action/clocks/0/label": {
+  "en": "Appeal by this date to keep your payment unchanged",
+  "es": "Apele a más tardar en esta fecha para que su pago no cambie"
+ },
+ "letters/ssi-planned-action/clocks/0/rule": {
+  "en": "If you ask for reconsideration in writing within 10 days of the date you receive the notice, any payment being made continues until the reconsideration is decided.",
+  "es": "Si pide una reconsideración por escrito dentro de los 10 días de la fecha en que recibe el aviso, cualquier pago que se esté haciendo continúa hasta que se decida la reconsideración."
+ },
+ "letters/ssi-planned-action/clocks/0/note": {
+  "en": "Counted from the date printed on the letter, which is the cautious reading. Social Security assumes you received it 5 days later.",
+  "es": "Contados desde la fecha impresa en la carta, que es la lectura más prudente. El Seguro Social supone que usted la recibió 5 días después."
+ },
+ "letters/ssi-planned-action/chip": {
+  "en": "10 and 60 days",
+  "es": "10 y 60 días"
+ },
+ "letters/ssi-planned-action/kit/about_label": {
+  "en": "What Social Security plans to change, and what the letter gives as the reason",
+  "es": "Lo que el Seguro Social planea cambiar, y la razón que da la carta"
+ },
+ "letters/ssi-planned-action/kit/include/0": {
+  "en": "A copy of the Notice of Planned Action",
+  "es": "Una copia del aviso (Notice of Planned Action)"
+ },
+ "letters/ssi-planned-action/kit/include/1": {
+  "en": "Proof that supports your side, such as pay stubs, bank statements, a lease or bills",
+  "es": "Pruebas que apoyen su posición, como talones de pago, estados de cuenta del banco, un contrato de alquiler o facturas"
+ },
+ "letters/ssi-planned-action/kit/include/2": {
+  "en": "Your name and the number shown on the letter, written by hand on the copy you send",
+  "es": "Su nombre y el número que aparece en la carta, escritos a mano en la copia que envíe"
+ },
+ "letters/ssi-planned-action/kit/how/0": {
+  "en": "Ask in writing. Form SSA-561 can be used, or the online appeal.",
+  "es": "Pídala por escrito. Se puede usar el formulario SSA-561 o la apelación por internet."
+ },
+ "letters/ssi-planned-action/kit/how/1": {
+  "en": "If you ask within 10 days of getting the letter, the payment you get now continues until Social Security decides.",
+  "es": "Si la pide dentro de los 10 días de recibir la carta, el pago que recibe ahora continúa hasta que el Seguro Social decida."
+ },
+ "letters/ssi-planned-action/kit/how/2": {
+  "en": "Hand it in at your local office or send it in a way that shows the date. Keep a copy.",
+  "es": "Entréguela en su oficina local o envíela de una manera que muestre la fecha. Guarde una copia."
+ },
+ "letters/ssi-planned-action/kit/how/3": {
+  "en": "Ask for a receipt that shows the date Social Security got it.",
+  "es": "Pida un recibo que muestre la fecha en que el Seguro Social la recibió."
+ },
+ "letters/ssi-redetermination/title": {
+  "en": "It says Social Security is reviewing my SSI (redetermination)",
+  "es": "Dice que el Seguro Social está revisando mi SSI (redeterminación)"
+ },
+ "letters/ssi-redetermination/cue": {
+  "en": "An appointment letter, or a form asking about income, savings and where you live.",
+  "es": "Una carta con una cita, o un formulario que pregunta por sus ingresos, sus ahorros y dónde vive."
+ },
+ "letters/ssi-redetermination/plain": {
+  "en": "A redetermination is a review of your income, resources and living arrangements, to make sure you still qualify for SSI and get the right amount. It is not about your medical condition.",
+  "es": "Una redeterminación es una revisión de sus ingresos, sus recursos y su situación de vivienda, para confirmar que usted todavía califica para SSI y recibe la cantidad correcta. No trata de su condición médica."
+ },
+ "letters/ssi-redetermination/do/0": {
+  "en": "Keep the appointment in the letter, or call Social Security to change it.",
+  "es": "Vaya a la cita de la carta, o llame al Seguro Social para cambiarla."
+ },
+ "letters/ssi-redetermination/do/1": {
+  "en": "If you were sent a form, complete, sign and return it. If you have a representative payee, the payee completes and signs it.",
+  "es": "Si le enviaron un formulario, llénelo, fírmelo y devuélvalo. Si usted tiene un representante de beneficiario, es esa persona quien lo llena y lo firma."
+ },
+ "letters/ssi-redetermination/do/2": {
+  "en": "Ask your local office for help with the form if you need it.",
+  "es": "Pida ayuda con el formulario en su oficina local si la necesita."
+ },
+ "letters/ssi-redetermination/do/3": {
+  "en": "Gather what the letter asks for, such as pay stubs, bank statements and bills for household expenses.",
+  "es": "Reúna lo que la carta pide, como talones de pago, estados de cuenta del banco y facturas de los gastos del hogar."
+ },
+ "letters/ssi-redetermination/chip": {
+  "en": "Date in the letter",
+  "es": "La fecha de la carta"
+ },
+ "letters/ssi-redetermination/see_label": {
+  "en": "Check what they asked for before you send it",
+  "es": "Revise lo que le pidieron antes de enviarlo"
+ },
+ "letters/disability-update/title": {
+  "en": "It asks about my health and work (Disability Update Report)",
+  "es": "Pregunta por mi salud y mi trabajo (Disability Update Report)"
+ },
+ "letters/disability-update/cue": {
+  "en": "A short form, numbered SSA-455, with questions about the last two years.",
+  "es": "Un formulario corto, con el número SSA-455, con preguntas sobre los últimos dos años."
+ },
+ "letters/disability-update/plain": {
+  "en": "This form is part of a periodic review of people who get disability benefits. It asks about your health, treatment, work and training, usually over the last two years. It is not a decision and it does not stop your benefits.",
+  "es": "Este formulario es parte de una revisión periódica de las personas que reciben beneficios por incapacidad. Pregunta por su salud, su tratamiento, su trabajo y su capacitación, por lo general de los últimos dos años. No es una decisión y no detiene sus beneficios."
+ },
+ "letters/disability-update/do/0": {
+  "en": "Answer every question and return the form by the date printed on it.",
+  "es": "Conteste todas las preguntas y devuelva el formulario a más tardar en la fecha impresa en él."
+ },
+ "letters/disability-update/do/1": {
+  "en": "Keep a copy and note the date you sent it.",
+  "es": "Guarde una copia y anote la fecha en que lo envió."
+ },
+ "letters/disability-update/do/2": {
+  "en": "If it is not returned, Social Security sends a second request.",
+  "es": "Si no se devuelve, el Seguro Social envía un segundo pedido."
+ },
+ "letters/disability-update/do/3": {
+  "en": "If you later get a letter saying your disability has ended, use the disability-ended helper straight away.",
+  "es": "Si más adelante recibe una carta que dice que su incapacidad terminó, use de inmediato la herramienta de incapacidad terminada."
+ },
+ "letters/disability-update/chip": {
+  "en": "Date on the form",
+  "es": "La fecha del formulario"
+ },
+ "letters/payee-report/title": {
+  "en": "It asks how I spent someone's benefits (Representative Payee Report)",
+  "es": "Pregunta cómo gasté los beneficios de otra persona (Representative Payee Report)"
+ },
+ "letters/payee-report/cue": {
+  "en": "Sent once a year to people who manage benefits for someone else. Forms SSA-623, SSA-6230 or SSA-6234.",
+  "es": "Se envía una vez al año a quienes administran los beneficios de otra persona. Formularios SSA-623, SSA-6230 o SSA-6234."
+ },
+ "letters/payee-report/plain": {
+  "en": "If you receive benefits on behalf of someone else, Social Security asks most payees once a year to report how the money was spent or saved.",
+  "es": "Si usted recibe beneficios en nombre de otra persona, el Seguro Social pide a la mayoría de los representantes, una vez al año, que informen cómo se gastó o se ahorró el dinero."
+ },
+ "letters/payee-report/do/0": {
+  "en": "Complete the report on paper or online and return it by the date on the form.",
+  "es": "Llene el informe en papel o por internet y devuélvalo a más tardar en la fecha del formulario."
+ },
+ "letters/payee-report/do/1": {
+  "en": "Use your records of what was spent on food, housing, medical care and personal needs, and what was saved.",
+  "es": "Use sus registros de lo que se gastó en comida, vivienda, atención médica y necesidades personales, y de lo que se ahorró."
+ },
+ "letters/payee-report/do/2": {
+  "en": "If a payee does not respond after repeated requests, Social Security must consider choosing a different payee.",
+  "es": "Si un representante no responde después de varios pedidos, el Seguro Social debe considerar elegir a otro representante."
+ },
+ "letters/cola/title": {
+  "en": "It tells me my new benefit amount for next year (COLA notice)",
+  "es": "Me dice la nueva cantidad de mi beneficio para el próximo año (aviso de COLA)"
+ },
+ "letters/cola/cue": {
+  "en": "Mailed in December. It gives your new monthly amount after the cost-of-living adjustment.",
+  "es": "Se envía por correo en diciembre. Da su nueva cantidad mensual después del ajuste por costo de vida."
+ },
+ "letters/cola/plain": {
+  "en": "Each year Social Security tells you your benefit amount for the next year, after the cost-of-living adjustment. Most people can also read it in the Message Center of their my Social Security account from late November.",
+  "es": "Cada año el Seguro Social le dice la cantidad de su beneficio para el año siguiente, después del ajuste por costo de vida. La mayoría de las personas también puede leerlo en el Message Center de su cuenta my Social Security desde finales de noviembre."
+ },
+ "letters/cola/do/0": {
+  "en": "Check the new monthly amount, and any Medicare premium taken out of it.",
+  "es": "Revise la nueva cantidad mensual, y cualquier prima de Medicare que se descuente de ella."
+ },
+ "letters/cola/do/1": {
+  "en": "Keep the notice. Landlords, lenders and other programs often ask for proof of income.",
+  "es": "Guarde el aviso. Los dueños de vivienda, los prestamistas y otros programas piden con frecuencia una prueba de ingresos."
+ },
+ "letters/cola/do/2": {
+  "en": "If an amount looks wrong, call Social Security and ask how it was worked out.",
+  "es": "Si una cantidad parece estar mal, llame al Seguro Social y pregunte cómo la calcularon."
+ },
+ "letters/cola/chip": {
+  "en": "Keep it",
+  "es": "Guárdelo"
+ },
+ "letters/ssa-1099/title": {
+  "en": "It is my tax statement (SSA-1099)",
+  "es": "Es mi declaración para impuestos (SSA-1099)"
+ },
+ "letters/ssa-1099/cue": {
+  "en": "Sent early in the year. It shows the benefits paid to you last year, for your tax return.",
+  "es": "Se envía a principios de año. Muestra los beneficios que le pagaron el año pasado, para su declaración de impuestos."
+ },
+ "letters/ssa-1099/plain": {
+  "en": "The SSA-1099 shows the Social Security benefits paid to you in a year, so you can report them on your tax return.",
+  "es": "El SSA-1099 muestra los beneficios del Seguro Social que le pagaron en un año, para que usted pueda informarlos en su declaración de impuestos."
+ },
+ "letters/ssa-1099/do/0": {
+  "en": "Use it when you or your tax preparer file your tax return.",
+  "es": "Úselo cuando usted o quien le prepara los impuestos presente su declaración."
+ },
+ "letters/ssa-1099/do/1": {
+  "en": "If you lost it, download a replacement from your my Social Security account, or call 1-800-772-1213 and say \"ten ninety-nine\".",
+  "es": "Si lo perdió, descargue un reemplazo de su cuenta my Social Security, o llame al 1-800-772-1213 y diga \"ten ninety-nine\" (diez noventa y nueve)."
+ },
+ "letters/ssa-1099/do/2": {
+  "en": "If the amount looks wrong, call Social Security before you file.",
+  "es": "Si la cantidad parece estar mal, llame al Seguro Social antes de presentar su declaración."
+ },
+ "letters/ssa-1099/chip": {
+  "en": "For your tax return",
+  "es": "Para su declaración de impuestos"
+ },
+ "letters/work-report/title": {
+  "en": "It asks about my work (Work Activity Report)",
+  "es": "Pregunta por mi trabajo (Work Activity Report)"
+ },
+ "letters/work-report/cue": {
+  "en": "Form SSA-821. It asks about work since a date it names.",
+  "es": "Formulario SSA-821. Pregunta por el trabajo desde una fecha que el formulario indica."
+ },
+ "letters/work-report/plain": {
+  "en": "Social Security believes you may have worked recently and asks for details: where and when you worked, what you were paid, and any help or expenses related to your disability.",
+  "es": "El Seguro Social cree que usted puede haber trabajado recientemente y pide detalles: dónde y cuándo trabajó, cuánto le pagaron, y cualquier ayuda o gasto relacionado con su incapacidad."
+ },
+ "letters/work-report/do/0": {
+  "en": "Complete, sign and return the form by the date in the letter. If you were asked for it, you can also complete it online.",
+  "es": "Llene, firme y devuelva el formulario a más tardar en la fecha de la carta. Si se lo pidieron, también puede llenarlo por internet."
+ },
+ "letters/work-report/do/1": {
+  "en": "Have your pay stubs for each month you worked.",
+  "es": "Tenga a mano sus talones de pago de cada mes en que trabajó."
+ },
+ "letters/work-report/do/2": {
+  "en": "Include what you pay for in order to work because of your disability, and any extra help your employer gives. Social Security can count less pay because of them.",
+  "es": "Incluya lo que usted paga para poder trabajar debido a su incapacidad, y cualquier ayuda adicional que le dé su empleador. Por eso el Seguro Social puede contar menos de su sueldo."
+ },
+ "letters/work-report/do/3": {
+  "en": "If you cannot explain the earnings shown, ask your employer or your local Social Security office.",
+  "es": "Si no puede explicar las ganancias que aparecen, pregunte a su empleador o a su oficina local del Seguro Social."
+ },
+ "letters/work-report/see_label": {
+  "en": "Check your pay against the limits",
+  "es": "Compare su sueldo con los límites"
+ },
+ "letters/medical-exam/title": {
+  "en": "It books a medical exam for my disability claim",
+  "es": "Programa un examen médico para mi solicitud por incapacidad"
+ },
+ "letters/medical-exam/cue": {
+  "en": "A consultative examination appointment from the state agency that decides disability claims.",
+  "es": "Una cita para un examen consultivo, de la agencia estatal que decide las solicitudes por incapacidad."
+ },
+ "letters/medical-exam/plain": {
+  "en": "The state agency deciding your claim needs more medical information, so it has booked an exam or test that Social Security pays for. It is not a decision.",
+  "es": "La agencia estatal que decide su solicitud necesita más información médica, así que programó un examen o una prueba que paga el Seguro Social. No es una decisión."
+ },
+ "letters/medical-exam/do/0": {
+  "en": "Confirm you will attend by the date in the letter, using the form and envelope sent with it.",
+  "es": "Confirme que va a asistir, a más tardar en la fecha de la carta, con el formulario y el sobre que vinieron con ella."
+ },
+ "letters/medical-exam/do/1": {
+  "en": "If you cannot keep the appointment, call the agency right away at the number in the letter. To reschedule, you must give a good reason.",
+  "es": "Si no puede ir a la cita, llame de inmediato a la agencia al número de la carta. Para cambiar la cita, debe dar una buena razón."
+ },
+ "letters/medical-exam/do/2": {
+  "en": "Tell the agency before the appointment if you need an interpreter. One is provided free.",
+  "es": "Avise a la agencia antes de la cita si necesita un intérprete. Se le da uno gratis."
+ },
+ "letters/medical-exam/do/3": {
+  "en": "Social Security also pays certain travel costs. Ask about it if a travel form came with the letter.",
+  "es": "El Seguro Social también paga ciertos gastos de viaje. Pregunte por eso si vino un formulario de viaje con la carta."
+ },
+ "letters/medical-exam/contact": {
+  "en": "The state agency's phone number is in the letter. Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+  "es": "El número de teléfono de la agencia estatal está en la carta. Seguro Social: 1-800-772-1213 (TTY 1-800-325-0778)"
+ },
+ "letters/hearing-notice/title": {
+  "en": "It gives the date of my hearing with a judge",
+  "es": "Da la fecha de mi audiencia con un juez"
+ },
+ "letters/hearing-notice/cue": {
+  "en": "A Notice of Hearing, sent at least 75 days before the hearing.",
+  "es": "Un aviso de audiencia (Notice of Hearing), enviado al menos 75 días antes de la audiencia."
+ },
+ "letters/hearing-notice/plain": {
+  "en": "Your hearing before an administrative law judge has been scheduled. The notice gives the date, the time, and how you will take part.",
+  "es": "Ya se programó su audiencia ante un juez de derecho administrativo. El aviso da la fecha, la hora y la manera en que usted va a participar."
+ },
+ "letters/hearing-notice/do/0": {
+  "en": "Read how you will take part. The notice includes a form to object to or agree to the ways offered.",
+  "es": "Lea cómo va a participar. El aviso incluye un formulario para oponerse a las maneras ofrecidas o aceptarlas."
+ },
+ "letters/hearing-notice/do/1": {
+  "en": "Send any written evidence early, and no later than 5 business days before the hearing.",
+  "es": "Envíe pronto cualquier prueba escrita, y a más tardar 5 días hábiles antes de la audiencia."
+ },
+ "letters/hearing-notice/do/2": {
+  "en": "If you cannot attend, contact the hearing office as soon as possible and explain why in writing.",
+  "es": "Si no puede asistir, comuníquese con la oficina de audiencias lo antes posible y explique por escrito la razón."
+ },
+ "letters/hearing-notice/do/3": {
+  "en": "If you have a representative, make sure they have the notice.",
+  "es": "Si tiene un representante, asegúrese de que tenga el aviso."
+ },
+ "letters/hearing-notice/clocks/0/label": {
+  "en": "Send written evidence by this date",
+  "es": "Envíe las pruebas escritas a más tardar en esta fecha"
+ },
+ "letters/hearing-notice/clocks/0/rule": {
+  "en": "For a disability hearing, written evidence must be submitted no later than 5 business days before the hearing date.",
+  "es": "Para una audiencia de incapacidad, las pruebas escritas se deben presentar a más tardar 5 días hábiles antes de la fecha de la audiencia."
+ },
+ "letters/hearing-notice/clocks/0/note": {
+  "en": "Counted back 5 business days from the hearing date, skipping weekends and federal holidays. Send it earlier if you can.",
+  "es": "Contados hacia atrás 5 días hábiles desde la fecha de la audiencia, sin contar fines de semana ni feriados federales. Envíelas antes si puede."
+ },
+ "letters/hearing-notice/clocks/1/label": {
+  "en": "Your hearing",
+  "es": "Su audiencia"
+ },
+ "letters/hearing-notice/clocks/1/rule": {
+  "en": "The notice of hearing is sent at least 75 days before the hearing and gives the date, time and how you will appear.",
+  "es": "El aviso de audiencia se envía al menos 75 días antes de la audiencia y da la fecha, la hora y la manera en que usted se presentará."
+ },
+ "letters/hearing-notice/date/label": {
+  "en": "Date of your hearing",
+  "es": "Fecha de su audiencia"
+ },
+ "letters/hearing-notice/date/hint": {
+  "en": "From the notice, not the date the notice was written.",
+  "es": "La que da el aviso, no la fecha en que se escribió el aviso."
+ },
+ "letters/hearing-notice/chip": {
+  "en": "5 business days before",
+  "es": "5 días hábiles antes"
+ },
+ "letters/show-cause/title": {
+  "en": "It asks why I missed my hearing (Request to Show Cause)",
+  "es": "Pregunta por qué falté a mi audiencia (Request to Show Cause)"
+ },
+ "letters/show-cause/cue": {
+  "en": "Sent when you did not appear at a scheduled hearing.",
+  "es": "Se envía cuando usted no se presentó a una audiencia programada."
+ },
+ "letters/show-cause/plain": {
+  "en": "The hearing office is asking why you did not attend your hearing. If you do not answer in time, your request for a hearing can be dismissed.",
+  "es": "La oficina de audiencias pregunta por qué usted no asistió a su audiencia. Si no contesta a tiempo, su solicitud de audiencia puede ser desestimada."
+ },
+ "letters/show-cause/do/0": {
+  "en": "Answer in writing, and explain the reason you could not attend.",
+  "es": "Conteste por escrito, y explique la razón por la que no pudo asistir."
+ },
+ "letters/show-cause/do/1": {
+  "en": "Send copies of anything that shows the reason.",
+  "es": "Envíe copias de cualquier cosa que demuestre la razón."
+ },
+ "letters/show-cause/do/2": {
+  "en": "Contact the hearing office named in the letter to confirm it received your answer.",
+  "es": "Comuníquese con la oficina de audiencias que nombra la carta para confirmar que recibió su respuesta."
+ },
+ "letters/show-cause/clocks/0/label": {
+  "en": "Respond by this date",
+  "es": "Responda a más tardar en esta fecha"
+ },
+ "letters/show-cause/clocks/0/rule": {
+  "en": "You have 10 days from the date of the request, plus 5 days for mail, to respond before a dismissal is issued.",
+  "es": "Tiene 10 días desde la fecha del pedido, más 5 días por el correo, para responder antes de que se emita una desestimación."
+ },
+ "letters/show-cause/clocks/0/note": {
+  "en": "Counted from the date printed on the request. Respond sooner if you can.",
+  "es": "Contados desde la fecha impresa en el pedido. Responda antes si puede."
+ },
+ "letters/show-cause/chip": {
+  "en": "15 days",
+  "es": "15 días"
+ },
+ "letters/show-cause/contact": {
+  "en": "The hearing office's phone number is in the letter. Social Security: 1-800-772-1213 (TTY 1-800-325-0778)",
+  "es": "El número de teléfono de la oficina de audiencias está en la carta. Seguro Social: 1-800-772-1213 (TTY 1-800-325-0778)"
+ },
+ "letters/age-18/title": {
+  "en": "It says my SSI will stop after the review at age 18",
+  "es": "Dice que mi SSI se va a detener después de la revisión a los 18 años"
+ },
+ "letters/age-18/cue": {
+  "en": "A decision after the review under the disability rules for adults.",
+  "es": "Una decisión después de la revisión con las reglas de incapacidad para adultos."
+ },
+ "letters/age-18/plain": {
+  "en": "When someone getting SSI turns 18, Social Security reviews whether they qualify under the disability rules for adults. If it decides they do not, payments usually stop.",
+  "es": "Cuando alguien que recibe SSI cumple 18 años, el Seguro Social revisa si califica con las reglas de incapacidad para adultos. Si decide que no, por lo general los pagos se detienen."
+ },
+ "letters/age-18/do/0": {
+  "en": "If you disagree, appeal in writing. Your letter says how.",
+  "es": "Si no está de acuerdo, apele por escrito. Su carta dice cómo."
+ },
+ "letters/age-18/do/1": {
+  "en": "Appeal within 10 days of getting the letter if you want payments to continue during the appeal.",
+  "es": "Apele dentro de los 10 días de recibir la carta si quiere que los pagos continúen durante la apelación."
+ },
+ "letters/age-18/do/2": {
+  "en": "If you are in school or a vocational rehabilitation program, ask whether payments can continue because of it.",
+  "es": "Si está en la escuela o en un programa de rehabilitación vocacional, pregunte si los pagos pueden continuar por esa razón."
+ },
+ "letters/age-18/do/3": {
+  "en": "Legal aid offices help with these appeals.",
+  "es": "Las oficinas de ayuda legal ayudan con estas apelaciones."
+ },
+ "letters/age-18/clocks/0/label": {
+  "en": "Appeal by this date to keep payments during the appeal",
+  "es": "Apele a más tardar en esta fecha para mantener los pagos durante la apelación"
+ },
+ "letters/age-18/clocks/0/rule": {
+  "en": "If you appeal within 10 days of receiving the letter, you can ask to keep receiving payments during the appeal.",
+  "es": "Si apela dentro de los 10 días de recibir la carta, puede pedir seguir recibiendo los pagos durante la apelación."
+ },
+ "letters/age-18/clocks/1/rule": {
+  "en": "You have 60 days from the date you receive the letter to file a written appeal.",
+  "es": "Tiene 60 días desde la fecha en que recibe la carta para presentar una apelación por escrito."
+ },
+ "letters/age-18/clocks/2/rule": {
+  "en": "Social Security assumes you receive a notice five days after the date on it, unless you show otherwise.",
+  "es": "El Seguro Social supone que usted recibe un aviso cinco días después de la fecha que aparece en él, a menos que usted demuestre otra cosa."
+ },
+ "letters/age-18/kit/about_label": {
+  "en": "Why you think you meet the adult rules, or what the review missed",
+  "es": "Por qué cree que cumple las reglas para adultos, o qué no tomó en cuenta la revisión"
+ },
+ "letters/age-18/kit/include/0": {
+  "en": "A copy of the decision letter",
+  "es": "Una copia de la carta de decisión"
+ },
+ "letters/age-18/kit/include/1": {
+  "en": "Recent medical records, and the names of the doctors and clinics treating you",
+  "es": "Expedientes médicos recientes, y los nombres de los médicos y las clínicas que le atienden"
+ },
+ "letters/age-18/kit/include/2": {
+  "en": "Proof of school or a vocational rehabilitation program, if you are in one",
+  "es": "Prueba de que está en la escuela o en un programa de rehabilitación vocacional, si es su caso"
+ },
+ "letters/age-18/kit/how/0": {
+  "en": "Hand it in at your local Social Security office or send it in a way that shows the date. Keep a copy.",
+  "es": "Entréguela en su oficina local del Seguro Social o envíela de una manera que muestre la fecha. Guarde una copia."
+ },
+ "letters/age-18/kit/how/1": {
+  "en": "If you want payments to continue, say so, and send it within 10 days of getting the letter.",
+  "es": "Si quiere que los pagos continúen, dígalo, y envíela dentro de los 10 días de recibir la carta."
+ },
+ "letters/irmaa/title": {
+  "en": "It says my Medicare premium is higher because of my income",
+  "es": "Dice que mi prima de Medicare es más alta por mis ingresos"
+ },
+ "letters/irmaa/cue": {
+  "en": "From Social Security. It mentions an income-related monthly adjustment amount, or IRMAA.",
+  "es": "Del Seguro Social. Menciona una cantidad de ajuste mensual relacionada con los ingresos, o IRMAA."
+ },
+ "letters/irmaa/plain": {
+  "en": "Social Security used your tax return from two years ago to decide that you pay more for Medicare Part B, Part D or both.",
+  "es": "El Seguro Social usó su declaración de impuestos de hace dos años para decidir que usted paga más por la Parte B de Medicare, la Parte D o ambas."
+ },
+ "letters/irmaa/do/0": {
+  "en": "If your income has dropped because of a life-changing event, such as the death of a spouse, marriage, divorce, or stopping or reducing work, ask Social Security to use your newer income. Form SSA-44 can be used for this.",
+  "es": "Si sus ingresos bajaron por un evento que cambió su vida, como la muerte de su cónyuge, un matrimonio, un divorcio, o dejar de trabajar o trabajar menos, pida al Seguro Social que use sus ingresos más recientes. Para esto se puede usar el formulario SSA-44."
+ },
+ "letters/irmaa/do/1": {
+  "en": "If you think the tax information used is wrong, you can ask for reconsideration.",
+  "es": "Si cree que la información de impuestos que usaron está mal, puede pedir una reconsideración."
+ },
+ "letters/irmaa/do/2": {
+  "en": "Social Security can also be asked to look again if you filed an amended tax return.",
+  "es": "También se le puede pedir al Seguro Social que lo revise otra vez si usted presentó una declaración de impuestos enmendada."
+ },
+ "letters/irmaa/clocks/0/label": {
+  "en": "Ask for reconsideration by this date",
+  "es": "Pida la reconsideración a más tardar en esta fecha"
+ },
+ "letters/irmaa/clocks/0/rule": {
+  "en": "A request for reconsideration can be filed within 60 days of receiving the determination notice.",
+  "es": "Una solicitud de reconsideración se puede presentar dentro de los 60 días de recibir el aviso de la determinación."
+ },
+ "letters/irmaa/clocks/1/label": {
+  "en": "Latest date if the letter took 5 days to arrive",
+  "es": "Última fecha si la carta tardó 5 días en llegar"
+ },
+ "letters/irmaa/clocks/1/rule": {
+  "en": "Date received means 5 days after the date on the notice, unless you show you did not receive it within that time.",
+  "es": "La fecha de recibo significa 5 días después de la fecha del aviso, a menos que usted demuestre que no lo recibió dentro de ese tiempo."
+ },
+ "letters/irmaa/kit/about_label": {
+  "en": "What happened and when (for example: stopped work in March 2026), or what is wrong with the tax information used",
+  "es": "Qué pasó y cuándo (por ejemplo: dejé de trabajar en marzo de 2026), o qué está mal en la información de impuestos que usaron"
+ },
+ "letters/irmaa/kit/include/0": {
+  "en": "A copy of the letter about your premium",
+  "es": "Una copia de la carta sobre su prima"
+ },
+ "letters/irmaa/kit/include/1": {
+  "en": "Proof of the life-changing event, such as a death certificate, a letter from your employer or a divorce decree",
+  "es": "Prueba del evento que cambió su vida, como un certificado de defunción, una carta de su empleador o una sentencia de divorcio"
+ },
+ "letters/irmaa/kit/include/2": {
+  "en": "Your newer tax return or your estimate of this year's income",
+  "es": "Su declaración de impuestos más reciente o su cálculo de los ingresos de este año"
+ },
+ "letters/irmaa/kit/how/0": {
+  "en": "If your income dropped because of a life-changing event, Form SSA-44 asks Social Security to use your newer income. That is a new decision, not an appeal.",
+  "es": "Si sus ingresos bajaron por un evento que cambió su vida, el formulario SSA-44 pide al Seguro Social que use sus ingresos más recientes. Eso es una decisión nueva, no una apelación."
+ },
+ "letters/irmaa/kit/how/1": {
+  "en": "If you think the tax information is wrong, ask for reconsideration. Form SSA-561 can be used.",
+  "es": "Si cree que la información de impuestos está mal, pida una reconsideración. Se puede usar el formulario SSA-561."
+ },
+ "letters/irmaa/kit/how/2": {
+  "en": "Send or take it to your local Social Security office, or call 1-800-772-1213.",
+  "es": "Envíela o llévela a su oficina local del Seguro Social, o llame al 1-800-772-1213."
+ },
+ "letters/irmaa/kit/how/3": {
+  "en": "Keep a copy of everything you send and note the date.",
+  "es": "Guarde una copia de todo lo que envíe y anote la fecha."
+ },
+ "letters/irmaa/see_label": {
+  "en": "Check my premium tier and whether form SSA-44 could lower it",
+  "es": "Revisar el nivel de mi prima y si el formulario SSA-44 podría bajarla"
+ },
+ "letters/extra-help/title": {
+  "en": "It is a decision about Extra Help with drug costs",
+  "es": "Es una decisión sobre el Beneficio Adicional (Extra Help) para los costos de medicamentos"
+ },
+ "letters/extra-help/cue": {
+  "en": "From Social Security, about help with Medicare prescription drug plan costs.",
+  "es": "Del Seguro Social, sobre la ayuda con los costos del plan de medicamentos recetados de Medicare."
+ },
+ "letters/extra-help/plain": {
+  "en": "Social Security decided whether you can get, or keep, Extra Help with Medicare prescription drug costs.",
+  "es": "El Seguro Social decidió si usted puede recibir, o seguir recibiendo, el Beneficio Adicional (Extra Help) para los costos de medicamentos recetados de Medicare."
+ },
+ "letters/extra-help/do/0": {
+  "en": "If you disagree, ask for an appeal by calling Social Security, in writing, or at a local office. Form SSA-1021 can be used.",
+  "es": "Si no está de acuerdo, pida una apelación llamando al Seguro Social, por escrito o en una oficina local. Se puede usar el formulario SSA-1021."
+ },
+ "letters/extra-help/do/1": {
+  "en": "You can choose a hearing by telephone or a review of your case file. Both are the same level of appeal.",
+  "es": "Puede elegir una audiencia por teléfono o una revisión del expediente de su caso. Las dos son el mismo nivel de apelación."
+ },
+ "letters/extra-help/do/2": {
+  "en": "The letter says how long you have. Do not wait.",
+  "es": "La carta dice cuánto tiempo tiene. No espere."
+ },
+ "letters/extra-help/kit/about_label": {
+  "en": "Which part of the decision you disagree with (income, savings, household size or something else)",
+  "es": "Con qué parte de la decisión no está de acuerdo (ingresos, ahorros, tamaño del hogar u otra cosa)"
+ },
+ "letters/extra-help/kit/include/1": {
+  "en": "Proof of the correct income, savings or household details",
+  "es": "Prueba de los ingresos, los ahorros o los datos del hogar correctos"
+ },
+ "letters/extra-help/kit/how/0": {
+  "en": "Ask for the appeal by calling 1-800-772-1213, in writing, or at a local Social Security office. Form SSA-1021 can be used.",
+  "es": "Pida la apelación llamando al 1-800-772-1213, por escrito o en una oficina local del Seguro Social. Se puede usar el formulario SSA-1021."
+ },
+ "letters/extra-help/kit/how/1": {
+  "en": "Say whether you want a hearing by telephone or a review of your case file. Both are the same level of appeal.",
+  "es": "Diga si quiere una audiencia por teléfono o una revisión del expediente de su caso. Las dos son el mismo nivel de apelación."
+ },
+ "letters/msn/title": {
+  "en": "It lists my Medicare claims (Medicare Summary Notice)",
+  "es": "Enumera mis reclamos de Medicare (Medicare Summary Notice)"
+ },
+ "letters/msn/cue": {
+  "en": "Comes every 3 months if you have Original Medicare. It says \"This is not a bill\".",
+  "es": "Llega cada 3 meses si usted tiene Medicare Original. Dice \"This is not a bill\" (esto no es una factura)."
+ },
+ "letters/msn/plain": {
+  "en": "The Medicare Summary Notice lists the services billed to Medicare for you, what Medicare paid, and what you may owe. If Medicare did not pay for something, this is where you find out.",
+  "es": "El resumen de Medicare (Medicare Summary Notice) enumera los servicios que se cobraron a Medicare por usted, lo que Medicare pagó y lo que usted puede deber. Si Medicare no pagó algo, aquí es donde usted se entera."
+ },
+ "letters/msn/do/0": {
+  "en": "Check each service against what you actually received.",
+  "es": "Compare cada servicio con lo que usted recibió en realidad."
+ },
+ "letters/msn/do/1": {
+  "en": "To appeal a claim Medicare did not pay, follow the appeal instructions on the last page: circle the item, say why you disagree, sign and send it to the address listed, or use the Redetermination Request Form.",
+  "es": "Para apelar un reclamo que Medicare no pagó, siga las instrucciones de apelación de la última página: encierre el artículo en un círculo, diga por qué no está de acuerdo, firme y envíelo a la dirección indicada, o use el formulario Redetermination Request Form."
+ },
+ "letters/msn/do/2": {
+  "en": "The last page also shows the date your appeal must be received. If it differs from the date here, use the date on your notice.",
+  "es": "La última página también muestra la fecha en que se debe recibir su apelación. Si es diferente de la fecha que aparece aquí, use la fecha de su aviso."
+ },
+ "letters/msn/do/3": {
+  "en": "Ask your doctor or supplier for any information that may help.",
+  "es": "Pida a su médico o proveedor cualquier información que pueda ayudar."
+ },
+ "letters/msn/clocks/0/rule": {
+  "en": "You must file your appeal within 120 days of the date you get the Medicare Summary Notice.",
+  "es": "Debe presentar su apelación dentro de los 120 días de la fecha en que recibe el resumen de Medicare."
+ },
+ "letters/msn/clocks/0/note": {
+  "en": "Counted from the date printed on the notice, which is the cautious reading.",
+  "es": "Contados desde la fecha impresa en el aviso, que es la lectura más prudente."
+ },
+ "letters/msn/clocks/1/label": {
+  "en": "Latest date if the notice took 5 days to arrive",
+  "es": "Última fecha si el aviso tardó 5 días en llegar"
+ },
+ "letters/msn/clocks/1/rule": {
+  "en": "The notice is presumed to be received 5 calendar days after its date, unless there is evidence otherwise.",
+  "es": "Se supone que el aviso se recibe 5 días calendario después de su fecha, a menos que haya pruebas de lo contrario."
+ },
+ "letters/msn/date/label": {
+  "en": "Date printed on the notice",
+  "es": "Fecha impresa en el aviso"
+ },
+ "letters/msn/date/hint": {
+  "en": "At the top of the first page.",
+  "es": "Arriba, en la primera página."
+ },
+ "letters/msn/chip": {
+  "en": "120 days",
+  "es": "120 días"
+ },
+ "letters/msn/kit/about_label": {
+  "en": "Which service or item, and the date you got it",
+  "es": "Qué servicio o artículo, y la fecha en que lo recibió"
+ },
+ "letters/msn/kit/include/0": {
+  "en": "A copy of the Medicare Summary Notice with the item you disagree with circled",
+  "es": "Una copia del resumen de Medicare con el artículo con el que no está de acuerdo encerrado en un círculo"
+ },
+ "letters/msn/kit/include/1": {
+  "en": "Anything from your doctor or supplier that supports the claim",
+  "es": "Cualquier cosa de su médico o proveedor que apoye el reclamo"
+ },
+ "letters/msn/kit/include/2": {
+  "en": "Your name and Medicare number, written by hand on the copy you send",
+  "es": "Su nombre y su número de Medicare, escritos a mano en la copia que envíe"
+ },
+ "letters/msn/kit/how/0": {
+  "en": "Use the Redetermination Request Form, or send this written request. Either goes to the Medicare contractor at the address listed on your notice.",
+  "es": "Use el formulario Redetermination Request Form, o envíe esta solicitud escrita. Cualquiera de los dos va al contratista de Medicare, a la dirección indicada en su aviso."
+ },
+ "letters/msn/kit/how/2": {
+  "en": "You will generally get a decision, called a Medicare Redetermination Notice, within 60 days after the contractor gets your request.",
+  "es": "Por lo general recibirá una decisión, llamada Medicare Redetermination Notice, dentro de los 60 días después de que el contratista reciba su solicitud."
+ },
+ "letters/msn/kit/how/3": {
+  "en": "You can send more information after you file, but the decision may then take longer than 60 days.",
+  "es": "Puede enviar más información después de presentar la apelación, pero entonces la decisión puede tardar más de 60 días."
+ },
+ "letters/ma-denial/title": {
+  "en": "My Medicare Advantage plan refused to cover or pay for care",
+  "es": "Mi plan Medicare Advantage se negó a cubrir o a pagar una atención"
+ },
+ "letters/ma-denial/cue": {
+  "en": "From your health plan, often titled Notice of Denial of Medical Coverage or Payment.",
+  "es": "De su plan de salud, a menudo titulado Notice of Denial of Medical Coverage or Payment."
+ },
+ "letters/ma-denial/plain": {
+  "en": "Your Medicare Advantage plan decided not to cover, or not to pay for, a service, item or drug it handles. The first appeal goes to the plan itself and is called a reconsideration.",
+  "es": "Su plan Medicare Advantage decidió no cubrir, o no pagar, un servicio, un artículo o un medicamento que el plan maneja. La primera apelación va al propio plan y se llama reconsideración."
+ },
+ "letters/ma-denial/do/0": {
+  "en": "Follow the directions in the plan's denial notice to start your appeal.",
+  "es": "Siga las instrucciones del aviso de negación del plan para empezar su apelación."
+ },
+ "letters/ma-denial/do/1": {
+  "en": "Standard requests are made in writing, unless your plan accepts requests by phone.",
+  "es": "Las solicitudes normales se hacen por escrito, a menos que su plan acepte solicitudes por teléfono."
+ },
+ "letters/ma-denial/do/2": {
+  "en": "Ask your doctor for information that supports the request. For care you have not had yet, your doctor can ask for the reconsideration for you.",
+  "es": "Pida a su médico información que apoye la solicitud. Para una atención que todavía no ha recibido, su médico puede pedir la reconsideración por usted."
+ },
+ "letters/ma-denial/clocks/0/label": {
+  "en": "Ask the plan for reconsideration by this date",
+  "es": "Pida la reconsideración al plan a más tardar en esta fecha"
+ },
+ "letters/ma-denial/clocks/0/rule": {
+  "en": "Reconsideration requests must be filed with the health plan within 65 calendar days from the date of the notice.",
+  "es": "Las solicitudes de reconsideración se deben presentar al plan de salud dentro de los 65 días calendario desde la fecha del aviso."
+ },
+ "letters/ma-denial/clocks/0/note": {
+  "en": "Counted from the date printed on the notice.",
+  "es": "Contados desde la fecha impresa en el aviso."
+ },
+ "letters/ma-denial/date/label": {
+  "en": "Date printed on the denial notice",
+  "es": "Fecha impresa en el aviso de negación"
+ },
+ "letters/ma-denial/chip": {
+  "en": "65 days",
+  "es": "65 días"
+ },
+ "letters/ma-denial/contact": {
+  "en": "Your plan's phone number is on your membership card. Medicare: 1-800-MEDICARE (1-800-633-4227), TTY 1-877-486-2048",
+  "es": "El número de teléfono de su plan está en su tarjeta de miembro. Medicare: 1-800-MEDICARE (1-800-633-4227), TTY 1-877-486-2048"
+ },
+ "letters/ma-denial/kit/about_label": {
+  "en": "Which service, item or payment the plan refused",
+  "es": "Qué servicio, artículo o pago negó el plan"
+ },
+ "letters/ma-denial/kit/include/0": {
+  "en": "A copy of the plan's denial notice",
+  "es": "Una copia del aviso de negación del plan"
+ },
+ "letters/ma-denial/kit/include/1": {
+  "en": "A letter or records from your doctor that support the request",
+  "es": "Una carta o expedientes de su médico que apoyen la solicitud"
+ },
+ "letters/ma-denial/kit/include/2": {
+  "en": "Your name and plan member number, written by hand on the copy you send",
+  "es": "Su nombre y su número de miembro del plan, escritos a mano en la copia que envíe"
+ },
+ "letters/ma-denial/kit/how/0": {
+  "en": "Follow the directions in the plan's denial notice to send this request to the plan.",
+  "es": "Siga las instrucciones del aviso de negación del plan para enviar esta solicitud al plan."
+ },
+ "letters/ma-denial/kit/how/2": {
+  "en": "For care you have not had yet, your doctor can ask for the reconsideration for you.",
+  "es": "Para una atención que todavía no ha recibido, su médico puede pedir la reconsideración por usted."
+ },
+ "letters/ma-denial/kit/how/3": {
+  "en": "If you file after the 65 days, give your reason for filing late.",
+  "es": "Si la presenta después de los 65 días, dé la razón por la que la presenta tarde."
+ },
+ "letters/partd-denial/title": {
+  "en": "My drug plan refused to cover or pay for a prescription",
+  "es": "Mi plan de medicamentos se negó a cubrir o a pagar una receta"
+ },
+ "letters/partd-denial/cue": {
+  "en": "From your Part D plan, titled Notice of Denial of Medicare Part D Prescription Drug Coverage.",
+  "es": "De su plan de la Parte D, titulado Notice of Denial of Medicare Part D Prescription Drug Coverage."
+ },
+ "letters/partd-denial/plain": {
+  "en": "Your Medicare drug plan decided not to cover or pay for a drug. The first appeal goes to the plan and is called a redetermination.",
+  "es": "Su plan de medicamentos de Medicare decidió no cubrir o no pagar un medicamento. La primera apelación va al plan y se llama redeterminación."
+ },
+ "letters/partd-denial/do/0": {
+  "en": "You, your prescriber or your representative can ask the plan for a redetermination.",
+  "es": "Usted, quien le receta o su representante pueden pedir al plan una redeterminación."
+ },
+ "letters/partd-denial/do/1": {
+  "en": "If waiting could harm your health, ask for a fast (expedited) decision. Fast requests may be made by phone or in writing, and the plan has 72 hours.",
+  "es": "Si esperar podría dañar su salud, pida una decisión rápida (expedited). Las solicitudes rápidas se pueden hacer por teléfono o por escrito, y el plan tiene 72 horas."
+ },
+ "letters/partd-denial/do/2": {
+  "en": "A standard request is decided in 7 days for a drug you have not received and 14 days for a payment request.",
+  "es": "Una solicitud normal se decide en 7 días para un medicamento que usted no ha recibido y en 14 días para una solicitud de pago."
+ },
+ "letters/partd-denial/clocks/0/label": {
+  "en": "Ask the plan for a redetermination by this date",
+  "es": "Pida la redeterminación al plan a más tardar en esta fecha"
+ },
+ "letters/partd-denial/clocks/0/rule": {
+  "en": "Redetermination requests must be filed with the plan within 65 calendar days from the date of the notice.",
+  "es": "Las solicitudes de redeterminación se deben presentar al plan dentro de los 65 días calendario desde la fecha del aviso."
+ },
+ "letters/partd-denial/kit/about_label": {
+  "en": "Which drug the plan refused, and what your prescriber says about it",
+  "es": "Qué medicamento negó el plan, y qué dice quien se lo receta"
+ },
+ "letters/partd-denial/kit/include/1": {
+  "en": "A statement from your prescriber, if you have one",
+  "es": "Una declaración de quien le receta, si la tiene"
+ },
+ "letters/partd-denial/kit/how/0": {
+  "en": "Send this request to the plan, following the directions in its denial notice. Your prescriber or representative can also ask for you.",
+  "es": "Envíe esta solicitud al plan, siguiendo las instrucciones de su aviso de negación. Quien le receta o su representante también pueden pedirla por usted."
+ },
+ "letters/partd-denial/kit/how/1": {
+  "en": "If waiting could harm your health, ask for a fast (expedited) decision by phone or in writing. The plan then has 72 hours.",
+  "es": "Si esperar podría dañar su salud, pida una decisión rápida (expedited) por teléfono o por escrito. El plan tiene entonces 72 horas."
+ },
+ "letters/nomnc/title": {
+  "en": "It says my nursing, home health or hospice care is ending",
+  "es": "Dice que mi atención de enfermería, de salud en el hogar o de hospicio va a terminar"
+ },
+ "letters/nomnc/cue": {
+  "en": "Titled Notice of Medicare Non-Coverage. You should get it at least 2 days before covered services end.",
+  "es": "Titulado Notice of Medicare Non-Coverage. Debe recibirlo al menos 2 días antes de que terminen los servicios cubiertos."
+ },
+ "letters/nomnc/plain": {
+  "en": "The provider or your plan has decided Medicare will stop covering your skilled nursing, home health, outpatient rehabilitation or hospice services on the date in the notice.",
+  "es": "El proveedor o su plan decidió que Medicare dejará de cubrir sus servicios de enfermería especializada, de salud en el hogar, de rehabilitación ambulatoria o de hospicio en la fecha del aviso."
+ },
+ "letters/nomnc/do/0": {
+  "en": "If you think the services are ending too soon, ask for a fast appeal. The notice gives the phone number of the review organization for your area (the BFCC-QIO).",
+  "es": "Si cree que los servicios terminan demasiado pronto, pida una apelación rápida. El aviso da el número de teléfono de la organización de revisión de su área (la BFCC-QIO)."
+ },
+ "letters/nomnc/do/1": {
+  "en": "Call no later than noon on the day before the end date printed on the notice.",
+  "es": "Llame a más tardar al mediodía del día anterior a la fecha de fin impresa en el aviso."
+ },
+ "letters/nomnc/do/2": {
+  "en": "You are not charged for services you get before the end date on the notice.",
+  "es": "No le cobran por los servicios que reciba antes de la fecha de fin del aviso."
+ },
+ "letters/nomnc/do/3": {
+  "en": "If you miss that time, you can still ask, but different rules and time frames apply.",
+  "es": "Si se le pasa ese plazo, todavía puede pedirla, pero se aplican otras reglas y otros plazos."
+ },
+ "letters/nomnc/clocks/0/label": {
+  "en": "Ask for a fast appeal by noon on this date",
+  "es": "Pida una apelación rápida antes del mediodía de esta fecha"
+ },
+ "letters/nomnc/clocks/0/rule": {
+  "en": "Follow the instructions on the Notice of Medicare Non-Coverage no later than noon the day before the termination date listed on the notice.",
+  "es": "Siga las instrucciones del aviso (Notice of Medicare Non-Coverage) a más tardar al mediodía del día anterior a la fecha de terminación indicada en el aviso."
+ },
+ "letters/nomnc/clocks/0/note": {
+  "en": "By noon, not by the end of the day.",
+  "es": "Antes del mediodía, no antes del final del día."
+ },
+ "letters/nomnc/date/label": {
+  "en": "Date your services end, printed on the notice",
+  "es": "Fecha en que terminan sus servicios, impresa en el aviso"
+ },
+ "letters/nomnc/date/hint": {
+  "en": "Not the date the notice was written.",
+  "es": "No la fecha en que se escribió el aviso."
+ },
+ "letters/nomnc/chip": {
+  "en": "Noon the day before",
+  "es": "Mediodía del día anterior"
+ },
+ "letters/nomnc/kit/about_label": {
+  "en": "Which services are ending (for example: physical therapy at home)",
+  "es": "Qué servicios van a terminar (por ejemplo: terapia física en casa)"
+ },
+ "letters/nomnc/kit/include/0": {
+  "en": "The Notice of Medicare Non-Coverage, with the end date",
+  "es": "El aviso (Notice of Medicare Non-Coverage), con la fecha de fin"
+ },
+ "letters/nomnc/kit/include/1": {
+  "en": "Your Medicare card",
+  "es": "Su tarjeta de Medicare"
+ },
+ "letters/nomnc/kit/include/2": {
+  "en": "The name of the provider and of your doctor",
+  "es": "El nombre del proveedor y el de su médico"
+ },
+ "letters/nomnc/kit/how/0": {
+  "en": "Call the review organization (the BFCC-QIO) at the number printed on your notice. It is a free review.",
+  "es": "Llame a la organización de revisión (la BFCC-QIO) al número impreso en su aviso. La revisión es gratis."
+ },
+ "letters/nomnc/kit/how/1": {
+  "en": "Write down the date and time you called, the name of the person, and any case number.",
+  "es": "Anote la fecha y la hora en que llamó, el nombre de la persona y cualquier número de caso."
+ },
+ "letters/nomnc/kit/how/2": {
+  "en": "You can ask a family member or someone you trust to make the call for you.",
+  "es": "Puede pedir a un familiar o a alguien de su confianza que haga la llamada por usted."
+ },
+ "letters/nomnc/kit/how/3": {
+  "en": "After you call, your provider must give you a Detailed Explanation of Non-Coverage by the end of the day it is told about your appeal.",
+  "es": "Después de que usted llame, su proveedor debe darle una explicación detallada (Detailed Explanation of Non-Coverage) antes del final del día en que le avisen de su apelación."
+ },
+ "letters/nomnc/kit/script": {
+  "en": "I have Medicare and I received a Notice of Medicare Non-Coverage. I am asking for a fast appeal because I think my services are ending too soon.",
+  "es": "Tengo Medicare y recibí un aviso llamado Notice of Medicare Non-Coverage. Pido una apelación rápida porque creo que mis servicios terminan demasiado pronto."
+ },
+ "letters/nomnc/urgent/call": {
+  "en": "the review organization (BFCC-QIO) whose phone number is printed on your notice",
+  "es": "la organización de revisión (BFCC-QIO) cuyo número de teléfono está impreso en su aviso"
+ },
+ "letters/nomnc/urgent/by": {
+  "en": "By noon on the day before the end date printed on the notice",
+  "es": "A más tardar al mediodía del día anterior a la fecha de fin impresa en el aviso"
+ },
+ "letters/nomnc/urgent/script/0": {
+  "en": "Hello. I want a fast appeal. My Medicare services are ending and I think it is too soon.",
+  "es": "Hola. Quiero una apelación rápida. Mis servicios de Medicare van a terminar y creo que es demasiado pronto."
+ },
+ "letters/nomnc/urgent/script/1": {
+  "en": "My name is [your name]. I am getting care from [the provider's name on the notice].",
+  "es": "Mi nombre es [su nombre]. Recibo atención de [el nombre del proveedor que aparece en el aviso]."
+ },
+ "letters/nomnc/urgent/script/2": {
+  "en": "The end date on my notice is [the date on the notice].",
+  "es": "La fecha de fin en mi aviso es [la fecha del aviso]."
+ },
+ "letters/nomnc/urgent/script/3": {
+  "en": "Please tell me what happens next, and when I will hear back.",
+  "es": "Por favor dígame qué pasa ahora y cuándo me van a responder."
+ },
+ "letters/hospital-im/title": {
+  "en": "I am in hospital and think I am being sent home too soon",
+  "es": "Estoy en el hospital y creo que me mandan a casa demasiado pronto"
+ },
+ "letters/hospital-im/cue": {
+  "en": "You should have been given An Important Message from Medicare about Your Rights within 2 days of being admitted.",
+  "es": "Debieron darle el aviso An Important Message from Medicare about Your Rights dentro de los 2 días de su ingreso."
+ },
+ "letters/hospital-im/plain": {
+  "en": "The Important Message from Medicare explains your rights as a hospital patient, including the right to a fast review if you think you are being discharged too soon.",
+  "es": "El aviso Important Message from Medicare explica sus derechos como paciente del hospital, incluido el derecho a una revisión rápida si cree que le dan de alta demasiado pronto."
+ },
+ "letters/hospital-im/do/0": {
+  "en": "Follow the directions on the Important Message to ask for a fast appeal. It gives the phone number of the review organization for your area (the BFCC-QIO).",
+  "es": "Siga las instrucciones del aviso Important Message para pedir una apelación rápida. Da el número de teléfono de la organización de revisión de su área (la BFCC-QIO)."
+ },
+ "letters/hospital-im/do/1": {
+  "en": "Ask no later than the day you are scheduled to be discharged.",
+  "es": "Pídala a más tardar el día en que está programada su alta."
+ },
+ "letters/hospital-im/do/2": {
+  "en": "If you were not given the notice, ask the hospital for it.",
+  "es": "Si no le dieron el aviso, pídalo al hospital."
+ },
+ "letters/hospital-im/do/3": {
+  "en": "If you miss that day you can still ask for a review, but different rules apply and you might have to pay for the extra days.",
+  "es": "Si se le pasa ese día, todavía puede pedir una revisión, pero se aplican otras reglas y es posible que tenga que pagar los días adicionales."
+ },
+ "letters/hospital-im/clocks/0/label": {
+  "en": "Ask for a fast appeal no later than this day",
+  "es": "Pida una apelación rápida a más tardar este día"
+ },
+ "letters/hospital-im/clocks/0/rule": {
+  "en": "Follow the directions on the Important Message from Medicare no later than the day you are scheduled to be discharged from the hospital.",
+  "es": "Siga las instrucciones del aviso Important Message from Medicare a más tardar el día en que está programada su alta del hospital."
+ },
+ "letters/hospital-im/clocks/0/note": {
+  "en": "Ask before you leave the hospital.",
+  "es": "Pídala antes de salir del hospital."
+ },
+ "letters/hospital-im/date/label": {
+  "en": "The day the hospital plans to discharge you",
+  "es": "El día en que el hospital planea darle de alta"
+ },
+ "letters/hospital-im/chip": {
+  "en": "Day of discharge",
+  "es": "El día del alta"
+ },
+ "letters/hospital-im/kit/about_label": {
+  "en": "Why you were admitted, and what you still need the hospital for",
+  "es": "Por qué le ingresaron, y para qué necesita todavía el hospital"
+ },
+ "letters/hospital-im/kit/include/0": {
+  "en": "The Important Message from Medicare you signed",
+  "es": "El aviso Important Message from Medicare que usted firmó"
+ },
+ "letters/hospital-im/kit/include/2": {
+  "en": "The name of the hospital and of your doctor",
+  "es": "El nombre del hospital y el de su médico"
+ },
+ "letters/hospital-im/kit/how/3": {
+  "en": "After you call, the hospital must give you a Detailed Notice of Discharge by noon of the day after it is told about your appeal.",
+  "es": "Después de que usted llame, el hospital debe darle un aviso detallado (Detailed Notice of Discharge) antes del mediodía del día siguiente a aquel en que le avisen de su apelación."
+ },
+ "letters/hospital-im/kit/how/4": {
+  "en": "Ask before you leave the hospital, and no later than the day you are scheduled to be discharged.",
+  "es": "Pídala antes de salir del hospital, y a más tardar el día en que está programada su alta."
+ },
+ "letters/hospital-im/kit/script": {
+  "en": "I have Medicare and I am a hospital inpatient. I am asking for a fast appeal because I think I am being discharged too soon.",
+  "es": "Tengo Medicare y estoy internado en un hospital. Pido una apelación rápida porque creo que me dan de alta demasiado pronto."
+ },
+ "letters/hospital-im/urgent/call": {
+  "en": "the review organization (BFCC-QIO) whose phone number is printed on the Important Message from Medicare",
+  "es": "la organización de revisión (BFCC-QIO) cuyo número de teléfono está impreso en el aviso Important Message from Medicare"
+ },
+ "letters/hospital-im/urgent/by": {
+  "en": "No later than the day you are scheduled to leave the hospital, and before you leave",
+  "es": "A más tardar el día en que está programada su salida del hospital, y antes de salir"
+ },
+ "letters/hospital-im/urgent/script/0": {
+  "en": "Hello. I want a fast appeal. I am in the hospital and I think I am being discharged too soon.",
+  "es": "Hola. Quiero una apelación rápida. Estoy en el hospital y creo que me dan de alta demasiado pronto."
+ },
+ "letters/hospital-im/urgent/script/1": {
+  "en": "My name is [your name]. I am at [the hospital's name].",
+  "es": "Mi nombre es [su nombre]. Estoy en [el nombre del hospital]."
+ },
+ "letters/hospital-im/urgent/script/2": {
+  "en": "My planned discharge date is [the date].",
+  "es": "La fecha planeada para mi alta es [la fecha]."
+ },
+ "letters/premium-bill/title": {
+  "en": "It is a bill for my Medicare premium (CMS-500)",
+  "es": "Es una factura de mi prima de Medicare (CMS-500)"
+ },
+ "letters/premium-bill/cue": {
+  "en": "Titled Medicare Premium Bill. Sent to people whose premium is not taken out of a Social Security payment.",
+  "es": "Titulada Medicare Premium Bill. Se envía a las personas cuya prima no se descuenta de un pago del Seguro Social."
+ },
+ "letters/premium-bill/plain": {
+  "en": "This is a bill for people who pay Medicare directly for Part A, Part B, or the extra Part D amount charged to people with higher incomes.",
+  "es": "Esta es una factura para las personas que pagan directamente a Medicare por la Parte A, la Parte B, o la cantidad adicional de la Parte D que se cobra a las personas con ingresos más altos."
+ },
+ "letters/premium-bill/do/0": {
+  "en": "Pay the total amount by the due date on the bill. Medicare must get your payment by the 25th of the month for it to be on time.",
+  "es": "Pague la cantidad total a más tardar en la fecha de vencimiento de la factura. Medicare debe recibir su pago a más tardar el día 25 del mes para que llegue a tiempo."
+ },
+ "letters/premium-bill/do/1": {
+  "en": "If the bill says Delinquent Bill and you do not pay the full amount by the due date, you could lose your Medicare coverage.",
+  "es": "Si la factura dice Delinquent Bill y usted no paga la cantidad completa a más tardar en la fecha de vencimiento, podría perder su cobertura de Medicare."
+ },
+ "letters/premium-bill/do/2": {
+  "en": "You can pay through your Medicare account online or sign up for Medicare Easy Pay.",
+  "es": "Puede pagar por internet con su cuenta de Medicare o inscribirse en Medicare Easy Pay."
+ },
+ "letters/premium-bill/chip": {
+  "en": "25th of the month",
+  "es": "El día 25 del mes"
+ },
+ "letters/part-d-lep/title": {
+  "en": "It says I owe a late enrollment penalty for drug coverage",
+  "es": "Dice que debo una multa por inscripción tardía en la cobertura de medicamentos"
+ },
+ "letters/part-d-lep/cue": {
+  "en": "From your drug plan. A penalty is added to your monthly premium for a gap in drug coverage.",
+  "es": "De su plan de medicamentos. Se agrega una multa a su prima mensual por un período sin cobertura de medicamentos."
+ },
+ "letters/part-d-lep/plain": {
+  "en": "Your drug plan says you went 63 days or more without creditable drug coverage after you were first able to join, so a penalty is added to your premium for as long as you have Medicare drug coverage.",
+  "es": "Su plan de medicamentos dice que usted pasó 63 días o más sin una cobertura de medicamentos acreditable después de la primera vez que pudo inscribirse, así que se agrega una multa a su prima mientras tenga cobertura de medicamentos de Medicare."
+ },
+ "letters/part-d-lep/do/0": {
+  "en": "If you disagree, ask for a review using the reconsideration request form that came with the letter.",
+  "es": "Si no está de acuerdo, pida una revisión con el formulario de solicitud de reconsideración que vino con la carta."
+ },
+ "letters/part-d-lep/do/1": {
+  "en": "Show that you had other drug coverage that counts, such as through an employer or union.",
+  "es": "Demuestre que tuvo otra cobertura de medicamentos que cuenta, por ejemplo por medio de un empleador o un sindicato."
+ },
+ "letters/part-d-lep/do/2": {
+  "en": "Send it by the date listed in the letter.",
+  "es": "Envíelo a más tardar en la fecha indicada en la carta."
+ },
+ "letters/part-d-lep/clocks/0/label": {
+  "en": "Ask for a review by this date",
+  "es": "Pida una revisión a más tardar en esta fecha"
+ },
+ "letters/part-d-lep/clocks/0/rule": {
+  "en": "If you disagree with your penalty, you can request a review, generally within 60 days from the date on the letter.",
+  "es": "Si no está de acuerdo con su multa, puede pedir una revisión, por lo general dentro de los 60 días desde la fecha de la carta."
+ },
+ "letters/part-d-lep/clocks/0/note": {
+  "en": "Counted from the date printed on the letter. If the letter lists a different date, use that one.",
+  "es": "Contados desde la fecha impresa en la carta. Si la carta indica otra fecha, use esa."
+ },
+ "letters/part-d-lep/date/label": {
+  "en": "Date printed on the penalty letter",
+  "es": "Fecha impresa en la carta de la multa"
+ },
+ "letters/part-d-lep/kit/about_label": {
+  "en": "The months you had other drug coverage, and where it came from (for example an employer or union plan)",
+  "es": "Los meses en que tuvo otra cobertura de medicamentos, y de dónde venía (por ejemplo, un plan de un empleador o de un sindicato)"
+ },
+ "letters/part-d-lep/kit/include/0": {
+  "en": "The reconsideration request form that came with the plan's letter, completed and signed",
+  "es": "El formulario de solicitud de reconsideración que vino con la carta del plan, lleno y firmado"
+ },
+ "letters/part-d-lep/kit/include/1": {
+  "en": "Copies, not originals, of anything that shows your other drug coverage, such as letters from an employer or union plan",
+  "es": "Copias, no originales, de cualquier cosa que demuestre su otra cobertura de medicamentos, como cartas de un plan de un empleador o de un sindicato"
+ },
+ "letters/part-d-lep/kit/include/2": {
+  "en": "A copy of the plan's penalty letter",
+  "es": "Una copia de la carta de la multa del plan"
+ },
+ "letters/part-d-lep/kit/how/0": {
+  "en": "Fill out the reconsideration request form you got with the letter. This draft can go with it as your explanation.",
+  "es": "Llene el formulario de solicitud de reconsideración que recibió con la carta. Este borrador puede ir con él como su explicación."
+ },
+ "letters/part-d-lep/kit/how/1": {
+  "en": "Mail or fax it to the address or number on the form. Send copies, not originals.",
+  "es": "Envíelo por correo o por fax a la dirección o al número del formulario. Envíe copias, no originales."
+ },
+ "letters/part-d-lep/kit/how/2": {
+  "en": "The review contractor has 90 days to decide. You do not need to send the form again during that time.",
+  "es": "El contratista de revisión tiene 90 días para decidir. No necesita enviar el formulario otra vez durante ese tiempo."
+ },
+ "letters/anoc/title": {
+  "en": "It lists my plan's changes for next year (Annual Notice of Change)",
+  "es": "Enumera los cambios de mi plan para el próximo año (Annual Notice of Change)"
+ },
+ "letters/anoc/cue": {
+  "en": "From your Medicare Advantage or drug plan, each fall.",
+  "es": "De su plan Medicare Advantage o de medicamentos, cada otoño."
+ },
+ "letters/anoc/plain": {
+  "en": "Your plan sends this each fall. It lists the changes in coverage, costs and more that take effect in January.",
+  "es": "Su plan lo envía cada otoño. Enumera los cambios en la cobertura, los costos y otras cosas que entran en vigor en enero."
+ },
+ "letters/anoc/do/0": {
+  "en": "Review the changes to decide whether the plan will still meet your needs next year.",
+  "es": "Revise los cambios para decidir si el plan seguirá cubriendo sus necesidades el próximo año."
+ },
+ "letters/anoc/do/1": {
+  "en": "Open Enrollment runs from October 15 to December 7. If you join a new plan, the plan must get your enrollment by December 7.",
+  "es": "La inscripción abierta va del 15 de octubre al 7 de diciembre. Si se inscribe en un plan nuevo, el plan debe recibir su inscripción a más tardar el 7 de diciembre."
+ },
+ "letters/anoc/do/2": {
+  "en": "Compare plans on Medicare's plan finder, or call 1-800-MEDICARE.",
+  "es": "Compare planes en el buscador de planes de Medicare, o llame al 1-800-MEDICARE."
+ },
+ "letters/anoc/chip": {
+  "en": "Change by December 7",
+  "es": "Cambie a más tardar el 7 de diciembre"
+ },
+ "letters/abn/title": {
+  "en": "My doctor or supplier says Medicare may not pay (ABN)",
+  "es": "Mi médico o proveedor dice que Medicare quizás no pague (ABN)"
+ },
+ "letters/abn/cue": {
+  "en": "An Advance Beneficiary Notice of Non-coverage, given before you get an item or service.",
+  "es": "Un aviso llamado Advance Beneficiary Notice of Non-coverage, que se da antes de que usted reciba un artículo o servicio."
+ },
+ "letters/abn/plain": {
+  "en": "In Original Medicare, a doctor, provider or supplier gives you this notice when they think Medicare may not pay for something. It is their opinion, not an official Medicare decision.",
+  "es": "En Medicare Original, un médico, proveedor o suplidor le da este aviso cuando cree que Medicare quizás no pague por algo. Es su opinión, no una decisión oficial de Medicare."
+ },
+ "letters/abn/do/0": {
+  "en": "Read it and ask any questions before you decide.",
+  "es": "Léalo y haga todas sus preguntas antes de decidir."
+ },
+ "letters/abn/do/1": {
+  "en": "You must choose one option on the notice and sign it. The provider cannot choose for you.",
+  "es": "Usted debe elegir una opción en el aviso y firmarlo. El proveedor no puede elegir por usted."
+ },
+ "letters/abn/do/2": {
+  "en": "Under Option 1 you get the item and Medicare is billed for an official decision, which comes on your Medicare Summary Notice.",
+  "es": "Con la Opción 1 usted recibe el artículo y se le cobra a Medicare para obtener una decisión oficial, que llega en su resumen de Medicare (Medicare Summary Notice)."
+ },
+ "letters/abn/do/3": {
+  "en": "Under Option 3 you do not get the item, you do not pay for it, and you cannot appeal to see whether Medicare would pay.",
+  "es": "Con la Opción 3 usted no recibe el artículo, no paga por él, y no puede apelar para saber si Medicare pagaría."
+ },
+ "letters/abn/do/4": {
+  "en": "If Medicare later does not pay, the Medicare Summary Notice page here shows how long you have to appeal.",
+  "es": "Si después Medicare no paga, la página del resumen de Medicare en esta herramienta muestra cuánto tiempo tiene para apelar."
+ },
+ "letters/abn/chip": {
+  "en": "Choose before you get it",
+  "es": "Elija antes de recibirlo"
+ },
+ "letters/abn/see_label": {
+  "en": "See the Medicare letters, including the Medicare Summary Notice",
+  "es": "Ver las cartas de Medicare, incluido el resumen de Medicare"
+ },
+ "letters/ssi-planned-action/forms/0/name": {
+  "en": "Form SSA-561, Request for Reconsideration",
+  "es": "Formulario SSA-561, Request for Reconsideration"
+ },
+ "letters/work-report/forms/0/name": {
+  "en": "Complete Form SSA-821 online",
+  "es": "Llenar el formulario SSA-821 por internet"
+ },
+ "letters/irmaa/forms/0/name": {
+  "en": "Form SSA-44, life-changing event",
+  "es": "Formulario SSA-44, evento que cambió su vida"
+ },
+ "letters/extra-help/forms/0/name": {
+  "en": "Form SSA-1021, appeal of an Extra Help decision",
+  "es": "Formulario SSA-1021, apelación de una decisión sobre el Beneficio Adicional (Extra Help)"
+ },
+ "letters/part-d-lep/forms/0/name": {
+  "en": "Part D late enrollment penalty reconsideration request form",
+  "es": "Formulario de solicitud de reconsideración de la multa por inscripción tardía de la Parte D"
+ },
+ "letters/anoc/forms/0/name": {
+  "en": "Compare plans on Medicare.gov",
+  "es": "Comparar planes en Medicare.gov"
  }
 }

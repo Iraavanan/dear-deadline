@@ -66,6 +66,28 @@ def create_app():
         )
         return response
 
+    def _scam():
+        table = rules.load_table("scam")["rows"]
+        return {"signs": [{"id": r["id"], "plain": r["plain"], "ask": r["ask"], "source": r["source"], "programs": r["programs"], "other": r.get("other")} for r in table if "ask" in r],
+                "advice": {r["id"]: {k: v for k, v in r.items() if k not in ("effective_from", "checked_on")} for r in table if "ask" not in r}}
+
+    def _wic():
+        return {r["id"]: {k: v for k, v in r.items() if k not in ("effective_from", "checked_on")} for r in rules.load_table("wic")["rows"]}
+
+    @app.get("/api/es/meta")
+    def spanish_meta():
+        """What the Spanish pages need for the helpers that run in the browser: the same rule rows, with their sentences in Spanish."""
+        token = i18n.LANG.set("es")
+        try:
+            today = dt.date.today()
+            tables = ("askedagain", "permission", "hearingnext", "medicaidend", "hearing")
+            return jsonify({"version": helper.__version__, "lang": "es", "rules_as_of": i18n.as_of(), "counting": counts.on,
+                            "scam": i18n.deep(_scam()), "wic": i18n.deep(_wic()),
+                            "letters": {"groups": letters.groups(), "list": letters.catalogue()},
+                            "engines": dict({t: i18n.deep(rules.rows_as_of(t, today)) for t in tables}, rules_as_of=i18n.as_of())})
+        finally:
+            i18n.LANG.reset(token)
+
     @app.get("/api/meta")
     def meta():
         return jsonify(
@@ -90,12 +112,7 @@ def create_app():
                     "benefits": [{"id": k, "label": v} for k, v in reporting.BENEFITS],
                     "changes": {k: reporting.changes_for(k, rules.rows_as_of("reporting", dt.date.today())) for k, _ in reporting.BENEFITS},
                 },
-                "scam": {
-                    "signs": [{"id": r["id"], "plain": r["plain"], "ask": r["ask"], "source": r["source"], "programs": r["programs"], "other": r.get("other")}
-                              for r in rules.load_table("scam")["rows"] if "ask" in r],
-                    "advice": {r["id"]: {k: v for k, v in r.items() if k not in ("effective_from", "checked_on")}
-                               for r in rules.load_table("scam")["rows"] if "ask" not in r},
-                },
+                "scam": _scam(),
                 "letters": {"groups": [{"id": k, "label": v} for k, v in letters.GROUPS], "list": letters.catalogue()},
                 "amount_example": amount.example(),
                 "workrules": {p: rules.rows_as_of("workrules", dt.date.today())[p + "_exemptions"]["items"] for p in workrules.PROGRAMS},
@@ -109,7 +126,7 @@ def create_app():
                             "askedagain": rules.rows_as_of("askedagain", dt.date.today()),
                             "permission": rules.rows_as_of("permission", dt.date.today()), "hearingnext": rules.rows_as_of("hearingnext", dt.date.today()),
                             "medicaidend": rules.rows_as_of("medicaidend", dt.date.today()), "hearing": rules.rows_as_of("hearing", dt.date.today()), "rules_as_of": rules.rules_checked_as_of()},
-                "wic": {r["id"]: {k: v for k, v in r.items() if k not in ("effective_from", "checked_on")} for r in rules.load_table("wic")["rows"]},
+                "wic": _wic(),
                 "counting": counts.on,
                 "contact": os.environ.get("HELPER_CONTACT", "").strip()[:120] or None,
                 "budget_fields": [{"id": "income", "label": "Monthly income, all sources"}]
@@ -592,6 +609,11 @@ def create_app():
     def spanish():
         """The most important points in Spanish, with links into the English tool."""
         return send_from_directory(FRONTEND, "es.html")
+
+    @app.get("/es/app")
+    def spanish_app():
+        """The Spanish helpers that run in the browser. Its scripts are Spanish copies built by tools/make_es_js.py."""
+        return send_from_directory(FRONTEND / "es", "app.html")
 
     @app.get("/about")
     def about():

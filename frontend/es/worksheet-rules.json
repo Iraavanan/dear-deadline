@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "checked_on": "2026-11-22",
+  "florida_1619b": {
+    "2026": 42946
+  },
+  "wage_base": {
+    "2018": 128400,
+    "2019": 132900,
+    "2020": 137700,
+    "2021": 142800,
+    "2022": 147000,
+    "2023": 160200,
+    "2024": 168600,
+    "2025": 176100,
+    "2026": 184500
+  },
+  "ssi_usual_lag_months": 2,
+  "fema_appeal_days": 60,
+  "sources": {
+    "ssi_wages": {
+      "title": "Guía del Seguro Social sobre cuándo se paga SSI",
+      "url": "https://www.ssa.gov/pubs/EN-05-11011.pdf"
+    },
+    "ssi_report": {
+      "title": "Informes de salarios y recibos del Seguro Social",
+      "url": "https://www.ssa.gov/ssi/reporting/wages"
+    },
+    "ssi_medicaid": {
+      "title": "Condiciones del Seguro Social para conservar Medicaid mientras trabaja",
+      "url": "https://www.ssa.gov/ssi/spotlights/spot-medicaid.htm"
+    },
+    "ssi_threshold": {
+      "title": "Límites anuales de ganancias por estado, del Seguro Social",
+      "url": "https://www.ssa.gov/disabilityresearch/wi/1619b.htm"
+    },
+    "individual_threshold": {
+      "title": "Red Book del Seguro Social sobre los límites individuales",
+      "url": "https://www.ssa.gov/redbook/eng/section-1619b.htm"
+    },
+    "wages_record": {
+      "title": "Guía del Seguro Social para corregir los registros de ganancias",
+      "url": "https://www.ssa.gov/pubs/EN-05-10081.pdf"
+    },
+    "wages_cap": {
+      "title": "Bases salariales anuales sujetas a impuestos, del Seguro Social",
+      "url": "https://www.ssa.gov/oact/cola/cbb.html"
+    },
+    "wages_boxes": {
+      "title": "Instrucciones del IRS para las casillas 3 y 7 del W-2",
+      "url": "https://www.irs.gov/instructions/iw2w3"
+    },
+    "wages_form": {
+      "title": "Solicitud de corrección del registro de ganancias del Seguro Social (SSA-7008)",
+      "url": "https://www.ssa.gov/forms/ssa-7008.pdf"
+    },
+    "fema_proof": {
+      "title": "FEMA: pruebas de residencia principal",
+      "url": "https://www.fema.gov/assistance/individual/after-applying/verifying-home-ownership-occupancy"
+    },
+    "fema_appeal": {
+      "title": "FEMA: instrucciones para apelar una decisión",
+      "url": "https://www.fema.gov/assistance/individual/after-applying/appeals"
+    },
+    "fema_account": {
+      "title": "Cuenta oficial de DisasterAssistance.gov",
+      "url": "https://www.disasterassistance.gov/"
+    }
+  }
+}

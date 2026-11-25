@@ -48,6 +48,19 @@ def rows(table, on, rules_dir=None):
     return {rid: dict(row, plain=BY_EN[row["plain"]]) if row.get("plain") in BY_EN else row for rid, row in found.items()}
 
 
+def deep(value):
+    """A rule row, or a table of them, with every sentence that has a Spanish translation swapped for it. Unchanged in English."""
+    if not es():
+        return value
+    if isinstance(value, str):
+        return BY_EN.get(value, value)
+    if isinstance(value, dict):
+        return {k: deep(v) for k, v in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [deep(v) for v in value]
+    return value
+
+
 def long_date(d):
     return "%d de %s de %d" % (d.day, MESES[d.month - 1], d.year) if es() else "%s %d, %d" % (MONTHS[d.month - 1], d.day, d.year)
 
@@ -165,6 +178,15 @@ def _tools():
     special["check-amount"] = amount_check
     from . import benefitmath
     special["benefit-math"] = spanish(benefitmath.run)
+    from . import letters
+
+    def one_letter(raw, today=None, rules_dir=None):
+        out = spanish(letters.run)(copy.deepcopy(raw), today=today, rules_dir=rules_dir)
+        if out.get("kit") and out["kit"]["kind"] != "call":         # a written request goes to the agency, so it stays in English
+            out["kit"]["draft"] = letters.run(copy.deepcopy(raw), today=today, rules_dir=rules_dir)["kit"]["draft"]
+            out["kit"]["draft_lang"] = "en"
+        return out
+    special["letter"] = one_letter
     special["work-check"] = spanish(lambda raw, today=None, rules_dir=None: work.run(raw, rules_dir=rules_dir))
     return dict({k: spanish(v) for k, v in more.items()}, **dict(special, **_first()))
 

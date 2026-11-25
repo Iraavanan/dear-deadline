@@ -12,6 +12,8 @@
   // answering is older than this page, say so plainly instead of failing later.
   var NEEDS_VERSION = "0.15.0";
   var stale = false;
+  /* Set by the Spanish page (es/shell.js): which helpers it has, where the others are, and its own addresses for the helper program. */
+  var ES = window.DD_ES || null;
 
   function reset() {
     state = { meta: state ? state.meta : null, facts: {}, answers: {}, statements: {}, budget: {}, result: null, sample: null, read: {}, otherDates: [], picture: null, photoLines: {}, q: 0 };
@@ -102,9 +104,9 @@
     var printing = Array.prototype.some.call(screen.querySelectorAll("button"), function (b) { return b.textContent === "Print this"; });
     if (!printing) return;
     screen.appendChild(h("nav", { class: "related", "aria-label": "Often needed next" }, h("p", { text: "Often needed next" }),
-      h("ul", {}, list.map(function (k) { return h("li", {}, h("a", { href: "#" + k, text: NAMES[k] })); }),
+      h("ul", {}, list.map(function (k) { return h("li", {}, h("a", { href: ES && ES.elsewhere[k] ? ES.home + "#" + ES.elsewhere[k] : "#" + k, text: NAMES[k] })); }),
         BOARD_FOR[where] && window.Modules && window.Modules.community ? h("li", { class: "community-link" }, h("a", { href: "#community/" + BOARD_FOR[where], text: "Talk with others about this" })) : null,
-        h("li", {}, h("a", { href: "/", text: "All helpers", on: { click: function (ev) { ev.preventDefault(); location.hash = ""; } } })))));
+        h("li", {}, h("a", { href: ES ? ES.home : "/", text: "All helpers", on: { click: function (ev) { ev.preventDefault(); location.hash = ""; } } })))));
   }
 
   /* The thin line under the card: how far through the whole helper this screen is. */
@@ -188,6 +190,7 @@
   function isLate(result) { return result.deadlines.items.some(function (i) { return i.id === "appeal" && i.status === "passed"; }); }
 
   function api(path, body) {
+    if (ES && ES.api[path]) path = ES.api[path];
     var opts = body ? { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) } : {};
     return fetch(path, opts).then(function (res) {
       return res.json().then(function (data) { return { ok: res.ok, data: data }; });
@@ -282,6 +285,7 @@
   /* Home, in two parts. First, what this site does and how it helps, with one arrow down.
      Then every way in, laid out across the page in three groups. Only what is built is offered. */
   function home() {
+    if (ES) { location.href = ES.home; return; }
     reset(); updateDatebar();
     if (location.hash) history.replaceState(null, "", location.pathname);
     var go = function (where) { return function () { location.hash = where; }; };
@@ -498,6 +502,7 @@
   function route() {
     if (!state.meta || stale) return;                     // not loaded yet, or the program behind the page is out of date
     var where = location.hash.replace("#", "");
+    if (ES && !ES.here[where.split("/")[0]]) { location.replace(ES.elsewhere[where] ? ES.home + "#" + ES.elsewhere[where] : ES.home); return; }
     if ((where === "community" || where.indexOf("community/") === 0) && window.Modules && window.Modules.community) window.Modules.community.start(where.split("/")[1]);
     else if (where === "overpayment") start();
     else if (where === "disability-ended" && window.Modules && window.Modules.cessation) window.Modules.cessation.start();
@@ -1061,7 +1066,8 @@
         h("p", { class: "small", text: "Page expects version " + NEEDS_VERSION + "; the program reports " + (res.data.version || "an older version") + "." }));
       return;
     }
-    route();
+    // The helpers are in scripts that load after this one. If the answer arrives first, wait for them before opening a helper.
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", route); else route();
   }).catch(failed);
 
   /* Shared building blocks for the other letter modules. */
